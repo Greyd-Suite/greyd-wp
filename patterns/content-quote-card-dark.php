@@ -42,7 +42,7 @@
 			<!-- /wp:paragraph -->
 
 			<!-- wp:paragraph -->
-			<p><?php esc_html_e( 'Designing for the web is not just about pixels; it\'s about people, accessibility, and crafting sustainable digital experiences that stand the test of time.', 'greyd-theme' ); ?></p>
+			<p><?php esc_html_e( "Designing for the web is not just about pixels; it's about people, accessibility, and crafting sustainable digital experiences that stand the test of time.", 'greyd-theme' ); ?></p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:paragraph {"align":"right","style":{"typography":{"lineHeight":"0","fontStyle":"normal","fontWeight":"700","fontSize":"5rem"}}} -->

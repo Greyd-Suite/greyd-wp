@@ -28,7 +28,7 @@
 	<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
 	<div class="wp-block-group">
 		<!-- wp:heading {"textAlign":"center"} -->
-		<h2 class="wp-block-heading has-text-align-center"><?php esc_html_e( 'Building Tomorrow\'s Responsibly', 'greyd-theme' ); ?></h2>
+		<h2 class="wp-block-heading has-text-align-center"><?php esc_html_e( "Building Tomorrow's Responsibly", 'greyd-theme' ); ?></h2>
 		<!-- /wp:heading -->
 
 		<!-- wp:paragraph {"align":"center"} -->

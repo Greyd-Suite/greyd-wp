@@ -1,59 +1,34 @@
 # Greyd Theme
 
-The perfect starting point to scale up your WordPress business
+![Image](screenshot.jpg)
 
-## Description
+The Greyd Theme is a multipurpose WordPress theme designed to give you more options and flexibility in the context of Full Site Editing. The block theme offers **additional Global Styles** to cover all your needs that might not be covered by the core offering yet. These features include various global button styles, hover effects for buttons, fluid font sizes and more. The global spacing presets can easily be individualized to your likings. The Greyd Theme is **accessibility-ready and responsive**, as it automatically adapts to the screen size without you having to individually define layouts and sizes for each breakpoint. Just like you know it from intrinsic web design.
 
-Greyd Theme is a multipurpose block theme that offers powerful extensions to the core global styles and responsive options. It comes with numerous patterns and templates as well as a super handy setup preview pattern that shows you all global styles adjustments at a glance.
+The Greyd theme is **designed to fast and flexibly fit any WordPress website**. It additionally comes with a variety of **patterns and templates** that are suitable for any kind of website and landing page. For an even easier visualization and customization all design adjustments are displayed in the preview with our handy **set-up pattern**. All these features let you do the work of professional developers without having profound knowledge.
 
-## Features
+## Getting started
 
-#### Additional Global Styles
-From multiple button variations to hover styles and fluid font size – it`s all there!
-
-#### Set-up Pattern
-See all adjustments in the Global Styles at a glance with our setup pattern.
-
-#### Lean & Fast
-No more bloated databases! Greyd websites are lightning-fast & SEO-optimized.
-
-#### Intrinsic Design
-Maximum control over the responsive design thanks to customizable spacing presets using modern CSS functions such as “clamp”.
-
-#### Free Patterns & Templates
-The Greyd Theme comes with a huge set of ready-to-use patterns & templates for all parts of your website.
-
-#### Accessibility-Ready
-Don't worry whether your website code is accessible. You put in the creativity, Greyd does the coding.
-
-### Links
-
-* [Demo of the theme](https://theme.greyd.io/)
-* [About the Theme](https://greyd.io/greyd-theme/)
-* [GitHub Repo](https://github.com/Greyd-Suite/greyd-theme)
-* [Discover Greyd.Suite](https://greyd.io/demo/)
-
-### Video
-
-Our additional global styles and grid settings give you even more flexibility in designing your websites than Full Site Editing alone.
-
-[vimeo https://vimeo.com/940779737/b3b0fa0a78?share=copy]
-
-### Details
-
-| Overview | |
+| Link | Description |
 | ------------- | ------------- |
-| Requires at least  | 6.4 |
-| Tested up to  | 6.5 |
-| Requires PHP  | 7.4 |
-| Stable tag  | 2.2.0 |
-| License  | [GPLv2 or later](http://www.gnu.org/licenses/gpl-2.0.html) |
+| [Features and tutorial](https://greyd.io/greyd-theme/) | Learn more about the features of the Theme and how to use it. |
+| [Live Demo](https://theme.greyd.io/) | View a live demo including all the styles, pages and templates. |
+| [Download the theme](https://update.greyd.io/public/themes/greyd-theme/greyd-theme.zip) | Download the latest theme zip to install on your WordPress site. |
+| [GitHub](https://github.com/Greyd-Suite/greyd-theme) | Dig through the source code in the official GitHub Repository. |
+| [Discover Greyd.Suite](https://greyd.io/demo/) | Learn more about what Greyd.Suite has to offer. |
 
+## Installation
+
+Before you start, make sure you're running WordPress 6.4 or later.
+
+1. Start by [downloading the theme](https://update.greyd.io/public/themes/greyd-theme/greyd-theme.zip).
+2. Go to `Appearance → Themes → Add New`
+3. Upload the ZIP.
+4. Activate the theme.
 
 ## Copyright
 
 Greyd Theme, (C) 2024 Greyd GmbH.
-Greyd Theme is distributed under the terms of the GNU GPL.
+Greyd Theme is distributed under the terms of the [GNU GPLv2 or later](http://www.gnu.org/licenses/gpl-2.0.html)
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -65,17 +40,21 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
-## Installation
+## Images
 
-1. Make sure you're running WordPress 6.4 or later.
-2. Upload the theme.
-3. Activate the theme.
+All images used in this theme have been created by our team or generated with the assistance of tools such as [Midjourney](https://www.midjourney.com/home) and [PatternPad](https://patternpad.com/).
+As such, we hold full ownership and rights to these images.
+You are free to use them within the context of this theme in accordance with the theme's license agreement.
+If you have any questions regarding the usage or licensing of these images, please contact us.
+
+* [Midyourney Terms of service](https://docs.midjourney.com/docs/terms-of-service)
+* [PatternPad Terms of service](https://patternpad.com/terms.html)
 
 ## Contributors
 
 * [greydsuite](https://profiles.wordpress.org/greydsuite/)
-* [sandrakurze](https://profiles.wordpress.org/sandrakurze/)
+* [annebovelett](https://profiles.wordpress.org/annebovelett/)
 * [luminuu](https://profiles.wordpress.org/luminuu/)
+* [sandrakurze](https://profiles.wordpress.org/sandrakurze/)
 * [jtgreyd](https://profiles.wordpress.org/jtgreyd/)
 * [thomask42](https://profiles.wordpress.org/thomask42/)
-* [annebovelett](https://profiles.wordpress.org/annebovelett/)

@@ -52,7 +52,7 @@
 			<div class="wp-block-buttons">
 				<!-- wp:button {"className":"is-size-small","size":"is-size-small"} -->
 				<div class="wp-block-button is-size-small">
-					<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Download', 'greyd-theme' ); ?></a>
+					<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Download now', 'greyd-theme' ); ?></a>
 				</div>
 				<!-- /wp:button -->
 

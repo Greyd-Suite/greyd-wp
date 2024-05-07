@@ -35,8 +35,8 @@
 		<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:66.66%">
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"constrained","contentSize":"440px","justifyContent":"left"}} -->
 			<div class="wp-block-group">
-				<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"textColor":"primary","className":"","fontSize":"small"} -->
-				<p class="has-primary-color has-text-color has-small-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Download Greyd.Suite', 'greyd-theme' ); ?></p>
+				<!-- wp:paragraph {"style":{"typography":{"fontWeight":"700"}},"className":"","fontSize":"small"} -->
+				<p class="has-small-font-size" style="font-weight:700"><?php esc_html_e( 'Download Greyd.Suite', 'greyd-theme' ); ?></p>
 				<!-- /wp:paragraph -->
 
 				<!-- wp:heading {"level":2,"className":""} -->
@@ -47,7 +47,7 @@
 
 			<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","bottom":"0","left":"0","right":"0"},"padding":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|small"}}},"className":"","fontSize":"small"} -->
 			<p class="has-small-font-size" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;padding-top:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small)">
-				<?php esc_html_e( 'Elevate your business strategy from ordinary to extraordinary and build the web empire you\'ve always dreamed of.', 'greyd-theme' ); ?>
+				<?php esc_html_e( "Elevate your business strategy from ordinary to extraordinary and build the web empire you've always dreamed of.", 'greyd-theme' ); ?>
 			</p>
 			<!-- /wp:paragraph -->
 

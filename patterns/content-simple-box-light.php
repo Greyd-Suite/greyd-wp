@@ -57,7 +57,7 @@
 
 			<!-- wp:button {"className":"is-style-outline"} -->
 			<div class="wp-block-button is-style-outline">
-				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Learn More', 'greyd-theme' ); ?></a>
+				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Learn more about Greyd', 'greyd-theme' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 		</div>

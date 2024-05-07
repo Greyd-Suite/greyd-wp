@@ -43,14 +43,14 @@
 			<div class="wp-block-buttons alignfull">
 				<!-- wp:button {"style":{"border":{"radius":0}},"className":"has-custom-width wp-block-button__width-100 is-style-outline"} -->
 				<div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-outline">
-					<a class="wp-block-button__link no-border-radius wp-element-button"><?php esc_html_e( 'Start Today →', 'greyd-theme' ); ?></a>
+					<a class="wp-block-button__link no-border-radius wp-element-button"><?php esc_html_e( 'Choose Monthly →', 'greyd-theme' ); ?></a>
 				</div>
 				<!-- /wp:button -->
 			</div>
 			<!-- /wp:buttons -->
 
 			<!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|small"}}},"className":""} -->
-			<p style="margin-bottom:var(--wp--preset--spacing--small)"><strong><?php esc_html_e( 'What\'s included', 'greyd-theme' ); ?></strong></p>
+			<p style="margin-bottom:var(--wp--preset--spacing--small)"><strong><?php esc_html_e( "What's included", 'greyd-theme' ); ?></strong></p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:list {"style":{"spacing":{"margin":{"top":"0","left":"0","right":"0","bottom":"0"}}},"className":""} -->
@@ -109,14 +109,14 @@
 				<div class="wp-block-buttons alignfull">
 					<!-- wp:button {"style":{"border":{"radius":0}},"className":"has-custom-width wp-block-button__width-100 is-style-fill"} -->
 					<div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-fill">
-						<a class="wp-block-button__link no-border-radius wp-element-button"><?php esc_html_e( 'Start Today →', 'greyd-theme' ); ?></a>
+						<a class="wp-block-button__link no-border-radius wp-element-button"><?php esc_html_e( 'Choose Quarterly →', 'greyd-theme' ); ?></a>
 					</div>
 					<!-- /wp:button -->
 				</div>
 				<!-- /wp:buttons -->
 
 				<!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|small"}}},"className":""} -->
-				<p style="margin-bottom:var(--wp--preset--spacing--small)"><strong><?php esc_html_e( 'What\'s included', 'greyd-theme' ); ?></strong></p>
+				<p style="margin-bottom:var(--wp--preset--spacing--small)"><strong><?php esc_html_e( "What's included", 'greyd-theme' ); ?></strong></p>
 				<!-- /wp:paragraph -->
 
 				<!-- wp:list {"style":{"spacing":{"margin":{"top":"0","left":"0","right":"0","bottom":"0"}}},"className":""} -->
@@ -161,7 +161,7 @@
 
 				<!-- wp:paragraph {"className":"","fontSize":"x-large"} -->
 				<p class="has-x-large-font-size">
-					<?php esc_html_e( '$4,99', 'greyd-theme' ); ?> <sub><?php esc_html_e( '/mo.', 'greyd-theme' ); ?></sub>
+					<strong><?php esc_html_e( '$4,99', 'greyd-theme' ); ?></strong> <sub><?php esc_html_e( '/mo.', 'greyd-theme' ); ?></sub>
 				</p>
 				<!-- /wp:paragraph -->
 			</div>
@@ -171,14 +171,14 @@
 			<div class="wp-block-buttons alignfull">
 				<!-- wp:button {"style":{"border":{"radius":0}},"className":"has-custom-width wp-block-button__width-100 is-style-outline"} -->
 				<div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-outline">
-					<a class="wp-block-button__link no-border-radius wp-element-button"><?php esc_html_e( 'Start Today →', 'greyd-theme' ); ?></a>
+					<a class="wp-block-button__link no-border-radius wp-element-button"><?php esc_html_e( 'Choose Yearly →', 'greyd-theme' ); ?></a>
 				</div>
 				<!-- /wp:button -->
 			</div>
 			<!-- /wp:buttons -->
 
 			<!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|small"}}},"className":""} -->
-			<p style="margin-bottom:var(--wp--preset--spacing--small)"><strong><?php esc_html_e( 'What\'s included', 'greyd-theme' ); ?></strong></p>
+			<p style="margin-bottom:var(--wp--preset--spacing--small)"><strong><?php esc_html_e( "What's included", 'greyd-theme' ); ?></strong></p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:list {"style":{"spacing":{"margin":{"top":"0","left":"0","right":"0","bottom":"0"}}},"className":""} -->

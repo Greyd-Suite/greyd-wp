@@ -17,8 +17,8 @@
 	<div class="wp-block-column is-vertically-aligned-center" style="padding-right:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)">
 		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
 		<div class="wp-block-group">
-			<!-- wp:paragraph {"textColor":"mediumdark","className":"","fontSize":"medium"} -->
-			<p class="has-mediumdark-color has-text-color has-medium-font-size">
+			<!-- wp:paragraph {"textColor":"primary","className":"","fontSize":"medium"} -->
+			<p class="has-primary-color has-text-color has-medium-font-size">
 				<strong><?php esc_html_e( 'Get started', 'greyd-theme' ); ?></strong>
 			</p>
 			<!-- /wp:paragraph -->
@@ -37,13 +37,13 @@
 		<div class="wp-block-buttons">
 			<!-- wp:button {"className":"is-style-fill"} -->
 			<div class="wp-block-button is-style-fill">
-				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Get started', 'greyd-theme' ); ?></a>
+				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Get Started', 'greyd-theme' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 
 			<!-- wp:button {"className":"is-style-sec is-style-outline"} -->
 			<div class="wp-block-button is-style-sec is-style-outline">
-				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Learn more', 'greyd-theme' ); ?></a>
+				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Learn more about Greyd', 'greyd-theme' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 		</div>

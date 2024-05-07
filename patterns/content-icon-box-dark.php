@@ -26,13 +26,13 @@
 		<!-- /wp:heading -->
 
 		<!-- wp:paragraph {"align":"center"} -->
-		<p class="has-text-align-center"><?php esc_html_e( 'Greyd theme is perfect starting point to scale up your WordPress business.', 'greyd-theme' ); ?></p>
+		<p class="has-text-align-center"><?php esc_html_e( 'The Greyd Theme is perfect starting point to scale up your WordPress business.', 'greyd-theme' ); ?></p>
 		<!-- /wp:paragraph -->
 	</div>
 	<!-- /wp:group -->
 
 	<!-- wp:paragraph {"align":"center"} -->
-	<p class="has-text-align-center"><a href="https://greyd.io/" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Learn more →', 'greyd-theme' ); ?></a></p>
+	<p class="has-text-align-center"><a href="https://greyd.io/" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Learn more about the theme →', 'greyd-theme' ); ?></a></p>
 	<!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->

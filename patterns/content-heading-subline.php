@@ -14,7 +14,7 @@
 <!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small","padding":{"top":"0","bottom":"var:preset|spacing|medium"}}},"className":"","layout":{"type":"default"}} -->
 <div class="wp-block-group" style="padding-top:0;padding-bottom:var(--wp--preset--spacing--medium)">
 	<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"textColor":"primary","className":"has-text-align-center"} -->
-	<p class="has-text-align-center has-primary-color has-text-color" style="font-style:normal;font-weight:700"><?php esc_html_e( 'And there\'s even more!', 'greyd-theme' ); ?></p>
+	<p class="has-text-align-center has-primary-color has-text-color" style="font-style:normal;font-weight:700"><?php esc_html_e( "And there's even more!", 'greyd-theme' ); ?></p>
 	<!-- /wp:paragraph -->
 
 	<!-- wp:post-title {"textAlign":"center","level":1,"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|x-large"}}},"className":"","fontSize":"x-large"} /-->

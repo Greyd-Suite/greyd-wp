@@ -67,7 +67,7 @@
 					<div class="wp-block-buttons">
 						<!-- wp:button {"className":"is-size-small is-style-alternate"} -->
 						<div class="wp-block-button is-size-small is-style-alternate">
-							<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Read story', 'greyd-theme' ); ?></a>
+							<a class="wp-block-button__link wp-element-button"><?php esc_html_e( "Read Roger's story", 'greyd-theme' ); ?></a>
 						</div>
 						<!-- /wp:button -->
 					</div>
@@ -113,7 +113,7 @@
 					<div class="wp-block-buttons">
 						<!-- wp:button {"className":"is-size-small is-style-alternate"} -->
 						<div class="wp-block-button is-size-small is-style-alternate">
-							<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Read story', 'greyd-theme' ); ?></a>
+							<a class="wp-block-button__link wp-element-button"><?php esc_html_e( "Read Nils' story", 'greyd-theme' ); ?></a>
 						</div>
 						<!-- /wp:button -->
 					</div>
@@ -159,7 +159,7 @@
 					<div class="wp-block-buttons">
 						<!-- wp:button {"className":"is-size-small is-style-alternate"} -->
 						<div class="wp-block-button is-size-small is-style-alternate">
-							<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Read story', 'greyd-theme' ); ?></a>
+							<a class="wp-block-button__link wp-element-button"><?php esc_html_e( "Read Kurt's story", 'greyd-theme' ); ?></a>
 						</div>
 						<!-- /wp:button -->
 					</div>

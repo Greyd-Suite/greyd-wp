@@ -470,7 +470,7 @@ class Dashboard {
 					<div class="greyd_dashboard--sidebar--changelog">
 						<h2><?php esc_html_e( 'What\'s new?', 'greyd-theme' ); ?></h2>
 						<div class="greyd-changelog">
-							<?php echo wp_kses_post( self::get_changelog_content( GREYD_THEME_CONFIG['update_url'] ) ); ?>
+							<?php echo wp_kses_post( self::get_changelog_content() ); ?>
 						</div>
 						<p><a href="https://greyd.io/changelog/?utm_source=theme" target="_blank"><?php esc_html_e( 'See full changelog →', 'greyd-theme' ); ?></a></p>
 					</div>
@@ -559,30 +559,30 @@ class Dashboard {
 	 *
 	 * @return string
 	 */
-	public static function get_changelog_content( $file, $name = 'greyd_theme_changelog' ) {
-
+	public static function get_changelog_content() {
+		$name = 'greyd_theme_changelog';
+		$file = get_template_directory() . '/CHANGELOG.md';
 		$changelog_content = get_transient( $name );
+
 		if ( ! $changelog_content ) {
-			$update_metadata = wp_remote_get( $file );
-			if ( $update_metadata ) {
-				$file_contents = json_decode( $update_metadata['body'], true );
-				if (
-					$file_contents
-					&& is_array( $file_contents )
-					&& isset( $file_contents['sections'] )
-					&& isset( $file_contents['sections']['changelog'] )
-				) {
-					$changelog_data = $file_contents['sections']['changelog'];
-
-					$changelog_array   = explode( '<h3><span>', $changelog_data );
-					$changelog_content = implode( '<h3><span>', array_slice( $changelog_array, 0, 4 ) );
-
-					// replace all multiple whitespace chars and multiple '\' chars
-					$changelog_content = preg_replace(
-						array( '/\s+/', '/[\\\]+/' ),
-						array( ' ', '' ),
-						$changelog_content
-					);
+			if ( file_exists( $file ) ) {
+				$file_contents = file_get_contents( $file );
+				if ( $file_contents ) {
+					$changelog_data = explode( '##', $file_contents );
+					$changelog_content = '';
+					foreach ($changelog_data as $key => $value) {
+						$entry = explode( '*', $value );
+						if ( count($entry) > 1 ) {
+							foreach ($entry as $key => $value) {
+								if ( $key === 0 ) {
+									$changelog_content .= '<h3>' . $value . '</h3><ul>';
+								} else {
+									$changelog_content .= '<li>' . $value . '</li>';
+								}
+							}
+							$changelog_content .= '</ul>';
+						}
+					}
 
 					set_transient(
 						$name,

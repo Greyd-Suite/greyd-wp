@@ -37,7 +37,7 @@
 			<div class="wp-block-buttons alignfull">
 				<!-- wp:button {"style":{"border":{"radius":0}},"className":"has-custom-width wp-block-button__width-100 is-style-outline"} -->
 				<div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-outline">
-					<a class="wp-block-button__link no-border-radius wp-element-button"><?php esc_html_e( 'Start Today →', 'greyd-theme' ); ?></a>
+					<a class="wp-block-button__link no-border-radius wp-element-button"><?php esc_html_e( 'Choose Monthly →', 'greyd-theme' ); ?></a>
 				</div>
 				<!-- /wp:button -->
 			</div>
@@ -46,7 +46,7 @@
 			<!-- wp:group {"layout":{"type":"default"}} -->
 			<div class="wp-block-group">
 				<!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|small"}}},"className":""} -->
-				<p style="margin-bottom:var(--wp--preset--spacing--small)"><strong><?php esc_html_e( 'What\'s included', 'greyd-theme' ); ?></strong></p>
+				<p style="margin-bottom:var(--wp--preset--spacing--small)"><strong><?php esc_html_e( "What's included", 'greyd-theme' ); ?></strong></p>
 				<!-- /wp:paragraph -->
 
 				<!-- wp:list {"style":{"spacing":{"margin":{"top":"0","left":"0","right":"0","bottom":"0"}}},"className":""} -->
@@ -95,7 +95,7 @@
 			<div class="wp-block-buttons alignfull">
 				<!-- wp:button {"style":{"border":{"radius":0}},"className":"has-custom-width wp-block-button__width-100 is-style-outline"} -->
 				<div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-outline">
-					<a class="wp-block-button__link no-border-radius wp-element-button"><?php esc_html_e( 'Start Today →', 'greyd-theme' ); ?></a>
+					<a class="wp-block-button__link no-border-radius wp-element-button"><?php esc_html_e( 'Choose Quarterly →', 'greyd-theme' ); ?></a>
 				</div>
 				<!-- /wp:button -->
 			</div>
@@ -104,7 +104,7 @@
 			<!-- wp:group {"layout":{"type":"default"}} -->
 			<div class="wp-block-group">
 				<!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|small"}}},"className":""} -->
-				<p style="margin-bottom:var(--wp--preset--spacing--small)"><strong><?php esc_html_e( 'What\'s included', 'greyd-theme' ); ?></strong></p>
+				<p style="margin-bottom:var(--wp--preset--spacing--small)"><strong><?php esc_html_e( "What's included", 'greyd-theme' ); ?></strong></p>
 				<!-- /wp:paragraph -->
 
 				<!-- wp:list {"style":{"spacing":{"margin":{"top":"0","left":"0","right":"0","bottom":"0"}}},"className":""} -->
@@ -153,7 +153,7 @@
 			<div class="wp-block-buttons alignfull">
 				<!-- wp:button {"style":{"border":{"radius":0}},"className":"has-custom-width wp-block-button__width-100 is-style-fill"} -->
 				<div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-fill">
-					<a class="wp-block-button__link no-border-radius wp-element-button"><?php esc_html_e( 'Start Today →', 'greyd-theme' ); ?></a>
+					<a class="wp-block-button__link no-border-radius wp-element-button"><?php esc_html_e( 'Choose Yearly →', 'greyd-theme' ); ?></a>
 				</div>
 				<!-- /wp:button -->
 			</div>
@@ -162,7 +162,7 @@
 			<!-- wp:group {"layout":{"type":"default"}} -->
 			<div class="wp-block-group">
 				<!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|small"}}},"className":""} -->
-				<p style="margin-bottom:var(--wp--preset--spacing--small)"><strong><?php esc_html_e( 'What\'s included', 'greyd-theme' ); ?></strong></p>
+				<p style="margin-bottom:var(--wp--preset--spacing--small)"><strong><?php esc_html_e( "What's included", 'greyd-theme' ); ?></strong></p>
 				<!-- /wp:paragraph -->
 
 				<!-- wp:list {"style":{"spacing":{"margin":{"top":"0","left":"0","right":"0","bottom":"0"}}},"className":""} -->
@@ -200,7 +200,7 @@
 			<!-- /wp:heading -->
 
 			<!-- wp:paragraph {"className":"","fontSize":"normal"} -->
-			<p class="has-normal-font-size"><?php esc_html_e( 'If your project doesn\'t fit in the above plans, or if you\'d like to discuss before making up your mind, book a call with us.', 'greyd-theme' ); ?></p>
+			<p class="has-normal-font-size"><?php esc_html_e( "If your project doesn't fit in the above plans, or if you'd like to discuss before making up your mind, book a call with us.", 'greyd-theme' ); ?></p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->

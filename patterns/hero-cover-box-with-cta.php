@@ -34,9 +34,9 @@
 
 				<!-- wp:buttons {"align":"","className":""} -->
 				<div class="wp-block-buttons">
-					<!-- wp:button {"style":{"spacing":{"padding":{"left":"0","right":"0","top":"0","bottom":"0"}},"typography":{"textDecoration":"underline"}},"className":"is-style-clear"} -->
-					<div class="wp-block-button is-style-clear" style="text-decoration:underline">
-						<a class="wp-block-button__link wp-element-button" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><?php esc_html_e( 'Find out more', 'greyd-theme' ); ?></a>
+					<!-- wp:button {"className":"is-style-alternate"} -->
+					<div class="wp-block-button is-style-alternate">
+						<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Find out more about Greyd →', 'greyd-theme' ); ?></a>
 					</div>
 					<!-- /wp:button -->
 				</div>

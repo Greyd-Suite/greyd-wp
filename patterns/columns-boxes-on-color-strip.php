@@ -57,7 +57,7 @@
 				<div class="wp-block-buttons">
 					<!-- wp:button {"textAlign":"left","className":"is-style-outline"} -->
 					<div class="wp-block-button is-style-outline">
-						<a class="wp-block-button__link has-text-align-left wp-element-button" href="https://greyd.io/"><?php esc_html_e( 'Learn more →', 'greyd-theme' ); ?></a>
+						<a class="wp-block-button__link has-text-align-left wp-element-button" href="https://greyd.io/"><?php esc_html_e( 'Learn more about Greyd →', 'greyd-theme' ); ?></a>
 					</div>
 					<!-- /wp:button -->
 				</div>

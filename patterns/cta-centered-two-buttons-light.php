@@ -29,13 +29,13 @@
 	<div class="wp-block-buttons">
 		<!-- wp:button {"className":"is-style-fill"} -->
 		<div class="wp-block-button is-style-fill">
-			<a class="wp-block-button__link wp-element-button" href="https://greyd.io/" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Download →', 'greyd-theme' ); ?></a>
+			<a class="wp-block-button__link wp-element-button" href="https://greyd.io/" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Download now →', 'greyd-theme' ); ?></a>
 		</div>
 		<!-- /wp:button -->
 
 		<!-- wp:button {"className":"is-style-outline"} -->
 		<div class="wp-block-button is-style-outline">
-			<a class="wp-block-button__link wp-element-button" href="https://greyd.io/known-issues/" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Known Issues →', 'greyd-theme' ); ?></a>
+			<a class="wp-block-button__link wp-element-button" href="https://greyd.io/known-issues/" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Known issues →', 'greyd-theme' ); ?></a>
 		</div>
 		<!-- /wp:button -->
 	</div>

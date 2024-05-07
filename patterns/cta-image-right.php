@@ -32,7 +32,7 @@
 			<!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|medium"},"blockGap":"var:preset|spacing|small"}},"className":"","layout":{"type":"default"}} -->
 			<div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--large);margin-bottom:var(--wp--preset--spacing--medium)">
 				<!-- wp:paragraph {"className":""} -->
-				<p><?php esc_html_e( 'Greyd offers a comprehensive platform to scale up your WordPress business and build the web empire you\'ve always dreamed of. Whether you are a freelancer, agency or large corporation, your WordPress revolution starts here.', 'greyd-theme' ); ?></p>
+				<p><?php esc_html_e( "Greyd offers a comprehensive platform to scale up your WordPress business and build the web empire you've always dreamed of. Whether you are a freelancer, agency or large corporation, your WordPress revolution starts here.", 'greyd-theme' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->

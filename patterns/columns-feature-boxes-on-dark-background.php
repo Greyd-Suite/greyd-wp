@@ -58,7 +58,7 @@
 				<!-- /wp:group -->
 
 				<!-- wp:paragraph {"align":"left","className":""} -->
-				<p class="has-text-align-left"><?php esc_html_e( 'Benefit from various extensions and additions in the Site Editor: From multiple button variations to hover styles and fluid font sizes – it\'s all there!', 'greyd-theme' ); ?></p>
+				<p class="has-text-align-left"><?php esc_html_e( "Benefit from various extensions and additions in the Site Editor: From multiple button variations to hover styles and fluid font sizes – it's all there!", 'greyd-theme' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -84,7 +84,7 @@
 				<!-- /wp:group -->
 
 				<!-- wp:paragraph {"align":"left","className":""} -->
-				<p class="has-text-align-left"><?php esc_html_e( 'Don\'t worry whether your website code is accessible. You put in the creativity, Greyd does the coding. The result are super-fast and lean websites!', 'greyd-theme' ); ?></p>
+				<p class="has-text-align-left"><?php esc_html_e( "Don't worry whether your website code is accessible. You put in the creativity, Greyd does the coding. The result are super-fast and lean websites!", 'greyd-theme' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
