@@ -1,0 +1,142 @@
+/**
+ * Editor Styles for components and UI.
+ * 
+ * This style is loaded in the editor only.
+ *
+ * @package Greyd
+ */
+
+:root {
+	--basic-margin: 12px;
+	--basic-padding: 8px;
+}
+
+
+/*    Sidebar Panel
+__________________________________
+*/
+.greyd-styles-panel {
+	position: relative;
+	padding-bottom: 50px;
+}
+.greyd-styles-panel .panel-head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: calc(2 * var(--basic-padding));
+	border-bottom: 1px solid #ddd;
+}
+
+.greyd-styles-panel .panel-menu {
+	padding: calc(2 * var(--basic-padding));
+}
+
+.greyd-styles-panel .panel-head .panel-title {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-left: var(--basic-margin);
+}
+
+.greyd-styles-panel .panel-menu-item {
+	width: 100%;
+	padding-top: calc(1 * var(--basic-margin));
+	padding-bottom: calc(1 * var(--basic-margin));
+	height: auto;
+}
+
+.greyd-styles-panel .panel-headline {
+	margin-top: calc( 3 * var(--basic-margin));
+	margin-bottom: var(--basic-margin);
+}
+
+.greyd-styles-panel :is( input:not([type=checkbox]):not([type=radio]), select ) {
+	height: 40px;
+	min-height: 40px;
+}
+
+.greyd-styles-panel .components-range-control {
+	flex: 1;
+}
+
+.greyd-styles-panel .components-panel__body:last-child {
+	border-bottom: none;
+}
+
+
+/*    Save Button
+__________________________________
+*/
+
+.panel-foot-sticky {
+	position: fixed;
+	bottom: 25px;
+	right: -1px;
+	width: 282px;
+	padding: calc(2 * var(--basic-padding));
+	background: #fff;
+	border: 1px solid #ddd;
+	z-index: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.panel-foot-sticky > button {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+}
+
+.greyd-styles-panel .components-button.is-primary {
+	background: var(--wp-block-synced-color);
+}
+
+.greyd-styles-panel .components-button.is-primary:hover {
+	background: rgba( var(--wp-block-synced-color--rgb),.9 );
+}
+
+.greyd-styles-panel .components-button.is-primary:disabled {
+	background: rgba( var(--wp-block-synced-color--rgb),.6 );
+}
+
+
+/*    Debug
+__________________________________
+*/
+.panel_debug {
+	font-size: 0.75em;
+	line-height: 1;
+	padding: var(--basic-padding) 2px;
+	border: 1px solid #D7D7D7;
+	background: #f3f3f3;
+	overflow: auto hidden;
+}
+
+
+/*    Preview
+__________________________________
+*/
+.greyd-styles-panel .edit-site-typography-preview {
+	padding-top: var(--basic-padding);
+	padding-bottom: var(--basic-padding);
+}
+:where( .greyd-styles-panel .edit-site-typography-preview ) {
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+
+/*    ButtonGroup
+__________________________________
+*/
+.greyd-styles-panel .block-editor-block-styles__variants.layout--inline {
+	margin: 1rem 0;
+	background: #eee;
+	padding: 4px;
+	border-radius: 2px;
+	justify-content: space-around;
+}
+.greyd-styles-panel .block-editor-block-styles__variants .block-editor-block-styles__item:not(.is-active) {
+	background-color: #fff;
+}

@@ -1,0 +1,225 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"title": "Clearblue",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "primary",
+					"color": "#002FFF",
+					"name": "Primary"
+				},
+				{
+					"slug": "secondary",
+					"color": "#FF70E5",
+					"name": "Secondary"
+				},
+				{
+					"slug": "tertiary",
+					"color": "#859BFF",
+					"name": "Tertiary"
+				},
+				{
+					"slug": "foreground",
+					"color": "#001633",
+					"name": "Foreground"
+				},
+				{
+					"slug": "dark",
+					"color": "#4a5566",
+					"name": "Dark"
+				},
+				{
+					"slug": "mediumdark",
+					"color": "#9bafc6",
+					"name": "Medium Dark"
+				},
+				{
+					"slug": "mediumlight",
+					"color": "#cedde8",
+					"name": "Medium Light"
+				},
+				{
+					"slug": "base",
+					"color": "#e8f1f7",
+					"name": "Light"
+				},
+				{
+					"slug": "background",
+					"color": "#f4f7ff",
+					"name": "Background"
+				},
+				{
+					"slug": "darkest",
+					"color": "#000000",
+					"name": "Black"
+				},
+				{
+					"slug": "lightest",
+					"color": "#ffffff",
+					"name": "White"
+				},
+				{
+					"slug": "transparent",
+					"color": "rgba(255,255,255,0)",
+					"name": "Transparent"
+				}
+			],
+			"duotone": [
+				{
+					"name": "Foreground & Background",
+					"slug": "foreground-background",
+					"colors": [
+						"#001633",
+						"#f4f7ff"
+					]
+				},
+				{
+					"name": "Background & Foreground",
+					"slug": "background-foreground",
+					"colors": [
+						"#f4f7ff",
+						"#001633"
+					]
+				},
+				{
+					"name": "Primary & Secondary",
+					"slug": "primary-secondary",
+					"colors": [
+						"#002FFF",
+						"#FF70E5"
+					]
+				},
+				{
+					"name": "Primary & Tertiary",
+					"slug": "primary-tertiary",
+					"colors": [
+						"#002FFF",
+						"#859BFF"
+					]
+				},
+				{
+					"name": "Secondary & Tertiary",
+					"slug": "secondary-tertiary",
+					"colors": [
+						"#FF70E5",
+						"#859BFF"
+					]
+				},
+				{
+					"name": "Primary & Foreground",
+					"slug": "primary-foreground",
+					"colors": [
+						"#002FFF",
+						"#001633"
+					]
+				},
+				{
+					"name": "Foreground & Primary",
+					"slug": "foreground-primary",
+					"colors": [
+						"#001633",
+						"#002FFF"
+					]
+				},
+				{
+					"name": "Secondary & Foreground",
+					"slug": "secondary-foreground",
+					"colors": [
+						"#FF70E5",
+						"#001633"
+					]
+				},
+				{
+					"name": "Foreground & Secondary",
+					"slug": "foreground-secondary",
+					"colors": [
+						"#001633",
+						"#FF70E5"
+					]
+				},
+				{
+					"name": "Tertiary & Foreground",
+					"slug": "tertiary-foreground",
+					"colors": [
+						"#859BFF",
+						"#001633"
+					]
+				},
+				{
+					"name": "Foreground & Tertiary",
+					"slug": "foreground-tertiary",
+					"colors": [
+						"#001633",
+						"#859BFF"
+					]
+				},
+				{
+					"name": "Primary & Background",
+					"slug": "primary-background",
+					"colors": [
+						"#002FFF",
+						"#f4f7ff"
+					]
+				},
+				{
+					"name": "Background & Primary",
+					"slug": "background-primary",
+					"colors": [
+						"#f4f7ff",
+						"#002FFF"
+					]
+				},
+				{
+					"name": "Secondary & Background",
+					"slug": "secondary-background",
+					"colors": [
+						"#FF70E5",
+						"#f4f7ff"
+					]
+				},
+				{
+					"name": "Background & Secondary",
+					"slug": "background-secondary",
+					"colors": [
+						"#f4f7ff",
+						"#FF70E5"
+					]
+				},
+				{
+					"name": "Tertiary & Background",
+					"slug": "tertiary-background",
+					"colors": [
+						"#859BFF",
+						"#f4f7ff"
+					]
+				},
+				{
+					"name": "Background & Tertiary",
+					"slug": "background-tertiary",
+					"colors": [
+						"#f4f7ff",
+						"#859BFF"
+					]
+				},
+				{
+					"name": "Background & Foreground",
+					"slug": "background-foreground",
+					"colors": [
+						"#f4f7ff",
+						"#001633"
+					]
+				},
+				{
+					"name": "Foreground & Background",
+					"slug": "foreground-background",
+					"colors": [
+						"#001633",
+						"#f4f7ff"
+					]
+				}
+			]
+		}
+	}
+}

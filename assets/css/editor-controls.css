@@ -1,0 +1,167 @@
+/**
+ * Editor Styles for components and UI.
+ * 
+ * This style is loaded in the editor only.
+ *
+ * @package Greyd
+ */
+
+:root {
+	--basic-margin: 10px;
+	--basic-padding: 8px;
+}
+
+.greyd_block_editor_preview .editor-styles-wrapper .editor-post-title,
+.edit-post-visual-editor__post-title-wrapper .editor-post-title {
+	margin-bottom: 50px !important;
+}
+
+/* fix resizing of template area in site editor */
+.edit-site-visual-editor.is-focus-mode .components-resizable-box__container {
+	height: 100% !important;
+}
+
+
+/*    Greyd Tabs in the editor
+__________________________________
+*/
+
+.components-panel .greyd_tabs {
+	margin: 0 0 calc( 2 * var(--basic-margin) ) 0;
+	padding: 0 6px;
+	gap: 6px;
+	background: 0 0;
+	width: 100%;
+	overflow: hidden;
+	height: auto;
+}
+
+.components-panel .greyd_tabs .tab {
+	background: #fff;
+	color: #949495;
+	padding: 0 16px;
+	margin: 0;
+	height: auto;
+	justify-content: center;
+	padding: 0 10px;
+	height: 34px;
+	min-width: 50px;
+}
+
+.components-panel .greyd_tabs .tab.active {
+	background: #fff;
+	border-top: 1px solid var(--wp-admin-theme-color);
+	color: var(--wp-admin-theme-color);
+}
+
+.components-panel .greyd_tabs .tab svg {
+	vertical-align: middle;
+	width: 17px;
+	fill: currentColor;
+	outline: none;
+}
+
+/*    Control Group
+__________________________________
+*/
+.components-greyd-controlgroup {
+    margin: 0px -8px var(--basic-margin);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.components-greyd-controlgroup__item {
+    position: relative;
+    width: 100%;
+    padding: 12px 30px 2px 12px;
+    margin-bottom: 6px;
+    background: #F2F2F2;
+}
+.components-greyd-controlgroup__item select {
+    max-width: 100%;
+}
+.components-greyd-controlgroup__item .components-base-control {
+    margin-bottom: 12px !important;
+}
+.components-greyd-controlgroup__item .components-form-token-field__input-container {
+    background: #fff;
+}
+.components-greyd-controlgroup__item .components-form-token-field__label {
+    display: none;
+}
+.components-greyd-controlgroup__remove,
+.components-greyd-controlgroup__add {
+    line-height: 0.8;
+    padding: 3px;
+    height: auto;
+}
+.components-greyd-controlgroup__remove {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.components-greyd-controlgroup__add {
+    background: #F2F2F2;
+}
+.components-greyd-controlgroup__add.group_is_empty {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+.components-greyd-controlgroup__add.group_is_empty > * {
+    margin: 0 5px;
+}
+
+/*    Greyd Fonts
+__________________________________
+*/
+
+.greyd-customfont-control {
+	margin-top: 16px;
+}
+.greyd-customfont-control.active {
+	padding: 8px;
+	background: #fafafa;
+}
+
+.greyd-font-options {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+.greyd-font-options > button {
+	display: inline;
+}
+
+.greyd-font-status {
+	width: fit-content;
+	padding: 0px 8px;
+	font-size: 12px;
+	font-weight: bold;
+	border-radius: 3px;
+	color: #0052CC;
+	background-color: #DEEBFF;
+	text-transform: uppercase;
+}
+.greyd-font-status.ok {
+	color: #006644;
+	background-color: #E3FCEF;
+}
+.greyd-font-status.warning {
+	color: #974F0C;
+	background-color: #FFFAE6;
+}
+
+.greyd-customfont-control.info {
+	margin-top: 0px;
+	padding: 8px;
+	background: #fafafa;
+}
+.greyd-customfont-control.info pre {
+	margin-top: 0;
+	white-space: break-spaces;
+}
+.greyd-customfont-control.info pre:not(.panel_debug) {
+	margin: 0;
+}

@@ -1,0 +1,209 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"title": "Retro",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"slug": "primary",
+					"color": "#C45608",
+					"name": "Primary"
+				},
+				{
+					"slug": "secondary",
+					"color": "#F9AD77",
+					"name": "Secondary"
+				},
+				{
+					"slug": "tertiary",
+					"color": "#F56E0E",
+					"name": "Tertiary"
+				},
+				{
+					"slug": "foreground",
+					"color": "#151419",
+					"name": "Foreground"
+				},
+				{
+					"slug": "dark",
+					"color": "#37373B",
+					"name": "Dark"
+				},
+				{
+					"slug": "mediumdark",
+					"color": "#929292",
+					"name": "Medium Dark"
+				},
+				{
+					"slug": "mediumlight",
+					"color": "#DBE0E0",
+					"name": "Medium Light"
+				},
+				{
+					"slug": "base",
+					"color": "#EEEDED",
+					"name": "Light"
+				},
+				{
+					"slug": "background",
+					"color": "#FBFBFB",
+					"name": "Background"
+				},
+				{
+					"slug": "darkest",
+					"color": "#000000",
+					"name": "Black"
+				},
+				{
+					"slug": "lightest",
+					"color": "#ffffff",
+					"name": "White"
+				},
+				{
+					"slug": "transparent",
+					"color": "rgba(255,255,255,0)",
+					"name": "Transparent"
+				}
+			],
+			"duotone": [
+				{
+					"name": "Foreground & Background",
+					"slug": "foreground-background",
+					"colors": [
+						"#151419",
+						"#FBFBFB"
+					]
+				},
+				{
+					"name": "Background & Foreground",
+					"slug": "background-foreground",
+					"colors": [
+						"#FBFBFB",
+						"#151419"
+					]
+				},
+				{
+					"name": "Primary & Secondary",
+					"slug": "primary-secondary",
+					"colors": [
+						"#C45608",
+						"#F9AD77"
+					]
+				},
+				{
+					"name": "Primary & Tertiary",
+					"slug": "primary-tertiary",
+					"colors": [
+						"#C45608",
+						"#F56E0E"
+					]
+				},
+				{
+					"name": "Secondary & Tertiary",
+					"slug": "secondary-tertiary",
+					"colors": [
+						"#F9AD77",
+						"#F56E0E"
+					]
+				},
+				{
+					"name": "Primary & Background",
+					"slug": "primary-background",
+					"colors": [
+						"#C45608",
+						"#FBFBFB"
+					]
+				},
+				{
+					"name": "Background & Primary",
+					"slug": "background-primary",
+					"colors": [
+						"#FBFBFB",
+						"#C45608"
+					]
+				},
+				{
+					"name": "Secondary & Background",
+					"slug": "secondary-background",
+					"colors": [
+						"#F9AD77",
+						"#FBFBFB"
+					]
+				},
+				{
+					"name": "Background & Secondary",
+					"slug": "background-secondary",
+					"colors": [
+						"#FBFBFB",
+						"#F9AD77"
+					]
+				},
+				{
+					"name": "Tertiary & Background",
+					"slug": "tertiary-background",
+					"colors": [
+						"#F56E0E",
+						"#FBFBFB"
+					]
+				},
+				{
+					"name": "Background & Tertiary",
+					"slug": "background-tertiary",
+					"colors": [
+						"#FBFBFB",
+						"#F56E0E"
+					]
+				},
+				{
+					"name": "Primary & Foreground",
+					"slug": "primary-foreground",
+					"colors": [
+						"#C45608",
+						"#151419"
+					]
+				},
+				{
+					"name": "Foreground & Primary",
+					"slug": "foreground-primary",
+					"colors": [
+						"#151419",
+						"#C45608"
+					]
+				},
+				{
+					"name": "Secondary & Foreground",
+					"slug": "secondary-foreground",
+					"colors": [
+						"#F9AD77",
+						"#151419"
+					]
+				},
+				{
+					"name": "Foreground & Secondary",
+					"slug": "foreground-secondary",
+					"colors": [
+						"#151419",
+						"#F9AD77"
+					]
+				},
+				{
+					"name": "Tertiary & Foreground",
+					"slug": "tertiary-foreground",
+					"colors": [
+						"#F56E0E",
+						"#151419"
+					]
+				},
+				{
+					"name": "Foreground & Tertiary",
+					"slug": "foreground-tertiary",
+					"colors": [
+						"#151419",
+						"#F56E0E"
+					]
+				}
+			]
+		}
+	}
+}

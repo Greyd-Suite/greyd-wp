@@ -1,0 +1,271 @@
+/**
+ * Editor Styles for components and UI.
+ * 
+ * This style is loaded in the editor only.
+ *
+ * @package Greyd
+ */
+:root {
+	--basic-margin: 10px;
+	--basic-padding: 8px;
+}
+
+
+/*    OptionsControl
+__________________________________
+*/
+.components-base-control.greyd-options-control {
+	width: 100%;
+}
+
+.components-base-control.greyd-options-control label {
+	display: inline-block;
+	margin-bottom: var(--basic-padding);
+}
+
+.components-base-control.greyd-options-control select {
+	display: inline-block;
+	margin-bottom: var(--basic-padding);
+}
+
+
+/*    Block Styles Variants
+__________________________________
+*/
+.block-editor-block-styles__variants.layout--inline {
+	gap: 4px;
+	justify-content: flex-start;
+}
+
+.block-editor-block-styles__variants.layout--inline .block-editor-block-styles__item,
+.block-editor-block-styles__variants.layout--inline .block-editor-block-styles__item.components-button {
+	height: auto;
+	width: auto;
+}
+
+.advanced_label + .block-editor-block-styles {
+	margin-top: var(--basic-margin);
+}
+
+/*    DimensionControl
+__________________________________
+*/
+.dimension_control {
+	margin-bottom: calc(2 * var(--basic-padding));
+}
+
+.dimension_control__label,
+.dimension_control__inputs {
+	margin-bottom: var(--basic-padding);
+}
+
+.dimension_control .components-unit-control-wrapper {
+	/* flex: 1; */
+	width: 45%;
+}
+
+/* switch button */
+.dimension_control__label .switch_button {
+	cursor: pointer;
+	align-self: center;
+	height: 24px;
+	width: 24px;
+	padding: 2px;
+	color: #777;
+	transition: all .2 ease;
+}
+
+.dimension_control__label .switch_button:hover {
+	color: #555;
+}
+
+
+/*    ColorPopupControl
+__________________________________
+*/
+.color_popup_control__popover .components-popover__content > div {
+	width: 265px;
+	padding: 8px;
+}
+
+/* remove color indicator */
+.color_popup_control__popover .components-popover__content legend {
+	display: none;
+}
+
+.color_gradient_popup_control {
+	border: 1px solid rgba(0, 0, 0, .1);
+	border-bottom-width: 0px;
+}
+
+.color_gradient_popup_control.single,
+.color_gradient_popup_control:last-of-type {
+	border-bottom-width: 1px;
+	margin-bottom: calc(2 * var(--basic-padding));
+}
+
+.color_gradient_popup_control.small {
+	height: 32px;
+	margin-bottom: 0px;
+}
+
+.color_gradient_popup_control.small button {
+	height: auto;
+}
+
+.color_popup_control__popover.color_gradient {
+	margin-left: -45px;
+}
+
+
+/*    RangeControl
+__________________________________
+*/
+.components-h-stack > .inner_label {
+	flex: 1;
+	margin-bottom: var(--basic-padding);
+}
+
+.components-h-stack > .components-range-control {
+	flex: 2;
+}
+
+
+/*    DropShadowControl
+__________________________________
+*/
+.drop_shadow_control {
+	margin-bottom: calc(2 * var(--basic-padding));
+}
+
+.drop_shadow_control__label,
+.drop_shadow_control .inner_label,
+.drop_shadow_control > .components-flex {
+	flex: 1;
+	margin-bottom: var(--basic-padding);
+}
+
+.drop_shadow_control .components-range-control {
+	flex: 2;
+}
+
+.drop_shadow_control .color_popup_control,
+.drop_shadow_control .components-range-control,
+.drop_shadow_control .components-range-control > div {
+	margin-bottom: 0 !important;
+}
+
+.drop_shadow_control .button_group_control {
+	padding: 0;
+	margin: 0;
+}
+
+
+/*    AdvancedPanelBody
+__________________________________
+*/
+/* indicate a change inside */
+.components-panel__body.holds-change:not(.is-opened) button.components-panel__body-toggle::after,
+.components-panel__body:not(.is-opened) button.components-panel__body-toggle .change_holder {
+	content: " ";
+	display: inline-block;
+	background: #d6d6d6;
+	height: var(--basic-margin);
+	width: var(--basic-margin);
+	border-radius: 100%;
+	vertical-align: baseline;
+	margin-left: 6px;
+}
+
+
+/*    Buttons
+__________________________________
+*/
+.components-panel__body .panel_buttons {
+	position: absolute;
+	right: 55px;
+	top: 10px;
+}
+
+.components-panel__body .panel_buttons .button {
+	color: #949495;
+	background-color: #fff;
+	min-height: 0;
+	line-height: 1;
+	padding: 2px 6px;
+	border-color: #D7D7D7 !important;
+	box-shadow: none !important;
+}
+
+.components-panel__body .panel_buttons .button:hover {
+	color: #949495;
+	background-color: #f3f3f3;
+}
+
+.components-panel__body .panel_buttons .button.active {
+	color: var(--wp-admin-theme-color);
+	background-color: #f3f3f3;
+}
+
+
+/*    Tabs
+__________________________________
+*/
+.greyd_tabs {
+	display: flex;
+	position: relative;
+	height: 36px;
+	margin: 20px -20px 20px -23px;
+	padding: 0px 15px 0 18px;
+	background-image: linear-gradient(180deg, #f1f1f1 0%, #e2e2e2 100%);
+	width: calc(100% - 10px);
+	overflow: auto;
+	isolation: isolate;
+}
+
+.greyd_tabs::before {
+	content: " ";
+	position: absolute;
+	display: block;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-bottom: 1px solid #c4c4c4;
+	z-index: -1;
+}
+
+.greyd_tabs .tab {
+	display: flex;
+	position: relative;
+	align-items: center;
+	font-size: 13px;
+	font-weight: 400;
+	margin: 0px 5px;
+	padding: 0px 20px;
+	color: #575756;
+	background: #d7d7d7;
+	border: 1px solid #c4c4c4;
+	text-decoration: none;
+	box-shadow: none;
+	outline: 0;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+.greyd_tabs .tab:hover {
+	color: #1e1f1f;
+	background: #f1f1f1;
+}
+
+.greyd_tabs .tab:not(.active) {
+	z-index: -2;
+}
+
+.greyd_tabs .tab.active {
+	font-weight: 600;
+	color: #1e1f1f;
+	background: #f1f1f1;
+	border-top-width: 3px;
+	border-bottom: 1px solid transparent;
+	border-top-color: #505050;
+}
