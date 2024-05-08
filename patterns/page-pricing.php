@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Page: Pricing
- * Slug: greyd-theme/page-pricing
+ * Slug: greyd-wp/page-pricing
  * Categories: greyd-pages
  * Keywords: starter
  * Block Types: core/post-content
@@ -9,8 +9,8 @@
  * Viewport width: 1600
  */
 ?>
-<!-- wp:pattern {"slug":"greyd-theme/content-heading-separator"} /-->
-<!-- wp:pattern {"slug":"greyd-theme/pricing-three-columns-middle-highlighted-split-bg"} /-->
-<!-- wp:pattern {"slug":"greyd-theme/columns-faq"} /-->
-<!-- wp:pattern {"slug":"greyd-theme/content-separator-six-key-facts"} /-->
-<!-- wp:pattern {"slug":"greyd-theme/testimonial-three-boxes"} /-->
+<!-- wp:pattern {"slug":"greyd-wp/content-heading-separator"} /-->
+<!-- wp:pattern {"slug":"greyd-wp/pricing-three-columns-middle-highlighted-split-bg"} /-->
+<!-- wp:pattern {"slug":"greyd-wp/columns-faq"} /-->
+<!-- wp:pattern {"slug":"greyd-wp/content-separator-six-key-facts"} /-->
+<!-- wp:pattern {"slug":"greyd-wp/testimonial-three-boxes"} /-->

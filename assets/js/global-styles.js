@@ -117,7 +117,7 @@
 		 */
 		window.onbeforeunload = () => {
 			if ( hasUnsavedGlobalStyles() ) {
-				return __( 'You have unsaved changes inside the Greyd.Styles editor. Are you sure you want to leave?', 'greyd-theme' );
+				return __( 'You have unsaved changes inside the Greyd.Styles editor. Are you sure you want to leave?', 'greyd-wp' );
 			}
 		}
 
@@ -129,76 +129,76 @@
 
 		const menuItems = [
 			{
-				title: __( 'Font families', 'greyd-theme' ),
+				title: __( 'Font families', 'greyd-wp' ),
 				slug: "font-families",
 				icon: 'editor-paragraph',
-				tip: __( 'Define up to 3 font families for your website. Reference them within your blocks or declare them as defaults for headlines, buttons, and more using the styles editor.', 'greyd-theme' )
+				tip: __( 'Define up to 3 font families for your website. Reference them within your blocks or declare them as defaults for headlines, buttons, and more using the styles editor.', 'greyd-wp' )
 			},
 			{
-				title: __( 'Font Sizes', 'greyd-theme' ),
+				title: __( 'Font Sizes', 'greyd-wp' ),
 				slug: "font-sizes",
 				icon: 'editor-textcolor',
-				tip: __( "Define up to 7 font sizes here, set to 'fluid' by default. Specify the minimum and maximum values, and the system automatically adjusts font sizes between screen sizes for optimal readability and visual consistency.", 'greyd-theme' )
+				tip: __( "Define up to 7 font sizes here, set to 'fluid' by default. Specify the minimum and maximum values, and the system automatically adjusts font sizes between screen sizes for optimal readability and visual consistency.", 'greyd-wp' )
 			},
 			{
-				title: __( 'Buttons', 'greyd-theme' ),
+				title: __( 'Buttons', 'greyd-wp' ),
 				slug: "button",
 				icon: 'button',
 				menu: [
 					{
-						title: __( 'Basics', 'greyd-theme' ),
+						title: __( 'Basics', 'greyd-wp' ),
 						slug: "basic",
 						icon: 'admin-tools'
 					},
 					{
-						title: __( 'Primary Button', 'greyd-theme' ),
+						title: __( 'Primary Button', 'greyd-wp' ),
 						slug: "prim",
 						icon: 'button'
 					},
 					{
-						title: __( 'Secondary Button', 'greyd-theme' ),
+						title: __( 'Secondary Button', 'greyd-wp' ),
 						slug: "sec",
 						icon: 'button'
 					},
 					{
-						title: __( 'Alternate Button', 'greyd-theme' ),
+						title: __( 'Alternate Button', 'greyd-wp' ),
 						slug: "trd",
 						icon: 'button'
 					},
 					{
-						title: __( 'Large Button', 'greyd-theme' ),
+						title: __( 'Large Button', 'greyd-wp' ),
 						slug: "big",
 						icon: 'editor-expand'
 					},
 					{
-						title: __( 'Small Button', 'greyd-theme' ),
+						title: __( 'Small Button', 'greyd-wp' ),
 						slug: "small",
 						icon: 'editor-contract'
 					},
 				]
 			},
 			{
-				title: __( 'Input fields', 'greyd-theme' ),
+				title: __( 'Input fields', 'greyd-wp' ),
 				slug: "input",
 				icon: 'forms',
 				menu: [
 					{
-						title: __( 'Basics', 'greyd-theme' ),
+						title: __( 'Basics', 'greyd-wp' ),
 						slug: "basic",
 						icon: 'admin-tools'
 					},
 					{
-						title: __( 'Primary Input', 'greyd-theme' ),
+						title: __( 'Primary Input', 'greyd-wp' ),
 						slug: "prim",
 						icon: 'button'
 					},
 					{
-						title: __( 'Secondary Input', 'greyd-theme' ),
+						title: __( 'Secondary Input', 'greyd-wp' ),
 						slug: "sec",
 						icon: 'button'
 					},
 					{
-						title: __( 'Labels', 'greyd-theme' ),
+						title: __( 'Labels', 'greyd-wp' ),
 						slug: "label",
 						icon: 'editor-paragraph'
 					},
@@ -208,26 +208,26 @@
 				]
 			},
 			{
-				title: __( 'Spacing', 'greyd-theme' ),
+				title: __( 'Spacing', 'greyd-wp' ),
 				slug: "spacing",
 				icon: 'align-center',
-				tip: __( "Here you can set spacing sizes, which can be referenced when adjusting margins, gaps or paddings. By using more dynamic calculations, you can achieve native responsiveness without the need to define a static value for every breakpoint, try using options like 'clamp' combined with dynamic units like 'vw' (vieport width) or 'vh' (viewport height) te see what is possible.", 'greyd-theme' ),
+				tip: __( "Here you can set spacing sizes, which can be referenced when adjusting margins, gaps or paddings. By using more dynamic calculations, you can achieve native responsiveness without the need to define a static value for every breakpoint, try using options like 'clamp' combined with dynamic units like 'vw' (vieport width) or 'vh' (viewport height) te see what is possible.", 'greyd-wp' ),
 			},
 			{
-				title: __('Grid', 'greyd-theme'),
+				title: __('Grid', 'greyd-wp'),
 				slug: "grid",
 				icon: 'align-wide',
-				// tip: __( "Customise the grid.", 'greyd-theme' ),
+				// tip: __( "Customise the grid.", 'greyd-wp' ),
 			},
 		];
 
 		const tabs = [
 			{
-				label: __( "Default", "greyd-theme" ),
+				label: __( "Default", "greyd-wp" ),
 				slug: ""
 			},
 			{
-				label: __( "Hover", "greyd-theme" ),
+				label: __( "Hover", "greyd-wp" ),
 				slug: "hover",
 				previewClass: "has-button-hover"
 			}
@@ -547,7 +547,7 @@
 						}
 
 						return el( wp.components.PanelBody, {
-							title: __( family.title, 'greyd-theme' ),
+							title: __( family.title, 'greyd-wp' ),
 							initialOpen: true
 						}, [
 
@@ -577,7 +577,7 @@
 				elements.push( ...[
 					greyd.tools.settings.getFontSizes().map( ( size ) => {
 						return el( wp.components.PanelBody, {
-							title: __( size.title, 'greyd-theme' ),
+							title: __( size.title, 'greyd-wp' ),
 							initialOpen: true
 						}, [
 							el( greyd.components.ClampMinMaxControl, {
@@ -620,20 +620,20 @@
 						vars: greyd.tools.globalStyles.vars,
 						slug: [ 'prim', 'sec', 'trd' ],
 						labels: {
-							'prim': __( 'Primary', 'greyd-theme' ),
-							'sec': __( 'Secondary', 'greyd-theme' ),
-							'trd': __( 'Tertiary', 'greyd-theme' )
+							'prim': __( 'Primary', 'greyd-wp' ),
+							'sec': __( 'Secondary', 'greyd-wp' ),
+							'trd': __( 'Tertiary', 'greyd-wp' )
 						}
 					} ),
 
 					// font
 					el( greyd.components.GlobalStylesPanelBody, {
-						title: __( 'Typography', 'greyd-theme' ),
+						title: __( 'Typography', 'greyd-wp' ),
 					}, renderTypographyPanel( atts.parent ) ),
 
 					// spacing
 					el( greyd.components.GlobalStylesPanelBody, {
-						title: __( 'Spacing', 'greyd-theme' ),
+						title: __( 'Spacing', 'greyd-wp' ),
 					}, renderSpacingPanel( atts.parent ) ),
 
 				] );
@@ -651,15 +651,15 @@
 						vars: greyd.tools.globalStyles.vars,
 						slug: atts.item.slug,
 						labels: {
-							'prim': __( 'Primary', 'greyd-theme' ),
-							'sec': __( 'Secondary', 'greyd-theme' ),
-							'trd': __( 'Tertiary', 'greyd-theme' )
+							'prim': __( 'Primary', 'greyd-wp' ),
+							'sec': __( 'Secondary', 'greyd-wp' ),
+							'trd': __( 'Tertiary', 'greyd-wp' )
 						}
 					} ),
 
 					// color
 					el( greyd.components.GlobalStylesPanelBody, {
-						title: __( 'Colors', 'greyd-theme' ),
+						title: __( 'Colors', 'greyd-wp' ),
 						tabs: tabs,
 					}, renderColorPanel( atts.parent, atts.item.slug ) ),
 
@@ -670,7 +670,7 @@
 					// text decoration
 					elements.push( ...[
 						el( greyd.components.GlobalStylesPanelBody, {
-							title: __( 'Decoration', 'greyd-theme' ),
+							title: __( 'Decoration', 'greyd-wp' ),
 							tabs: tabs,
 						}, renderDecorationPanel( atts.parent, atts.item.slug ) )
 					] );
@@ -682,18 +682,18 @@
 
 						// border-radius
 						el( greyd.components.GlobalStylesPanelBody, {
-							title: __( 'Border Radius', 'greyd-theme' ),
+							title: __( 'Border Radius', 'greyd-wp' ),
 						}, renderBorderRadiusPanel( atts.parent, atts.item.slug ) ),
 
 						// border
 						el( greyd.components.GlobalStylesPanelBody, {
-							title: __( 'Border', 'greyd-theme' ),
+							title: __( 'Border', 'greyd-wp' ),
 							tabs: tabs,
 						}, renderBorderPanel( atts.parent, atts.item.slug ) ),
 
 						// shadow
 						el( greyd.components.GlobalStylesPanelBody, {
-							title: __( 'Box Shadow', 'greyd-theme' ),
+							title: __( 'Box Shadow', 'greyd-wp' ),
 							tabs: tabs,
 						}, renderShadowPanel( atts.parent, atts.item.slug ) ),
 					] );
@@ -713,18 +713,18 @@
 						vars: greyd.tools.globalStyles.vars,
 						slug: [ 'prim ' + atts.item.slug ],
 						labels: {
-							['prim ' + atts.item.slug]: atts.item.slug == 'big' ?  __( 'Large', 'greyd-theme' ) :  __( 'Small', 'greyd-theme' )
+							['prim ' + atts.item.slug]: atts.item.slug == 'big' ?  __( 'Large', 'greyd-wp' ) :  __( 'Small', 'greyd-wp' )
 						}
 					} ),
 
 					// font
 					el( greyd.components.GlobalStylesPanelBody, {
-						title: __( 'Typography', 'greyd-theme' ),
+						title: __( 'Typography', 'greyd-wp' ),
 					}, renderTypographyPanel( atts.parent, atts.item.slug ) ),
 
 					// spacing
 					el( greyd.components.GlobalStylesPanelBody, {
-						title: __( 'Spacing', 'greyd-theme' ),
+						title: __( 'Spacing', 'greyd-wp' ),
 					}, renderSpacingPanel( atts.parent, atts.item.slug ) ),
 
 				] );
@@ -743,18 +743,18 @@
 						vars: greyd.tools.globalStyles.vars,
 						slug: atts.item.slug,
 						labels: {
-							'label': __( 'Label', 'greyd-theme' )
+							'label': __( 'Label', 'greyd-wp' )
 						}
 					} ),
 
 					// font
 					el( greyd.components.GlobalStylesPanelBody, {
-						title: __( 'Typography', 'greyd-theme' ),
+						title: __( 'Typography', 'greyd-wp' ),
 					}, renderTypographyPanel( atts.parent, atts.item.slug ) ),
 
 					// color
 					el( greyd.components.GlobalStylesPanelBody, {
-						title: __( 'Colors', 'greyd-theme' ),
+						title: __( 'Colors', 'greyd-wp' ),
 					}, renderColorPanel( atts.parent, atts.item.slug ) ),
 
 				] );
@@ -766,16 +766,16 @@
 
 				var labels = {
 					sm: {
-						label: __( 'Small Breakpoint', 'greyd-theme' ),
-						help: __( 'This Breakpoint usually sets the mobile screen size.', 'greyd-theme' )
+						label: __( 'Small Breakpoint', 'greyd-wp' ),
+						help: __( 'This Breakpoint usually sets the mobile screen size.', 'greyd-wp' )
 					},
 					md: {
-						label: __( 'Medium Breakpoint', 'greyd-theme' ),
-						help: __( 'This Breakpoint usually sets the break between tablet and smaller desktops.', 'greyd-theme' )
+						label: __( 'Medium Breakpoint', 'greyd-wp' ),
+						help: __( 'This Breakpoint usually sets the break between tablet and smaller desktops.', 'greyd-wp' )
 					},
 					lg: {
-						label: __( 'Large Breakpoint', 'greyd-theme' ),
-						help: __( 'This Breakpoint usually sets the break between smaller and larger desktops.', 'greyd-theme' )
+						label: __( 'Large Breakpoint', 'greyd-wp' ),
+						help: __( 'This Breakpoint usually sets the break between smaller and larger desktops.', 'greyd-wp' )
 					}
 				};
 
@@ -786,7 +786,7 @@
 
 					// breakpoints
 					el( greyd.components.GlobalStylesPanelBody, {
-						title: __( 'Breakpoints', 'greyd-theme' ),
+						title: __( 'Breakpoints', 'greyd-wp' ),
 						initialOpen: true
 					}, [
 
@@ -860,18 +860,18 @@
 						} ),
 
 						!isGreydPluginActive && el( wp.components.Tip, {}, [
-							el( "div", {}, __( "If you are using the Greyd Plugin you can define up to 4 different screen sizes. Go to the Greyd Theme Dashboard to install the plugin.", "greyd-theme" ) ),
+							el( "div", {}, __( "If you are using the Greyd Plugin you can define up to 4 different screen sizes. Go to the Greyd Theme Dashboard to install the plugin.", "greyd-wp" ) ),
 						] )
 					] ),
 
 					// content size
 					el( greyd.components.GlobalStylesPanelBody, {
-						title: __( 'Content Size', 'greyd-theme' ),
+						title: __( 'Content Size', 'greyd-wp' ),
 						initialOpen: true
 					}, [
 						el( greyd.components.ClampMinMaxControl, {
 							enableCustom: true,
-							help: __( 'This setting overwrites the default content size set inside the global styles panel.', 'greyd-theme' ),
+							help: __( 'This setting overwrites the default content size set inside the global styles panel.', 'greyd-wp' ),
 							value: greyd.tools.globalStyles.vars?.[ 'grid' ]?.[ '--wp--style--global--content-size' ],
 							onChange: ( newValue ) => setStyle( '--wp--style--global--content-size', newValue )
 						} )
@@ -879,12 +879,12 @@
 
 					// wide size
 					el( greyd.components.GlobalStylesPanelBody, {
-						title: __( 'Wide Size', 'greyd-theme' ),
+						title: __( 'Wide Size', 'greyd-wp' ),
 						initialOpen: true
 					}, [
 						el( greyd.components.ClampMinMaxControl, {
 							enableCustom: true,
-							help: __( 'This setting overwrites the default wide size set inside the global styles panel.', 'greyd-theme' ),
+							help: __( 'This setting overwrites the default wide size set inside the global styles panel.', 'greyd-wp' ),
 							value: greyd.tools.globalStyles.vars?.[ 'grid' ]?.[ '--wp--style--global--wide-size' ],
 							onChange: ( newValue ) => setStyle( '--wp--style--global--wide-size', newValue )
 						} )
@@ -892,18 +892,18 @@
 
 					// spacing
 					el( greyd.components.GlobalStylesPanelBody, {
-						title: __( 'Spacing', 'greyd-theme' ),
+						title: __( 'Spacing', 'greyd-wp' ),
 						initialOpen: true
 					}, [
 						el( wp.components.BaseControl, {
 							help: [
 								el( "p", {}, [
-									__( 'You can select the default Block Spacing in the Global Styles "Layout" Settings.', 'greyd-theme' )
+									__( 'You can select the default Block Spacing in the Global Styles "Layout" Settings.', 'greyd-wp' )
 								] ),
 								el( "a", { 
 									style: { cursor: 'pointer' },
 									onClick: () => wp.data.dispatch('core/edit-site').openGeneralSidebar('edit-site/global-styles')
-								}, __( 'Go to Global Styles →', 'greyd-theme' ) )
+								}, __( 'Go to Global Styles →', 'greyd-wp' ) )
 							]
 						} )
 					] ),
@@ -916,7 +916,7 @@
 			if ( _.has( current, 'tip' ) ) {
 				elements.unshift(
 					el( wp.components.PanelBody, {
-						title: __( 'Help', 'greyd-theme' ),
+						title: __( 'Help', 'greyd-wp' ),
 						initialOpen: false
 					}, [
 						el( wp.components.Tip, {}, [
@@ -1045,7 +1045,7 @@
 				_.has( defaults.color, 'text' ) && el( greyd.components.GlobalStylesColorGradientPopupControl, {
 					className: last == "text" ? 'single' : '',
 					mode: 'color',
-					label: __( "Text", "greyd-theme" ),
+					label: __( "Text", "greyd-wp" ),
 					value: vars[ pre + "color--text" ],
 					onChange: ( newValue ) => {
 						if ( newValue === '' ) newValue = defaults.color.text;
@@ -1063,7 +1063,7 @@
 				_.has( defaults.color, 'placeholder' ) && el( greyd.components.GlobalStylesColorGradientPopupControl, {
 					className: last == "placeholder" ? 'single' : '',
 					mode: 'color',
-					label: __( "Placeholder", "greyd-theme" ),
+					label: __( "Placeholder", "greyd-wp" ),
 					value: vars[ pre + "color--placeholder" ],
 					onChange: ( newValue ) => {
 						if ( newValue === '' ) newValue = defaults.color.placeholder;
@@ -1080,7 +1080,7 @@
 				// background
 				_.has( defaults.color, 'background' ) && el( greyd.components.GlobalStylesColorGradientPopupControl, {
 					className: last == "background" ? 'single' : '',
-					label: __( "Background", "greyd-theme" ),
+					label: __( "Background", "greyd-wp" ),
 					value: vars[ pre + "color--background" ],
 					enableAlpha: true,
 					onChange: ( newValue ) => {
@@ -1352,7 +1352,7 @@
 			return [
 				// decoration
 				_.has( defaults, 'decoration' ) && el( greyd.components.TextDecorationControl, {
-					label: __( "Text Decoration", "greyd-theme" ),
+					label: __( "Text Decoration", "greyd-wp" ),
 					value: vars[ pre + "decoration" ],
 					onChange: ( newValue ) => {
 						if ( newValue === '' ) newValue = defaults.decoration;
@@ -1401,7 +1401,7 @@
 					style: {
 						marginTop: '2em'
 					}
-				}, __( 'Loading global styles...', 'greyd-theme' ) )
+				}, __( 'Loading global styles...', 'greyd-wp' ) )
 			] );
 		}
 		// loading failed
@@ -1424,7 +1424,7 @@
 					}
 				} ),
 				el( 'p', {
-				}, __( 'Error loading Global Styles. Please see console for details.', 'greyd-theme' ) )
+				}, __( 'Error loading Global Styles. Please see console for details.', 'greyd-wp' ) )
 			] );
 		}
 		
@@ -1443,7 +1443,7 @@
 					style: {
 						marginTop: '2em'
 					}
-				}, __( 'Switch to Visual Editor to edit Greyd Global Styles.', 'greyd-theme' ) )
+				}, __( 'Switch to Visual Editor to edit Greyd Global Styles.', 'greyd-wp' ) )
 			] );
 		}
 
@@ -1473,7 +1473,7 @@
 					el( 'span', {
 						className: "panel-title"
 					}, (
-						current ? _.get( getSubMenuItem( mode ), 'title' ) : __( 'Build your own theme', 'greyd-theme' )
+						current ? _.get( getSubMenuItem( mode ), 'title' ) : __( 'Build your own theme', 'greyd-wp' )
 					) ),
 
 				] ),
@@ -1496,11 +1496,11 @@
 					] ),
 
 					el( wp.components.PanelBody, {
-						title: __( 'Help', 'greyd-theme' ),
+						title: __( 'Help', 'greyd-wp' ),
 						initialOpen: true
 					}, [
 						el( wp.components.Tip, {}, [
-							el( "span", {}, __( 'You can customize your color palette inside the default global styles panel.', 'greyd-theme' ) ),
+							el( "span", {}, __( 'You can customize your color palette inside the default global styles panel.', 'greyd-wp' ) ),
 						] )
 					] )
 				]
@@ -1532,7 +1532,7 @@
 				mode == "colors"
 				? [
 					// panel colors
-					el( wp.components.PanelBody, { title: __( 'Colors', 'greyd-theme' ), initialOpen: true }, [
+					el( wp.components.PanelBody, { title: __( 'Colors', 'greyd-wp' ), initialOpen: true }, [
 						el( greyd.components.DebugControl, { value: greyd.tools.globalStyles.vars[ 'color' ] } ),
 						el( greyd.components.DebugControl, { value: greyd.tools.globalStyles.vars[ 'gradient' ] } ),
 						el( greyd.components.DebugControl, { value: greyd.tools.globalStyles.vars[ 'duotone' ] } ),
@@ -1541,7 +1541,7 @@
 				] : (
 					mode == "dev"
 					? [
-						el( wp.components.PanelBody, { title: __( 'dev', 'greyd-theme' ), initialOpen: true }, [
+						el( wp.components.PanelBody, { title: __( 'dev', 'greyd-wp' ), initialOpen: true }, [
 							el( greyd.components.DebugControl, { value: greyd.tools.globalStyles.vars[ 'custom' ] } ),
 						] )
 					]
@@ -1577,7 +1577,7 @@
 							] )
 						}
 					} ),
-					title: __( 'Greyd Styles', 'greyd-theme' )
+					title: __( 'Greyd Styles', 'greyd-wp' )
 				},
 				greydGlobalStyles()
 			);

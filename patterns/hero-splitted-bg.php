@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Hero with Header and Splitted Background
- * Slug: greyd-theme/hero-splitted-bg
+ * Slug: greyd-wp/hero-splitted-bg
  * Description: Hero section with header and splitted background
  * Categories: greyd-hero
  * Keywords:
@@ -19,6 +19,6 @@
 	</div>
 	<!-- /wp:group -->
 
-	<!-- wp:pattern {"slug":"greyd-theme/cta-half-dark-bg"} /-->
+	<!-- wp:pattern {"slug":"greyd-wp/cta-half-dark-bg"} /-->
 </div>
 <!-- /wp:group -->

@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Header Simple (Default)
- * Slug: greyd-theme/header-simple
+ * Slug: greyd-wp/header-simple
  * Description: Header with logo, site title and menu
  * Categories: header
  * Keywords: header, nav, links

@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Author Card
- * Slug: greyd-theme/content-author-card
+ * Slug: greyd-wp/content-author-card
  * Description:
  * Categories: greyd-content
  * Keywords:

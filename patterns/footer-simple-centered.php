@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Footer Simple, Centered
- * Slug: greyd-theme/footer-simple-centered
+ * Slug: greyd-wp/footer-simple-centered
  * Description: Site logo, site title
  * Categories: footer
  * Keywords:
@@ -19,7 +19,7 @@
 		<!-- wp:site-title {"level":0,"className":""} /-->
 
 		<!-- wp:paragraph {"className":"","fontSize":"tiny"} -->
-		<p class="has-tiny-font-size"><?php esc_html_e( '© 2024', 'greyd-theme' ); ?> <?php esc_html_e( 'All rights reserved', 'greyd-theme' ); ?></p>
+		<p class="has-tiny-font-size"><?php esc_html_e( '© 2024', 'greyd-wp' ); ?> <?php esc_html_e( 'All rights reserved', 'greyd-wp' ); ?></p>
 		<!-- /wp:paragraph -->
 	</div>
 	<!-- /wp:group -->

@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: CTA with Image Right
- * Slug: greyd-theme/cta-image-right
+ * Slug: greyd-wp/cta-image-right
  * Description: Simple CTA section with an image on the right
  * Categories: greyd-cta, greyd-hero
  * Keywords:
@@ -20,11 +20,11 @@
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
 			<div class="wp-block-group">
 				<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700","textTransform":"uppercase"}},"textColor":"primary","className":""} -->
-				<p class="has-primary-color has-text-color" style="font-style:normal;font-weight:700;text-transform:uppercase"><?php esc_html_e( 'Greyd', 'greyd-theme' ); ?></p>
+				<p class="has-primary-color has-text-color" style="font-style:normal;font-weight:700;text-transform:uppercase"><?php esc_html_e( 'Greyd', 'greyd-wp' ); ?></p>
 				<!-- /wp:paragraph -->
 
 				<!-- wp:heading {"className":"","fontSize":"x-large"} -->
-				<h2 class="wp-block-heading has-x-large-font-size"><?php esc_html_e( 'The driving force for your WordPress business', 'greyd-theme' ); ?></h2>
+				<h2 class="wp-block-heading has-x-large-font-size"><?php esc_html_e( 'The driving force for your WordPress business', 'greyd-wp' ); ?></h2>
 				<!-- /wp:heading -->
 			</div>
 			<!-- /wp:group -->
@@ -32,7 +32,7 @@
 			<!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|medium"},"blockGap":"var:preset|spacing|small"}},"className":"","layout":{"type":"default"}} -->
 			<div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--large);margin-bottom:var(--wp--preset--spacing--medium)">
 				<!-- wp:paragraph {"className":""} -->
-				<p><?php esc_html_e( "Greyd offers a comprehensive platform to scale up your WordPress business and build the web empire you've always dreamed of. Whether you are a freelancer, agency or large corporation, your WordPress revolution starts here.", 'greyd-theme' ); ?></p>
+				<p><?php esc_html_e( "Greyd offers a comprehensive platform to scale up your WordPress business and build the web empire you've always dreamed of. Whether you are a freelancer, agency or large corporation, your WordPress revolution starts here.", 'greyd-wp' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -41,7 +41,7 @@
 			<div class="wp-block-buttons">
 				<!-- wp:button {"className":""} -->
 				<div class="wp-block-button">
-					<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Watch demo', 'greyd-theme' ); ?></a>
+					<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Watch demo', 'greyd-wp' ); ?></a>
 				</div>
 				<!-- /wp:button -->
 			</div>

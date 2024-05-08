@@ -259,17 +259,17 @@ class Fonts {
 		
 		// enqueue 
 		wp_register_script(
-			'greyd-theme-editor-fonts',
+			'greyd-wp-editor-fonts',
 			get_template_directory_uri() . '/assets/js/editor-fonts.js',
 			array( 'greyd-components', 'wp-data', 'wp-blocks', 'wp-element', 'wp-editor', 'wp-components', 'wp-i18n', 'lodash' ),
 			wp_get_theme()->get( 'Version' ),
 			true
 		);
-		wp_enqueue_script( 'greyd-theme-editor-fonts' );
+		wp_enqueue_script( 'greyd-wp-editor-fonts' );
 
 		// localize the script
 		wp_localize_script(
-			'greyd-theme-editor-fonts',
+			'greyd-wp-editor-fonts',
 			'greyd_fonts',
 			get_option( 'greyd_fonts', array( 'google_fonts_list' => array(), 'google_fonts' => array() ) )
 		);
@@ -1267,7 +1267,7 @@ class Fonts {
 			$post_id = wp_update_post( $post );
 		}
 		if ( $post_id === 0 || is_wp_error( $post_id ) ) {
-			return new \WP_Error( 'font_post_creation_failed', __( 'Font post creation failed', 'greyd-theme' ) );
+			return new \WP_Error( 'font_post_creation_failed', __( 'Font post creation failed', 'greyd-wp' ) );
 		}
 		return $post_id;
 	}

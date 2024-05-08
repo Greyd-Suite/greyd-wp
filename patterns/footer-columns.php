@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Footer with 4 Columns (Default)
- * Slug: greyd-theme/footer-columns
+ * Slug: greyd-wp/footer-columns
  * Description: 1st column: Site logo, title, tagline. 2nd column: More info, navigation. 3rd column: Social links. 4th column: Search.
  * Categories: footer
  * Keywords:
@@ -39,7 +39,7 @@
 				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"constrained"}} -->
 				<div class="wp-block-group">
 					<!-- wp:heading {"level":3,"fontSize":"small"} -->
-					<h3 class="wp-block-heading has-small-font-size"><?php esc_html_e( 'More info', 'greyd-theme' ); ?></h3>
+					<h3 class="wp-block-heading has-small-font-size"><?php esc_html_e( 'More info', 'greyd-wp' ); ?></h3>
 					<!-- /wp:heading -->
 
 					<!-- wp:navigation {"overlayMenu":"never","__unstableLocation":"primary","className":"","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"left","orientation":"vertical"}} -->
@@ -51,7 +51,7 @@
 				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"constrained"}} -->
 				<div class="wp-block-group">
 					<!-- wp:heading {"level":3,"fontSize":"small"} -->
-					<h3 class="wp-block-heading has-small-font-size"><?php esc_html_e( 'Socials', 'greyd-theme' ); ?></h3>
+					<h3 class="wp-block-heading has-small-font-size"><?php esc_html_e( 'Socials', 'greyd-wp' ); ?></h3>
 					<!-- /wp:heading -->
 
 					<!-- wp:social-links {"iconColor":"foreground","iconColorValue":"#0e1111","style":{"spacing":{"blockGap":{"left":"var:preset|spacing|small"}}},"className":"is-style-logos-only"} -->
@@ -73,10 +73,10 @@
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"constrained"}} -->
 			<div class="wp-block-group">
 				<!-- wp:heading {"level":3,"fontSize":"small"} -->
-				<h3 class="wp-block-heading has-small-font-size"><?php esc_html_e( 'Search', 'greyd-theme' ); ?></h3>
+				<h3 class="wp-block-heading has-small-font-size"><?php esc_html_e( 'Search', 'greyd-wp' ); ?></h3>
 				<!-- /wp:heading -->
 
-				<!-- wp:search {"label":"<?php esc_html_e( 'Search', 'greyd-theme' ); ?>","showLabel":false,"buttonText":"<?php esc_html_e( 'Search', 'greyd-theme' ); ?>","buttonUseIcon":true,"style":{"border":{"radius":"4px"}},"className":""} /-->
+				<!-- wp:search {"label":"<?php esc_html_e( 'Search', 'greyd-wp' ); ?>","showLabel":false,"buttonText":"<?php esc_html_e( 'Search', 'greyd-wp' ); ?>","buttonUseIcon":true,"style":{"border":{"radius":"4px"}},"className":""} /-->
 			</div>
 			<!-- /wp:group -->
 		</div>

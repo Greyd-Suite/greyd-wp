@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: CTA with Dark Background, wide
- * Slug: greyd-theme/cta-dark-bg
+ * Slug: greyd-wp/cta-dark-bg
  * Description:
  * Categories: greyd-cta
  * Keywords:
@@ -20,7 +20,7 @@
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small","padding":{"bottom":"var:preset|spacing|medium"}},"border":{"bottom":{"color":"var:preset|color|background","style":"dotted","width":"1px"},"top":{},"right":{},"left":{}}},"className":"","layout":{"type":"flex","flexWrap":"nowrap"}} -->
 			<div class="wp-block-group" style="border-bottom-color:var(--wp--preset--color--background);border-bottom-style:dotted;border-bottom-width:1px;padding-bottom:var(--wp--preset--spacing--medium)">
 				<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"500"}},"textColor":"main-accent","className":"","fontSize":"small"} -->
-				<p class="has-main-accent-color has-text-color has-small-font-size" style="font-style:normal;font-weight:500"><?php esc_html_e( 'Explore Greyd', 'greyd-theme' ); ?></p>
+				<p class="has-main-accent-color has-text-color has-small-font-size" style="font-style:normal;font-weight:500"><?php esc_html_e( 'Explore Greyd', 'greyd-wp' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -29,12 +29,12 @@
 			<div class="wp-block-group">
 				<!-- wp:heading {"textAlign":"left","textColor":"base","className":""} -->
 				<h2 class="wp-block-heading has-text-align-left has-base-color has-text-color">
-					<strong><?php esc_html_e( 'The powerhouse where your business strategy thrives', 'greyd-theme' ); ?></strong>
+					<strong><?php esc_html_e( 'The powerhouse where your business strategy thrives', 'greyd-wp' ); ?></strong>
 				</h2>
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph {"align":"left","style":{"typography":{"fontStyle":"normal","fontWeight":"400"}},"textColor":"main-accent","className":""} -->
-				<p class="has-text-align-left has-main-accent-color has-text-color" style="font-style:normal;font-weight:400"><?php esc_html_e( 'Benefit from an enhanced Block &amp; Site Editor experience and build beautiful, fast &amp; accessible websites - no coding required.', 'greyd-theme' ); ?></p>
+				<p class="has-text-align-left has-main-accent-color has-text-color" style="font-style:normal;font-weight:400"><?php esc_html_e( 'Benefit from an enhanced Block &amp; Site Editor experience and build beautiful, fast &amp; accessible websites - no coding required.', 'greyd-wp' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -47,7 +47,7 @@
 			<div class="wp-block-buttons">
 				<!-- wp:button {"className":"has-custom-width wp-block-button__width-100"} -->
 				<div class="wp-block-button has-custom-width wp-block-button__width-100">
-					<a class="wp-block-button__link wp-element-button" href="https://greyd.io"><?php esc_html_e( 'Get Started Today →', 'greyd-theme' ); ?></a>
+					<a class="wp-block-button__link wp-element-button" href="https://greyd.io"><?php esc_html_e( 'Get Started Today →', 'greyd-wp' ); ?></a>
 				</div>
 				<!-- /wp:button -->
 			</div>

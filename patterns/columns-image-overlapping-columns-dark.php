@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Image with Overlapping Columns, Dark
- * Slug: greyd-theme/columns-image-overlapping-columns-dark
+ * Slug: greyd-wp/columns-image-overlapping-columns-dark
  * Description:
  * Categories: greyd-columns
  * Keywords:
@@ -25,11 +25,11 @@
 			<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}},"border":{"width":"2px","color":"#0e1111","radius":"4px"},"layout":{"selfStretch":"fill","flexSize":null}},"backgroundColor":"lightest","className":"","layout":{"type":"flex","orientation":"vertical","verticalAlignment":"space-between"}} -->
 			<div class="wp-block-group has-border-color has-lightest-background-color has-background" style="border-color:#0e1111;border-width:2px;border-radius:4px;padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)">
 				<!-- wp:heading {"textAlign":"left","level":3,"className":""} -->
-				<h3 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Beyond Boundaries', 'greyd-theme' ); ?></h3>
+				<h3 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Beyond Boundaries', 'greyd-wp' ); ?></h3>
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph {"align":"left","className":""} -->
-				<p class="has-text-align-left"><?php esc_html_e( 'Elevate your design game with Greyd while ensuring inclusivity for all users.', 'greyd-theme' ); ?></p>
+				<p class="has-text-align-left"><?php esc_html_e( 'Elevate your design game with Greyd while ensuring inclusivity for all users.', 'greyd-wp' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -37,11 +37,11 @@
 			<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}},"border":{"width":"2px","color":"#0e1111","radius":"4px"},"layout":{"selfStretch":"fill","flexSize":null}},"backgroundColor":"lightest","className":"","layout":{"type":"flex","orientation":"vertical","verticalAlignment":"space-between"}} -->
 			<div class="wp-block-group has-border-color has-lightest-background-color has-background" style="border-color:#0e1111;border-width:2px;border-radius:4px;padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)">
 				<!-- wp:heading {"textAlign":"left","level":3} -->
-				<h3 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Craft for All Devices', 'greyd-theme' ); ?></h3>
+				<h3 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Craft for All Devices', 'greyd-wp' ); ?></h3>
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph {"align":"left","className":""} -->
-				<p class="has-text-align-left"><?php esc_html_e( 'Dive into accessibility to create web experiences that everyone can enjoy.', 'greyd-theme' ); ?></p>
+				<p class="has-text-align-left"><?php esc_html_e( 'Dive into accessibility to create web experiences that everyone can enjoy.', 'greyd-wp' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -49,11 +49,11 @@
 			<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}},"border":{"width":"2px","color":"#0e1111","radius":"4px"},"layout":{"selfStretch":"fill","flexSize":null}},"backgroundColor":"lightest","className":"","layout":{"type":"flex","orientation":"vertical","verticalAlignment":"space-between"}} -->
 			<div class="wp-block-group has-border-color has-lightest-background-color has-background" style="border-color:#0e1111;border-width:2px;border-radius:4px;padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)">
 				<!-- wp:heading {"textAlign":"left","level":3,"className":""} -->
-				<h3 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Everyone in Mind', 'greyd-theme' ); ?></h3>
+				<h3 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Everyone in Mind', 'greyd-wp' ); ?></h3>
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph {"align":"left","className":""} -->
-				<p class="has-text-align-left"><?php esc_html_e( 'Master techniques to enhance usability and inclusivity in your designs.', 'greyd-theme' ); ?></p>
+				<p class="has-text-align-left"><?php esc_html_e( 'Master techniques to enhance usability and inclusivity in your designs.', 'greyd-wp' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->

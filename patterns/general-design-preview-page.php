@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Design Preview Page
- * Slug: greyd-theme/general-design-preview-page
+ * Slug: greyd-wp/general-design-preview-page
  * Description:
  * Categories: greyd-general
  * Keywords:
@@ -18,17 +18,17 @@
 		<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"constrained","justifyContent":"left"}} -->
 		<div class="wp-block-group alignwide">
 			<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"textColor":"primary","fontSize":"small"} -->
-			<p class="has-primary-color has-text-color has-link-color has-small-font-size"><strong><?php esc_html_e( 'Greyd Theme', 'greyd-theme' ); ?></strong></p>
+			<p class="has-primary-color has-text-color has-link-color has-small-font-size"><strong><?php esc_html_e( 'Greyd Theme', 'greyd-wp' ); ?></strong></p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:heading {"className":""} -->
-			<h2 class="wp-block-heading"><?php esc_html_e( 'Style Guide', 'greyd-theme' ); ?></h2>
+			<h2 class="wp-block-heading"><?php esc_html_e( 'Style Guide', 'greyd-wp' ); ?></h2>
 			<!-- /wp:heading -->
 		</div>
 		<!-- /wp:group -->
 
 		<!-- wp:paragraph -->
-		<p><?php esc_html_e( 'Build and share your design viewing all affected elements.', 'greyd-theme' ); ?></p>
+		<p><?php esc_html_e( 'Build and share your design viewing all affected elements.', 'greyd-wp' ); ?></p>
 		<!-- /wp:paragraph -->
 	</div>
 	<!-- /wp:group -->
@@ -38,7 +38,7 @@
 		<!-- wp:group {"align":"wide","style":{"border":{"bottom":{"color":"var:preset|color|foreground","width":"1px","style":"dotted"},"top":{},"right":{},"left":{}},"spacing":{"padding":{"bottom":"var:preset|spacing|small"},"margin":{"bottom":"var:preset|spacing|medium"}}},"layout":{"type":"default"}} -->
 		<div class="wp-block-group alignwide" style="border-bottom-color:var(--wp--preset--color--foreground);border-bottom-style:dotted;border-bottom-width:1px;margin-bottom:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--small)">
 			<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}}} -->
-			<p style="font-style:normal;font-weight:700"><?php esc_html_e( 'Colors', 'greyd-theme' ); ?></p>
+			<p style="font-style:normal;font-weight:700"><?php esc_html_e( 'Colors', 'greyd-wp' ); ?></p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
@@ -58,7 +58,7 @@
 					<!-- /wp:group -->
 
 					<!-- wp:paragraph {"align":"center"} -->
-					<p class="has-text-align-center"><?php esc_html_e( 'Primary Color', 'greyd-theme' ); ?></p>
+					<p class="has-text-align-center"><?php esc_html_e( 'Primary Color', 'greyd-wp' ); ?></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
@@ -78,7 +78,7 @@
 					<!-- /wp:group -->
 
 					<!-- wp:paragraph {"align":"center"} -->
-					<p class="has-text-align-center"><?php esc_html_e( 'Secondary Color', 'greyd-theme' ); ?></p>
+					<p class="has-text-align-center"><?php esc_html_e( 'Secondary Color', 'greyd-wp' ); ?></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
@@ -98,7 +98,7 @@
 					<!-- /wp:group -->
 
 					<!-- wp:paragraph {"align":"center"} -->
-					<p class="has-text-align-center"><?php esc_html_e( 'Tertiary Color', 'greyd-theme' ); ?></p>
+					<p class="has-text-align-center"><?php esc_html_e( 'Tertiary Color', 'greyd-wp' ); ?></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
@@ -122,7 +122,7 @@
 					<!-- /wp:group -->
 
 					<!-- wp:paragraph {"align":"center"} -->
-					<p class="has-text-align-center"><?php esc_html_e( 'Very Dark', 'greyd-theme' ); ?></p>
+					<p class="has-text-align-center"><?php esc_html_e( 'Very Dark', 'greyd-wp' ); ?></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
@@ -142,7 +142,7 @@
 					<!-- /wp:group -->
 
 					<!-- wp:paragraph {"align":"center"} -->
-					<p class="has-text-align-center"><?php esc_html_e( 'Dark', 'greyd-theme' ); ?></p>
+					<p class="has-text-align-center"><?php esc_html_e( 'Dark', 'greyd-wp' ); ?></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
@@ -162,7 +162,7 @@
 					<!-- /wp:group -->
 
 					<!-- wp:paragraph {"align":"center"} -->
-					<p class="has-text-align-center"><?php esc_html_e( 'Medium Dark', 'greyd-theme' ); ?></p>
+					<p class="has-text-align-center"><?php esc_html_e( 'Medium Dark', 'greyd-wp' ); ?></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
@@ -182,7 +182,7 @@
 					<!-- /wp:group -->
 
 					<!-- wp:paragraph {"align":"center"} -->
-					<p class="has-text-align-center"><?php esc_html_e( 'Medium Light', 'greyd-theme' ); ?></p>
+					<p class="has-text-align-center"><?php esc_html_e( 'Medium Light', 'greyd-wp' ); ?></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
@@ -202,7 +202,7 @@
 					<!-- /wp:group -->
 
 					<!-- wp:paragraph {"align":"center"} -->
-					<p class="has-text-align-center"><?php esc_html_e( 'Light', 'greyd-theme' ); ?></p>
+					<p class="has-text-align-center"><?php esc_html_e( 'Light', 'greyd-wp' ); ?></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
@@ -222,7 +222,7 @@
 					<!-- /wp:group -->
 
 					<!-- wp:paragraph {"align":"center"} -->
-					<p class="has-text-align-center"><?php esc_html_e( 'Very Light', 'greyd-theme' ); ?></p>
+					<p class="has-text-align-center"><?php esc_html_e( 'Very Light', 'greyd-wp' ); ?></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
@@ -238,7 +238,7 @@
 		<!-- wp:group {"align":"wide","style":{"border":{"bottom":{"color":"var:preset|color|foreground","width":"1px","style":"dotted"},"top":{},"right":{},"left":{}},"spacing":{"padding":{"bottom":"var:preset|spacing|small"},"margin":{"bottom":"var:preset|spacing|medium"}}},"layout":{"type":"default"}} -->
 		<div class="wp-block-group alignwide" style="border-bottom-color:var(--wp--preset--color--foreground);border-bottom-style:dotted;border-bottom-width:1px;margin-bottom:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--small)">
 			<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}}} -->
-			<p style="font-style:normal;font-weight:700"><?php esc_html_e( 'Typography', 'greyd-theme' ); ?></p>
+			<p style="font-style:normal;font-weight:700"><?php esc_html_e( 'Typography', 'greyd-wp' ); ?></p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
@@ -250,33 +250,33 @@
 				<!-- wp:group {"style":{"border":{"bottom":{"style":"none","width":"0px"}},"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"constrained"}} -->
 				<div class="wp-block-group" style="border-bottom-style:none;border-bottom-width:0px">
 					<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"tiny"} -->
-					<p class="has-tiny-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Heading Font &amp; Sizes', 'greyd-theme' ); ?></p>
+					<p class="has-tiny-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Heading Font &amp; Sizes', 'greyd-wp' ); ?></p>
 					<!-- /wp:paragraph -->
 
 					<!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
 					<div class="wp-block-group">
 						<!-- wp:heading {"level":1,"style":{"spacing":{"margin":{"top":"0"}}}} -->
-						<h1 class="wp-block-heading" style="margin-top:0"><?php esc_html_e( 'Headline 1', 'greyd-theme' ); ?></h1>
+						<h1 class="wp-block-heading" style="margin-top:0"><?php esc_html_e( 'Headline 1', 'greyd-wp' ); ?></h1>
 						<!-- /wp:heading -->
 
 						<!-- wp:heading -->
-						<h2 class="wp-block-heading"><?php esc_html_e( 'Headline 2', 'greyd-theme' ); ?></h2>
+						<h2 class="wp-block-heading"><?php esc_html_e( 'Headline 2', 'greyd-wp' ); ?></h2>
 						<!-- /wp:heading -->
 
 						<!-- wp:heading {"level":3} -->
-						<h3 class="wp-block-heading"><?php esc_html_e( 'Headline 3', 'greyd-theme' ); ?></h3>
+						<h3 class="wp-block-heading"><?php esc_html_e( 'Headline 3', 'greyd-wp' ); ?></h3>
 						<!-- /wp:heading -->
 
 						<!-- wp:heading {"level":4} -->
-						<h4 class="wp-block-heading"><?php esc_html_e( 'Headline 4', 'greyd-theme' ); ?></h4>
+						<h4 class="wp-block-heading"><?php esc_html_e( 'Headline 4', 'greyd-wp' ); ?></h4>
 						<!-- /wp:heading -->
 
 						<!-- wp:heading {"level":5} -->
-						<h5 class="wp-block-heading"><?php esc_html_e( 'Headline 5', 'greyd-theme' ); ?></h5>
+						<h5 class="wp-block-heading"><?php esc_html_e( 'Headline 5', 'greyd-wp' ); ?></h5>
 						<!-- /wp:heading -->
 
 						<!-- wp:heading {"level":6} -->
-						<h6 class="wp-block-heading"><?php esc_html_e( 'Headline 6', 'greyd-theme' ); ?></h6>
+						<h6 class="wp-block-heading"><?php esc_html_e( 'Headline 6', 'greyd-wp' ); ?></h6>
 						<!-- /wp:heading -->
 					</div>
 					<!-- /wp:group -->
@@ -290,51 +290,51 @@
 				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"constrained"}} -->
 				<div class="wp-block-group">
 					<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"tiny"} -->
-					<p class="has-tiny-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Body Font &amp; Default Size', 'greyd-theme' ); ?></p>
+					<p class="has-tiny-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Body Font &amp; Default Size', 'greyd-wp' ); ?></p>
 					<!-- /wp:paragraph -->
 
 					<!-- wp:group {"layout":{"type":"constrained"}} -->
 					<div class="wp-block-group">
 						<!-- wp:paragraph -->
-						<p><?php esc_html_e( 'abcdefghijklmnopqrstuvwxyz1234567890', 'greyd-theme' ); ?><br><?php esc_html_e( 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'greyd-theme' ); ?></p>
+						<p><?php esc_html_e( 'abcdefghijklmnopqrstuvwxyz1234567890', 'greyd-wp' ); ?><br><?php esc_html_e( 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'greyd-wp' ); ?></p>
 						<!-- /wp:paragraph -->
 
 						<!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"className":"gapless-group","layout":{"type":"flex","orientation":"vertical"}} -->
 						<div class="wp-block-group gapless-group">
 							<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"100"}}} -->
-							<p style="font-style:normal;font-weight:100"><?php esc_html_e( '100 - Thin', 'greyd-theme' ); ?></p>
+							<p style="font-style:normal;font-weight:100"><?php esc_html_e( '100 - Thin', 'greyd-wp' ); ?></p>
 							<!-- /wp:paragraph -->
 
 							<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"200"}}} -->
-							<p style="font-style:normal;font-weight:200"><?php esc_html_e( '200 - Extra Light', 'greyd-theme' ); ?></p>
+							<p style="font-style:normal;font-weight:200"><?php esc_html_e( '200 - Extra Light', 'greyd-wp' ); ?></p>
 							<!-- /wp:paragraph -->
 
 							<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"300"}}} -->
-							<p style="font-style:normal;font-weight:300"><?php esc_html_e( '300 - Light', 'greyd-theme' ); ?></p>
+							<p style="font-style:normal;font-weight:300"><?php esc_html_e( '300 - Light', 'greyd-wp' ); ?></p>
 							<!-- /wp:paragraph -->
 
 							<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"400"}}} -->
-							<p style="font-style:normal;font-weight:400"><?php esc_html_e( '400 - Regular', 'greyd-theme' ); ?></p>
+							<p style="font-style:normal;font-weight:400"><?php esc_html_e( '400 - Regular', 'greyd-wp' ); ?></p>
 							<!-- /wp:paragraph -->
 
 							<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"500"}}} -->
-							<p style="font-style:normal;font-weight:500"><?php esc_html_e( '500 - Medium', 'greyd-theme' ); ?></p>
+							<p style="font-style:normal;font-weight:500"><?php esc_html_e( '500 - Medium', 'greyd-wp' ); ?></p>
 							<!-- /wp:paragraph -->
 
 							<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"600"}}} -->
-							<p style="font-style:normal;font-weight:600"><?php esc_html_e( '600 - Semi-Bold', 'greyd-theme' ); ?></p>
+							<p style="font-style:normal;font-weight:600"><?php esc_html_e( '600 - Semi-Bold', 'greyd-wp' ); ?></p>
 							<!-- /wp:paragraph -->
 
 							<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}}} -->
-							<p style="font-style:normal;font-weight:700"><?php esc_html_e( '700 - Bold', 'greyd-theme' ); ?></p>
+							<p style="font-style:normal;font-weight:700"><?php esc_html_e( '700 - Bold', 'greyd-wp' ); ?></p>
 							<!-- /wp:paragraph -->
 
 							<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"800"}}} -->
-							<p style="font-style:normal;font-weight:800"><?php esc_html_e( '800 - Extra Bold', 'greyd-theme' ); ?></p>
+							<p style="font-style:normal;font-weight:800"><?php esc_html_e( '800 - Extra Bold', 'greyd-wp' ); ?></p>
 							<!-- /wp:paragraph -->
 
 							<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"900"}}} -->
-							<p style="font-style:normal;font-weight:900"><?php esc_html_e( '900 - Black', 'greyd-theme' ); ?></p>
+							<p style="font-style:normal;font-weight:900"><?php esc_html_e( '900 - Black', 'greyd-wp' ); ?></p>
 							<!-- /wp:paragraph -->
 						</div>
 						<!-- /wp:group -->
@@ -354,7 +354,7 @@
 		<!-- wp:group {"align":"wide","style":{"border":{"bottom":{"color":"var:preset|color|foreground","width":"1px","style":"dotted"},"top":{},"right":{},"left":{}},"spacing":{"padding":{"bottom":"var:preset|spacing|small"},"margin":{"bottom":"var:preset|spacing|medium"}}},"layout":{"type":"default"}} -->
 		<div class="wp-block-group alignwide" style="border-bottom-color:var(--wp--preset--color--foreground);border-bottom-style:dotted;border-bottom-width:1px;margin-bottom:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--small)">
 			<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}}} -->
-			<p style="font-style:normal;font-weight:700"><?php esc_html_e( 'Buttons &amp; Links', 'greyd-theme' ); ?></p>
+			<p style="font-style:normal;font-weight:700"><?php esc_html_e( 'Buttons &amp; Links', 'greyd-wp' ); ?></p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
@@ -363,19 +363,19 @@
 		<div class="wp-block-buttons alignwide">
 			<!-- wp:button -->
 			<div class="wp-block-button">
-				<a class="wp-block-button__link wp-element-button" href="#"><?php esc_html_e( 'Primary Button', 'greyd-theme' ); ?></a>
+				<a class="wp-block-button__link wp-element-button" href="#"><?php esc_html_e( 'Primary Button', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 
 			<!-- wp:button {"className":"is-style-outline"} -->
 			<div class="wp-block-button is-style-outline">
-				<a class="wp-block-button__link wp-element-button" href="#"><?php esc_html_e( 'Secondary Button', 'greyd-theme' ); ?></a>
+				<a class="wp-block-button__link wp-element-button" href="#"><?php esc_html_e( 'Secondary Button', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 
 			<!-- wp:button {"className":"is-style-alternate"} -->
 			<div class="wp-block-button is-style-alternate">
-				<a class="wp-block-button__link wp-element-button" href="#"><?php esc_html_e( 'Tertiary Button', 'greyd-theme' ); ?></a>
+				<a class="wp-block-button__link wp-element-button" href="#"><?php esc_html_e( 'Tertiary Button', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 		</div>
@@ -385,13 +385,13 @@
 		<div class="wp-block-buttons alignwide">
 			<!-- wp:button {"className":"is-size-big"} -->
 			<div class="wp-block-button is-size-big">
-				<a class="wp-block-button__link wp-element-button" href="#"><?php esc_html_e( 'Large Button', 'greyd-theme' ); ?></a>
+				<a class="wp-block-button__link wp-element-button" href="#"><?php esc_html_e( 'Large Button', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 
 			<!-- wp:button {"className":"is-size-small is-style-outline"} -->
 			<div class="wp-block-button is-size-small is-style-outline">
-				<a class="wp-block-button__link wp-element-button" href="#"><?php esc_html_e( 'Small button', 'greyd-theme' ); ?></a>
+				<a class="wp-block-button__link wp-element-button" href="#"><?php esc_html_e( 'Small button', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 		</div>
@@ -401,7 +401,7 @@
 		<div class="wp-block-group alignwide">
 			<!-- wp:paragraph {"align":"left"} -->
 			<p class="has-text-align-left">
-				<a href="#"><?php esc_html_e( 'Standard Link', 'greyd-theme' ); ?></a>
+				<a href="#"><?php esc_html_e( 'Standard Link', 'greyd-wp' ); ?></a>
 			</p>
 			<!-- /wp:paragraph -->
 		</div>
@@ -414,7 +414,7 @@
 		<!-- wp:group {"align":"wide","style":{"border":{"bottom":{"color":"var:preset|color|foreground","width":"1px","style":"dotted"},"top":{},"right":{},"left":{}},"spacing":{"padding":{"bottom":"var:preset|spacing|small"},"margin":{"bottom":"var:preset|spacing|medium"}}},"layout":{"type":"default"}} -->
 		<div class="wp-block-group alignwide" style="border-bottom-color:var(--wp--preset--color--foreground);border-bottom-style:dotted;border-bottom-width:1px;margin-bottom:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--small)">
 			<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}}} -->
-			<p style="font-style:normal;font-weight:700"><?php esc_html_e( 'Spacing Sizes', 'greyd-theme' ); ?></p>
+			<p style="font-style:normal;font-weight:700"><?php esc_html_e( 'Spacing Sizes', 'greyd-wp' ); ?></p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
@@ -422,7 +422,7 @@
 		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
 		<div class="wp-block-group">
 			<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"tiny"} -->
-			<p class="has-tiny-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Huge', 'greyd-theme' ); ?></p>
+			<p class="has-tiny-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Huge', 'greyd-wp' ); ?></p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","right":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large","left":"var:preset|spacing|x-large"},"blockGap":"var:preset|spacing|x-large","margin":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|medium"}},"border":{"width":"1px","style":"dashed"}},"borderColor":"foreground","className":"","layout":{"type":"flex","flexWrap":"nowrap"}} -->
@@ -458,7 +458,7 @@
 		<!-- wp:group {"layout":{"type":"default"}} -->
 		<div class="wp-block-group">
 			<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"tiny"} -->
-			<p class="has-tiny-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Large', 'greyd-theme' ); ?></p>
+			<p class="has-tiny-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Large', 'greyd-wp' ); ?></p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|large","right":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large"},"blockGap":"var:preset|spacing|large","margin":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|medium"}},"border":{"style":"dashed","width":"1px"}},"borderColor":"foreground","className":"","layout":{"type":"flex","flexWrap":"nowrap"}} -->
@@ -502,7 +502,7 @@
 		<!-- wp:group {"layout":{"type":"default"}} -->
 		<div class="wp-block-group">
 			<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"tiny"} -->
-			<p class="has-tiny-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Medium', 'greyd-theme' ); ?></p>
+			<p class="has-tiny-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Medium', 'greyd-wp' ); ?></p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","right":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|medium"},"blockGap":"var:preset|spacing|medium","margin":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|small"}},"border":{"width":"1px","style":"dashed"}},"borderColor":"foreground","className":"","layout":{"type":"flex","flexWrap":"nowrap"}} -->
@@ -554,7 +554,7 @@
 		<!-- wp:group {"layout":{"type":"default"}} -->
 		<div class="wp-block-group">
 			<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"tiny"} -->
-			<p class="has-tiny-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Small', 'greyd-theme' ); ?></p>
+			<p class="has-tiny-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Small', 'greyd-wp' ); ?></p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|small","right":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small"},"blockGap":"var:preset|spacing|small","margin":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|small"}},"border":{"width":"1px","style":"dashed"}},"borderColor":"foreground","className":"","layout":{"type":"flex","flexWrap":"nowrap"}} -->
@@ -614,7 +614,7 @@
 		<!-- wp:group {"layout":{"type":"default"}} -->
 		<div class="wp-block-group">
 			<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}},"fontSize":"tiny"} -->
-			<p class="has-tiny-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Tiny', 'greyd-theme' ); ?></p>
+			<p class="has-tiny-font-size" style="font-style:normal;font-weight:700"><?php esc_html_e( 'Tiny', 'greyd-wp' ); ?></p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|small","right":"var:preset|spacing|small","bottom":"var:preset|spacing|small","left":"var:preset|spacing|small"},"blockGap":"var:preset|spacing|small","margin":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|medium"}},"border":{"width":"1px","style":"dashed"}},"borderColor":"foreground","className":"","layout":{"type":"flex","flexWrap":"nowrap"}} -->

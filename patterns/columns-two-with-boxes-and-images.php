@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Two Columns with Boxes and Images
- * Slug: greyd-theme/columns-two-with-boxes-and-images
+ * Slug: greyd-wp/columns-two-with-boxes-and-images
  * Description:
  * Categories: greyd-columns
  * Keywords:
@@ -18,11 +18,11 @@
 			<!-- wp:group {"style":{"elements":{"link":{"color":{"text":"var:preset|color|background"}}}},"textColor":"background","layout":{"type":"constrained","contentSize":"450px","justifyContent":"left"}} -->
 			<div class="wp-block-group has-background-color has-text-color has-link-color">
 				<!-- wp:heading {"className":""} -->
-				<h2 class="wp-block-heading"><?php esc_html_e( 'Discover Greyd', 'greyd-theme' ); ?></h2>
+				<h2 class="wp-block-heading"><?php esc_html_e( 'Discover Greyd', 'greyd-wp' ); ?></h2>
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph {"className":""} -->
-				<p><?php esc_html_e( 'Greyd Theme is a block theme that not only gives you an advanced block &amp; site editor experience, but also comes with many powerful add-ons. Its native integration into the core makes it extremely flexible, creating clean, accessible and superfast websites.', 'greyd-theme' ); ?></p>
+				<p><?php esc_html_e( 'Greyd Theme is a block theme that not only gives you an advanced block &amp; site editor experience, but also comes with many powerful add-ons. Its native integration into the core makes it extremely flexible, creating clean, accessible and superfast websites.', 'greyd-wp' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -44,7 +44,7 @@
 				<!-- wp:group {"layout":{"type":"constrained","contentSize":"280px","justifyContent":"center"}} -->
 				<div class="wp-block-group">
 					<!-- wp:paragraph {"style":{"layout":{"selfStretch":"fixed"}},"className":""} -->
-					<p><mark class="has-inline-color has-foreground-color has-background-background-color"><?php esc_html_e( 'Whether you are a freelancer, agency or large corporation, your WordPress revolution starts here.', 'greyd-theme' ); ?></mark></p>
+					<p><mark class="has-inline-color has-foreground-color has-background-background-color"><?php esc_html_e( 'Whether you are a freelancer, agency or large corporation, your WordPress revolution starts here.', 'greyd-wp' ); ?></mark></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
@@ -72,17 +72,17 @@
 				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"constrained"}} -->
 				<div class="wp-block-group">
 					<!-- wp:heading {"textAlign":"center","level":3} -->
-					<h3 class="wp-block-heading has-text-align-center"><?php esc_html_e( 'Elevate your WP business', 'greyd-theme' ); ?></h3>
+					<h3 class="wp-block-heading has-text-align-center"><?php esc_html_e( 'Elevate your WP business', 'greyd-wp' ); ?></h3>
 					<!-- /wp:heading -->
 
 					<!-- wp:paragraph {"align":"center","className":""} -->
-					<p class="has-text-align-center"><?php esc_html_e( 'The Greyd Theme is the perfect starting point to scale up your WordPress business.', 'greyd-theme' ); ?></p>
+					<p class="has-text-align-center"><?php esc_html_e( 'The Greyd Theme is the perfect starting point to scale up your WordPress business.', 'greyd-wp' ); ?></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
 
 				<!-- wp:paragraph {"align":"center","className":""} -->
-				<p class="has-text-align-center"><a href="https://greyd.io/" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Learn more about the theme →', 'greyd-theme' ); ?></a></p>
+				<p class="has-text-align-center"><a href="https://greyd.io/" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Learn more about the theme →', 'greyd-wp' ); ?></a></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->

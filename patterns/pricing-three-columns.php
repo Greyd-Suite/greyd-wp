@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Three Pricing columns, with group below
- * Slug: greyd-theme/pricing-three-columns
+ * Slug: greyd-wp/pricing-three-columns
  * Description:
  * Categories: greyd-pricing
  * Keywords:
@@ -20,24 +20,24 @@
 			<!-- wp:group {"style":{"spacing":{"padding":{"right":"0","left":"0"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
 			<div class="wp-block-group" style="padding-right:0;padding-left:0">
 				<!-- wp:heading {"style":{"spacing":{"margin":{"top":"0"}}},"className":"","fontSize":"medium"} -->
-				<h2 class="wp-block-heading has-medium-font-size" style="margin-top:0"><?php esc_html_e( 'Monthly', 'greyd-theme' ); ?></h2>
+				<h2 class="wp-block-heading has-medium-font-size" style="margin-top:0"><?php esc_html_e( 'Monthly', 'greyd-wp' ); ?></h2>
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.5"}},"className":"","fontSize":"normal"} -->
-				<p class="has-normal-font-size" style="line-height:1.5"><?php esc_html_e( 'Gives you the most freedom. Perfect if you want to try us out. for a short trip', 'greyd-theme' ); ?></p>
+				<p class="has-normal-font-size" style="line-height:1.5"><?php esc_html_e( 'Gives you the most freedom. Perfect if you want to try us out. for a short trip', 'greyd-wp' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
 
 			<!-- wp:paragraph {"className":"","fontSize":"x-large"} -->
-			<p class="has-x-large-font-size"><?php esc_html_e( '$8,99 / mo.', 'greyd-theme' ); ?></p>
+			<p class="has-x-large-font-size"><?php esc_html_e( '$8,99 / mo.', 'greyd-wp' ); ?></p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:buttons {"align":"full","className":"","layout":{"type":"flex","justifyContent":"center","orientation":"horizontal"}} -->
 			<div class="wp-block-buttons alignfull">
 				<!-- wp:button {"style":{"border":{"radius":0}},"className":"has-custom-width wp-block-button__width-100 is-style-outline"} -->
 				<div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-outline">
-					<a class="wp-block-button__link no-border-radius wp-element-button"><?php esc_html_e( 'Choose Monthly →', 'greyd-theme' ); ?></a>
+					<a class="wp-block-button__link no-border-radius wp-element-button"><?php esc_html_e( 'Choose Monthly →', 'greyd-wp' ); ?></a>
 				</div>
 				<!-- /wp:button -->
 			</div>
@@ -46,21 +46,21 @@
 			<!-- wp:group {"layout":{"type":"default"}} -->
 			<div class="wp-block-group">
 				<!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|small"}}},"className":""} -->
-				<p style="margin-bottom:var(--wp--preset--spacing--small)"><strong><?php esc_html_e( "What's included", 'greyd-theme' ); ?></strong></p>
+				<p style="margin-bottom:var(--wp--preset--spacing--small)"><strong><?php esc_html_e( "What's included", 'greyd-wp' ); ?></strong></p>
 				<!-- /wp:paragraph -->
 
 				<!-- wp:list {"style":{"spacing":{"margin":{"top":"0","left":"0","right":"0","bottom":"0"}}},"className":""} -->
 				<ul style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0">
 					<!-- wp:list-item {"className":""} -->
-					<li><?php esc_html_e( 'Unlimited requests', 'greyd-theme' ); ?></li>
+					<li><?php esc_html_e( 'Unlimited requests', 'greyd-wp' ); ?></li>
 					<!-- /wp:list-item -->
 
 					<!-- wp:list-item {"className":""} -->
-					<li><?php esc_html_e( 'Unlimited brands', 'greyd-theme' ); ?></li>
+					<li><?php esc_html_e( 'Unlimited brands', 'greyd-wp' ); ?></li>
 					<!-- /wp:list-item -->
 
 					<!-- wp:list-item {"className":""} -->
-					<li><?php esc_html_e( 'Pause or cancel anytime', 'greyd-theme' ); ?></li>
+					<li><?php esc_html_e( 'Pause or cancel anytime', 'greyd-wp' ); ?></li>
 					<!-- /wp:list-item -->
 				</ul>
 				<!-- /wp:list -->
@@ -78,24 +78,24 @@
 			<!-- wp:group {"style":{"spacing":{"padding":{"right":"0","left":"0"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
 			<div class="wp-block-group" style="padding-right:0;padding-left:0">
 				<!-- wp:heading {"style":{"spacing":{"margin":{"top":"0"}}},"className":"","fontSize":"medium"} -->
-				<h2 class="wp-block-heading has-medium-font-size" style="margin-top:0"><?php esc_html_e( 'Quarterly', 'greyd-theme' ); ?></h2>
+				<h2 class="wp-block-heading has-medium-font-size" style="margin-top:0"><?php esc_html_e( 'Quarterly', 'greyd-wp' ); ?></h2>
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.5"}},"className":"","fontSize":"normal"} -->
-				<p class="has-normal-font-size" style="line-height:1.5"><?php esc_html_e( 'For companies of all sizes, who know what they need. For a casual relationship', 'greyd-theme' ); ?></p>
+				<p class="has-normal-font-size" style="line-height:1.5"><?php esc_html_e( 'For companies of all sizes, who know what they need. For a casual relationship', 'greyd-wp' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
 
 			<!-- wp:paragraph {"className":"","fontSize":"x-large"} -->
-			<p class="has-x-large-font-size"><?php esc_html_e( '$6,49 / mo.', 'greyd-theme' ); ?></p>
+			<p class="has-x-large-font-size"><?php esc_html_e( '$6,49 / mo.', 'greyd-wp' ); ?></p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:buttons {"align":"full","className":"","layout":{"type":"flex","justifyContent":"center","orientation":"horizontal"}} -->
 			<div class="wp-block-buttons alignfull">
 				<!-- wp:button {"style":{"border":{"radius":0}},"className":"has-custom-width wp-block-button__width-100 is-style-outline"} -->
 				<div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-outline">
-					<a class="wp-block-button__link no-border-radius wp-element-button"><?php esc_html_e( 'Choose Quarterly →', 'greyd-theme' ); ?></a>
+					<a class="wp-block-button__link no-border-radius wp-element-button"><?php esc_html_e( 'Choose Quarterly →', 'greyd-wp' ); ?></a>
 				</div>
 				<!-- /wp:button -->
 			</div>
@@ -104,21 +104,21 @@
 			<!-- wp:group {"layout":{"type":"default"}} -->
 			<div class="wp-block-group">
 				<!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|small"}}},"className":""} -->
-				<p style="margin-bottom:var(--wp--preset--spacing--small)"><strong><?php esc_html_e( "What's included", 'greyd-theme' ); ?></strong></p>
+				<p style="margin-bottom:var(--wp--preset--spacing--small)"><strong><?php esc_html_e( "What's included", 'greyd-wp' ); ?></strong></p>
 				<!-- /wp:paragraph -->
 
 				<!-- wp:list {"style":{"spacing":{"margin":{"top":"0","left":"0","right":"0","bottom":"0"}}},"className":""} -->
 				<ul style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0">
 					<!-- wp:list-item {"className":""} -->
-					<li><?php esc_html_e( 'Unlimited requests', 'greyd-theme' ); ?></li>
+					<li><?php esc_html_e( 'Unlimited requests', 'greyd-wp' ); ?></li>
 					<!-- /wp:list-item -->
 
 					<!-- wp:list-item {"className":""} -->
-					<li><?php esc_html_e( 'Unlimited brands', 'greyd-theme' ); ?></li>
+					<li><?php esc_html_e( 'Unlimited brands', 'greyd-wp' ); ?></li>
 					<!-- /wp:list-item -->
 
 					<!-- wp:list-item {"className":""} -->
-					<li><?php esc_html_e( 'Pause or cancel anytime', 'greyd-theme' ); ?></li>
+					<li><?php esc_html_e( 'Pause or cancel anytime', 'greyd-wp' ); ?></li>
 					<!-- /wp:list-item -->
 				</ul>
 				<!-- /wp:list -->
@@ -136,24 +136,24 @@
 			<!-- wp:group {"style":{"dimensions":{"minHeight":"3px"},"spacing":{"padding":{"right":"0","left":"0"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
 			<div class="wp-block-group" style="min-height:3px;padding-right:0;padding-left:0">
 				<!-- wp:heading {"style":{"spacing":{"margin":{"top":"0"}}},"className":"","fontSize":"medium"} -->
-				<h2 class="wp-block-heading has-medium-font-size" style="margin-top:0"><?php esc_html_e( 'Yearly', 'greyd-theme' ); ?></h2>
+				<h2 class="wp-block-heading has-medium-font-size" style="margin-top:0"><?php esc_html_e( 'Yearly', 'greyd-wp' ); ?></h2>
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph {"className":"","fontSize":"normal"} -->
-				<p class="has-normal-font-size"><?php esc_html_e( 'The most cost-effective option. For a long-term relationship ❤️', 'greyd-theme' ); ?></p>
+				<p class="has-normal-font-size"><?php esc_html_e( 'The most cost-effective option. For a long-term relationship ❤️', 'greyd-wp' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
 
 			<!-- wp:paragraph {"className":"","fontSize":"x-large"} -->
-			<p class="has-x-large-font-size"><?php esc_html_e( '$4,99 / mo.', 'greyd-theme' ); ?></p>
+			<p class="has-x-large-font-size"><?php esc_html_e( '$4,99 / mo.', 'greyd-wp' ); ?></p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:buttons {"align":"full","className":"","layout":{"type":"flex","justifyContent":"center","orientation":"horizontal"}} -->
 			<div class="wp-block-buttons alignfull">
 				<!-- wp:button {"style":{"border":{"radius":0}},"className":"has-custom-width wp-block-button__width-100 is-style-fill"} -->
 				<div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-fill">
-					<a class="wp-block-button__link no-border-radius wp-element-button"><?php esc_html_e( 'Choose Yearly →', 'greyd-theme' ); ?></a>
+					<a class="wp-block-button__link no-border-radius wp-element-button"><?php esc_html_e( 'Choose Yearly →', 'greyd-wp' ); ?></a>
 				</div>
 				<!-- /wp:button -->
 			</div>
@@ -162,21 +162,21 @@
 			<!-- wp:group {"layout":{"type":"default"}} -->
 			<div class="wp-block-group">
 				<!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|small"}}},"className":""} -->
-				<p style="margin-bottom:var(--wp--preset--spacing--small)"><strong><?php esc_html_e( "What's included", 'greyd-theme' ); ?></strong></p>
+				<p style="margin-bottom:var(--wp--preset--spacing--small)"><strong><?php esc_html_e( "What's included", 'greyd-wp' ); ?></strong></p>
 				<!-- /wp:paragraph -->
 
 				<!-- wp:list {"style":{"spacing":{"margin":{"top":"0","left":"0","right":"0","bottom":"0"}}},"className":""} -->
 				<ul style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0">
 					<!-- wp:list-item {"className":""} -->
-					<li><?php esc_html_e( 'Unlimited requests', 'greyd-theme' ); ?></li>
+					<li><?php esc_html_e( 'Unlimited requests', 'greyd-wp' ); ?></li>
 					<!-- /wp:list-item -->
 
 					<!-- wp:list-item {"className":""} -->
-					<li><?php esc_html_e( 'Unlimited brands', 'greyd-theme' ); ?></li>
+					<li><?php esc_html_e( 'Unlimited brands', 'greyd-wp' ); ?></li>
 					<!-- /wp:list-item -->
 
 					<!-- wp:list-item {"className":""} -->
-					<li><?php esc_html_e( 'Pause or cancel anytime', 'greyd-theme' ); ?></li>
+					<li><?php esc_html_e( 'Pause or cancel anytime', 'greyd-wp' ); ?></li>
 					<!-- /wp:list-item -->
 				</ul>
 				<!-- /wp:list -->
@@ -196,11 +196,11 @@
 		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"className":"","layout":{"type":"default"}} -->
 		<div class="wp-block-group">
 			<!-- wp:heading {"style":{"spacing":{"margin":{"top":"0"}}},"className":"","fontSize":"medium"} -->
-			<h2 class="wp-block-heading has-medium-font-size" style="margin-top:0"><?php esc_html_e( 'Are you interested in a custom price plan?', 'greyd-theme' ); ?></h2>
+			<h2 class="wp-block-heading has-medium-font-size" style="margin-top:0"><?php esc_html_e( 'Are you interested in a custom price plan?', 'greyd-wp' ); ?></h2>
 			<!-- /wp:heading -->
 
 			<!-- wp:paragraph {"className":"","fontSize":"normal"} -->
-			<p class="has-normal-font-size"><?php esc_html_e( "If your project doesn't fit in the above plans, or if you'd like to discuss before making up your mind, book a call with us.", 'greyd-theme' ); ?></p>
+			<p class="has-normal-font-size"><?php esc_html_e( "If your project doesn't fit in the above plans, or if you'd like to discuss before making up your mind, book a call with us.", 'greyd-wp' ); ?></p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
@@ -209,7 +209,7 @@
 		<div class="wp-block-buttons alignfull">
 			<!-- wp:button {"style":{"border":{"radius":0}},"className":"is-style-outline"} -->
 			<div class="wp-block-button is-style-outline">
-				<a class="wp-block-button__link no-border-radius wp-element-button"><?php esc_html_e( 'Call Us', 'greyd-theme' ); ?></a>
+				<a class="wp-block-button__link no-border-radius wp-element-button"><?php esc_html_e( 'Call Us', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 		</div>

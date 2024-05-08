@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Template: Single, simple
- * Slug: greyd-theme/template-single-simple
+ * Slug: greyd-wp/template-single-simple
  * Template Types: single
  * Viewport width: 1600
  * Inserter: no
@@ -21,9 +21,9 @@
 
 		<!-- wp:post-content {"layout":{"type":"constrained"}} /-->
 
-		<!-- wp:pattern {"slug":"greyd-theme/hidden-comments"} /-->
+		<!-- wp:pattern {"slug":"greyd-wp/hidden-comments"} /-->
 
-		<!-- wp:pattern {"slug":"greyd-theme/hidden-post-navigation"} /-->
+		<!-- wp:pattern {"slug":"greyd-wp/hidden-post-navigation"} /-->
 	</div>
 	<!-- /wp:group -->
 </main>

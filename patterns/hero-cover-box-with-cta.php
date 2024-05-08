@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Dark Cover Box with CTA
- * Slug: greyd-theme/hero-cover-box-with-cta
+ * Slug: greyd-wp/hero-cover-box-with-cta
  * Description:
  * Categories: greyd-hero
  * Keywords:
@@ -25,7 +25,7 @@
 					<!-- wp:heading {"level":1,"className":""} -->
 					<h1 class="wp-block-heading">
 						<strong>
-							<?php esc_html_e( 'We built the tool we knew we all needed.', 'greyd-theme' ); ?><br><mark class="has-inline-color has-background-color has-foreground-background-color"><?php esc_html_e( 'Including you.', 'greyd-theme' ); ?></mark>
+							<?php esc_html_e( 'We built the tool we knew we all needed.', 'greyd-wp' ); ?><br><mark class="has-inline-color has-background-color has-foreground-background-color"><?php esc_html_e( 'Including you.', 'greyd-wp' ); ?></mark>
 						</strong>
 					</h1>
 					<!-- /wp:heading -->
@@ -36,7 +36,7 @@
 				<div class="wp-block-buttons">
 					<!-- wp:button {"className":"is-style-alternate"} -->
 					<div class="wp-block-button is-style-alternate">
-						<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Find out more about Greyd →', 'greyd-theme' ); ?></a>
+						<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Find out more about Greyd →', 'greyd-wp' ); ?></a>
 					</div>
 					<!-- /wp:button -->
 				</div>

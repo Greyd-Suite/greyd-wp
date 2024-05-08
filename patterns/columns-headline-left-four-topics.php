@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Headline left and four Topics
- * Slug: greyd-theme/columns-headline-left-four-topics
+ * Slug: greyd-wp/columns-headline-left-four-topics
  * Description:
  * Categories: greyd-columns
  * Keywords:
@@ -20,7 +20,7 @@
 			<!-- wp:group {"style":{"position":{"type":"sticky","top":"0px"}},"layout":{"type":"constrained","contentSize":"480px","justifyContent":"left"}} -->
 			<div class="wp-block-group">
 				<!-- wp:heading {"className":""} -->
-				<h2 class="wp-block-heading"><?php esc_html_e( 'What we offer - Our services', 'greyd-theme' ); ?></h2>
+				<h2 class="wp-block-heading"><?php esc_html_e( 'What we offer - Our services', 'greyd-wp' ); ?></h2>
 				<!-- /wp:heading -->
 			</div>
 			<!-- /wp:group -->
@@ -29,7 +29,7 @@
 
 		<!-- wp:column {"verticalAlignment":"top","width":"50%","className":""} -->
 		<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:50%">
-			<!-- wp:pattern {"slug":"greyd-theme/columns-four-topics-in-tiles"} /-->
+			<!-- wp:pattern {"slug":"greyd-wp/columns-four-topics-in-tiles"} /-->
 		</div>
 		<!-- /wp:column -->
 	</div>

@@ -56,22 +56,22 @@ class Theme {
 
 		// Register theme stylesheet
 		wp_register_style(
-			'greyd-theme',
+			'greyd-wp',
 			get_template_directory_uri() . '/assets/css/theme.css',
 			array(),
 			wp_get_theme()->get( 'Version' )
 		);
-		wp_enqueue_style( 'greyd-theme' );
+		wp_enqueue_style( 'greyd-wp' );
 
 		// frontend script
 		wp_register_script(
-			'greyd-theme',
+			'greyd-wp',
 			get_template_directory_uri() . '/assets/js/public.js',
 			array(),
 			wp_get_theme()->get( 'Version' ),
 			false
 		);
-		wp_enqueue_script( 'greyd-theme' );
+		wp_enqueue_script( 'greyd-wp' );
 
 	}
 
@@ -84,31 +84,31 @@ class Theme {
 
 		$pattern_categories = array(
 			'greyd-cta'            => array(
-				'label' => __( 'Greyd Call To Action', 'greyd-theme' ),
+				'label' => __( 'Greyd Call To Action', 'greyd-wp' ),
 			),
 			'greyd-columns'        => array(
-				'label' => __( 'Greyd Columns', 'greyd-theme' ),
+				'label' => __( 'Greyd Columns', 'greyd-wp' ),
 			),
 			'greyd-content'        => array(
-				'label' => __( 'Greyd Content', 'greyd-theme' ),
+				'label' => __( 'Greyd Content', 'greyd-wp' ),
 			),
 			'greyd-general'        => array(
-				'label' => __( 'Greyd General', 'greyd-theme' ),
+				'label' => __( 'Greyd General', 'greyd-wp' ),
 			),
 			'greyd-hero'           => array(
-				'label' => __( 'Greyd Hero', 'greyd-theme' ),
+				'label' => __( 'Greyd Hero', 'greyd-wp' ),
 			),
 			'greyd-pages'          => array(
-				'label' => __( 'Greyd Pages', 'greyd-theme' ),
+				'label' => __( 'Greyd Pages', 'greyd-wp' ),
 			),
 			'greyd-posts'          => array(
-				'label' => __( 'Greyd Posts', 'greyd-theme' ),
+				'label' => __( 'Greyd Posts', 'greyd-wp' ),
 			),
 			'greyd-pricing'        => array(
-				'label' => __( 'Greyd Pricing', 'greyd-theme' ),
+				'label' => __( 'Greyd Pricing', 'greyd-wp' ),
 			),
 			'greyd-testimonial'    => array(
-				'label' => __( 'Greyd Testimonials', 'greyd-theme' ),
+				'label' => __( 'Greyd Testimonials', 'greyd-wp' ),
 			),
 		);
 
@@ -126,47 +126,47 @@ class Theme {
 
 		$block_styles = array(
 			'core/button'          => array(
-				'fill'      => __( 'Primary Button', 'greyd-theme' ),
-				'outline'   => __( 'Secondary Button', 'greyd-theme' ),
-				'alternate' => __( 'Alternate Button', 'greyd-theme' ),
-				'clear'     => __( 'Clear', 'greyd-theme' ),
+				'fill'      => __( 'Primary Button', 'greyd-wp' ),
+				'outline'   => __( 'Secondary Button', 'greyd-wp' ),
+				'alternate' => __( 'Alternate Button', 'greyd-wp' ),
+				'clear'     => __( 'Clear', 'greyd-wp' ),
 			),
 			'core/navigation' => array(
-				'button-fill' => __( 'Primary Button', 'greyd-theme' ),
-				'button-outline' => __( 'Secondary Button', 'greyd-theme' ),
-				'button-alternate' => __( 'Alternate Button', 'greyd-theme' ),
-				'button-chips' => __( 'Chip', 'greyd-theme' ),
-				'clear'     => __( 'Clear', 'greyd-theme' ),
+				'button-fill' => __( 'Primary Button', 'greyd-wp' ),
+				'button-outline' => __( 'Secondary Button', 'greyd-wp' ),
+				'button-alternate' => __( 'Alternate Button', 'greyd-wp' ),
+				'button-chips' => __( 'Chip', 'greyd-wp' ),
+				'clear'     => __( 'Clear', 'greyd-wp' ),
 			),
 			'core/navigation-submenu' => array(
-				'button-fill' => __( 'Primary Button', 'greyd-theme' ),
-				'button-outline' => __( 'Secondary Button', 'greyd-theme' ),
-				'button-alternate' => __( 'Alternate Button', 'greyd-theme' ),
-				'button-chips' => __( 'Chip', 'greyd-theme' ),
-				'clear'     => __( 'Clear', 'greyd-theme' ),
+				'button-fill' => __( 'Primary Button', 'greyd-wp' ),
+				'button-outline' => __( 'Secondary Button', 'greyd-wp' ),
+				'button-alternate' => __( 'Alternate Button', 'greyd-wp' ),
+				'button-chips' => __( 'Chip', 'greyd-wp' ),
+				'clear'     => __( 'Clear', 'greyd-wp' ),
 			),
 			'core/navigation-link' => array(
-				'button-fill' => __( 'Primary Button', 'greyd-theme' ),
-				'button-outline' => __( 'Secondary Button', 'greyd-theme' ),
-				'button-alternate' => __( 'Alternate Button', 'greyd-theme' ),
-				'button-chips' => __( 'Chip', 'greyd-theme' ),
-				'clear'     => __( 'Clear', 'greyd-theme' ),
+				'button-fill' => __( 'Primary Button', 'greyd-wp' ),
+				'button-outline' => __( 'Secondary Button', 'greyd-wp' ),
+				'button-alternate' => __( 'Alternate Button', 'greyd-wp' ),
+				'button-chips' => __( 'Chip', 'greyd-wp' ),
+				'clear'     => __( 'Clear', 'greyd-wp' ),
 			),
 			'core/separator'       => array(
-				'bar' => __( 'Bar', 'greyd-theme' ),
+				'bar' => __( 'Bar', 'greyd-wp' ),
 			),
 			'core/image'           => array(
-				'rounded-corners' => __( 'Rounded', 'greyd-theme' ),
-				'has-shadow'      => __( 'Shadow', 'greyd-theme' ),
-				'diagonal-up'     => __( 'Diagonal (up)', 'greyd-theme' ),
-				'diagonal-down'   => __( 'Diagonal (down)', 'greyd-theme' ),
-				'rotate-left'     => __( 'Rotated (left)', 'greyd-theme' ),
-				'rotate-right'    => __( 'Rotated (right)', 'greyd-theme' ),
-				'tilt-left'       => __( '3D (left)', 'greyd-theme' ),
-				'tilt-right'      => __( '3D (right)', 'greyd-theme' ),
+				'rounded-corners' => __( 'Rounded', 'greyd-wp' ),
+				'has-shadow'      => __( 'Shadow', 'greyd-wp' ),
+				'diagonal-up'     => __( 'Diagonal (up)', 'greyd-wp' ),
+				'diagonal-down'   => __( 'Diagonal (down)', 'greyd-wp' ),
+				'rotate-left'     => __( 'Rotated (left)', 'greyd-wp' ),
+				'rotate-right'    => __( 'Rotated (right)', 'greyd-wp' ),
+				'tilt-left'       => __( '3D (left)', 'greyd-wp' ),
+				'tilt-right'      => __( '3D (right)', 'greyd-wp' ),
 			),
 			'core/cover'       => array(
-				'no-background' => __( 'No Background', 'greyd-theme' ),
+				'no-background' => __( 'No Background', 'greyd-wp' ),
 			),
 		);
 

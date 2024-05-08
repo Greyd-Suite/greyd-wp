@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Four Images with Text
- * Slug: greyd-theme/columns-four-images-text
+ * Slug: greyd-wp/columns-four-images-text
  * Description:
  * Categories: greyd-columns
  * Keywords:
@@ -44,11 +44,11 @@
 	<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"},"blockGap":"var:preset|spacing|small"},"layout":{"selfStretch":"fit","flexSize":null},"elements":{"link":{"color":{"text":"var:preset|color|background"}}}},"backgroundColor":"primary","textColor":"background","className":"","layout":{"type":"flex","orientation":"vertical","verticalAlignment":"space-between"}} -->
 	<div class="wp-block-group has-background-color has-primary-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)">
 		<!-- wp:heading {"level":3,"className":"","fontSize":"large"} -->
-		<h3 class="wp-block-heading has-large-font-size"><?php esc_html_e( 'Discover Greyd', 'greyd-theme' ); ?></h3>
+		<h3 class="wp-block-heading has-large-font-size"><?php esc_html_e( 'Discover Greyd', 'greyd-wp' ); ?></h3>
 		<!-- /wp:heading -->
 
 		<!-- wp:paragraph {"className":"","fontSize":"small"} -->
-		<p class="has-small-font-size"><?php esc_html_e( 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.', 'greyd-theme' ); ?></p>
+		<p class="has-small-font-size"><?php esc_html_e( 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.', 'greyd-wp' ); ?></p>
 		<!-- /wp:paragraph -->
 	</div>
 	<!-- /wp:group -->

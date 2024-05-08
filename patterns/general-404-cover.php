@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: 404 Template Cover
- * Slug: greyd-theme/general-404-cover
+ * Slug: greyd-wp/general-404-cover
  * Description: A 404 template with a cover image.
  * Categories: greyd-general
  * Keywords: 404
@@ -21,18 +21,18 @@
 			<img class="wp-block-cover__image-background" alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/dark-transparent-background-pattern.webp" data-object-fit="cover" />
 			<div class="wp-block-cover__inner-container">
 				<!-- wp:heading {"level":1,"style":{"typography":{"fontSize":"200px"}},"className":""} -->
-				<h1 class="wp-block-heading" style="font-size:200px"><?php esc_html_e( '404', 'greyd-theme' ); ?></h1>
+				<h1 class="wp-block-heading" style="font-size:200px"><?php esc_html_e( '404', 'greyd-wp' ); ?></h1>
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph {"className":""} -->
-				<p><?php esc_html_e( 'This page could not be found.', 'greyd-theme' ); ?></p>
+				<p><?php esc_html_e( 'This page could not be found.', 'greyd-wp' ); ?></p>
 				<!-- /wp:paragraph -->
 
 				<!-- wp:buttons {"align":"","className":""} -->
 				<div class="wp-block-buttons">
 					<!-- wp:button {"className":"is-size-big is-style-alternate"} -->
 					<div class="wp-block-button is-size-big is-style-alternate">
-						<a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( get_home_url() ); ?>"><?php esc_html_e( 'Go to home page', 'greyd-theme' ); ?></a>
+						<a class="wp-block-button__link wp-element-button" href="<?php echo esc_url( get_home_url() ); ?>"><?php esc_html_e( 'Go to home page', 'greyd-wp' ); ?></a>
 					</div>
 					<!-- /wp:button -->
 				</div>

@@ -56,16 +56,16 @@
 
 					return [
 						el( wp.components.PanelBody, {
-							title: __( 'Size', 'greyd-theme' ),
+							title: __( 'Size', 'greyd-wp' ),
 							initialOpen: true
 						}, [
 							el( 'div', { className: "greyd-inspector-wrapper greyd-2" }, [
 								el( greyd.components.ButtonGroupControl, {
 									value: props.attributes?.size,
 									options: [
-										{ label: __( 'default', 'greyd-theme' ), value: '' },
-										{ label: __( 'large', 'greyd-theme' ), value: 'is-size-big' },
-										{ label: __( 'small', 'greyd-theme' ), value: 'is-size-small' },
+										{ label: __( 'default', 'greyd-wp' ), value: '' },
+										{ label: __( 'large', 'greyd-wp' ), value: 'is-size-big' },
+										{ label: __( 'small', 'greyd-wp' ), value: 'is-size-small' },
 									],
 									onChange: ( value ) => {
 										var classNames = [];

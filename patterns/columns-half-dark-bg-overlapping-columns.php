@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Half Dark Background with Overlapping Columns
- * Slug: greyd-theme/columns-half-dark-bg-overlapping-columns
+ * Slug: greyd-wp/columns-half-dark-bg-overlapping-columns
  * Description:
  * Categories: greyd-columns
  * Keywords:
@@ -15,8 +15,8 @@
 <div class="wp-block-group alignfull has-cut-foreground-transparent-1-2-gradient-background has-background has-small-font-size" style="padding-top:var(--wp--preset--spacing--x-large);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--x-large);padding-left:var(--wp--preset--spacing--medium)">
 	<!-- wp:heading {"textAlign":"center","align":"wide","style":{"typography":{"lineHeight":"1.5"},"elements":{"link":{"color":{"text":"var:preset|color|lightest"}}}},"textColor":"lightest","className":""} -->
 	<h2 class="wp-block-heading alignwide has-text-align-center has-lightest-color has-text-color has-link-color" style="line-height:1.5">
-		<strong><?php esc_html_e( 'Scale up your WordPress business', 'greyd-theme' ); ?></strong><br>
-		<mark class="has-inline-color has-secondary-color"><?php esc_html_e( 'With Greyd', 'greyd-theme' ); ?></mark>
+		<strong><?php esc_html_e( 'Scale up your WordPress business', 'greyd-wp' ); ?></strong><br>
+		<mark class="has-inline-color has-secondary-color"><?php esc_html_e( 'With Greyd', 'greyd-wp' ); ?></mark>
 	</h2>
 	<!-- /wp:heading -->
 
@@ -33,11 +33,11 @@
 				<!-- /wp:image -->
 
 				<!-- wp:heading {"textAlign":"left","level":3,"textColor":"color-31","className":""} -->
-				<h3 class="wp-block-heading has-text-align-left has-color-31-color has-text-color"><?php esc_html_e( 'Responsive Design 2.0', 'greyd-theme' ); ?></h3>
+				<h3 class="wp-block-heading has-text-align-left has-color-31-color has-text-color"><?php esc_html_e( 'Responsive Design 2.0', 'greyd-wp' ); ?></h3>
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph {"align":"left","className":""} -->
-				<p class="has-text-align-left"><?php esc_html_e( 'Maximum control over responsive design thanks to customizable spacing presets.', 'greyd-theme' ); ?></p>
+				<p class="has-text-align-left"><?php esc_html_e( 'Maximum control over responsive design thanks to customizable spacing presets.', 'greyd-wp' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -55,11 +55,11 @@
 				<!-- /wp:image -->
 
 				<!-- wp:heading {"textAlign":"left","level":3,"textColor":"color-31","className":""} -->
-				<h3 class="wp-block-heading has-text-align-left has-color-31-color has-text-color"><?php esc_html_e( 'More Global Styles', 'greyd-theme' ); ?></h3>
+				<h3 class="wp-block-heading has-text-align-left has-color-31-color has-text-color"><?php esc_html_e( 'More Global Styles', 'greyd-wp' ); ?></h3>
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph {"align":"left","className":""} -->
-				<p class="has-text-align-left"><?php esc_html_e( "Benefit from additional global styles - from multiple button variations to hover styles and fluid font size – it's all there!", 'greyd-theme' ); ?></p>
+				<p class="has-text-align-left"><?php esc_html_e( "Benefit from additional global styles - from multiple button variations to hover styles and fluid font size – it's all there!", 'greyd-wp' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -77,11 +77,11 @@
 				<!-- /wp:image -->
 
 				<!-- wp:heading {"textAlign":"left","level":3,"textColor":"color-31","className":""} -->
-				<h3 class="wp-block-heading has-text-align-left has-color-31-color has-text-color"><?php esc_html_e( 'Accessibility-Ready', 'greyd-theme' ); ?></h3>
+				<h3 class="wp-block-heading has-text-align-left has-color-31-color has-text-color"><?php esc_html_e( 'Accessibility-Ready', 'greyd-wp' ); ?></h3>
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph {"align":"left","className":""} -->
-				<p class="has-text-align-left"><?php esc_html_e( "Don't worry whether your website code is accessible. You put in the creativity, Greyd does the coding. And it`s super fast as well!", 'greyd-theme' ); ?></p>
+				<p class="has-text-align-left"><?php esc_html_e( "Don't worry whether your website code is accessible. You put in the creativity, Greyd does the coding. And it`s super fast as well!", 'greyd-wp' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->

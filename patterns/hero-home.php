@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Hero Homepage with Header
- * Slug: greyd-theme/hero-home
+ * Slug: greyd-wp/hero-home
  * Description: The hero section for the homepage with header
  * Categories: greyd-hero
  * Keywords:
@@ -31,11 +31,11 @@
 				<!-- wp:group {"style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"textColor":"foreground","className":"","layout":{"type":"constrained"}} -->
 				<div class="wp-block-group has-foreground-color has-text-color has-link-color">
 					<!-- wp:heading {"textAlign":"left","level":1,"className":""} -->
-					<h1 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Greyd Theme', 'greyd-theme' ); ?></h1>
+					<h1 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Greyd Theme', 'greyd-wp' ); ?></h1>
 					<!-- /wp:heading -->
 
 					<!-- wp:paragraph {"className":""} -->
-					<p><?php esc_html_e( 'Our free block theme enhances your full site editing experience with powerful extensions. It is the ideal basis for any website you build with Greyd.Suite, but can also be used independently.', 'greyd-theme' ); ?></p>
+					<p><?php esc_html_e( 'Our free block theme enhances your full site editing experience with powerful extensions. It is the ideal basis for any website you build with Greyd.Suite, but can also be used independently.', 'greyd-wp' ); ?></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
@@ -44,13 +44,13 @@
 				<div class="wp-block-buttons">
 					<!-- wp:button {"className":"is-style-fill"} -->
 					<div class="wp-block-button is-style-fill">
-						<a class="wp-block-button__link wp-element-button" href="https://greyd.io/greyd-theme" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Download Theme →', 'greyd-theme' ); ?></a>
+						<a class="wp-block-button__link wp-element-button" href="https://greyd.io/greyd-wp" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Download Theme →', 'greyd-wp' ); ?></a>
 					</div>
 					<!-- /wp:button -->
 
 					<!-- wp:button {"textColor":"foreground","style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"className":"is-style-outline"} -->
 					<div class="wp-block-button is-style-outline">
-						<a class="wp-block-button__link has-foreground-color has-text-color has-link-color wp-element-button" href="https://greyd.io/demo/" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Discover the Suite', 'greyd-theme' ); ?></a>
+						<a class="wp-block-button__link has-foreground-color has-text-color has-link-color wp-element-button" href="https://greyd.io/demo/" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Discover the Suite', 'greyd-wp' ); ?></a>
 					</div>
 					<!-- /wp:button -->
 				</div>
@@ -66,20 +66,20 @@
 					<div class="wp-block-group has-foreground-color has-lightest-background-color has-text-color has-background" style="border-radius:4px;padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)">
 						<!-- wp:paragraph {"textColor":"foreground"} -->
 						<p class="has-foreground-color has-text-color">
-							<strong><?php esc_html_e( 'Links &amp; Resources', 'greyd-theme' ); ?></strong>
+							<strong><?php esc_html_e( 'Links &amp; Resources', 'greyd-wp' ); ?></strong>
 						</p>
 						<!-- /wp:paragraph -->
 
 						<!-- wp:paragraph {"className":""} -->
-						<p><a href="https://greyd.io/" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Visit our homepage →', 'greyd-theme' ); ?></a></p>
+						<p><a href="https://greyd.io/" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Visit our homepage →', 'greyd-wp' ); ?></a></p>
 						<!-- /wp:paragraph -->
 
 						<!-- wp:paragraph {"className":""} -->
-						<p><a href="https://greyd.io/greyd-theme/#tutorial" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Helpcenter →', 'greyd-theme' ); ?></a></p>
+						<p><a href="https://greyd.io/greyd-wp/#tutorial" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Helpcenter →', 'greyd-wp' ); ?></a></p>
 						<!-- /wp:paragraph -->
 
 						<!-- wp:paragraph {"className":""} -->
-						<p><a href="https://greyd.io/greyd-theme/#faq" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'FAQs →', 'greyd-theme' ); ?></a></p>
+						<p><a href="https://greyd.io/greyd-wp/#faq" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'FAQs →', 'greyd-wp' ); ?></a></p>
 						<!-- /wp:paragraph -->
 					</div>
 					<!-- /wp:group -->

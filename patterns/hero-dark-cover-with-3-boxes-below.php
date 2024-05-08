@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Dark Cover Box with 3 boxes below
- * Slug: greyd-theme/hero-dark-cover-with-3-boxes-below
+ * Slug: greyd-wp/hero-dark-cover-with-3-boxes-below
  * Description:
  * Categories: greyd-hero
  * Keywords:
@@ -23,11 +23,11 @@
 				<!-- wp:group {"style":{"border":{"bottom":{"color":"var:preset|color|background","style":"dotted","width":"1px"},"top":{},"right":{},"left":{}},"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium"}},"elements":{"link":{"color":{"text":"var:preset|color|background"}}}},"textColor":"background","className":"","layout":{"type":"constrained"}} -->
 				<div class="wp-block-group has-background-color has-text-color has-link-color" style="border-bottom-color:var(--wp--preset--color--background);border-bottom-style:dotted;border-bottom-width:1px;padding-top:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium)">
 					<!-- wp:heading {"textAlign":"left","level":1,"style":{"elements":{"link":{"color":{"text":"var:preset|color|lightest"}}}},"textColor":"lightest","className":""} -->
-					<h1 class="wp-block-heading has-text-align-left has-lightest-color has-text-color has-link-color"><?php esc_html_e( 'Greyd Theme', 'greyd-theme' ); ?></h1>
+					<h1 class="wp-block-heading has-text-align-left has-lightest-color has-text-color has-link-color"><?php esc_html_e( 'Greyd Theme', 'greyd-wp' ); ?></h1>
 					<!-- /wp:heading -->
 
 					<!-- wp:paragraph {"className":""} -->
-					<p><?php esc_html_e( 'Our free block theme enhances your full site editing experience with powerful extensions. It is the ideal basis for any website you build with Greyd.Suite, but can also be used independently.', 'greyd-theme' ); ?></p>
+					<p><?php esc_html_e( 'Our free block theme enhances your full site editing experience with powerful extensions. It is the ideal basis for any website you build with Greyd.Suite, but can also be used independently.', 'greyd-wp' ); ?></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
@@ -36,13 +36,13 @@
 				<div class="wp-block-buttons">
 					<!-- wp:button {"className":"is-style-alternate"} -->
 					<div class="wp-block-button is-style-alternate outline-light">
-						<a class="wp-block-button__link wp-element-button" href="https://greyd.io/greyd-theme" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Download Theme →', 'greyd-theme' ); ?></a>
+						<a class="wp-block-button__link wp-element-button" href="https://greyd.io/greyd-wp" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Download Theme →', 'greyd-wp' ); ?></a>
 					</div>
 					<!-- /wp:button -->
 
 					<!-- wp:button {"className":"outline-light is-style-fill"} -->
 					<div class="wp-block-button outline-light is-style-fill">
-						<a class="wp-block-button__link wp-element-button" href="https://greyd.io/demo/" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Discover the Suite', 'greyd-theme' ); ?></a>
+						<a class="wp-block-button__link wp-element-button" href="https://greyd.io/demo/" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Discover the Suite', 'greyd-wp' ); ?></a>
 					</div>
 					<!-- /wp:button -->
 				</div>
@@ -70,13 +70,13 @@
 						<!-- /wp:image -->
 
 						<!-- wp:heading {"textAlign":"left","level":3,"className":""} -->
-						<h3 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Responsive Web Design 2.0', 'greyd-theme' ); ?></h3>
+						<h3 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Responsive Web Design 2.0', 'greyd-wp' ); ?></h3>
 						<!-- /wp:heading -->
 					</div>
 					<!-- /wp:group -->
 
 					<!-- wp:paragraph {"align":"left","className":""} -->
-					<p class="has-text-align-left"><?php esc_html_e( 'Maximum control over responsive design thanks to customizable spacing presets using modern CSS functions such as "clamp".', 'greyd-theme' ); ?></p>
+					<p class="has-text-align-left"><?php esc_html_e( 'Maximum control over responsive design thanks to customizable spacing presets using modern CSS functions such as "clamp".', 'greyd-wp' ); ?></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
@@ -96,13 +96,13 @@
 						<!-- /wp:image -->
 
 						<!-- wp:heading {"textAlign":"left","level":3,"className":""} -->
-						<h3 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Additional Global Styles', 'greyd-theme' ); ?></h3>
+						<h3 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Additional Global Styles', 'greyd-wp' ); ?></h3>
 						<!-- /wp:heading -->
 					</div>
 					<!-- /wp:group -->
 
 					<!-- wp:paragraph {"align":"left","className":""} -->
-					<p class="has-text-align-left"><?php esc_html_e( "Benefit from various extensions and additions in the Site Editor: Multiple button variations, hover styles and fluid font sizes – it's all there!", 'greyd-theme' ); ?></p>
+					<p class="has-text-align-left"><?php esc_html_e( "Benefit from various extensions and additions in the Site Editor: Multiple button variations, hover styles and fluid font sizes – it's all there!", 'greyd-wp' ); ?></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
@@ -122,13 +122,13 @@
 						<!-- /wp:image -->
 
 						<!-- wp:heading {"textAlign":"left","level":3,"className":""} -->
-						<h3 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Fast &amp; Accessibility-Ready', 'greyd-theme' ); ?></h3>
+						<h3 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Fast &amp; Accessibility-Ready', 'greyd-wp' ); ?></h3>
 						<!-- /wp:heading -->
 					</div>
 					<!-- /wp:group -->
 
 					<!-- wp:paragraph {"align":"left","className":""} -->
-					<p class="has-text-align-left"><?php esc_html_e( "Don't worry whether your website code is accessible. You put in the creativity, Greyd does the coding. The results are superfast websites!", 'greyd-theme' ); ?></p>
+					<p class="has-text-align-left"><?php esc_html_e( "Don't worry whether your website code is accessible. You put in the creativity, Greyd does the coding. The results are superfast websites!", 'greyd-wp' ); ?></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->

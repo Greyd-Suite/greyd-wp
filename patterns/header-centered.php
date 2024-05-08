@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Header Centered
- * Slug: greyd-theme/header-centered
+ * Slug: greyd-wp/header-centered
  * Description: Header with logo, site title and menu, centered
  * Categories: header
  * Keywords: header, nav, links

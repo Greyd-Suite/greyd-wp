@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Testimonial, three Boxes
- * Slug: greyd-theme/testimonial-three-boxes
+ * Slug: greyd-wp/testimonial-three-boxes
  * Description:
  * Categories: greyd-testimonial
  * Keywords:
@@ -16,14 +16,14 @@
 	<!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|large"}}},"className":"","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
 	<div class="wp-block-group alignwide" style="margin-bottom:var(--wp--preset--spacing--large)">
 		<!-- wp:heading {"textAlign":"left","style":{"spacing":{"padding":{"right":"0","left":"0"}}},"className":"","fontSize":"medium"} -->
-		<h2 class="wp-block-heading has-text-align-left has-medium-font-size" style="padding-right:0;padding-left:0"><?php esc_html_e( 'Testimonials', 'greyd-theme' ); ?></h2>
+		<h2 class="wp-block-heading has-text-align-left has-medium-font-size" style="padding-right:0;padding-left:0"><?php esc_html_e( 'Testimonials', 'greyd-wp' ); ?></h2>
 		<!-- /wp:heading -->
 
 		<!-- wp:buttons {"align":"right","className":""} -->
 		<div class="wp-block-buttons">
 			<!-- wp:button {"className":"is-style-outline is-style-sec"} -->
 			<div class="wp-block-button is-style-outline is-style-sec">
-				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Read stories', 'greyd-theme' ); ?></a>
+				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Read stories', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 		</div>
@@ -45,7 +45,7 @@
 						<!-- wp:group {"style":{"elements":{"link":{"color":{"text":"var:preset|color|background"}}},"spacing":{"padding":{"top":"1px","bottom":"1px","left":"6px","right":"6px"}},"border":{"radius":"4px"}},"backgroundColor":"foreground","textColor":"background","className":"","layout":{"type":"flex","flexWrap":"nowrap"},"fontSize":"tiny"} -->
 						<div class="wp-block-group has-background-color has-foreground-background-color has-text-color has-background has-link-color has-tiny-font-size" style="border-radius:4px;padding-top:1px;padding-right:6px;padding-bottom:1px;padding-left:6px">
 							<!-- wp:paragraph {"className":""} -->
-							<p><?php esc_html_e( 'Story', 'greyd-theme' ); ?></p>
+							<p><?php esc_html_e( 'Story', 'greyd-wp' ); ?></p>
 							<!-- /wp:paragraph -->
 						</div>
 						<!-- /wp:group -->
@@ -56,18 +56,18 @@
 				<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"},"margin":{"top":"0","bottom":"0"},"blockGap":"var:preset|spacing|small"}},"className":"","layout":{"type":"constrained"}} -->
 				<div class="wp-block-group" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)">
 					<!-- wp:heading {"textAlign":"left","className":"","fontSize":"base"} -->
-					<h2 class="wp-block-heading has-text-align-left has-base-font-size"><?php esc_html_e( 'Roger', 'greyd-theme' ); ?></h2>
+					<h2 class="wp-block-heading has-text-align-left has-base-font-size"><?php esc_html_e( 'Roger', 'greyd-wp' ); ?></h2>
 					<!-- /wp:heading -->
 
 					<!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|medium"}}},"className":"","fontSize":"small"} -->
-					<p class="has-small-font-size" style="margin-bottom:var(--wp--preset--spacing--medium)"><?php esc_html_e( 'Greyd is perfect for anyone who wants to centrally control content and design over any number of websites.', 'greyd-theme' ); ?></p>
+					<p class="has-small-font-size" style="margin-bottom:var(--wp--preset--spacing--medium)"><?php esc_html_e( 'Greyd is perfect for anyone who wants to centrally control content and design over any number of websites.', 'greyd-wp' ); ?></p>
 					<!-- /wp:paragraph -->
 
 					<!-- wp:buttons {"className":""} -->
 					<div class="wp-block-buttons">
 						<!-- wp:button {"className":"is-size-small is-style-alternate"} -->
 						<div class="wp-block-button is-size-small is-style-alternate">
-							<a class="wp-block-button__link wp-element-button"><?php esc_html_e( "Read Roger's story", 'greyd-theme' ); ?></a>
+							<a class="wp-block-button__link wp-element-button"><?php esc_html_e( "Read Roger's story", 'greyd-wp' ); ?></a>
 						</div>
 						<!-- /wp:button -->
 					</div>
@@ -91,7 +91,7 @@
 						<!-- wp:group {"style":{"elements":{"link":{"color":{"text":"var:preset|color|background"}}},"spacing":{"padding":{"top":"1px","bottom":"1px","left":"6px","right":"6px"}},"border":{"radius":"4px"}},"backgroundColor":"foreground","textColor":"background","className":"","layout":{"type":"flex","flexWrap":"nowrap"},"fontSize":"tiny"} -->
 						<div class="wp-block-group has-background-color has-foreground-background-color has-text-color has-background has-link-color has-tiny-font-size" style="border-radius:4px;padding-top:1px;padding-right:6px;padding-bottom:1px;padding-left:6px">
 							<!-- wp:paragraph {"className":""} -->
-							<p><?php esc_html_e( 'Story', 'greyd-theme' ); ?></p>
+							<p><?php esc_html_e( 'Story', 'greyd-wp' ); ?></p>
 							<!-- /wp:paragraph -->
 						</div>
 						<!-- /wp:group -->
@@ -102,18 +102,18 @@
 				<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"},"margin":{"top":"0","bottom":"0"},"blockGap":"var:preset|spacing|small"}},"className":"","layout":{"type":"constrained"}} -->
 				<div class="wp-block-group" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)">
 					<!-- wp:heading {"textAlign":"left","className":"","fontSize":"base"} -->
-					<h2 class="wp-block-heading has-text-align-left has-base-font-size"><?php esc_html_e( 'Nils', 'greyd-theme' ); ?></h2>
+					<h2 class="wp-block-heading has-text-align-left has-base-font-size"><?php esc_html_e( 'Nils', 'greyd-wp' ); ?></h2>
 					<!-- /wp:heading -->
 
 					<!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|medium"}}},"className":"","fontSize":"small"} -->
-					<p class="has-small-font-size" style="margin-bottom:var(--wp--preset--spacing--medium)"><?php esc_html_e( 'Our customer more than doubled their leads in only three months after relaunching their sites with Greyd.', 'greyd-theme' ); ?></p>
+					<p class="has-small-font-size" style="margin-bottom:var(--wp--preset--spacing--medium)"><?php esc_html_e( 'Our customer more than doubled their leads in only three months after relaunching their sites with Greyd.', 'greyd-wp' ); ?></p>
 					<!-- /wp:paragraph -->
 
 					<!-- wp:buttons {"className":""} -->
 					<div class="wp-block-buttons">
 						<!-- wp:button {"className":"is-size-small is-style-alternate"} -->
 						<div class="wp-block-button is-size-small is-style-alternate">
-							<a class="wp-block-button__link wp-element-button"><?php esc_html_e( "Read Nils' story", 'greyd-theme' ); ?></a>
+							<a class="wp-block-button__link wp-element-button"><?php esc_html_e( "Read Nils' story", 'greyd-wp' ); ?></a>
 						</div>
 						<!-- /wp:button -->
 					</div>
@@ -137,7 +137,7 @@
 						<!-- wp:group {"style":{"elements":{"link":{"color":{"text":"var:preset|color|background"}}},"spacing":{"padding":{"top":"1px","bottom":"1px","left":"6px","right":"6px"}},"border":{"radius":"4px"}},"backgroundColor":"foreground","textColor":"background","className":"","layout":{"type":"flex","flexWrap":"nowrap"},"fontSize":"tiny"} -->
 						<div class="wp-block-group has-background-color has-foreground-background-color has-text-color has-background has-link-color has-tiny-font-size" style="border-radius:4px;padding-top:1px;padding-right:6px;padding-bottom:1px;padding-left:6px">
 							<!-- wp:paragraph {"className":""} -->
-							<p><?php esc_html_e( 'Story', 'greyd-theme' ); ?></p>
+							<p><?php esc_html_e( 'Story', 'greyd-wp' ); ?></p>
 							<!-- /wp:paragraph -->
 						</div>
 						<!-- /wp:group -->
@@ -148,18 +148,18 @@
 				<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"},"margin":{"top":"0","bottom":"0"},"blockGap":"var:preset|spacing|small"}},"className":"","layout":{"type":"constrained"}} -->
 				<div class="wp-block-group" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)">
 					<!-- wp:heading {"textAlign":"left","className":"","fontSize":"base"} -->
-					<h2 class="wp-block-heading has-text-align-left has-base-font-size"><?php esc_html_e( 'Kurt', 'greyd-theme' ); ?></h2>
+					<h2 class="wp-block-heading has-text-align-left has-base-font-size"><?php esc_html_e( 'Kurt', 'greyd-wp' ); ?></h2>
 					<!-- /wp:heading -->
 
 					<!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|medium"}}},"className":"","fontSize":"small"} -->
-					<p class="has-small-font-size" style="margin-bottom:var(--wp--preset--spacing--medium)"><?php esc_html_e( 'Greyd is THE tool for me because I can automate a lot of things and speed up work steps.', 'greyd-theme' ); ?></p>
+					<p class="has-small-font-size" style="margin-bottom:var(--wp--preset--spacing--medium)"><?php esc_html_e( 'Greyd is THE tool for me because I can automate a lot of things and speed up work steps.', 'greyd-wp' ); ?></p>
 					<!-- /wp:paragraph -->
 
 					<!-- wp:buttons {"className":""} -->
 					<div class="wp-block-buttons">
 						<!-- wp:button {"className":"is-size-small is-style-alternate"} -->
 						<div class="wp-block-button is-size-small is-style-alternate">
-							<a class="wp-block-button__link wp-element-button"><?php esc_html_e( "Read Kurt's story", 'greyd-theme' ); ?></a>
+							<a class="wp-block-button__link wp-element-button"><?php esc_html_e( "Read Kurt's story", 'greyd-wp' ); ?></a>
 						</div>
 						<!-- /wp:button -->
 					</div>

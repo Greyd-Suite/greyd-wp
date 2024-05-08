@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Simple Box, Light
- * Slug: greyd-theme/content-simple-box-light
+ * Slug: greyd-wp/content-simple-box-light
  * Description:
  * Categories: greyd-content
  * Keywords:
@@ -21,7 +21,7 @@
 			<!-- wp:group {"style":{"elements":{"link":{"color":{"text":"var:preset|color|lightest"}}},"spacing":{"padding":{"top":"4px","bottom":"4px","left":"8px","right":"8px"}},"border":{"radius":"4px"}},"backgroundColor":"darkest","textColor":"lightest","layout":{"type":"constrained"}} -->
 			<div class="wp-block-group has-lightest-color has-darkest-background-color has-text-color has-background has-link-color" style="border-radius:4px;padding-top:4px;padding-right:8px;padding-bottom:4px;padding-left:8px">
 				<!-- wp:paragraph -->
-				<p><?php esc_html_e( 'Innovate', 'greyd-theme' ); ?></p>
+				<p><?php esc_html_e( 'Innovate', 'greyd-wp' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -34,30 +34,30 @@
 		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
 		<div class="wp-block-group">
 			<!-- wp:paragraph -->
-			<p><?php esc_html_e( 'Your Success, Our Priority', 'greyd-theme' ); ?></p>
+			<p><?php esc_html_e( 'Your Success, Our Priority', 'greyd-wp' ); ?></p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:heading -->
-			<h2 class="wp-block-heading"><?php esc_html_e( 'Optimize with Greyd', 'greyd-theme' ); ?></h2>
+			<h2 class="wp-block-heading"><?php esc_html_e( 'Optimize with Greyd', 'greyd-wp' ); ?></h2>
 			<!-- /wp:heading -->
 		</div>
 		<!-- /wp:group -->
 
 		<!-- wp:paragraph -->
-		<p><?php esc_html_e( 'Transform your online presence with our expert Greyd services. Elevate efficiency, streamline processes, and achieve unparalleled design excellence.', 'greyd-theme' ); ?></p>
+		<p><?php esc_html_e( 'Transform your online presence with our expert Greyd services. Elevate efficiency, streamline processes, and achieve unparalleled design excellence.', 'greyd-wp' ); ?></p>
 		<!-- /wp:paragraph -->
 
 		<!-- wp:buttons -->
 		<div class="wp-block-buttons">
 			<!-- wp:button {"className":"is-style-fill"} -->
 			<div class="wp-block-button is-style-fill">
-				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Get Started', 'greyd-theme' ); ?></a>
+				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Get Started', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 
 			<!-- wp:button {"className":"is-style-outline"} -->
 			<div class="wp-block-button is-style-outline">
-				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Learn more about Greyd', 'greyd-theme' ); ?></a>
+				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Learn more about Greyd', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 		</div>

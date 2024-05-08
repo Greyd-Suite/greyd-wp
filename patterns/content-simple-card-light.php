@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Simple Card, Light
- * Slug: greyd-theme/content-simple-card-light
+ * Slug: greyd-wp/content-simple-card-light
  * Description: 
  * Categories: greyd-content
  * Keywords: 
@@ -22,24 +22,24 @@
 	<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"},"layout":{"selfStretch":"fill","flexSize":null}},"layout":{"type":"default"}} -->
 	<div class="wp-block-group">
 		<!-- wp:paragraph -->
-		<p><?php esc_html_e( 'Elevate Your Experience', 'greyd-theme' ); ?></p>
+		<p><?php esc_html_e( 'Elevate Your Experience', 'greyd-wp' ); ?></p>
 		<!-- /wp:paragraph -->
 
 		<!-- wp:heading -->
-		<h2 class="wp-block-heading"><?php esc_html_e( 'Discover Greyd', 'greyd-theme' ); ?></h2>
+		<h2 class="wp-block-heading"><?php esc_html_e( 'Discover Greyd', 'greyd-wp' ); ?></h2>
 		<!-- /wp:heading -->
 	</div>
 	<!-- /wp:group -->
 
 	<!-- wp:paragraph -->
-	<p><?php esc_html_e( 'Immerse yourself in unparalleled Greyd excellence. Unleash a new era of website design. Your journey to streamlined creativity starts here.', 'greyd-theme' ); ?></p>
+	<p><?php esc_html_e( 'Immerse yourself in unparalleled Greyd excellence. Unleash a new era of website design. Your journey to streamlined creativity starts here.', 'greyd-wp' ); ?></p>
 	<!-- /wp:paragraph -->
 
 	<!-- wp:buttons -->
 	<div class="wp-block-buttons">
 		<!-- wp:button {"className":"is-style-outline"} -->
 		<div class="wp-block-button is-style-outline">
-			<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Explore Now', 'greyd-theme' ); ?></a>
+			<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Explore Now', 'greyd-wp' ); ?></a>
 		</div>
 		<!-- /wp:button -->
 	</div>

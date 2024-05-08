@@ -35,16 +35,16 @@
  * Reset some WP Admin styles
  */
 @media screen and (max-width: 600px) {
-	.appearance_page_greyd-theme #wpbody {
+	.appearance_page_greyd-wp #wpbody {
 		padding-top: 0;
 	}
 }
 
-.appearance_page_greyd-theme #wpcontent {
+.appearance_page_greyd-wp #wpcontent {
 	padding-left: 0;
 }
 
-.appearance_page_greyd-theme #wpbody .wrap {
+.appearance_page_greyd-wp #wpbody .wrap {
 	margin: 0;
 }
 
@@ -52,14 +52,14 @@
 	margin: 1em;
 }
 
-.appearance_page_greyd-theme #wpbody .wrap a:hover,
-.appearance_page_greyd-theme #wpbody .wrap a:focus,
-.appearance_page_greyd-theme #wpbody .wrap a:active {
+.appearance_page_greyd-wp #wpbody .wrap a:hover,
+.appearance_page_greyd-wp #wpbody .wrap a:focus,
+.appearance_page_greyd-wp #wpbody .wrap a:active {
 	color: var(--wp-admin-color-blue-dark);
 	text-decoration: none;
 }
 
-.appearance_page_greyd-theme #wpbody .wrap h3 {
+.appearance_page_greyd-wp #wpbody .wrap h3 {
 	font-size: 1.2em;
 }
 

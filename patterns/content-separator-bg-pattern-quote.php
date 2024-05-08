@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Separator with Background Pattern and Quote
- * Slug: greyd-theme/content-separator-bg-pattern-quote
+ * Slug: greyd-wp/content-separator-bg-pattern-quote
  * Description:
  * Categories: greyd-content
  * Keywords:
@@ -31,10 +31,10 @@
 			<!-- wp:quote {"align":"center","className":"is-style-plain"} -->
 			<blockquote class="wp-block-quote has-text-align-center is-style-plain">
 				<!-- wp:paragraph {"align":"center","className":""} -->
-				<p class="has-text-align-center"><?php esc_html_e( '„Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.“', 'greyd-theme' ); ?></p>
+				<p class="has-text-align-center"><?php esc_html_e( '„Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.“', 'greyd-wp' ); ?></p>
 				<!-- /wp:paragraph -->
 				
-				<cite><?php esc_html_e( 'John Doe – Managing Director', 'greyd-theme' ); ?></cite>
+				<cite><?php esc_html_e( 'John Doe – Managing Director', 'greyd-wp' ); ?></cite>
 			</blockquote>
 			<!-- /wp:quote -->
 		</div>

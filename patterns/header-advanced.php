@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Header Advanced
- * Slug: greyd-theme/header-advanced
+ * Slug: greyd-wp/header-advanced
  * Description: Header with two sections, first menu and social links on dark background, second logo, site title and buttons on light background
  * Categories: header
  * Keywords: header, nav, links, social, buttons
@@ -52,13 +52,13 @@
 			<div class="wp-block-buttons">
 				<!-- wp:button {"className":"is-size-small","size":"is-size-small"} -->
 				<div class="wp-block-button is-size-small">
-					<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Download now', 'greyd-theme' ); ?></a>
+					<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Download now', 'greyd-wp' ); ?></a>
 				</div>
 				<!-- /wp:button -->
 
 				<!-- wp:button {"className":"is-size-small is-style-outline"} -->
 				<div class="wp-block-button is-size-small is-style-outline">
-					<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Contact us', 'greyd-theme' ); ?></a>
+					<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Contact us', 'greyd-wp' ); ?></a>
 				</div>
 				<!-- /wp:button -->
 			</div>

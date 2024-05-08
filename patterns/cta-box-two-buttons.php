@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: CTA Box with Two Buttons
- * Slug: greyd-theme/cta-box-two-buttons
+ * Slug: greyd-wp/cta-box-two-buttons
  * Description: Simple CTA box with two buttons
  * Categories: greyd-cta
  * Keywords:
@@ -18,11 +18,11 @@
 		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"className":"","layout":{"type":"constrained","contentSize":"840px"}} -->
 		<div class="wp-block-group">
 			<!-- wp:heading {"textAlign":"center","className":"","fontSize":"medium"} -->
-			<h2 class="wp-block-heading has-text-align-center has-medium-font-size"><?php esc_html_e( 'Build With Patterns', 'greyd-theme' ); ?></h2>
+			<h2 class="wp-block-heading has-text-align-center has-medium-font-size"><?php esc_html_e( 'Build With Patterns', 'greyd-wp' ); ?></h2>
 			<!-- /wp:heading -->
 
 			<!-- wp:paragraph {"align":"center","textColor":"primary-accent","className":""} -->
-			<p class="has-text-align-center has-primary-accent-color has-text-color"><?php esc_html_e( 'Benefit from the power of the WordPress Block &amp; Site Editor and our ready-to-use patterns and templates. No need for pagebuilders, coding or additional plugins.', 'greyd-theme' ); ?></p>
+			<p class="has-text-align-center has-primary-accent-color has-text-color"><?php esc_html_e( 'Benefit from the power of the WordPress Block &amp; Site Editor and our ready-to-use patterns and templates. No need for pagebuilders, coding or additional plugins.', 'greyd-wp' ); ?></p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
@@ -31,13 +31,13 @@
 		<div class="wp-block-buttons">
 			<!-- wp:button {"className":"is-style-fill"} -->
 			<div class="wp-block-button is-style-fill">
-				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Get Started Today', 'greyd-theme' ); ?></a>
+				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Get Started Today', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 
 			<!-- wp:button {"className":"is-style-outline"} -->
 			<div class="wp-block-button is-style-outline">
-				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Explore Features →', 'greyd-theme' ); ?></a>
+				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Explore Features →', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 		</div>

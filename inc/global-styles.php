@@ -50,26 +50,26 @@ class Global_Styles {
 		
 		// editor styles
 		wp_register_style(
-			'greyd-theme-global-styles',
+			'greyd-wp-global-styles',
 			get_template_directory_uri().'/assets/css/global-styles.css',
 			array( ),
 			wp_get_theme()->get( 'Version' )
 		);
-		wp_enqueue_style('greyd-theme-global-styles');
+		wp_enqueue_style('greyd-wp-global-styles');
 
 		// enqueue /assets/js/styles.js
 		wp_register_script(
-			'greyd-theme-global-styles-script',
+			'greyd-wp-global-styles-script',
 			get_template_directory_uri() . '/assets/js/global-styles.js',
 			array( 'greyd-components', 'wp-data', 'wp-blocks', 'wp-element', 'wp-editor', 'wp-components', 'wp-i18n', 'lodash' ),
 			wp_get_theme()->get( 'Version' ),
 			true
 		);
-		wp_enqueue_script( 'greyd-theme-global-styles-script' );
+		wp_enqueue_script( 'greyd-wp-global-styles-script' );
 
 		// localize the script
 		wp_localize_script(
-			'greyd-theme-global-styles-script',
+			'greyd-wp-global-styles-script',
 			'global_styles_admin',
 			array(
 				'ajax_url' => admin_url( 'admin-ajax.php' ),

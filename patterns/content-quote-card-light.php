@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Quote Card, Light
- * Slug: greyd-theme/content-quote-card-light
+ * Slug: greyd-wp/content-quote-card-light
  * Description:
  * Categories: greyd-content
  * Keywords:
@@ -18,18 +18,18 @@
 		<!-- wp:quote {"className":"is-style-plain"} -->
 		<blockquote class="wp-block-quote is-style-plain">
 			<!-- wp:paragraph {"style":{"typography":{"lineHeight":"0.3","fontStyle":"normal","fontWeight":"700","fontSize":"5rem"}}} -->
-			<p style="font-size:5rem;font-style:normal;font-weight:700;line-height:0.3"><?php esc_html_e( '“', 'greyd-theme' ); ?></p>
+			<p style="font-size:5rem;font-style:normal;font-weight:700;line-height:0.3"><?php esc_html_e( '“', 'greyd-wp' ); ?></p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:paragraph -->
-			<p><?php esc_html_e( "Designing for the web is not just about pixels; it's about people, accessibility, and crafting sustainable digital experiences that stand the test of time.", 'greyd-theme' ); ?></p>
+			<p><?php esc_html_e( "Designing for the web is not just about pixels; it's about people, accessibility, and crafting sustainable digital experiences that stand the test of time.", 'greyd-wp' ); ?></p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:paragraph {"align":"right","style":{"typography":{"lineHeight":"0","fontStyle":"normal","fontWeight":"700","fontSize":"5rem"}}} -->
-			<p class="has-text-align-right" style="font-size:5rem;font-style:normal;font-weight:700;line-height:0"><?php esc_html_e( '„', 'greyd-theme' ); ?></p>
+			<p class="has-text-align-right" style="font-size:5rem;font-style:normal;font-weight:700;line-height:0"><?php esc_html_e( '„', 'greyd-wp' ); ?></p>
 			<!-- /wp:paragraph -->
 			
-			<cite><?php esc_html_e( '15th February 2024', 'greyd-theme' ); ?></cite>
+			<cite><?php esc_html_e( '15th February 2024', 'greyd-wp' ); ?></cite>
 		</blockquote>
 		<!-- /wp:quote -->
 	</div>
@@ -43,11 +43,11 @@
 			<!-- wp:group {"style":{"spacing":{"blockGap":"0","padding":{"right":"var:preset|spacing|small","left":"var:preset|spacing|small"}}},"layout":{"type":"flex","flexWrap":"nowrap","orientation":"vertical"}} -->
 			<div class="wp-block-group" style="padding-right:var(--wp--preset--spacing--small);padding-left:var(--wp--preset--spacing--small)">
 				<!-- wp:heading -->
-				<h2 class="wp-block-heading"><?php esc_html_e( 'Jane Doe', 'greyd-theme' ); ?></h2>
+				<h2 class="wp-block-heading"><?php esc_html_e( 'Jane Doe', 'greyd-wp' ); ?></h2>
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph {"fontSize":"medium","fontFamily":"heading"} -->
-				<p class="has-heading-font-family has-medium-font-size"><strong><?php esc_html_e( 'Web Advocate', 'greyd-theme' ); ?></strong></p>
+				<p class="has-heading-font-family has-medium-font-size"><strong><?php esc_html_e( 'Web Advocate', 'greyd-wp' ); ?></strong></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->

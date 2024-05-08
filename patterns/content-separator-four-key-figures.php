@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Separator with Four Key Figures
- * Slug: greyd-theme/content-separator-four-key-figures
+ * Slug: greyd-wp/content-separator-four-key-figures
  * Description:
  * Categories: greyd-content
  * Keywords:
@@ -14,7 +14,7 @@
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"},"blockGap":"var:preset|spacing|large"}},"backgroundColor":"lightest","className":"","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-lightest-background-color has-background" style="padding-top:var(--wp--preset--spacing--x-large);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--x-large);padding-left:var(--wp--preset--spacing--medium)">
 	<!-- wp:heading {"textAlign":"center","style":{"spacing":{"margin":{"top":"0"}}},"className":"","fontSize":"large"} -->
-	<h2 class="wp-block-heading has-text-align-center has-large-font-size" style="margin-top:0"><?php esc_html_e( 'Why choose us?', 'greyd-theme' ); ?></h2>
+	<h2 class="wp-block-heading has-text-align-center has-large-font-size" style="margin-top:0"><?php esc_html_e( 'Why choose us?', 'greyd-wp' ); ?></h2>
 	<!-- /wp:heading -->
 
 	<!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|small"}}},"className":""} -->
@@ -27,14 +27,14 @@
 				<div class="wp-block-group" style="border-bottom-color:var(--wp--preset--color--foreground);border-bottom-style:dotted;border-bottom-width:1px;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small)">
 					<!-- wp:paragraph {"align":"left","style":{"typography":{"fontSize":"64px","lineHeight":"1"},"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"textColor":"primary","className":""} -->
 					<p class="has-text-align-left has-primary-color has-text-color has-link-color" style="font-size:64px;line-height:1">
-						<strong><?php esc_html_e( '100+', 'greyd-theme' ); ?></strong>
+						<strong><?php esc_html_e( '100+', 'greyd-wp' ); ?></strong>
 					</p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
 
 				<!-- wp:paragraph {"align":"left","className":""} -->
-				<p class="has-text-align-left"><?php esc_html_e( '5 star reviews', 'greyd-theme' ); ?></p>
+				<p class="has-text-align-left"><?php esc_html_e( '5 star reviews', 'greyd-wp' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -49,14 +49,14 @@
 				<div class="wp-block-group" style="border-bottom-color:var(--wp--preset--color--foreground);border-bottom-style:dotted;border-bottom-width:1px;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small)">
 					<!-- wp:paragraph {"align":"left","style":{"typography":{"fontSize":"64px","lineHeight":"1"},"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"textColor":"primary","className":""} -->
 					<p class="has-text-align-left has-primary-color has-text-color has-link-color" style="font-size:64px;line-height:1">
-						<strong><?php esc_html_e( '90%', 'greyd-theme' ); ?></strong>
+						<strong><?php esc_html_e( '90%', 'greyd-wp' ); ?></strong>
 					</p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
 
 				<!-- wp:paragraph {"align":"left","className":""} -->
-				<p class="has-text-align-left"><?php esc_html_e( 'retention rate', 'greyd-theme' ); ?></p>
+				<p class="has-text-align-left"><?php esc_html_e( 'retention rate', 'greyd-wp' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -71,14 +71,14 @@
 				<div class="wp-block-group" style="border-bottom-color:var(--wp--preset--color--foreground);border-bottom-style:dotted;border-bottom-width:1px;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small)">
 					<!-- wp:paragraph {"align":"left","style":{"typography":{"fontSize":"64px","lineHeight":"1"},"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"textColor":"primary","className":""} -->
 					<p class="has-text-align-left has-primary-color has-text-color has-link-color" style="font-size:64px;line-height:1">
-						<strong><?php esc_html_e( '20M+', 'greyd-theme' ); ?></strong>
+						<strong><?php esc_html_e( '20M+', 'greyd-wp' ); ?></strong>
 					</p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
 
 				<!-- wp:paragraph {"align":"left","className":""} -->
-				<p class="has-text-align-left"><?php esc_html_e( 'downloads', 'greyd-theme' ); ?></p>
+				<p class="has-text-align-left"><?php esc_html_e( 'downloads', 'greyd-wp' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -93,14 +93,14 @@
 				<div class="wp-block-group" style="border-bottom-color:var(--wp--preset--color--foreground);border-bottom-style:dotted;border-bottom-width:1px;margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small)">
 					<!-- wp:paragraph {"align":"left","style":{"typography":{"fontSize":"64px","lineHeight":"1"},"elements":{"link":{"color":{"text":"var:preset|color|primary"}}}},"textColor":"primary","className":""} -->
 					<p class="has-text-align-left has-primary-color has-text-color has-link-color" style="font-size:64px;line-height:1">
-						<strong><?php esc_html_e( '$49', 'greyd-theme' ); ?></strong>
+						<strong><?php esc_html_e( '$49', 'greyd-wp' ); ?></strong>
 					</p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
 
 				<!-- wp:paragraph {"align":"left","className":""} -->
-				<p class="has-text-align-left"><?php esc_html_e( 'starting price', 'greyd-theme' ); ?></p>
+				<p class="has-text-align-left"><?php esc_html_e( 'starting price', 'greyd-wp' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->

@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Separator with Light Background
- * Slug: greyd-theme/content-separator-light-background
+ * Slug: greyd-wp/content-separator-light-background
  * Description: A separator with a light solid background color.
  * Categories: greyd-content
  * Keywords:
@@ -18,11 +18,11 @@
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"constrained"}} -->
 			<div class="wp-block-group">
 				<!-- wp:heading {"textAlign":"left","level":2,"className":""} -->
-				<h2 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'All WordPress. One Suite.', 'greyd-theme' ); ?></h2>
+				<h2 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'All WordPress. One Suite.', 'greyd-wp' ); ?></h2>
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph {"align":"left","className":""} -->
-				<p class="has-text-align-left"><?php esc_html_e( 'Take your website to the next level!', 'greyd-theme' ); ?></p>
+				<p class="has-text-align-left"><?php esc_html_e( 'Take your website to the next level!', 'greyd-wp' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -35,7 +35,7 @@
 			<div class="wp-block-buttons">
 				<!-- wp:button {"className":"has-custom-width wp-block-button__width-100 is-size-big is-style-fill"} -->
 				<div class="wp-block-button has-custom-width wp-block-button__width-100 is-size-big is-style-fill">
-					<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Get Started →', 'greyd-theme' ); ?></a>
+					<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Get Started →', 'greyd-wp' ); ?></a>
 				</div>
 				<!-- /wp:button -->
 			</div>

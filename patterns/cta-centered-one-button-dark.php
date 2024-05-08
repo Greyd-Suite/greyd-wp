@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: CTA Centered, One Button, Dark
- * Slug: greyd-theme/cta-centered-one-button-dark
+ * Slug: greyd-wp/cta-centered-one-button-dark
  * Description:
  * Categories: greyd-cta
  * Keywords:
@@ -19,12 +19,12 @@
 		<div class="wp-block-group">
 			<!-- wp:heading {"className":""} -->
 			<h2 class="wp-block-heading">
-				<strong><?php esc_html_e( 'You want to try Greyd?', 'greyd-theme' ); ?></strong>
+				<strong><?php esc_html_e( 'You want to try Greyd?', 'greyd-wp' ); ?></strong>
 			</h2>
 			<!-- /wp:heading -->
 
 			<!-- wp:paragraph {"align":"center","className":"","fontSize":"medium"} -->
-			<p class="has-text-align-center has-medium-font-size"><?php esc_html_e( 'Greyd.Suite is the solution that will remind you how satisfying it is to make a business thrive and scale with WordPress.', 'greyd-theme' ); ?></p>
+			<p class="has-text-align-center has-medium-font-size"><?php esc_html_e( 'Greyd.Suite is the solution that will remind you how satisfying it is to make a business thrive and scale with WordPress.', 'greyd-wp' ); ?></p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
@@ -33,7 +33,7 @@
 		<div class="wp-block-buttons">
 			<!-- wp:button {"className":"is-style-prim"} -->
 			<div class="wp-block-button is-style-prim">
-				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Download now', 'greyd-theme' ); ?></a>
+				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Download now', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 		</div>

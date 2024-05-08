@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Image Box, Light
- * Slug: greyd-theme/content-image-box-light
+ * Slug: greyd-wp/content-image-box-light
  * Description:
  * Categories: greyd-content
  * Keywords:
@@ -21,7 +21,7 @@
 			<!-- wp:group {"style":{"elements":{"link":{"color":{"text":"var:preset|color|lightest"}}},"spacing":{"padding":{"top":"4px","bottom":"4px","left":"8px","right":"8px"}},"border":{"radius":"4px"}},"backgroundColor":"darkest","textColor":"lightest","layout":{"type":"default"}} -->
 			<div class="wp-block-group has-lightest-color has-darkest-background-color has-text-color has-background has-link-color" style="border-radius:4px;padding-top:4px;padding-right:8px;padding-bottom:4px;padding-left:8px">
 				<!-- wp:paragraph -->
-				<p><?php esc_html_e( 'Creative', 'greyd-theme' ); ?></p>
+				<p><?php esc_html_e( 'Creative', 'greyd-wp' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -35,11 +35,11 @@
 		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
 		<div class="wp-block-group">
 			<!-- wp:heading -->
-			<h2 class="wp-block-heading"><?php esc_html_e( 'Join the Excitement', 'greyd-theme' ); ?></h2>
+			<h2 class="wp-block-heading"><?php esc_html_e( 'Join the Excitement', 'greyd-wp' ); ?></h2>
 			<!-- /wp:heading -->
 
 			<!-- wp:paragraph -->
-			<p><?php esc_html_e( 'Be part of an extraordinary gathering. Immerse yourself in unforgettable experiences, connect with like-minded design enthusiasts, and create lasting memories.', 'greyd-theme' ); ?></p>
+			<p><?php esc_html_e( 'Be part of an extraordinary gathering. Immerse yourself in unforgettable experiences, connect with like-minded design enthusiasts, and create lasting memories.', 'greyd-wp' ); ?></p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->

@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Footer Simple
- * Slug: greyd-theme/footer-simple
+ * Slug: greyd-wp/footer-simple
  * Description: Site title on the left, navigation on the right.
  * Categories: footer
  * Keywords:
@@ -17,7 +17,7 @@
 		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 		<div class="wp-block-group">
 			<!-- wp:paragraph -->
-			<p><?php esc_html_e( '© 2024', 'greyd-theme' ); ?></p>
+			<p><?php esc_html_e( '© 2024', 'greyd-wp' ); ?></p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:site-title {"level":0,"className":""} /-->

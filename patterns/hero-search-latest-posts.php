@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Hero with Header, Search and Latest Posts
- * Slug: greyd-theme/hero-search-latest-posts
+ * Slug: greyd-wp/hero-search-latest-posts
  * Description: Hero section with header, search and latest posts
  * Categories: greyd-hero
  * Keywords:
@@ -33,16 +33,16 @@
 				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
 				<div class="wp-block-group">
 					<!-- wp:heading {"textAlign":"left","level":1,"className":""} -->
-					<h1 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'How can we help you today?', 'greyd-theme' ); ?></h1>
+					<h1 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'How can we help you today?', 'greyd-wp' ); ?></h1>
 					<!-- /wp:heading -->
 
 					<!-- wp:paragraph {"className":""} -->
-					<p><?php esc_html_e( 'Search our knowledge base for answers to common questions:', 'greyd-theme' ); ?></p>
+					<p><?php esc_html_e( 'Search our knowledge base for answers to common questions:', 'greyd-wp' ); ?></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
 
-				<!-- wp:search {"label":"<?php esc_html_e( 'Search', 'greyd-theme' ); ?>","showLabel":false,"placeholder":"<?php esc_html_e( 'Search', 'greyd-theme' ); ?>","buttonText":"<?php esc_html_e( 'Search', 'greyd-theme' ); ?>","buttonUseIcon":true,"style":{"border":{"radius":"4px"}},"className":""} /-->
+				<!-- wp:search {"label":"<?php esc_html_e( 'Search', 'greyd-wp' ); ?>","showLabel":false,"placeholder":"<?php esc_html_e( 'Search', 'greyd-wp' ); ?>","buttonText":"<?php esc_html_e( 'Search', 'greyd-wp' ); ?>","buttonUseIcon":true,"style":{"border":{"radius":"4px"}},"className":""} /-->
 			</div>
 			<!-- /wp:column -->
 
@@ -53,7 +53,7 @@
 					<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}},"border":{"width":"2px","color":"#0e1111","radius":"4px"}},"backgroundColor":"background","textColor":"foreground","className":""} -->
 					<div class="wp-block-group has-border-color has-foreground-color has-background-background-color has-text-color has-background" style="border-color:#0e1111;border-width:2px;border-radius:4px;padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)">
 						<!-- wp:heading {"style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|small"}}},"className":"","fontSize":"medium"} -->
-						<h2 class="wp-block-heading has-medium-font-size" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--small)"><?php esc_html_e( 'Latest Posts', 'greyd-theme' ); ?></h2>
+						<h2 class="wp-block-heading has-medium-font-size" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--small)"><?php esc_html_e( 'Latest Posts', 'greyd-wp' ); ?></h2>
 						<!-- /wp:heading -->
 
 						<!-- wp:latest-posts {"postsToShow":3,"className":""} /-->

@@ -233,7 +233,7 @@ var greyd = greyd || { tools: {}, components: {} };
 
 					el( "div", {}, [
 						el( greyd.components.GlobalStylesColorGradientPopupControl, {
-							label: __( "Color", 'greyd-theme' ),
+							label: __( "Color", 'greyd-wp' ),
 							mode: 'color',
 							value: value.color,
 							onChange: ( newValue ) => {
@@ -352,16 +352,16 @@ var greyd = greyd || { tools: {}, components: {} };
 		getOptions( type ) {
 			var options = {
 				'type': [
-					{ value: 'websafe', label: __( 'Websafe Fonts', 'greyd-theme' ) },
-					{ value: 'modern', label: __( 'Modern Font Stacks', 'greyd-theme' ) },
-					{ value: 'google', label: __( 'Google Fonts', 'greyd-theme' ) },
-					{ value: 'custom', label: __( 'Custom Fonts', 'greyd-theme' ) }
+					{ value: 'websafe', label: __( 'Websafe Fonts', 'greyd-wp' ) },
+					{ value: 'modern', label: __( 'Modern Font Stacks', 'greyd-wp' ) },
+					{ value: 'google', label: __( 'Google Fonts', 'greyd-wp' ) },
+					{ value: 'custom', label: __( 'Custom Fonts', 'greyd-wp' ) }
 				],
 				/**
 				 * @link https://www.w3schools.com/cssref/css_websafe_fonts.php
 				 */
 				'websafe': [
-					{ value: '', label: __( 'Select font', 'greyd-theme' ) },
+					{ value: '', label: __( 'Select font', 'greyd-wp' ) },
 					"Arial, Helvetica, sans-serif",
 					"'Arial Black', Gadget, sans-serif",
 					"'Comic Sans MS', cursive, sans-serif",
@@ -381,7 +381,7 @@ var greyd = greyd || { tools: {}, components: {} };
 				 */
 				'modern': [
 					{
-						label: __( 'Select font', 'greyd-theme' ),
+						label: __( 'Select font', 'greyd-wp' ),
 						value: ''
 					},
 					{
@@ -454,11 +454,11 @@ var greyd = greyd || { tools: {}, components: {} };
 					}
 				],
 				'google': [
-					{ value: '', label: __( 'Select font', 'greyd-theme' ) },
+					{ value: '', label: __( 'Select font', 'greyd-wp' ) },
 					...greyd.tools.font.getGoogleFonts()
 				],
 				'custom': [
-					{ value: '', label: __( 'Select font', 'greyd-theme' ) },
+					{ value: '', label: __( 'Select font', 'greyd-wp' ) },
 					...greyd.tools.font.getCustomFonts()
 				]
 			};
@@ -878,7 +878,7 @@ var greyd = greyd || { tools: {}, components: {} };
 					}, [
 						el( wp.components.FlexBlock, {}, [
 							el( wp.components.__experimentalUnitControl, {
-								label: __( "Minimum", 'greyd-theme' ),
+								label: __( "Minimum", 'greyd-wp' ),
 								value: min,
 								min: getMin( min ),
 								step: getMin( min ),
@@ -887,7 +887,7 @@ var greyd = greyd || { tools: {}, components: {} };
 						] ),
 						el( wp.components.FlexBlock, {}, [
 							el( wp.components.__experimentalUnitControl, {
-								label: __( "Preferred", 'greyd-theme' ),
+								label: __( "Preferred", 'greyd-wp' ),
 								value: val,
 								min: getMin( val ),
 								step: getMin( val ),
@@ -896,7 +896,7 @@ var greyd = greyd || { tools: {}, components: {} };
 						] ),
 						el( wp.components.FlexBlock, {}, [
 							el( wp.components.__experimentalUnitControl, {
-								label: __( "Maximum", 'greyd-theme' ),
+								label: __( "Maximum", 'greyd-wp' ),
 								value: max,
 								min: getMin( max ),
 								step: getMin( max ),
@@ -1007,11 +1007,11 @@ var greyd = greyd || { tools: {}, components: {} };
 				custom ? null : el( greyd.components.ButtonGroupControl, {
 					value: mode,
 					options: [
-						{ value: 'static', label: __( 'static', 'greyd-theme' ) },
-						{ value: 'min', label: __( 'min', 'greyd-theme' ) },
-						{ value: 'max', label: __( 'max', 'greyd-theme' ) },
-						{ value: 'clamp', label: __( 'clamp', 'greyd-theme' ) },
-						{ value: 'fluid', label: __( 'fluid', 'greyd-theme' ) }
+						{ value: 'static', label: __( 'static', 'greyd-wp' ) },
+						{ value: 'min', label: __( 'min', 'greyd-wp' ) },
+						{ value: 'max', label: __( 'max', 'greyd-wp' ) },
+						{ value: 'clamp', label: __( 'clamp', 'greyd-wp' ) },
+						{ value: 'fluid', label: __( 'fluid', 'greyd-wp' ) }
 					].filter( option => {
 						return modes.indexOf( option.value ) !== -1;
 					} ),
@@ -1040,7 +1040,7 @@ var greyd = greyd || { tools: {}, components: {} };
 				} ),
 				// custom input
 				!enableCustom ? null : el( wp.components.ToggleControl, {
-					label: __( 'enable custom input', 'greyd-theme' ),
+					label: __( 'enable custom input', 'greyd-wp' ),
 					checked: custom,
 					onChange: ( val ) => {
 						this.setState( {
@@ -1459,11 +1459,11 @@ var greyd = greyd || { tools: {}, components: {} };
 			var elements = [];
 
 			if ( _.has( values, 'margin' ) && !_.isEmpty( values.margin ) ) elements.push(
-				this.DimensionControl( { ...values.margin, label: __( 'Margin', 'greyd-theme' ) } )
+				this.DimensionControl( { ...values.margin, label: __( 'Margin', 'greyd-wp' ) } )
 			);
 
 			if ( _.has( values, 'padding' ) && !_.isEmpty( values.padding ) ) elements.push(
-				this.DimensionControl( { ...values.padding, label: __( 'Padding', 'greyd-theme' ) } )
+				this.DimensionControl( { ...values.padding, label: __( 'Padding', 'greyd-wp' ) } )
 			);
 
 			return elements;
@@ -1499,7 +1499,7 @@ var greyd = greyd || { tools: {}, components: {} };
 			if ( _.has( values, 'fontFamily' ) && !_.isEmpty( values.fontFamily ) ) elements.push(
 				el( greyd.components.OptionsControl, {
 					style: { width: "100%" },
-					label: __( 'Font family', 'greyd-theme' ),
+					label: __( 'Font family', 'greyd-wp' ),
 					value: values.fontFamily.value,
 					options: values.fontFamily.options,
 					onChange: ( newValue ) => {
@@ -1549,7 +1549,7 @@ var greyd = greyd || { tools: {}, components: {} };
 							el ( wp.components.BaseControl, {}, [
 								el( wp.components.__experimentalUnitControl, {
 									style: { display: "inline-block", maxWidth: "45%", marginRight: "10%" },
-									label: __( 'Line height', 'greyd-theme' ),
+									label: __( 'Line height', 'greyd-wp' ),
 									value: values.lineHeight.value,
 									min: 0,
 									step: 0.005,
@@ -1583,7 +1583,7 @@ var greyd = greyd || { tools: {}, components: {} };
 							el ( wp.components.BaseControl, {}, [
 								el( wp.components.__experimentalUnitControl, {
 									style: { display: "inline-block", maxWidth: "45%", marginRight: "10%", marginBottom: "16px" },
-									label: __( 'Letter spacing', 'greyd-theme' ),
+									label: __( 'Letter spacing', 'greyd-wp' ),
 									value: values.letterSpacing.value,
 									units: [
 										{ value: 'px', label: 'px', step: 0.1 },
@@ -1603,7 +1603,7 @@ var greyd = greyd || { tools: {}, components: {} };
 							el ( wp.components.BaseControl, {}, [
 								el( wp.components.__experimentalUnitControl, {
 									style: { display: "inline-block", maxWidth: "45%", marginBottom: "16px" },
-									label: __( 'Word spacing', 'greyd-theme' ),
+									label: __( 'Word spacing', 'greyd-wp' ),
 									value: values.wordSpacing.value,
 									units: [
 										{ value: 'px', label: 'px', step: 0.1 },
@@ -1676,16 +1676,16 @@ var greyd = greyd || { tools: {}, components: {} };
 				editor: editor,
 				stateTabs: [
 					{
-						label: __( "Default", 'greyd-theme' ),
+						label: __( "Default", 'greyd-wp' ),
 						slug: ""
 					},
 					{
-						label: __( "Hover", 'greyd-theme' ),
+						label: __( "Hover", 'greyd-wp' ),
 						slug: "hover",
 						previewClass: "has-hover"
 					},
 					{
-						label: __( "Active", 'greyd-theme' ),
+						label: __( "Active", 'greyd-wp' ),
 						slug: "active",
 						previewClass: "has-active"
 					}
@@ -2029,7 +2029,7 @@ var greyd = greyd || { tools: {}, components: {} };
 					el( "div", { className: "panel_buttons" }, [
 						supportsState && onStateToggle ?
 							el( Tooltip, {
-								text: __( "change on hover", 'greyd-theme' )
+								text: __( "change on hover", 'greyd-wp' )
 							}, el( "button", {
 								className: "button button-ghost" + ( isStateEnabled ? " active" : "" ),
 								onClick: ( e ) => {
@@ -2043,7 +2043,7 @@ var greyd = greyd || { tools: {}, components: {} };
 							) : "",
 						!supportsState && supportsResponsive && onResponsiveToggle ?
 							el( Tooltip, {
-								text: __( "change on screen sizes", 'greyd-theme' )
+								text: __( "change on screen sizes", 'greyd-wp' )
 							}, el( "button", {
 								className: "button button-ghost" + ( isResponsiveEnabled ? " active" : "" ),
 								onClick: ( e ) => {
@@ -2469,14 +2469,14 @@ var greyd = greyd || { tools: {}, components: {} };
 						] ) : "",
 					el( "div", {}, [
 						el( greyd.components.GlobalStylesColorGradientPopupControl, {
-							label: __( "Color", 'greyd-theme' ),
+							label: __( "Color", 'greyd-wp' ),
 							mode: 'color',
 							value: value.color,
 							onChange: ( newValue ) => this.setValue( "color", newValue )
 						} )
 					] ),
 					el( HStack, {}, [
-						el( "span", { className: "inner_label" }, __( "Horizontally", 'greyd-theme' ) ),
+						el( "span", { className: "inner_label" }, __( "Horizontally", 'greyd-wp' ) ),
 						el( RangeControl, {
 							value: value.x,
 							min: -50,
@@ -2485,7 +2485,7 @@ var greyd = greyd || { tools: {}, components: {} };
 						} )
 					] ),
 					el( HStack, {}, [
-						el( "span", { className: "inner_label" }, __( "Vertical", 'greyd-theme' ) ),
+						el( "span", { className: "inner_label" }, __( "Vertical", 'greyd-wp' ) ),
 						el( RangeControl, {
 							value: value.y,
 							min: -50,
@@ -2494,7 +2494,7 @@ var greyd = greyd || { tools: {}, components: {} };
 						} )
 					] ),
 					el( HStack, {}, [
-						el( "span", { className: "inner_label" }, __( "Blur", 'greyd-theme' ) ),
+						el( "span", { className: "inner_label" }, __( "Blur", 'greyd-wp' ) ),
 						el( RangeControl, {
 							value: value.blur,
 							min: 0,
@@ -2503,7 +2503,7 @@ var greyd = greyd || { tools: {}, components: {} };
 						} )
 					] ),
 					el( HStack, {}, [
-						el( "span", { className: "inner_label" }, __( "Spread", 'greyd-theme' ) ),
+						el( "span", { className: "inner_label" }, __( "Spread", 'greyd-wp' ) ),
 						el( RangeControl, {
 							value: value.spread,
 							min: -50,
@@ -2512,7 +2512,7 @@ var greyd = greyd || { tools: {}, components: {} };
 						} )
 					] ),
 					el( HStack, {}, [
-						el( "span", { className: "inner_label" }, __( "Opacity", 'greyd-theme' ) ),
+						el( "span", { className: "inner_label" }, __( "Opacity", 'greyd-wp' ) ),
 						el( RangeControl, {
 							value: value.opacity,
 							min: 0,
@@ -2521,16 +2521,16 @@ var greyd = greyd || { tools: {}, components: {} };
 						} )
 					] ),
 					el( HStack, {}, [
-						el( "span", { className: "inner_label" }, __( "Position", 'greyd-theme' ) ),
+						el( "span", { className: "inner_label" }, __( "Position", 'greyd-wp' ) ),
 						el( greyd.components.ButtonGroupControl, {
 							value: value.position,
 							options: [
 								{
-									label: __( "outset", 'greyd-theme' ),
+									label: __( "outset", 'greyd-wp' ),
 									value: "outset"
 								},
 								{
-									label: __( "inset", 'greyd-theme' ),
+									label: __( "inset", 'greyd-wp' ),
 									value: "inset"
 								},
 							],

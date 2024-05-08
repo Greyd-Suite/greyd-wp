@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: About Us with Three Boxes
- * Slug: greyd-theme/columns-about-us-three-boxes
+ * Slug: greyd-wp/columns-about-us-three-boxes
  * Description:
  * Categories: greyd-columns
  * Keywords:
@@ -20,12 +20,12 @@
 				<!-- wp:group {"style":{"position":{"type":"sticky","top":"0px"}},"layout":{"type":"constrained","contentSize":"540px","justifyContent":"left"}} -->
 				<div class="wp-block-group">
 					<!-- wp:paragraph {"align":"left","style":{"typography":{"fontStyle":"normal","fontWeight":"700"},"spacing":{"padding":{"top":"var:preset|spacing|small","bottom":"var:preset|spacing|small"}}},"textColor":"primary","className":"has-text-align-center"} -->
-					<p class="has-text-align-left has-text-align-center has-primary-color has-text-color" style="padding-top:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);font-style:normal;font-weight:700"><?php esc_html_e( 'Why it exists, you might ask?', 'greyd-theme' ); ?></p>
+					<p class="has-text-align-left has-text-align-center has-primary-color has-text-color" style="padding-top:var(--wp--preset--spacing--small);padding-bottom:var(--wp--preset--spacing--small);font-style:normal;font-weight:700"><?php esc_html_e( 'Why it exists, you might ask?', 'greyd-wp' ); ?></p>
 					<!-- /wp:paragraph -->
 
 					<!-- wp:heading {"textAlign":"left","style":{"typography":{"lineHeight":"1.2"},"spacing":{"margin":{"top":"0","bottom":"0"}}},"className":"","fontSize":"xx-large"} -->
 					<h2 class="wp-block-heading has-text-align-left has-xx-large-font-size" style="margin-top:0;margin-bottom:0;line-height:1.2">
-						<?php esc_html_e( 'We built the tool we knew we all needed.', 'greyd-theme' ); ?><br><mark class="has-inline-color has-background-color has-foreground-background-color"><?php esc_html_e( 'Including you.', 'greyd-theme' ); ?></mark>
+						<?php esc_html_e( 'We built the tool we knew we all needed.', 'greyd-wp' ); ?><br><mark class="has-inline-color has-background-color has-foreground-background-color"><?php esc_html_e( 'Including you.', 'greyd-wp' ); ?></mark>
 					</h2>
 					<!-- /wp:heading -->
 				</div>
@@ -46,13 +46,13 @@
 						<!-- /wp:image -->
 
 						<!-- wp:heading {"textAlign":"left","level":3,"className":""} -->
-						<h3 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Our ambition', 'greyd-theme' ); ?></h3>
+						<h3 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Our ambition', 'greyd-wp' ); ?></h3>
 						<!-- /wp:heading -->
 					</div>
 					<!-- /wp:group -->
 
 					<!-- wp:paragraph {"align":"left","className":""} -->
-					<p class="has-text-align-left"><?php esc_html_e( 'We spent years in the web agency and website creation industry: our biggest challenge was having to start each and every project from scratch.', 'greyd-theme' ); ?></p>
+					<p class="has-text-align-left"><?php esc_html_e( 'We spent years in the web agency and website creation industry: our biggest challenge was having to start each and every project from scratch.', 'greyd-wp' ); ?></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
@@ -68,13 +68,13 @@
 						<!-- /wp:image -->
 
 						<!-- wp:heading {"textAlign":"left","level":3,"className":""} -->
-						<h3 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Our story', 'greyd-theme' ); ?></h3>
+						<h3 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Our story', 'greyd-wp' ); ?></h3>
 						<!-- /wp:heading -->
 					</div>
 					<!-- /wp:group -->
 
 					<!-- wp:paragraph {"align":"left","className":""} -->
-					<p class="has-text-align-left"><?php esc_html_e( 'Greyd was born in response to the everyday struggles people and businesses face with WordPress, where page builders, themes, and plugins often fall short.', 'greyd-theme' ); ?></p>
+					<p class="has-text-align-left"><?php esc_html_e( 'Greyd was born in response to the everyday struggles people and businesses face with WordPress, where page builders, themes, and plugins often fall short.', 'greyd-wp' ); ?></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
@@ -90,13 +90,13 @@
 						<!-- /wp:image -->
 
 						<!-- wp:heading {"textAlign":"left","level":3,"className":""} -->
-						<h3 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Our mission', 'greyd-theme' ); ?></h3>
+						<h3 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Our mission', 'greyd-wp' ); ?></h3>
 						<!-- /wp:heading -->
 					</div>
 					<!-- /wp:group -->
 
 					<!-- wp:paragraph {"align":"left","className":""} -->
-					<p class="has-text-align-left"><?php esc_html_e( 'Join us on our mission to transform web development into a more accessible, sustainable, and inspiring journey.', 'greyd-theme' ); ?></p>
+					<p class="has-text-align-left"><?php esc_html_e( 'Join us on our mission to transform web development into a more accessible, sustainable, and inspiring journey.', 'greyd-wp' ); ?></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->

@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Hero with Header and Fixed Dark Background
- * Slug: greyd-theme/hero-fixed-dark-bg
+ * Slug: greyd-wp/hero-fixed-dark-bg
  * Description: Hero section with header and fixed dark background
  * Categories: greyd-hero
  * Keywords:
@@ -29,11 +29,11 @@
 		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"className":"","layout":{"type":"default"}} -->
 		<div class="wp-block-group">
 			<!-- wp:heading {"textAlign":"center","level":1,"className":""} -->
-			<h1 class="wp-block-heading has-text-align-center"><?php esc_html_e( 'Greyd Theme', 'greyd-theme' ); ?></h1>
+			<h1 class="wp-block-heading has-text-align-center"><?php esc_html_e( 'Greyd Theme', 'greyd-wp' ); ?></h1>
 			<!-- /wp:heading -->
 
 			<!-- wp:paragraph {"className":""} -->
-			<p><?php esc_html_e( 'Our free block theme enhances your full site editing experience with powerful extensions. It is the ideal basis for any website you build with Greyd.Suite, but can also be used independently.', 'greyd-theme' ); ?></p>
+			<p><?php esc_html_e( 'Our free block theme enhances your full site editing experience with powerful extensions. It is the ideal basis for any website you build with Greyd.Suite, but can also be used independently.', 'greyd-wp' ); ?></p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
@@ -42,13 +42,13 @@
 		<div class="wp-block-buttons">
 			<!-- wp:button {"className":"is-style-fill"} -->
 			<div class="wp-block-button is-style-fill">
-				<a class="wp-block-button__link wp-element-button" href="https://greyd.io/greyd-theme" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Download Theme →', 'greyd-theme' ); ?></a>
+				<a class="wp-block-button__link wp-element-button" href="https://greyd.io/greyd-wp" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Download Theme →', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 
 			<!-- wp:button {"textColor":"foreground","style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"className":"hidden-sm hidden-xs is-style-alternate"} -->
 			<div class="wp-block-button hidden-sm hidden-xs is-style-alternate">
-				<a class="wp-block-button__link has-foreground-color has-text-color has-link-color wp-element-button" href="https://greyd.io/demo/" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Discover the Suite', 'greyd-theme' ); ?></a>
+				<a class="wp-block-button__link has-foreground-color has-text-color has-link-color wp-element-button" href="https://greyd.io/demo/" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Discover the Suite', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 		</div>

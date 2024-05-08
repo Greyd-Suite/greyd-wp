@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Boxes on Color Strip
- * Slug: greyd-theme/columns-boxes-on-color-strip
+ * Slug: greyd-wp/columns-boxes-on-color-strip
  * Description:
  * Categories: greyd-columns
  * Keywords:
@@ -20,11 +20,11 @@
 			<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}}},"backgroundColor":"lightest","layout":{"type":"constrained"}} -->
 			<div class="wp-block-group has-lightest-background-color has-background" style="padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)">
 				<!-- wp:heading {"level":3} -->
-				<h3 class="wp-block-heading"><?php esc_html_e( 'Elevate Your Experience', 'greyd-theme' ); ?></h3>
+				<h3 class="wp-block-heading"><?php esc_html_e( 'Elevate Your Experience', 'greyd-wp' ); ?></h3>
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph {"fontSize":"small"} -->
-				<p class="has-small-font-size"><?php esc_html_e( 'Connect with experts, learn best practices, and ensure your designs cater to every user. Go beyond just average with your work.', 'greyd-theme' ); ?></p>
+				<p class="has-small-font-size"><?php esc_html_e( 'Connect with experts, learn best practices, and ensure your designs cater to every user. Go beyond just average with your work.', 'greyd-wp' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -46,18 +46,18 @@
 			<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}}},"backgroundColor":"lightest","layout":{"type":"constrained"}} -->
 			<div class="wp-block-group has-lightest-background-color has-background" style="padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)">
 				<!-- wp:heading {"level":3} -->
-				<h3 class="wp-block-heading"><?php esc_html_e( 'Design for Everyone', 'greyd-theme' ); ?></h3>
+				<h3 class="wp-block-heading"><?php esc_html_e( 'Design for Everyone', 'greyd-wp' ); ?></h3>
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph {"fontSize":"small"} -->
-				<p class="has-small-font-size"><?php esc_html_e( 'Immerse yourself in unparalleled Greyd excellence. Unleash a new era of website design. Your journey to streamlined creativity starts here.', 'greyd-theme' ); ?></p>
+				<p class="has-small-font-size"><?php esc_html_e( 'Immerse yourself in unparalleled Greyd excellence. Unleash a new era of website design. Your journey to streamlined creativity starts here.', 'greyd-wp' ); ?></p>
 				<!-- /wp:paragraph -->
 
 				<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left"}} -->
 				<div class="wp-block-buttons">
 					<!-- wp:button {"textAlign":"left","className":"is-style-outline"} -->
 					<div class="wp-block-button is-style-outline">
-						<a class="wp-block-button__link has-text-align-left wp-element-button" href="https://greyd.io/"><?php esc_html_e( 'Learn more about Greyd →', 'greyd-theme' ); ?></a>
+						<a class="wp-block-button__link has-text-align-left wp-element-button" href="https://greyd.io/"><?php esc_html_e( 'Learn more about Greyd →', 'greyd-wp' ); ?></a>
 					</div>
 					<!-- /wp:button -->
 				</div>
@@ -76,18 +76,18 @@
 			<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}},"elements":{"link":{"color":{"text":"var:preset|color|primary"},":hover":{"color":{"text":"var:preset|color|secondary"}}}}},"backgroundColor":"lightest","textColor":"darkest","layout":{"type":"constrained"}} -->
 			<div class="wp-block-group has-darkest-color has-lightest-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)">
 				<!-- wp:heading {"level":3,"fontSize":"large"} -->
-				<h3 class="wp-block-heading has-large-font-size"><?php esc_html_e( 'Sustainable Web Solutions', 'greyd-theme' ); ?></h3>
+				<h3 class="wp-block-heading has-large-font-size"><?php esc_html_e( 'Sustainable Web Solutions', 'greyd-wp' ); ?></h3>
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph {"fontSize":"small"} -->
-				<p class="has-small-font-size"><?php esc_html_e( 'Craft beautiful websites while minimizing environmental impact. Join the movement towards a greener digital future.', 'greyd-theme' ); ?></p>
+				<p class="has-small-font-size"><?php esc_html_e( 'Craft beautiful websites while minimizing environmental impact. Join the movement towards a greener digital future.', 'greyd-wp' ); ?></p>
 				<!-- /wp:paragraph -->
 
 				<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left"}} -->
 				<div class="wp-block-buttons">
 					<!-- wp:button {"textAlign":"left","className":"is-style-outline"} -->
 					<div class="wp-block-button is-style-outline">
-						<a class="wp-block-button__link has-text-align-left wp-element-button" href="https://greyd.io/"><?php esc_html_e( 'Join us today →', 'greyd-theme' ); ?></a>
+						<a class="wp-block-button__link has-text-align-left wp-element-button" href="https://greyd.io/"><?php esc_html_e( 'Join us today →', 'greyd-wp' ); ?></a>
 					</div>
 					<!-- /wp:button -->
 				</div>
@@ -112,11 +112,11 @@
 			<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}},"elements":{"link":{"color":{"text":"var:preset|color|background"}}}},"backgroundColor":"foreground","textColor":"background","layout":{"type":"constrained"}} -->
 			<div class="wp-block-group has-background-color has-foreground-background-color has-text-color has-background has-link-color" style="padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)">
 				<!-- wp:heading {"level":3} -->
-				<h3 class="wp-block-heading"><?php esc_html_e( 'Craft for All Devices', 'greyd-theme' ); ?></h3>
+				<h3 class="wp-block-heading"><?php esc_html_e( 'Craft for All Devices', 'greyd-wp' ); ?></h3>
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph {"fontSize":"small"} -->
-				<p class="has-small-font-size"><?php esc_html_e( 'Ensure your website is accessible to all. GREYD empowers you to create user-friendly designs, making your online space welcoming to everyone.', 'greyd-theme' ); ?></p>
+				<p class="has-small-font-size"><?php esc_html_e( 'Ensure your website is accessible to all. GREYD empowers you to create user-friendly designs, making your online space welcoming to everyone.', 'greyd-wp' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->

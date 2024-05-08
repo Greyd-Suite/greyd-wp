@@ -379,9 +379,9 @@ var greyd = greyd || { tools: {}, components: {} };
 			var edits = wp.data.select('core').__experimentalGetDirtyEntityRecords();
 			if ( edits && !_.isEmpty(edits) ) {
 				alert(
-					__( 'You have unsaved changes inside the Site Editor.', 'greyd-theme' )+
+					__( 'You have unsaved changes inside the Site Editor.', 'greyd-wp' )+
 					'\n'+
-					__( 'Please save them first.', 'greyd-theme' )
+					__( 'Please save them first.', 'greyd-wp' )
 				);
 				if ( typeof callback === 'function' ) {
 					callback( false );
@@ -568,22 +568,22 @@ var greyd = greyd || { tools: {}, components: {} };
 		makeTip() {
 			var tip = [];
 			if ( this.state.hasGoogleFonts && this.state.hasLocalGoogleFonts && this.state.hasLocalCustomFonts ) {
-				tip.push( el( "p", {}, __( 'We detected local Fonts and selected Google Fonts.', 'greyd-theme' ) ) );
+				tip.push( el( "p", {}, __( 'We detected local Fonts and selected Google Fonts.', 'greyd-wp' ) ) );
 			}
 			else if ( this.state.hasLocalGoogleFonts && this.state.hasLocalCustomFonts ) {
-				tip.push( el( "p", {}, __( 'We detected local Google and Custom Fonts.', 'greyd-theme' ) ) );
+				tip.push( el( "p", {}, __( 'We detected local Google and Custom Fonts.', 'greyd-wp' ) ) );
 			}
 			else if ( this.state.hasLocalGoogleFonts ) {
-				tip.push( el( "p", {}, __( 'We detected local Google Fonts.', 'greyd-theme' ) ) );
+				tip.push( el( "p", {}, __( 'We detected local Google Fonts.', 'greyd-wp' ) ) );
 			}
 			else if ( this.state.hasLocalCustomFonts ) {
-				tip.push( el( "p", {}, __( 'We detected local Custom Fonts.', 'greyd-theme' ) ) );
+				tip.push( el( "p", {}, __( 'We detected local Custom Fonts.', 'greyd-wp' ) ) );
 			}
 			else if ( this.state.hasGoogleFonts ) {
-				tip.push( el( "p", {}, __( 'We detected selected Google Fonts.', 'greyd-theme' ) ) );
+				tip.push( el( "p", {}, __( 'We detected selected Google Fonts.', 'greyd-wp' ) ) );
 			}
 			tip.push( el( 'br' ) );
-			tip.push( el( "i", {}, __( 'The Feature is deprecated, please convert the Fonts and use Global Styles Typography Settings instead.', 'greyd-theme' ) ) );
+			tip.push( el( "i", {}, __( 'The Feature is deprecated, please convert the Fonts and use Global Styles Typography Settings instead.', 'greyd-wp' ) ) );
 
 			return [
 				el( "p", {}, tip ),
@@ -595,12 +595,12 @@ var greyd = greyd || { tools: {}, components: {} };
 			if ( this.hasEdits() ) {
 				tip = [
 					el( "p", {}, [
-						el( "b", {}, __( 'You have unsaved changes inside the Site Editor, please save them first.', 'greyd-theme' ) ),
+						el( "b", {}, __( 'You have unsaved changes inside the Site Editor, please save them first.', 'greyd-wp' ) ),
 						el( "br" ),
 						el( "a", { 
 							style: { cursor: 'pointer' },
 							onClick: () => this.openSaveView()
-						}, __( 'Save Global Styles →', 'greyd-theme' ) )
+						}, __( 'Save Global Styles →', 'greyd-wp' ) )
 					] ),
 					el( "br" )
 				];
@@ -609,12 +609,12 @@ var greyd = greyd || { tools: {}, components: {} };
 			return tip;
 		}
 		makeButtonLabel() {
-			var btn = __( 'Convert Local Fonts', 'greyd-theme' );
+			var btn = __( 'Convert Local Fonts', 'greyd-wp' );
 			if ( this.state.hasGoogleFonts && this.state.hasLocalGoogleFonts && this.state.hasLocalCustomFonts ) {
-				btn = __( 'Convert Fonts', 'greyd-theme' );
+				btn = __( 'Convert Fonts', 'greyd-wp' );
 			}
 			else if ( this.state.hasGoogleFonts ) {
-				btn = __( 'Convert selected Fonts', 'greyd-theme' );
+				btn = __( 'Convert selected Fonts', 'greyd-wp' );
 			}
 
 			return btn;
@@ -640,7 +640,7 @@ var greyd = greyd || { tools: {}, components: {} };
 			}
 
 			return el( wp.components.PanelBody, {
-				title: __( 'Convert', 'greyd-theme' ),
+				title: __( 'Convert', 'greyd-wp' ),
 				initialOpen: true
 			}, [
 				el( wp.components.Tip, {}, [
@@ -687,15 +687,15 @@ var greyd = greyd || { tools: {}, components: {} };
 			return [
 				el( "p", {}, [
 					this.props.type == 'google' ?
-						__( 'Greyd Google Fonts are deprecated.', 'greyd-theme' ) :
-						__( 'Greyd Custom Fonts are deprecated.', 'greyd-theme' ),
+						__( 'Greyd Google Fonts are deprecated.', 'greyd-wp' ) :
+						__( 'Greyd Custom Fonts are deprecated.', 'greyd-wp' ),
 					el( 'br' ),
-					__( 'Please use Global Styles Typography Settings instead.', 'greyd-theme' )
+					__( 'Please use Global Styles Typography Settings instead.', 'greyd-wp' )
 				] ),
 				el( "a", { 
 					style: { cursor: 'pointer' },
 					onClick: () => this.openGlobalStyles()
-				}, __( 'Go to Global Styles →', 'greyd-theme' ) )
+				}, __( 'Go to Global Styles →', 'greyd-wp' ) )
 			];
 		}
 
@@ -777,7 +777,7 @@ var greyd = greyd || { tools: {}, components: {} };
 					}, 0);
 				}
 				else if ( typeof greyd.tools.showSnackbar === 'function' ) {
-					greyd.tools.showSnackbar( __( "Error Deleting Font. Please see console for details.", 'greyd-theme' ), 'error' );
+					greyd.tools.showSnackbar( __( "Error Deleting Font. Please see console for details.", 'greyd-wp' ), 'error' );
 				}
 				this.setState( { ...this.state, saving: false } );
 			} );
@@ -807,7 +807,7 @@ var greyd = greyd || { tools: {}, components: {} };
 					}, [
 						this.state.saving ? 
 						el( wp.components.Spinner ) : 
-						el( 'span', {}, __( "Host Font locally ↓", 'greyd-theme' ) )
+						el( 'span', {}, __( "Host Font locally ↓", 'greyd-wp' ) )
 					] ),
 				] ),
 
@@ -824,7 +824,7 @@ var greyd = greyd || { tools: {}, components: {} };
 					}, [
 						this.state.saving ? 
 						el( wp.components.Spinner ) : 
-						el( 'span', {}, __( "Delete local font ✕", 'greyd-theme' ) )
+						el( 'span', {}, __( "Delete local font ✕", 'greyd-wp' ) )
 					] ),
 				] ),
 
@@ -841,7 +841,7 @@ var greyd = greyd || { tools: {}, components: {} };
 					}, [
 						this.state.saving ? 
 						el( wp.components.Spinner ) : 
-						el( 'span', {}, __( "Update local font ⟲", 'greyd-theme' ) )
+						el( 'span', {}, __( "Update local font ⟲", 'greyd-wp' ) )
 					] ),
 					// remove
 					el( wp.components.Button, {
@@ -853,7 +853,7 @@ var greyd = greyd || { tools: {}, components: {} };
 					}, [
 						this.state.saving ? 
 						el( wp.components.Spinner ) : 
-						el( 'span', {}, __( "Delete local font ✕", 'greyd-theme' ) )
+						el( 'span', {}, __( "Delete local font ✕", 'greyd-wp' ) )
 					] ),
 				] )
 
@@ -942,7 +942,7 @@ var greyd = greyd || { tools: {}, components: {} };
 								faces.splice(index, 1);
 								this.setState( { ...this.state, font: { ...this.state.font, faces: faces } } );
 							},
-							title: __( 'Remove font-face', 'greyd-theme' )
+							title: __( 'Remove font-face', 'greyd-wp' )
 						}, el( wp.components.Icon, { icon: 'no-alt' } ) ),
 						// font-face
 						el( greyd.components.OptionsControl, {
@@ -956,7 +956,7 @@ var greyd = greyd || { tools: {}, components: {} };
 							options: this.getWeightOptions(),
 						} ),
 						// file
-						el( 'pre', {}, face.file && face.file[0]?.name ? face.file[0].name : __( 'No file selected', 'greyd-theme' ) ),
+						el( 'pre', {}, face.file && face.file[0]?.name ? face.file[0].name : __( 'No file selected', 'greyd-wp' ) ),
 						face.file ? [
 							// remove file
 							el( wp.components.Button, {
@@ -967,7 +967,7 @@ var greyd = greyd || { tools: {}, components: {} };
 									this.setState( { ...this.state, font: { ...this.state.font, faces: faces } } );
 								}
 							}, [
-								el( 'span', {}, __( "Remove font file", 'greyd-theme' ) )
+								el( 'span', {}, __( "Remove font file", 'greyd-wp' ) )
 							] ),
 						] : [
 							// select file
@@ -979,7 +979,7 @@ var greyd = greyd || { tools: {}, components: {} };
 									faces[index].file = event.target.files;
 									this.setState( { ...this.state, font: { ...this.state.font, faces: faces } } );
 								},
-							}, __( 'Select font file', 'greyd-theme' ) ),
+							}, __( 'Select font file', 'greyd-wp' ) ),
 						]
 					] )
 				);
@@ -1008,7 +1008,7 @@ var greyd = greyd || { tools: {}, components: {} };
 			} );
 			// return elements;
 			return el( wp.components.BaseControl, {
-				label: __( "Uploaded:", 'greyd-theme' ),
+				label: __( "Uploaded:", 'greyd-wp' ),
 				className: "greyd-customfont-control info",
 			}, elements );
 		}
@@ -1054,7 +1054,7 @@ var greyd = greyd || { tools: {}, components: {} };
 							greyd.tools.font.delete( this.props.value, (data) => {
 								if (data) this.props.onChange(this.props.value);
 								else if ( typeof greyd.tools.showSnackbar === 'function' ) {
-									greyd.tools.showSnackbar( __( "Error Deleting Font. Please see console for details.", 'greyd-theme' ), 'error' );
+									greyd.tools.showSnackbar( __( "Error Deleting Font. Please see console for details.", 'greyd-wp' ), 'error' );
 								}
 								this.setState( { ...this.state, saving: false } );
 							} );
@@ -1064,7 +1064,7 @@ var greyd = greyd || { tools: {}, components: {} };
 					}, [
 						this.state.saving ? 
 						el( wp.components.Spinner ) : 
-						el( 'span', {}, __( "Delete custom font ✕", 'greyd-theme' ) )
+						el( 'span', {}, __( "Delete custom font ✕", 'greyd-wp' ) )
 					] ),
 				] ),
 
@@ -1077,8 +1077,8 @@ var greyd = greyd || { tools: {}, components: {} };
 
 						// name
 						el( wp.components.TextControl, {
-							label: __( "Font name", 'greyd-theme' ),
-							help: !this.isValidName() ? __( "Name is already used", 'greyd-theme' ) : "",
+							label: __( "Font name", 'greyd-wp' ),
+							help: !this.isValidName() ? __( "Name is already used", 'greyd-wp' ) : "",
 							style: { width: "100%" },
 							value: this.state.font.name,
 							onChange: ( newValue ) => this.setState( { ...this.state, font: { ...this.state.font, name: newValue } } ),
@@ -1097,10 +1097,10 @@ var greyd = greyd || { tools: {}, components: {} };
 									value.push( { weight: this.getNextWeight() } );
 									this.setState( { ...this.state, font: { ...this.state.font, faces: value } } );
 								},
-								title: __( 'Add font-face', 'greyd-theme' )
+								title: __( 'Add font-face', 'greyd-wp' )
 							}, [
 								el( wp.components.Icon, { icon: 'plus-alt2' } ),
-								this.state.font.faces.length === 0 ? el( 'span', {}, __( 'Add font-face', 'greyd-theme' ) ) : null
+								this.state.font.faces.length === 0 ? el( 'span', {}, __( 'Add font-face', 'greyd-wp' ) ) : null
 							] )
 						] ),
 
@@ -1117,7 +1117,7 @@ var greyd = greyd || { tools: {}, components: {} };
 								greyd.tools.font.upload(newFont, (data) => {
 									if (data) this.props.onChange(newFont.name);
 									else if ( typeof greyd.tools.showSnackbar === 'function' ) {
-										greyd.tools.showSnackbar( __( "Error Uploading Font. Please see console for details.", 'greyd-theme' ), 'error' );
+										greyd.tools.showSnackbar( __( "Error Uploading Font. Please see console for details.", 'greyd-wp' ), 'error' );
 									}
 									this.setState( { ...this.state, upload: !this.state.upload, font: null, saving: null } );
 								} );
@@ -1126,7 +1126,7 @@ var greyd = greyd || { tools: {}, components: {} };
 						}, [
 							this.state.saving ? 
 							el( wp.components.Spinner ) : 
-							el( 'span', {}, __( "Upload font ↑", 'greyd-theme' ) )
+							el( 'span', {}, __( "Upload font ↑", 'greyd-wp' ) )
 						] )
 
 					],
@@ -1141,8 +1141,8 @@ var greyd = greyd || { tools: {}, components: {} };
 						}
 					}, [
 						this.state.upload ?
-						el( 'span', {}, __( "Abort upload", 'greyd-theme' ) ) :
-						el( 'span', {}, __( "Add new font", 'greyd-theme' ) )
+						el( 'span', {}, __( "Abort upload", 'greyd-wp' ) ) :
+						el( 'span', {}, __( "Add new font", 'greyd-wp' ) )
 					] )
 					
 				] )

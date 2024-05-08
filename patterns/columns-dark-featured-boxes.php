@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Dark featured boxes
- * Slug: greyd-theme/columns-dark-featured-boxes
+ * Slug: greyd-wp/columns-dark-featured-boxes
  * Description:
  * Categories: greyd-columns
  * Keywords:
@@ -28,13 +28,13 @@
 					<!-- /wp:image -->
 
 					<!-- wp:heading {"textAlign":"left","level":3,"className":""} -->
-					<h3 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Responsive Web Design 2.0', 'greyd-theme' ); ?></h3>
+					<h3 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Responsive Web Design 2.0', 'greyd-wp' ); ?></h3>
 					<!-- /wp:heading -->
 				</div>
 				<!-- /wp:group -->
 
 				<!-- wp:paragraph {"align":"left","className":""} -->
-				<p class="has-text-align-left"><?php esc_html_e( 'Maximum control over responsive design thanks to customizable spacing presets using modern CSS functions such as "clamp".', 'greyd-theme' ); ?></p>
+				<p class="has-text-align-left"><?php esc_html_e( 'Maximum control over responsive design thanks to customizable spacing presets using modern CSS functions such as "clamp".', 'greyd-wp' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -54,13 +54,13 @@
 					<!-- /wp:image -->
 
 					<!-- wp:heading {"textAlign":"left","level":3,"className":""} -->
-					<h3 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Additional Global Styles', 'greyd-theme' ); ?></h3>
+					<h3 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Additional Global Styles', 'greyd-wp' ); ?></h3>
 					<!-- /wp:heading -->
 				</div>
 				<!-- /wp:group -->
 
 				<!-- wp:paragraph {"align":"left","className":""} -->
-				<p class="has-text-align-left"><?php esc_html_e( "Benefit from various extensions and additions in the Site Editor: Multiple button variations, hover styles and fluid font sizes – it's all there!", 'greyd-theme' ); ?></p>
+				<p class="has-text-align-left"><?php esc_html_e( "Benefit from various extensions and additions in the Site Editor: Multiple button variations, hover styles and fluid font sizes – it's all there!", 'greyd-wp' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -80,13 +80,13 @@
 					<!-- /wp:image -->
 
 					<!-- wp:heading {"textAlign":"left","level":3,"className":""} -->
-					<h3 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Fast &amp; Accessibility-Ready', 'greyd-theme' ); ?></h3>
+					<h3 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Fast &amp; Accessibility-Ready', 'greyd-wp' ); ?></h3>
 					<!-- /wp:heading -->
 				</div>
 				<!-- /wp:group -->
 
 				<!-- wp:paragraph {"align":"left","className":""} -->
-				<p class="has-text-align-left"><?php esc_html_e( "Don't worry whether your website code is accessible. You put in the creativity, Greyd does the coding. The results are superfast websites!", 'greyd-theme' ); ?></p>
+				<p class="has-text-align-left"><?php esc_html_e( "Don't worry whether your website code is accessible. You put in the creativity, Greyd does the coding. The results are superfast websites!", 'greyd-wp' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->

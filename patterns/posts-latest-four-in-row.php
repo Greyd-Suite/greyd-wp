@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Latest Posts, four in a row
- * Slug: greyd-theme/posts-latest-four-in-row
+ * Slug: greyd-wp/posts-latest-four-in-row
  * Description: 
  * Categories: greyd-posts
  * Keywords: 
@@ -16,14 +16,14 @@
 	<!-- wp:group {"align":"wide","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|large"}}},"className":"","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
 	<div class="wp-block-group alignwide" style="margin-bottom:var(--wp--preset--spacing--large)">
 		<!-- wp:heading {"textAlign":"left","style":{"spacing":{"padding":{"right":"0","left":"0"}}},"className":"","fontSize":"medium"} -->
-		<h2 class="wp-block-heading has-text-align-left has-medium-font-size" style="padding-right:0;padding-left:0"><?php esc_html_e( 'Latest Posts', 'greyd-theme' ); ?></h2>
+		<h2 class="wp-block-heading has-text-align-left has-medium-font-size" style="padding-right:0;padding-left:0"><?php esc_html_e( 'Latest Posts', 'greyd-wp' ); ?></h2>
 		<!-- /wp:heading -->
 
 		<!-- wp:buttons {"align":"right","className":""} -->
 		<div class="wp-block-buttons">
 			<!-- wp:button {"className":"is-style-outline"} -->
 			<div class="wp-block-button is-style-outline">
-				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Read articles', 'greyd-theme' ); ?></a>
+				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Read articles', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 		</div>
@@ -46,7 +46,7 @@
 			<!-- /wp:post-template -->
 
 			<!-- wp:query-no-results -->
-				<!-- wp:pattern {"slug":"greyd-theme/hidden-no-results"} /-->
+				<!-- wp:pattern {"slug":"greyd-wp/hidden-no-results"} /-->
 			<!-- /wp:query-no-results -->
 
 			<!-- wp:query-pagination -->

@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Testimonial, three Boxes, split Background
- * Slug: greyd-theme/testimonial-three-boxes-split-bg
+ * Slug: greyd-wp/testimonial-three-boxes-split-bg
  * Description:
  * Categories: greyd-testimonial
  * Keywords:
@@ -13,6 +13,6 @@
 ?>
 <!-- wp:group {"align":"full","gradient":"cut-transparent-foreground-1-2","layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull has-cut-transparent-foreground-1-2-gradient-background has-background">
-	<!-- wp:pattern {"slug":"greyd-theme/testimonial-three-boxes"} /-->
+	<!-- wp:pattern {"slug":"greyd-wp/testimonial-three-boxes"} /-->
 </div>
 <!-- /wp:group -->

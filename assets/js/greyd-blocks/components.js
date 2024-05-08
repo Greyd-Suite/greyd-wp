@@ -143,15 +143,15 @@ greyd.components = new function () {
 				sides: [ "top", "right", "bottom", "left" ],
 				type: "object", // the type of value to return
 				labels: {
-					"top": __( "Top", 'greyd-theme' ),
-					"right": __( "Right", 'greyd-theme' ),
-					"bottom": __( "Bottom", 'greyd-theme' ),
-					"left": __( "Left", 'greyd-theme' ),
-					"topLeft": __( "Top left", 'greyd-theme' ),
-					"topRight": __( "Top right", 'greyd-theme' ),
-					"bottomRight": __( "Bottom right", 'greyd-theme' ),
-					"bottomLeft": __( "Bottom left", 'greyd-theme' ),
-					"all": __( "all sides", 'greyd-theme' )
+					"top": __( "Top", 'greyd-wp' ),
+					"right": __( "Right", 'greyd-wp' ),
+					"bottom": __( "Bottom", 'greyd-wp' ),
+					"left": __( "Left", 'greyd-wp' ),
+					"topLeft": __( "Top left", 'greyd-wp' ),
+					"topRight": __( "Top right", 'greyd-wp' ),
+					"bottomRight": __( "Bottom right", 'greyd-wp' ),
+					"bottomLeft": __( "Bottom left", 'greyd-wp' ),
+					"all": __( "all sides", 'greyd-wp' )
 				},
 			};
 
@@ -501,7 +501,7 @@ greyd.components = new function () {
 							el( HStack, {
 								justify: "space-between"
 							}, [
-								el( 'label', {}, __( labels.all, 'greyd-theme' ) ),
+								el( 'label', {}, __( labels.all, 'greyd-wp' ) ),
 								el( UnitControl, {
 									value: this.getFirstValue( value ) + unit,
 									min: min,
@@ -519,7 +519,7 @@ greyd.components = new function () {
 								className: "dimension_control__inputs",
 								justify: "space-between"
 							}, [
-								el( 'label', {}, __( labels[ side ], 'greyd-theme' ) ),
+								el( 'label', {}, __( labels[ side ], 'greyd-wp' ) ),
 								el( UnitControl, {
 									value: _.has( value, side ) ? value[ side ] : null,
 									min: min,

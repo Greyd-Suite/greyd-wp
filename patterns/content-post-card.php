@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Post Card, single
- * Slug: greyd-theme/content-post-card
+ * Slug: greyd-wp/content-post-card
  * Description:
  * Categories: greyd-content
  * Keywords:

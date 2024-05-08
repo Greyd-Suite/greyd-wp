@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Icon Box, Dark
- * Slug: greyd-theme/content-icon-box-dark
+ * Slug: greyd-wp/content-icon-box-dark
  * Description:
  * Categories: greyd-content
  * Keywords:
@@ -22,17 +22,17 @@
 	<!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained"}} -->
 	<div class="wp-block-group">
 		<!-- wp:heading {"textAlign":"center","level":3} -->
-		<h3 class="wp-block-heading has-text-align-center"><?php esc_html_e( 'Elevate your WordPress business', 'greyd-theme' ); ?></h3>
+		<h3 class="wp-block-heading has-text-align-center"><?php esc_html_e( 'Elevate your WordPress business', 'greyd-wp' ); ?></h3>
 		<!-- /wp:heading -->
 
 		<!-- wp:paragraph {"align":"center"} -->
-		<p class="has-text-align-center"><?php esc_html_e( 'The Greyd Theme is the perfect starting point to scale up your WordPress business.', 'greyd-theme' ); ?></p>
+		<p class="has-text-align-center"><?php esc_html_e( 'The Greyd Theme is the perfect starting point to scale up your WordPress business.', 'greyd-wp' ); ?></p>
 		<!-- /wp:paragraph -->
 	</div>
 	<!-- /wp:group -->
 
 	<!-- wp:paragraph {"align":"center"} -->
-	<p class="has-text-align-center"><a href="https://greyd.io/" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Learn more about the theme →', 'greyd-theme' ); ?></a></p>
+	<p class="has-text-align-center"><a href="https://greyd.io/" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Learn more about the theme →', 'greyd-wp' ); ?></a></p>
 	<!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->

@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Social Linktree
- * Slug: greyd-theme/content-social-linktree
+ * Slug: greyd-wp/content-social-linktree
  * Description:
  * Categories: greyd-content
  * Keywords:
@@ -24,12 +24,12 @@
 			<!-- /wp:image -->
 
 			<!-- wp:heading {"textAlign":"center","level":1,"className":"","fontSize":"x-large"} -->
-			<h1 class="wp-block-heading has-text-align-center has-x-large-font-size"><?php esc_html_e( 'Jane Doe', 'greyd-theme' ); ?></h1>
+			<h1 class="wp-block-heading has-text-align-center has-x-large-font-size"><?php esc_html_e( 'Jane Doe', 'greyd-wp' ); ?></h1>
 			<!-- /wp:heading -->
 
 			<!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|large"}}},"className":""} -->
 			<p class="has-text-align-center" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--large)">
-				<a href="mailto:<?php esc_html_e( 'jane@doe.com', 'greyd-theme' ); ?>"><?php esc_html_e( 'jane@doe.com', 'greyd-theme' ); ?></a>
+				<a href="mailto:<?php esc_html_e( 'jane@doe.com', 'greyd-wp' ); ?>"><?php esc_html_e( 'jane@doe.com', 'greyd-wp' ); ?></a>
 			</p>
 			<!-- /wp:paragraph -->
 
@@ -51,31 +51,31 @@
 		<div class="wp-block-buttons" style="margin-bottom:var(--wp--preset--spacing--small)">
 			<!-- wp:button {"className":"has-custom-width wp-block-button__width-100"} -->
 			<div class="wp-block-button has-custom-width wp-block-button__width-100">
-				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Read my latest article', 'greyd-theme' ); ?></a>
+				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Read my latest article', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 
 			<!-- wp:button {"className":"has-custom-width wp-block-button__width-100"} -->
 			<div class="wp-block-button has-custom-width wp-block-button__width-100">
-				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Listen to my latest interview', 'greyd-theme' ); ?></a>
+				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Listen to my latest interview', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 
 			<!-- wp:button {"className":"has-custom-width wp-block-button__width-100 is-style-fill"} -->
 			<div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-fill">
-				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Visit My Webshop', 'greyd-theme' ); ?></a>
+				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Visit My Webshop', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 
 			<!-- wp:button {"className":"has-custom-width wp-block-button__width-100 is-style-outline"} -->
 			<div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-outline">
-				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Become a Patreon', 'greyd-theme' ); ?></a>
+				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Become a Patreon', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 
 			<!-- wp:button {"className":"has-custom-width wp-block-button__width-100 is-style-outline"} -->
 			<div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-outline">
-				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Make a donation', 'greyd-theme' ); ?></a>
+				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Make a donation', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 		</div>

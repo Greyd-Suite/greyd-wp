@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Latest Posts, three cards in a row
- * Slug: greyd-theme/posts-cards-three-in-row
+ * Slug: greyd-wp/posts-cards-three-in-row
  * Description:
  * Categories: greyd-posts
  * Keywords:
@@ -16,11 +16,11 @@
 	<!-- wp:query {"queryId":0,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"align":"wide","className":""} -->
 	<div class="wp-block-query alignwide">
 		<!-- wp:post-template {"className":"","layout":{"type":"grid","columnCount":3}} -->
-			<!-- wp:pattern {"slug":"greyd-theme/content-post-card"} /-->
+			<!-- wp:pattern {"slug":"greyd-wp/content-post-card"} /-->
 		<!-- /wp:post-template -->
 
 		<!-- wp:query-no-results -->
-			<!-- wp:pattern {"slug":"greyd-theme/hidden-no-results"} /-->
+			<!-- wp:pattern {"slug":"greyd-wp/hidden-no-results"} /-->
 		<!-- /wp:query-no-results -->
 	</div>
 	<!-- /wp:query -->

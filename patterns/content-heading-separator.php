@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Heading with Separator
- * Slug: greyd-theme/content-heading-separator
+ * Slug: greyd-wp/content-heading-separator
  * Description:
  * Categories: greyd-content
  * Keywords:

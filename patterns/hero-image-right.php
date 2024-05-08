@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Hero with Image Right
- * Slug: greyd-theme/hero-image-right
+ * Slug: greyd-wp/hero-image-right
  * Description: Simple hero section with an image on the right
  * Categories: greyd-hero, greyd-cta
  * Keywords:
@@ -19,16 +19,16 @@
 		<div class="wp-block-group">
 			<!-- wp:paragraph {"textColor":"primary","className":"","fontSize":"medium"} -->
 			<p class="has-primary-color has-text-color has-medium-font-size">
-				<strong><?php esc_html_e( 'Get started', 'greyd-theme' ); ?></strong>
+				<strong><?php esc_html_e( 'Get started', 'greyd-wp' ); ?></strong>
 			</p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:heading {"textAlign":"left","level":1,"className":"","fontSize":"x-large"} -->
-			<h1 class="wp-block-heading has-text-align-left has-x-large-font-size"><?php esc_html_e( 'Make more time for the work that matters most', 'greyd-theme' ); ?></h1>
+			<h1 class="wp-block-heading has-text-align-left has-x-large-font-size"><?php esc_html_e( 'Make more time for the work that matters most', 'greyd-wp' ); ?></h1>
 			<!-- /wp:heading -->
 
 			<!-- wp:paragraph {"align":"left","className":""} -->
-			<p class="has-text-align-left"><?php esc_html_e( 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.', 'greyd-theme' ); ?></p>
+			<p class="has-text-align-left"><?php esc_html_e( 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.', 'greyd-wp' ); ?></p>
 			<!-- /wp:paragraph -->
 		</div>
 		<!-- /wp:group -->
@@ -37,13 +37,13 @@
 		<div class="wp-block-buttons">
 			<!-- wp:button {"className":"is-style-fill"} -->
 			<div class="wp-block-button is-style-fill">
-				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Get Started', 'greyd-theme' ); ?></a>
+				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Get Started', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 
 			<!-- wp:button {"className":"is-style-sec is-style-outline"} -->
 			<div class="wp-block-button is-style-sec is-style-outline">
-				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Learn more about Greyd', 'greyd-theme' ); ?></a>
+				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Learn more about Greyd', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 		</div>

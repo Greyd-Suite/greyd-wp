@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Comments
- * Slug: greyd-theme/hidden-comments
+ * Slug: greyd-wp/hidden-comments
  * Viewport Width: 800
  * Inserter: no
  */
@@ -10,7 +10,7 @@
 <!-- wp:comments {"className":"wp-block-comments-query-loop"} -->
 <div class="wp-block-comments wp-block-comments-query-loop">
 	<!-- wp:heading -->
-	<h2><?php esc_html_e( 'Comments', 'greyd-theme' ); ?></h2>
+	<h2><?php esc_html_e( 'Comments', 'greyd-wp' ); ?></h2>
 	<!-- /wp:heading -->
 	<!-- wp:comments-title {"level":3} /-->
 	<!-- wp:comment-template -->

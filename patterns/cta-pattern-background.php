@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: CTA with Pattern Background
- * Slug: greyd-theme/cta-pattern-background
+ * Slug: greyd-wp/cta-pattern-background
  * Description: A call to action with a pattern background and a button.
  * Categories: greyd-cta
  * Keywords:
@@ -25,14 +25,14 @@
 					<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"className":"","layout":{"type":"constrained"}} -->
 					<div class="wp-block-group">
 						<!-- wp:heading {"textAlign":"left","level":2,"className":""} -->
-						<h2 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'All WordPress. One Suite.', 'greyd-theme' ); ?></h2>
+						<h2 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'All WordPress. One Suite.', 'greyd-wp' ); ?></h2>
 						<!-- /wp:heading -->
 
 						<!-- wp:paragraph {"align":"left","className":""} -->
 						<p class="has-text-align-left">
 							<?php
 							printf( /* translators: The variables refer to the HTML tags for highlighting the "next level" part of the sentence. */
-								esc_html__( 'Take your website to the %1$snext level!%2$s', 'greyd-theme' ),
+								esc_html__( 'Take your website to the %1$snext level!%2$s', 'greyd-wp' ),
 								'<mark class="has-inline-color has-background-color has-foreground-background-color"><strong>',
 								'</strong></mark>'
 							);
@@ -50,7 +50,7 @@
 					<div class="wp-block-buttons">
 						<!-- wp:button {"className":"has-custom-width wp-block-button__width-100 is-size-big is-style-alternate"} -->
 						<div class="wp-block-button has-custom-width wp-block-button__width-100 is-size-big is-style-alternate">
-							<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Get Started →', 'greyd-theme' ); ?></a>
+							<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Get Started →', 'greyd-wp' ); ?></a>
 						</div>
 						<!-- /wp:button -->
 					</div>

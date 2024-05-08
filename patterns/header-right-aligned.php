@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Header Right Aligned
- * Slug: greyd-theme/header-right-aligned
+ * Slug: greyd-wp/header-right-aligned
  * Description: Header with logo, site title and menu, right aligned
  * Categories: header
  * Keywords: header, nav, links

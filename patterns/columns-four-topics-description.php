@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Four Topics with Description
- * Slug: greyd-theme/columns-four-topics-description
+ * Slug: greyd-wp/columns-four-topics-description
  * Description:
  * Categories: greyd-columns
  * Keywords:
@@ -20,18 +20,18 @@
 			<!-- wp:group {"style":{"position":{"type":"sticky","top":"0px"}},"className":"","layout":{"type":"constrained"}} -->
 			<div class="wp-block-group">
 				<!-- wp:heading {"className":""} -->
-				<h2 class="wp-block-heading"><?php esc_html_e( 'Our Services', 'greyd-theme' ); ?></h2>
+				<h2 class="wp-block-heading"><?php esc_html_e( 'Our Services', 'greyd-wp' ); ?></h2>
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph {"align":"left","className":"","fontSize":"medium"} -->
-				<p class="has-text-align-left has-medium-font-size"><?php esc_html_e( 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.', 'greyd-theme' ); ?></p>
+				<p class="has-text-align-left has-medium-font-size"><?php esc_html_e( 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.', 'greyd-wp' ); ?></p>
 				<!-- /wp:paragraph -->
 
 				<!-- wp:buttons {"align":"","className":""} -->
 				<div class="wp-block-buttons">
 					<!-- wp:button {"className":"is-style-sec is-style-outline"} -->
 					<div class="wp-block-button is-style-sec is-style-outline">
-						<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Contact us', 'greyd-theme' ); ?></a>
+						<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Contact us', 'greyd-wp' ); ?></a>
 					</div>
 					<!-- /wp:button -->
 				</div>
@@ -60,11 +60,11 @@
 							<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"className":"","layout":{"type":"default"}} -->
 							<div class="wp-block-group">
 								<!-- wp:heading {"textAlign":"center","level":3,"className":"","fontSize":"medium"} -->
-								<h3 class="wp-block-heading has-text-align-center has-medium-font-size"><?php esc_html_e( 'Webdesign', 'greyd-theme' ); ?></h3>
+								<h3 class="wp-block-heading has-text-align-center has-medium-font-size"><?php esc_html_e( 'Webdesign', 'greyd-wp' ); ?></h3>
 								<!-- /wp:heading -->
 
 								<!-- wp:paragraph {"align":"center","className":""} -->
-								<p class="has-text-align-center"><?php esc_html_e( 'At vero eos et accusam', 'greyd-theme' ); ?></p>
+								<p class="has-text-align-center"><?php esc_html_e( 'At vero eos et accusam', 'greyd-wp' ); ?></p>
 								<!-- /wp:paragraph -->
 							</div>
 							<!-- /wp:group -->
@@ -92,11 +92,11 @@
 							<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"className":"","layout":{"type":"default"}} -->
 							<div class="wp-block-group">
 								<!-- wp:heading {"textAlign":"center","level":3,"className":"","fontSize":"medium"} -->
-								<h3 class="wp-block-heading has-text-align-center has-medium-font-size"><?php esc_html_e( 'SEO', 'greyd-theme' ); ?></h3>
+								<h3 class="wp-block-heading has-text-align-center has-medium-font-size"><?php esc_html_e( 'SEO', 'greyd-wp' ); ?></h3>
 								<!-- /wp:heading -->
 
 								<!-- wp:paragraph {"align":"center","className":""} -->
-								<p class="has-text-align-center"><?php esc_html_e( 'At vero eos et accusam', 'greyd-theme' ); ?></p>
+								<p class="has-text-align-center"><?php esc_html_e( 'At vero eos et accusam', 'greyd-wp' ); ?></p>
 								<!-- /wp:paragraph -->
 							</div>
 							<!-- /wp:group -->
@@ -128,11 +128,11 @@
 							<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"className":"","layout":{"type":"default"}} -->
 							<div class="wp-block-group">
 								<!-- wp:heading {"textAlign":"center","level":3,"className":"","fontSize":"medium"} -->
-								<h3 class="wp-block-heading has-text-align-center has-medium-font-size"><?php esc_html_e( 'Social Media', 'greyd-theme' ); ?></h3>
+								<h3 class="wp-block-heading has-text-align-center has-medium-font-size"><?php esc_html_e( 'Social Media', 'greyd-wp' ); ?></h3>
 								<!-- /wp:heading -->
 
 								<!-- wp:paragraph {"align":"center","className":""} -->
-								<p class="has-text-align-center"><?php esc_html_e( 'At vero eos et accusam', 'greyd-theme' ); ?></p>
+								<p class="has-text-align-center"><?php esc_html_e( 'At vero eos et accusam', 'greyd-wp' ); ?></p>
 								<!-- /wp:paragraph -->
 							</div>
 							<!-- /wp:group -->
@@ -160,11 +160,11 @@
 							<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"className":"","layout":{"type":"default"}} -->
 							<div class="wp-block-group">
 								<!-- wp:heading {"textAlign":"center","level":3,"className":"","fontSize":"medium"} -->
-								<h3 class="wp-block-heading has-text-align-center has-medium-font-size"><?php esc_html_e( 'SEA', 'greyd-theme' ); ?></h3>
+								<h3 class="wp-block-heading has-text-align-center has-medium-font-size"><?php esc_html_e( 'SEA', 'greyd-wp' ); ?></h3>
 								<!-- /wp:heading -->
 
 								<!-- wp:paragraph {"align":"center","className":""} -->
-								<p class="has-text-align-center"><?php esc_html_e( 'At vero eos et accusam', 'greyd-theme' ); ?></p>
+								<p class="has-text-align-center"><?php esc_html_e( 'At vero eos et accusam', 'greyd-wp' ); ?></p>
 								<!-- /wp:paragraph -->
 							</div>
 							<!-- /wp:group -->

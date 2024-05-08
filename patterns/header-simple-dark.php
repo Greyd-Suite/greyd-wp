@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Header Simple Dark
- * Slug: greyd-theme/header-simple-dark
+ * Slug: greyd-wp/header-simple-dark
  * Description: Header with logo, site title and menu, on a dark background
  * Categories: header
  * Keywords: header, nav, links

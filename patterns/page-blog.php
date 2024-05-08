@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Page: Blog
- * Slug: greyd-theme/page-blog
+ * Slug: greyd-wp/page-blog
  * Categories: greyd-pages
  * Keywords: starter
  * Block Types: core/post-content
@@ -9,6 +9,6 @@
  * Viewport width: 1600
  */
 ?>
-<!-- wp:pattern {"slug":"greyd-theme/content-heading-separator"} /-->
-<!-- wp:pattern {"slug":"greyd-theme/posts-cards-three-in-row"} /-->
-<!-- wp:pattern {"slug":"greyd-theme/content-separator-bg-pattern-quote"} /-->
+<!-- wp:pattern {"slug":"greyd-wp/content-heading-separator"} /-->
+<!-- wp:pattern {"slug":"greyd-wp/posts-cards-three-in-row"} /-->
+<!-- wp:pattern {"slug":"greyd-wp/content-separator-bg-pattern-quote"} /-->

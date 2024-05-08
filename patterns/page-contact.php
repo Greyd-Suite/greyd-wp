@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Page: Contact
- * Slug: greyd-theme/page-contact
+ * Slug: greyd-wp/page-contact
  * Categories: greyd-pages
  * Keywords: starter
  * Block Types: core/post-content
@@ -9,12 +9,12 @@
  * Viewport width: 1600
  */
 ?>
-<!-- wp:pattern {"slug":"greyd-theme/content-social-linktree"} /-->
+<!-- wp:pattern {"slug":"greyd-wp/content-social-linktree"} /-->
 <!-- wp:separator {"className":"is-style-dots"} -->
 <hr class="wp-block-separator has-alpha-channel-opacity is-style-dots" />
 <!-- /wp:separator -->
-<!-- wp:pattern {"slug":"greyd-theme/columns-headline-left-four-topics"} /-->
+<!-- wp:pattern {"slug":"greyd-wp/columns-headline-left-four-topics"} /-->
 <!-- wp:separator {"className":"is-style-dots"} -->
 <hr class="wp-block-separator has-alpha-channel-opacity is-style-dots" />
 <!-- /wp:separator -->
-<!-- wp:pattern {"slug":"greyd-theme/testimonial-three-boxes-split-bg"} /-->
+<!-- wp:pattern {"slug":"greyd-wp/testimonial-three-boxes-split-bg"} /-->

@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Latest Posts, simple
- * Slug: greyd-theme/posts-latest-posts
+ * Slug: greyd-wp/posts-latest-posts
  * Description: 
  * Categories: greyd-posts
  * Keywords: 
@@ -16,7 +16,7 @@
 	<!-- wp:query {"queryId":0,"query":{"perPage":6,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"exclude","inherit":false},"align":"wide"} -->
 	<div class="wp-block-query alignwide">
 		<!-- wp:heading -->
-		<h2 class="wp-block-heading"><?php esc_html_e( 'Latest Posts', 'greyd-theme' ); ?></h2>
+		<h2 class="wp-block-heading"><?php esc_html_e( 'Latest Posts', 'greyd-wp' ); ?></h2>
 		<!-- /wp:heading -->
 
 		<!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
@@ -38,7 +38,7 @@
 		<!-- /wp:post-template -->
 
 		<!-- wp:query-no-results -->
-			<!-- wp:pattern {"slug":"greyd-theme/hidden-no-results"} /-->
+			<!-- wp:pattern {"slug":"greyd-wp/hidden-no-results"} /-->
 		<!-- /wp:query-no-results -->
 
 		<!-- wp:query-pagination -->

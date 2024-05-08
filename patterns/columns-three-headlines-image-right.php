@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Three Headlines left, Image right
- * Slug: greyd-theme/columns-three-headlines-image-right
+ * Slug: greyd-wp/columns-three-headlines-image-right
  * Description:
  * Categories: greyd-columns
  * Keywords:
@@ -16,7 +16,7 @@
 	<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"className":"","layout":{"type":"default"}} -->
 	<div class="wp-block-group alignwide">
 		<!-- wp:heading {"textAlign":"center","className":"is-style-wide"} -->
-		<h2 class="wp-block-heading has-text-align-center is-style-wide"><?php esc_html_e( 'Career', 'greyd-theme' ); ?></h2>
+		<h2 class="wp-block-heading has-text-align-center is-style-wide"><?php esc_html_e( 'Career', 'greyd-wp' ); ?></h2>
 		<!-- /wp:heading -->
 
 		<!-- wp:separator {"align":"center","style":{"spacing":{"margin":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large"}}},"backgroundColor":"foreground","className":"is-style-dots"} -->
@@ -33,11 +33,11 @@
 				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"className":"","layout":{"type":"constrained"}} -->
 				<div class="wp-block-group">
 					<!-- wp:heading {"level":3,"className":""} -->
-					<h3 class="wp-block-heading"><?php esc_html_e( 'What we offer', 'greyd-theme' ); ?></h3>
+					<h3 class="wp-block-heading"><?php esc_html_e( 'What we offer', 'greyd-wp' ); ?></h3>
 					<!-- /wp:heading -->
 
 					<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|dark"}}}},"textColor":"dark","className":"","fontSize":"small"} -->
-					<p class="has-dark-color has-text-color has-link-color has-small-font-size"><?php esc_html_e( 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.', 'greyd-theme' ); ?></p>
+					<p class="has-dark-color has-text-color has-link-color has-small-font-size"><?php esc_html_e( 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.', 'greyd-wp' ); ?></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
@@ -45,11 +45,11 @@
 				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"className":"","layout":{"type":"constrained"}} -->
 				<div class="wp-block-group">
 					<!-- wp:heading {"level":3,"className":""} -->
-					<h3 class="wp-block-heading"><?php esc_html_e( 'What we are looking for', 'greyd-theme' ); ?></h3>
+					<h3 class="wp-block-heading"><?php esc_html_e( 'What we are looking for', 'greyd-wp' ); ?></h3>
 					<!-- /wp:heading -->
 
 					<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|dark"}}}},"textColor":"dark","className":"","fontSize":"small"} -->
-					<p class="has-dark-color has-text-color has-link-color has-small-font-size"><?php esc_html_e( 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.', 'greyd-theme' ); ?></p>
+					<p class="has-dark-color has-text-color has-link-color has-small-font-size"><?php esc_html_e( 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.', 'greyd-wp' ); ?></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
@@ -60,7 +60,7 @@
 					<h3 class="wp-block-heading">
 						<?php
 						printf( /* translators: The variables refer to the HTML tags for highlighting the "unique" word of the sentence. */
-							esc_html__( 'What makes us %1$sunique%2$s', 'greyd-theme' ),
+							esc_html__( 'What makes us %1$sunique%2$s', 'greyd-wp' ),
 							'<mark class="has-inline-color has-secondary-color has-foreground-background-color">',
 							'</mark>'
 						);
@@ -69,7 +69,7 @@
 					<!-- /wp:heading -->
 
 					<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|dark"}}}},"textColor":"dark","className":"","fontSize":"small"} -->
-					<p class="has-dark-color has-text-color has-link-color has-small-font-size"><?php esc_html_e( 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.', 'greyd-theme' ); ?></p>
+					<p class="has-dark-color has-text-color has-link-color has-small-font-size"><?php esc_html_e( 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.', 'greyd-wp' ); ?></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
@@ -78,7 +78,7 @@
 				<div class="wp-block-buttons alignleft">
 					<!-- wp:button {"className":"is-style-sec is-style-outline"} -->
 					<div class="wp-block-button is-style-sec is-style-outline">
-						<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Apply Now', 'greyd-theme' ); ?></a>
+						<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Apply Now', 'greyd-wp' ); ?></a>
 					</div>
 					<!-- /wp:button -->
 				</div>
