@@ -1,3 +1,7 @@
+## 2.3.0 - 2024-05-08
+* Pattern updates
+* Various fixes and improvements
+
 ## 2.2.0 - 2024-04-12
 * Adding patterns
 
