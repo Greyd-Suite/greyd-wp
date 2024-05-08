@@ -108,7 +108,7 @@
 				<!-- /wp:group -->
 
 				<!-- wp:paragraph {"className":"","fontSize":"small"} -->
-				<p class="has-small-font-size"><?php esc_html_e( 'Create any type of form with our block-based form generator. From simple contact forms with double opt-in to complex multistep forms with CRM connection, conditions and mathematical calculations everything is possible!', 'greyd-theme' ); ?></p>
+				<p class="has-small-font-size"><?php esc_html_e( 'Create any type of form with our block-based form generator. From simple contact forms with double opt-in to complex multistep forms with CRM connection, conditions and mathematical calculations, anything is possible!', 'greyd-theme' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->

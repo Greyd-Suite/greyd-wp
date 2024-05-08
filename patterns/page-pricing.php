@@ -9,7 +9,7 @@
  * Viewport width: 1600
  */
 ?>
-<!-- wp:pattern {"slug":"greyd-theme/content-heading-subline"} /-->
+<!-- wp:pattern {"slug":"greyd-theme/content-heading-separator"} /-->
 <!-- wp:pattern {"slug":"greyd-theme/pricing-three-columns-middle-highlighted-split-bg"} /-->
 <!-- wp:pattern {"slug":"greyd-theme/columns-faq"} /-->
 <!-- wp:pattern {"slug":"greyd-theme/content-separator-six-key-facts"} /-->

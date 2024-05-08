@@ -17,7 +17,7 @@
 
 		<!-- wp:post-date /-->
 
-		<!-- wp:post-title /-->
+		<!-- wp:post-title {"level":1} /-->
 
 		<!-- wp:post-content {"layout":{"type":"constrained"}} /-->
 

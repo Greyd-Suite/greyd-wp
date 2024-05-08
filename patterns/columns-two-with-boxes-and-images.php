@@ -22,7 +22,7 @@
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph {"className":""} -->
-				<p><?php esc_html_e( 'Greyd Theme is a block theme that not only gives you an advanced block &amp; site editor experience, but also comes with many powerful add-ons. Its native integration into the core makes it extremely flexible, creating clean, accessible and super-fast websites.', 'greyd-theme' ); ?></p>
+				<p><?php esc_html_e( 'Greyd Theme is a block theme that not only gives you an advanced block &amp; site editor experience, but also comes with many powerful add-ons. Its native integration into the core makes it extremely flexible, creating clean, accessible and superfast websites.', 'greyd-theme' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -76,7 +76,7 @@
 					<!-- /wp:heading -->
 
 					<!-- wp:paragraph {"align":"center","className":""} -->
-					<p class="has-text-align-center"><?php esc_html_e( 'The Greyd Theme is perfect starting point to scale up your WordPress business.', 'greyd-theme' ); ?></p>
+					<p class="has-text-align-center"><?php esc_html_e( 'The Greyd Theme is the perfect starting point to scale up your WordPress business.', 'greyd-theme' ); ?></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->

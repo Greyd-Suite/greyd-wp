@@ -52,7 +52,7 @@
 					<!-- /wp:group -->
 
 					<!-- wp:paragraph {"align":"left","className":""} -->
-					<p class="has-text-align-left"><?php esc_html_e( 'We spent years in the web agency and website creation industry: our biggest challenge was that we had to begin every project from the beginning each time.', 'greyd-theme' ); ?></p>
+					<p class="has-text-align-left"><?php esc_html_e( 'We spent years in the web agency and website creation industry: our biggest challenge was having to start each and every project from scratch.', 'greyd-theme' ); ?></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
@@ -74,7 +74,7 @@
 					<!-- /wp:group -->
 
 					<!-- wp:paragraph {"align":"left","className":""} -->
-					<p class="has-text-align-left"><?php esc_html_e( 'Greyd was born as a response to the everyday struggles people and businesses face with WordPress, where page builders, themes, and plugins often fall short.', 'greyd-theme' ); ?></p>
+					<p class="has-text-align-left"><?php esc_html_e( 'Greyd was born in response to the everyday struggles people and businesses face with WordPress, where page builders, themes, and plugins often fall short.', 'greyd-theme' ); ?></p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->

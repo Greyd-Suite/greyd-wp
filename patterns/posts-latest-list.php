@@ -22,7 +22,7 @@
 		<!-- wp:post-template {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}}} -->
 			<!-- wp:group {"style":{"border":{"bottom":{"color":"var:preset|color|mediumlight","style":"solid","width":"1px"}},"spacing":{"padding":{"bottom":"var:preset|spacing|small"}}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
 			<div class="wp-block-group" style="border-bottom-color:var(--wp--preset--color--mediumlight);border-bottom-style:solid;border-bottom-width:1px;padding-bottom:var(--wp--preset--spacing--small)">
-				<!-- wp:post-title {"isLink":true,"fontSize":"large"} /-->
+				<!-- wp:post-title {"level":3,"isLink":true,"fontSize":"large"} /-->
 
 				<!-- wp:post-date /-->
 			</div>

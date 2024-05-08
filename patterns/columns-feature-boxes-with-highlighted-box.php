@@ -86,7 +86,7 @@
 				<!-- /wp:group -->
 
 				<!-- wp:paragraph {"align":"left","className":""} -->
-				<p class="has-text-align-left"><?php esc_html_e( "Don't worry whether your website code is accessible. You put in the creativity, Greyd does the coding. The result are super-fast websites!", 'greyd-theme' ); ?></p>
+				<p class="has-text-align-left"><?php esc_html_e( "Don't worry whether your website code is accessible. You put in the creativity, Greyd does the coding. The results are superfast websites!", 'greyd-theme' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->

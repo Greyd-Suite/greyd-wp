@@ -30,7 +30,7 @@
 					</div>
 					<!-- /wp:group -->
 
-					<!-- wp:post-title {"style":{"elements":{"link":{"color":{"text":"var:preset|color|background"}}},"spacing":{"margin":{"top":"200px"}}},"textColor":"background","className":""} /-->
+					<!-- wp:post-title {"level":1,"style":{"elements":{"link":{"color":{"text":"var:preset|color|background"}}},"spacing":{"margin":{"top":"200px"}}},"textColor":"background","className":""} /-->
 				</div>
 			</div>
 			<!-- /wp:cover -->

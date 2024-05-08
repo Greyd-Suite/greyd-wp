@@ -23,8 +23,8 @@
 			</figure>
 			<!-- /wp:image -->
 
-			<!-- wp:heading {"textAlign":"center","level":2,"className":""} -->
-			<h2 class="wp-block-heading has-text-align-center"><?php esc_html_e( 'Jane Doe', 'greyd-theme' ); ?></h2>
+			<!-- wp:heading {"textAlign":"center","level":1,"className":"","fontSize":"x-large"} -->
+			<h1 class="wp-block-heading has-text-align-center has-x-large-font-size"><?php esc_html_e( 'Jane Doe', 'greyd-theme' ); ?></h1>
 			<!-- /wp:heading -->
 
 			<!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|large"}}},"className":""} -->

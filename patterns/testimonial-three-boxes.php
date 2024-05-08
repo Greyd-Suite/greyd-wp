@@ -106,7 +106,7 @@
 					<!-- /wp:heading -->
 
 					<!-- wp:paragraph {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|medium"}}},"className":"","fontSize":"small"} -->
-					<p class="has-small-font-size" style="margin-bottom:var(--wp--preset--spacing--medium)"><?php esc_html_e( 'Our customer more than doubled their leads in only 3 months after relaunching their sites with Greyd.', 'greyd-theme' ); ?></p>
+					<p class="has-small-font-size" style="margin-bottom:var(--wp--preset--spacing--medium)"><?php esc_html_e( 'Our customer more than doubled their leads in only three months after relaunching their sites with Greyd.', 'greyd-theme' ); ?></p>
 					<!-- /wp:paragraph -->
 
 					<!-- wp:buttons {"className":""} -->
