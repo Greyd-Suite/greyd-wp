@@ -10,21 +10,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-// TODO: Remove?
-// config vars
-if ( ! defined( 'GREYD_THEME_CONFIG' ) ) {
-	define(
-		'GREYD_THEME_CONFIG',
-		array(
-			'theme_name_full' => 'Greyd WP',
-			'theme_name'      => 'greyd-wp',
-			'theme_file'      => __FILE__,
-			'theme_dir'       => __DIR__,
-			'update_url'      => 'https://update.greyd.io/public/themes/greyd-wp/metadata.json',
-		)
-	);
-}
-
 /**
  * Main Theme.
  */
