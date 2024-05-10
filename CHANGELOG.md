@@ -1,3 +1,6 @@
+## 2.3.1 - 2024-05-10
+* Remove unneeded variable
+
 ## 2.3.0 - 2024-05-08
 * Pattern updates
 * Various fixes and improvements
