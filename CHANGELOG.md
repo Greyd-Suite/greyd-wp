@@ -1,3 +1,6 @@
+## 2.3.2 - 2024-05-13
+* Update screenshot
+
 ## 2.3.1 - 2024-05-10
 * Remove unneeded variable
 
