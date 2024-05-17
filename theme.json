@@ -842,14 +842,14 @@
 							"fontWeight": "400",
 							"fontStyle": "normal",
 							"fontStretch": "normal",
-							"src": [ "file:./assets/fonts/DM_Sans/DMSans_18pt-Regular.woff2" ]
+							"src": [ "file:./assets/fonts/DM_Sans/DMSans-Regular.woff2" ]
 						},
 						{
 							"fontFamily": "DM Sans",
 							"fontWeight": "700",
 							"fontStyle": "normal",
 							"fontStretch": "normal",
-							"src": [ "file:./assets/fonts/DM_Sans/DMSans_18pt-Bold.woff2" ]
+							"src": [ "file:./assets/fonts/DM_Sans/DMSans-SemiBold.woff2" ]
 						}
 					]
 				},
