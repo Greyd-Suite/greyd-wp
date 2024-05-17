@@ -1,3 +1,7 @@
+## 2.3.3 - 2024-05-17
+* Re-add GREYD_THEME_CONFIG variable
+* Fix an issue with font declarations in theme.json
+
 ## 2.3.2 - 2024-05-13
 * Update screenshot
 
