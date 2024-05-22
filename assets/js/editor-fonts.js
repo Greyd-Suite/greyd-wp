@@ -705,10 +705,6 @@ var greyd = greyd || { tools: {}, components: {} };
 
 		render() {
 
-			if ( !greyd.tools.isPluginActive( 'gutenberg/gutenberg' ) ) {
-				return;
-			}
-
 			return el( wp.components.BaseControl, {}, [
 				el( wp.components.Notice, { 
 					status: 'warning',
