@@ -1,3 +1,7 @@
+## 2.4.0 - 2024-05-22
+* Make Google and custom fonts deprecation notice always visible in Greyd Global Styles
+* Updates to translation strings
+
 ## 2.3.3 - 2024-05-17
 * Re-add GREYD_THEME_CONFIG variable
 * Fix an issue with font declarations in theme.json

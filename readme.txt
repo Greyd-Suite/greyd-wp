@@ -3,7 +3,7 @@ Contributors: greydsuite, sandrakurze, luminuu, jtgreyd, thomask42, annebovelett
 Requires at least: 6.4
 Tested up to: 6.5
 Requires PHP: 7.4
-Stable tag: 2.3.3
+Stable tag: 2.4.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: accessibility-ready, block-patterns, block-styles, custom-colors, custom-header, custom-logo, editor-style, featured-images, full-site-editing, template-editing, theme-options, translation-ready
@@ -46,6 +46,10 @@ Before you start, make sure you're running WordPress 6.4 or later.
 4. Activate the theme.
 
 == Changelog ==
+
+= 2.4.0 - 2024-05-22 =
+- Make Google and custom fonts deprecation notice always visible in Greyd Global Styles
+- Updates to translation strings
 
 = 2.3.3 - 2024-05-17 =
 - Re-add GREYD_THEME_CONFIG variable
