@@ -1040,7 +1040,7 @@ var greyd = greyd || { tools: {}, components: {} };
 				} ),
 				// custom input
 				!enableCustom ? null : el( wp.components.ToggleControl, {
-					label: __( 'enable custom input', 'greyd-wp' ),
+					label: __( 'Enable custom input', 'greyd-wp' ),
 					checked: custom,
 					onChange: ( val ) => {
 						this.setState( {
@@ -2029,7 +2029,7 @@ var greyd = greyd || { tools: {}, components: {} };
 					el( "div", { className: "panel_buttons" }, [
 						supportsState && onStateToggle ?
 							el( Tooltip, {
-								text: __( "change on hover", 'greyd-wp' )
+								text: __( "Change on hover", 'greyd-wp' )
 							}, el( "button", {
 								className: "button button-ghost" + ( isStateEnabled ? " active" : "" ),
 								onClick: ( e ) => {
@@ -2043,7 +2043,7 @@ var greyd = greyd || { tools: {}, components: {} };
 							) : "",
 						!supportsState && supportsResponsive && onResponsiveToggle ?
 							el( Tooltip, {
-								text: __( "change on screen sizes", 'greyd-wp' )
+								text: __( "Change on screen sizes", 'greyd-wp' )
 							}, el( "button", {
 								className: "button button-ghost" + ( isResponsiveEnabled ? " active" : "" ),
 								onClick: ( e ) => {
@@ -2485,7 +2485,7 @@ var greyd = greyd || { tools: {}, components: {} };
 						} )
 					] ),
 					el( HStack, {}, [
-						el( "span", { className: "inner_label" }, __( "Vertical", 'greyd-wp' ) ),
+						el( "span", { className: "inner_label" }, __( "Vertically", 'greyd-wp' ) ),
 						el( RangeControl, {
 							value: value.y,
 							min: -50,
@@ -2526,11 +2526,11 @@ var greyd = greyd || { tools: {}, components: {} };
 							value: value.position,
 							options: [
 								{
-									label: __( "outset", 'greyd-wp' ),
+									label: __( "Outset", 'greyd-wp' ),
 									value: "outset"
 								},
 								{
-									label: __( "inset", 'greyd-wp' ),
+									label: __( "Inset", 'greyd-wp' ),
 									value: "inset"
 								},
 							],

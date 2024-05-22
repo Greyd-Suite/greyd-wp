@@ -12,7 +12,7 @@ The Greyd theme is **designed to fast and flexibly fit any WordPress website**. 
 | ------------- | ------------- |
 | [Features and tutorial](https://greyd.io/greyd-theme/) | Learn more about the features of the Theme and how to use it. |
 | [Live Demo](https://theme.greyd.io/) | View a live demo including all the styles, pages and templates. |
-| [Download the theme](https://update.greyd.io/public/themes/greyd-wp/greyd-wp.zip) | Download the latest theme zip to install on your WordPress site. |
+| [Download the theme](https://wordpress.org/themes/greyd-wp/) | Download the latest theme zip to install on your WordPress site. |
 | [GitHub](https://github.com/Greyd-Suite/greyd-wp) | Dig through the source code in the official GitHub Repository. |
 | [Discover Greyd.Suite](https://greyd.io/demo/) | Learn more about what Greyd.Suite has to offer. |
 
@@ -20,7 +20,7 @@ The Greyd theme is **designed to fast and flexibly fit any WordPress website**. 
 
 Before you start, make sure you're running WordPress 6.4 or later.
 
-1. Start by [downloading the theme](https://update.greyd.io/public/themes/greyd-wp/greyd-wp.zip).
+1. Start by [downloading the theme](https://wordpress.org/themes/greyd-wp/).
 2. Go to `Appearance → Themes → Add New`
 3. Upload the ZIP.
 4. Activate the theme.
@@ -28,7 +28,7 @@ Before you start, make sure you're running WordPress 6.4 or later.
 ## Copyright
 
 Greyd WP, (C) 2024 Greyd GmbH.
-The Greyd Theme is distributed under the terms of the [GNU GPLv2 or later](http://www.gnu.org/licenses/gpl-2.0.html)
+The Greyd WP theme is distributed under the terms of the [GNU GPLv2 or later](http://www.gnu.org/licenses/gpl-2.0.html)
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

@@ -72,7 +72,7 @@
 				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"constrained"}} -->
 				<div class="wp-block-group">
 					<!-- wp:heading {"textAlign":"center","level":3} -->
-					<h3 class="wp-block-heading has-text-align-center"><?php esc_html_e( 'Elevate your WP business', 'greyd-wp' ); ?></h3>
+					<h3 class="wp-block-heading has-text-align-center"><?php esc_html_e( 'Elevate your WordPress business', 'greyd-wp' ); ?></h3>
 					<!-- /wp:heading -->
 
 					<!-- wp:paragraph {"align":"center","className":""} -->

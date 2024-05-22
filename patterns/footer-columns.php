@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Footer with 4 Columns (Default)
+ * Title: Footer with Four Columns (Default)
  * Slug: greyd-wp/footer-columns
  * Description: 1st column: Site logo, title, tagline. 2nd column: More info, navigation. 3rd column: Social links. 4th column: Search.
  * Categories: footer

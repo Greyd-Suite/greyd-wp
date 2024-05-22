@@ -63,9 +63,9 @@
 								el( greyd.components.ButtonGroupControl, {
 									value: props.attributes?.size,
 									options: [
-										{ label: __( 'default', 'greyd-wp' ), value: '' },
-										{ label: __( 'large', 'greyd-wp' ), value: 'is-size-big' },
-										{ label: __( 'small', 'greyd-wp' ), value: 'is-size-small' },
+										{ label: __( 'Default', 'greyd-wp' ), value: '' },
+										{ label: __( 'Large', 'greyd-wp' ), value: 'is-size-big' },
+										{ label: __( 'Small', 'greyd-wp' ), value: 'is-size-small' },
 									],
 									onChange: ( value ) => {
 										var classNames = [];

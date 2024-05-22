@@ -71,7 +71,7 @@
 						<!-- /wp:paragraph -->
 
 						<!-- wp:paragraph {"className":""} -->
-						<p><a href="https://greyd.io/" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Visit our homepage →', 'greyd-wp' ); ?></a></p>
+						<p><a href="https://greyd.io/" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Visit our website →', 'greyd-wp' ); ?></a></p>
 						<!-- /wp:paragraph -->
 
 						<!-- wp:paragraph {"className":""} -->

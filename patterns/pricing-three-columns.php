@@ -24,13 +24,13 @@
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.5"}},"className":"","fontSize":"normal"} -->
-				<p class="has-normal-font-size" style="line-height:1.5"><?php esc_html_e( 'Gives you the most freedom. Perfect if you want to try us out. for a short trip', 'greyd-wp' ); ?></p>
+				<p class="has-normal-font-size" style="line-height:1.5"><?php esc_html_e( 'Gives you the most freedom. Perfect if you want to try us out. For a short trip.', 'greyd-wp' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
 
 			<!-- wp:paragraph {"className":"","fontSize":"x-large"} -->
-			<p class="has-x-large-font-size"><?php esc_html_e( '$8,99 / mo.', 'greyd-wp' ); ?></p>
+			<p class="has-x-large-font-size"><?php esc_html_e( '$8.99 / mo.', 'greyd-wp' ); ?></p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:buttons {"align":"full","className":"","layout":{"type":"flex","justifyContent":"center","orientation":"horizontal"}} -->
@@ -82,13 +82,13 @@
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.5"}},"className":"","fontSize":"normal"} -->
-				<p class="has-normal-font-size" style="line-height:1.5"><?php esc_html_e( 'For companies of all sizes, who know what they need. For a casual relationship', 'greyd-wp' ); ?></p>
+				<p class="has-normal-font-size" style="line-height:1.5"><?php esc_html_e( 'For companies of all sizes, who know what they need. For a casual relationship.', 'greyd-wp' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
 
 			<!-- wp:paragraph {"className":"","fontSize":"x-large"} -->
-			<p class="has-x-large-font-size"><?php esc_html_e( '$6,49 / mo.', 'greyd-wp' ); ?></p>
+			<p class="has-x-large-font-size"><?php esc_html_e( '$6.49 / mo.', 'greyd-wp' ); ?></p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:buttons {"align":"full","className":"","layout":{"type":"flex","justifyContent":"center","orientation":"horizontal"}} -->
@@ -146,7 +146,7 @@
 			<!-- /wp:group -->
 
 			<!-- wp:paragraph {"className":"","fontSize":"x-large"} -->
-			<p class="has-x-large-font-size"><?php esc_html_e( '$4,99 / mo.', 'greyd-wp' ); ?></p>
+			<p class="has-x-large-font-size"><?php esc_html_e( '$4.99 / mo.', 'greyd-wp' ); ?></p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:buttons {"align":"full","className":"","layout":{"type":"flex","justifyContent":"center","orientation":"horizontal"}} -->

@@ -63,7 +63,7 @@
 
 			<!-- wp:button {"className":"has-custom-width wp-block-button__width-100 is-style-fill"} -->
 			<div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-fill">
-				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Visit My Webshop', 'greyd-wp' ); ?></a>
+				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Visit my webshop', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 

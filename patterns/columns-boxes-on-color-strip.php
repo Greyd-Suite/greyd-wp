@@ -116,7 +116,7 @@
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph {"fontSize":"small"} -->
-				<p class="has-small-font-size"><?php esc_html_e( 'Ensure your website is accessible to all. GREYD empowers you to create user-friendly designs, making your online space welcoming to everyone.', 'greyd-wp' ); ?></p>
+				<p class="has-small-font-size"><?php esc_html_e( 'Ensure your website is accessible to all. Greyd empowers you to create user-friendly designs, making your online space welcoming to everyone.', 'greyd-wp' ); ?></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->

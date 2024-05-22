@@ -193,7 +193,7 @@ __________________________________
 	min-height: 0;
 	line-height: 1;
 	padding: 2px 6px;
-	border-color: #D7D7D7 !important;
+	border-color: #D7D7D7;
 	box-shadow: none !important;
 }
 
@@ -203,8 +203,8 @@ __________________________________
 }
 
 .components-panel__body .panel_buttons .button.active {
-	color: var(--wp-admin-theme-color);
-	background-color: #f3f3f3;
+	color: var(--wp-components-color-accent, var(--wp-admin-theme-color, #3858e9));
+	border-color: var(--wp-components-color-accent, var(--wp-admin-theme-color, #3858e9));
 }
 
 

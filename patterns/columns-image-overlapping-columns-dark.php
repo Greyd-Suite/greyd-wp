@@ -49,7 +49,7 @@
 			<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|medium","bottom":"var:preset|spacing|medium","left":"var:preset|spacing|medium","right":"var:preset|spacing|medium"}},"border":{"width":"2px","color":"#0e1111","radius":"4px"},"layout":{"selfStretch":"fill","flexSize":null}},"backgroundColor":"lightest","className":"","layout":{"type":"flex","orientation":"vertical","verticalAlignment":"space-between"}} -->
 			<div class="wp-block-group has-border-color has-lightest-background-color has-background" style="border-color:#0e1111;border-width:2px;border-radius:4px;padding-top:var(--wp--preset--spacing--medium);padding-right:var(--wp--preset--spacing--medium);padding-bottom:var(--wp--preset--spacing--medium);padding-left:var(--wp--preset--spacing--medium)">
 				<!-- wp:heading {"textAlign":"left","level":3,"className":""} -->
-				<h3 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Everyone in Mind', 'greyd-wp' ); ?></h3>
+				<h3 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Everyone in mind', 'greyd-wp' ); ?></h3>
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph {"align":"left","className":""} -->

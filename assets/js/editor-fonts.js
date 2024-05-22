@@ -568,22 +568,22 @@ var greyd = greyd || { tools: {}, components: {} };
 		makeTip() {
 			var tip = [];
 			if ( this.state.hasGoogleFonts && this.state.hasLocalGoogleFonts && this.state.hasLocalCustomFonts ) {
-				tip.push( el( "p", {}, __( 'We detected local Fonts and selected Google Fonts.', 'greyd-wp' ) ) );
+				tip.push( el( "p", {}, __( 'We detected local fonts and selected Google Fonts.', 'greyd-wp' ) ) );
 			}
 			else if ( this.state.hasLocalGoogleFonts && this.state.hasLocalCustomFonts ) {
-				tip.push( el( "p", {}, __( 'We detected local Google and Custom Fonts.', 'greyd-wp' ) ) );
+				tip.push( el( "p", {}, __( 'We detected local Google Fonts and custom fonts.', 'greyd-wp' ) ) );
 			}
 			else if ( this.state.hasLocalGoogleFonts ) {
 				tip.push( el( "p", {}, __( 'We detected local Google Fonts.', 'greyd-wp' ) ) );
 			}
 			else if ( this.state.hasLocalCustomFonts ) {
-				tip.push( el( "p", {}, __( 'We detected local Custom Fonts.', 'greyd-wp' ) ) );
+				tip.push( el( "p", {}, __( 'We detected local custom fonts.', 'greyd-wp' ) ) );
 			}
 			else if ( this.state.hasGoogleFonts ) {
 				tip.push( el( "p", {}, __( 'We detected selected Google Fonts.', 'greyd-wp' ) ) );
 			}
 			tip.push( el( 'br' ) );
-			tip.push( el( "i", {}, __( 'The Feature is deprecated, please convert the Fonts and use Global Styles Typography Settings instead.', 'greyd-wp' ) ) );
+			tip.push( el( "i", {}, __( 'This feature is deprecated, please convert the fonts and use Global Styles Typography settings instead.', 'greyd-wp' ) ) );
 
 			return [
 				el( "p", {}, tip ),
@@ -609,12 +609,12 @@ var greyd = greyd || { tools: {}, components: {} };
 			return tip;
 		}
 		makeButtonLabel() {
-			var btn = __( 'Convert Local Fonts', 'greyd-wp' );
+			var btn = __( 'Convert local fonts', 'greyd-wp' );
 			if ( this.state.hasGoogleFonts && this.state.hasLocalGoogleFonts && this.state.hasLocalCustomFonts ) {
-				btn = __( 'Convert Fonts', 'greyd-wp' );
+				btn = __( 'Convert fonts', 'greyd-wp' );
 			}
 			else if ( this.state.hasGoogleFonts ) {
-				btn = __( 'Convert selected Fonts', 'greyd-wp' );
+				btn = __( 'Convert selected fonts', 'greyd-wp' );
 			}
 
 			return btn;
@@ -690,7 +690,7 @@ var greyd = greyd || { tools: {}, components: {} };
 						__( 'Greyd Google Fonts are deprecated.', 'greyd-wp' ) :
 						__( 'Greyd Custom Fonts are deprecated.', 'greyd-wp' ),
 					el( 'br' ),
-					__( 'Please use Global Styles Typography Settings instead.', 'greyd-wp' )
+					__( 'Please use Global Styles Typography settings instead.', 'greyd-wp' )
 				] ),
 				el( "a", { 
 					style: { cursor: 'pointer' },
@@ -777,7 +777,7 @@ var greyd = greyd || { tools: {}, components: {} };
 					}, 0);
 				}
 				else if ( typeof greyd.tools.showSnackbar === 'function' ) {
-					greyd.tools.showSnackbar( __( "Error Deleting Font. Please see console for details.", 'greyd-wp' ), 'error' );
+					greyd.tools.showSnackbar( __( "Error deleting font. Please see console for details.", 'greyd-wp' ), 'error' );
 				}
 				this.setState( { ...this.state, saving: false } );
 			} );
@@ -807,7 +807,7 @@ var greyd = greyd || { tools: {}, components: {} };
 					}, [
 						this.state.saving ? 
 						el( wp.components.Spinner ) : 
-						el( 'span', {}, __( "Host Font locally ↓", 'greyd-wp' ) )
+						el( 'span', {}, __( "Host font locally ↓", 'greyd-wp' ) )
 					] ),
 				] ),
 
@@ -1054,7 +1054,7 @@ var greyd = greyd || { tools: {}, components: {} };
 							greyd.tools.font.delete( this.props.value, (data) => {
 								if (data) this.props.onChange(this.props.value);
 								else if ( typeof greyd.tools.showSnackbar === 'function' ) {
-									greyd.tools.showSnackbar( __( "Error Deleting Font. Please see console for details.", 'greyd-wp' ), 'error' );
+									greyd.tools.showSnackbar( __( "Error deleting font. Please see console for details.", 'greyd-wp' ), 'error' );
 								}
 								this.setState( { ...this.state, saving: false } );
 							} );
@@ -1117,7 +1117,7 @@ var greyd = greyd || { tools: {}, components: {} };
 								greyd.tools.font.upload(newFont, (data) => {
 									if (data) this.props.onChange(newFont.name);
 									else if ( typeof greyd.tools.showSnackbar === 'function' ) {
-										greyd.tools.showSnackbar( __( "Error Uploading Font. Please see console for details.", 'greyd-wp' ), 'error' );
+										greyd.tools.showSnackbar( __( "Error uploading font. Please see console for details.", 'greyd-wp' ), 'error' );
 									}
 									this.setState( { ...this.state, upload: !this.state.upload, font: null, saving: null } );
 								} );

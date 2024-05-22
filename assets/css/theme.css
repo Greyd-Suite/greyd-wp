@@ -866,6 +866,24 @@ form label,
 }
 
 /**
+ * Disabled
+ * ____________________________________________________________________
+ */
+.input[disabled],
+input[disabled],
+textarea[disabled],
+select[disabled] {
+	opacity: 0.3;
+}
+
+.input[disabled]:hover,
+input[disabled]:hover,
+textarea[disabled]:hover,
+select[disabled]:hover {
+	cursor: not-allowed;
+}
+
+/**
  * Select
  * ____________________________________________________________________
  */
@@ -931,6 +949,9 @@ input[type="checkbox"]:checked::before {
 	transform: scale(1);
 }
 
+input[type="checkbox"][disabled] {
+	background: rgb(100 100 100 / 0.2);
+}
 
 /**
  * ====================================================================

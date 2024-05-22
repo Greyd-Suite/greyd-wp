@@ -18,7 +18,7 @@
 		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
 		<div class="wp-block-group">
 			<!-- wp:heading {"textAlign":"center","className":"","fontSize":"large"} -->
-			<h2 class="wp-block-heading has-text-align-center has-large-font-size"><?php esc_html_e( 'Our Story', 'greyd-wp' ); ?></h2>
+			<h2 class="wp-block-heading has-text-align-center has-large-font-size"><?php esc_html_e( 'Our story', 'greyd-wp' ); ?></h2>
 			<!-- /wp:heading -->
 
 			<!-- wp:paragraph {"align":"center","className":"","fontSize":"medium"} -->
@@ -52,7 +52,7 @@
 		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"constrained"}} -->
 		<div class="wp-block-group">
 			<!-- wp:heading {"textAlign":"center","className":"has-large-font-size"} -->
-			<h2 class="wp-block-heading has-text-align-center has-large-font-size"><?php esc_html_e( 'Our Mission', 'greyd-wp' ); ?></h2>
+			<h2 class="wp-block-heading has-text-align-center has-large-font-size"><?php esc_html_e( 'Our mission', 'greyd-wp' ); ?></h2>
 			<!-- /wp:heading -->
 
 			<!-- wp:paragraph {"align":"center","className":"","fontSize":"small"} -->

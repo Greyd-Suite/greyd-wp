@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Footer with 3 Columns
+ * Title: Footer with Three Columns
  * Slug: greyd-wp/footer-three-columns
  * Description: 1st column: Site logo, title, tagline, social links. 2nd column: More info, navigation. 3rd column: Search.
  * Categories: footer

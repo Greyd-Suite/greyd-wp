@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: Footer with 3 Columns, Dark
+ * Title: Footer with Three Columns, Dark
  * Slug: greyd-wp/footer-three-columns-dark
  * Description: 1st column: Site logo, title, tagline, social links. 2nd column: More info, navigation. 3rd column: Search.
  * Categories: footer

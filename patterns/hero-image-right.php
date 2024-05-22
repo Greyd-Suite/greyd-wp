@@ -19,7 +19,7 @@
 		<div class="wp-block-group">
 			<!-- wp:paragraph {"textColor":"primary","className":"","fontSize":"medium"} -->
 			<p class="has-primary-color has-text-color has-medium-font-size">
-				<strong><?php esc_html_e( 'Get started', 'greyd-wp' ); ?></strong>
+				<strong><?php esc_html_e( 'Get Started', 'greyd-wp' ); ?></strong>
 			</p>
 			<!-- /wp:paragraph -->
 

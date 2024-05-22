@@ -46,7 +46,7 @@
 			<!-- /wp:paragraph -->
 
 			<!-- wp:paragraph {"align":"right","style":{"typography":{"lineHeight":"0","fontStyle":"normal","fontWeight":"700","fontSize":"5rem"}}} -->
-			<p class="has-text-align-right" style="font-size:5rem;font-style:normal;font-weight:700;line-height:0"><?php esc_html_e( '„', 'greyd-wp' ); ?></p>
+			<p class="has-text-align-right" style="font-size:5rem;font-style:normal;font-weight:700;line-height:0"><?php esc_html_e( '”', 'greyd-wp' ); ?></p>
 			<!-- /wp:paragraph -->
 			
 			<cite><?php esc_html_e( '15th February 2024', 'greyd-wp' ); ?></cite>

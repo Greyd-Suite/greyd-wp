@@ -16,7 +16,7 @@
 	<!-- /wp:heading -->
 
 	<!-- wp:paragraph {"className":""} -->
-	<p><?php esc_html_e( 'The page could not be found.', 'greyd-wp' ); ?></p>
+	<p><?php esc_html_e( 'This page could not be found.', 'greyd-wp' ); ?></p>
 	<!-- /wp:paragraph -->
 
 	<!-- wp:buttons {"align":"","className":""} -->

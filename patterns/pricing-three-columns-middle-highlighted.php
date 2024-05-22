@@ -33,7 +33,7 @@
 
 				<!-- wp:paragraph {"className":"","fontSize":"x-large"} -->
 				<p class="has-x-large-font-size">
-					<strong><?php esc_html_e( '$5,99', 'greyd-wp' ); ?></strong> <sub><?php esc_html_e( '/mo.', 'greyd-wp' ); ?></sub>
+					<strong><?php esc_html_e( '$5.99', 'greyd-wp' ); ?></strong> <sub><?php esc_html_e( '/ mo.', 'greyd-wp' ); ?></sub>
 				</p>
 				<!-- /wp:paragraph -->
 			</div>
@@ -99,7 +99,7 @@
 
 					<!-- wp:paragraph {"className":"","fontSize":"x-large"} -->
 					<p class="has-x-large-font-size">
-						<strong><?php esc_html_e( '$5,49', 'greyd-wp' ); ?></strong> <sub><?php esc_html_e( '/mo.', 'greyd-wp' ); ?></sub>
+						<strong><?php esc_html_e( '$5.49', 'greyd-wp' ); ?></strong> <sub><?php esc_html_e( '/ mo.', 'greyd-wp' ); ?></sub>
 					</p>
 					<!-- /wp:paragraph -->
 				</div>
@@ -161,7 +161,7 @@
 
 				<!-- wp:paragraph {"className":"","fontSize":"x-large"} -->
 				<p class="has-x-large-font-size">
-					<strong><?php esc_html_e( '$4,99', 'greyd-wp' ); ?></strong> <sub><?php esc_html_e( '/mo.', 'greyd-wp' ); ?></sub>
+					<strong><?php esc_html_e( '$4.99', 'greyd-wp' ); ?></strong> <sub><?php esc_html_e( '/ mo.', 'greyd-wp' ); ?></sub>
 				</p>
 				<!-- /wp:paragraph -->
 			</div>

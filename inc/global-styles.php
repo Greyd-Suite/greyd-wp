@@ -28,6 +28,18 @@ class Global_Styles {
 
 		// ajax handler
 		add_action( 'wp_ajax_greyd_global_styles_ajax', array( $this, 'handle_greyd_ajax_request' ) );
+		add_action( 'after_setup_theme', function() {
+
+			/**
+			 * @since 2.3.0
+			 * By setting the query parameter ?repair_global_styles=1, users can fix faulty
+			 * global-styles settings, often caused by core overwriting default settings for
+			 * specific blocks.
+			 */
+			if ( isset( $_GET['repair_global_styles'] ) ) {
+				$this->fix_global_styles_settings();
+			}
+		} );
 
 		// fix fluid typography settings
 		add_filter( 'wp_theme_json_data_user', array( $this, 'filter_theme_json_data_user_to_fix_fluid_typography_settings' ), 0 );
@@ -484,19 +496,19 @@ class Global_Styles {
 	 */
 	public function fix_global_styles_settings() {
 
-		$post_id = 0;
-		if ( class_exists( 'WP_Theme_JSON_Resolver_Gutenberg' ) ) {
-			$post_id = \WP_Theme_JSON_Resolver_Gutenberg::get_user_global_styles_post_id();
-		} elseif ( class_exists( 'WP_Theme_JSON_Resolver' ) ) {
-			$post_id = \WP_Theme_JSON_Resolver::get_user_global_styles_post_id();
-		}
+		$post_id = $this->get_global_styles_id();
 
-		if ( ! $post_id ) {
-			return;
-		}
+		if ( ! $post_id ) return;
+
 		$content = get_post_field( 'post_content', $post_id );
 		$data    = json_decode( $content );
-		if ( isset($data->settings->blocks) ) {
+		
+		if (
+			$data
+			&& is_object($data)
+			&& isset($data->settings)
+			&& isset($data->settings->blocks)
+		) {
 			// remove faulty settings for blocks
 			unset($data->settings->blocks);
 			// Update styles post

@@ -391,7 +391,7 @@
 
 			<!-- wp:button {"className":"is-size-small is-style-outline"} -->
 			<div class="wp-block-button is-size-small is-style-outline">
-				<a class="wp-block-button__link wp-element-button" href="#"><?php esc_html_e( 'Small button', 'greyd-wp' ); ?></a>
+				<a class="wp-block-button__link wp-element-button" href="#"><?php esc_html_e( 'Small Button', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 		</div>

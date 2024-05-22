@@ -2,7 +2,7 @@
 /**
  * Title: Separator with Fixed Background
  * Slug: greyd-wp/content-separator-fixed-background
- * Description: A separator with a fixed background image.
+ * Description: A separator with a fixed background image
  * Categories: greyd-content
  * Keywords:
  * Viewport Width: 1600
@@ -18,7 +18,7 @@
 		<span aria-hidden="true" class="wp-block-cover__background has-background-dim wp-block-cover__gradient-background has-background-gradient has-primary-to-secondary-gradient-background"></span>
 		<div class="wp-block-cover__image-background has-parallax is-repeated" style="background-position:50% 50%;background-image:url(<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/dark-transparent-background-pattern.webp)"></div>
 		<div class="wp-block-cover__inner-container">
-			<!-- wp:paragraph {"align":"center","placeholder":"<?php esc_html_e( 'Write title…', 'greyd-wp' ); ?>","className":"","fontSize":"large"} -->
+			<!-- wp:paragraph {"align":"center","placeholder":"<?php esc_html_e( 'Write title...', 'greyd-wp' ); ?>","className":"","fontSize":"large"} -->
 			<p class="has-text-align-center has-large-font-size"></p>
 			<!-- /wp:paragraph -->
 		</div>

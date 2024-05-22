@@ -151,7 +151,7 @@ greyd.components = new function () {
 					"topRight": __( "Top right", 'greyd-wp' ),
 					"bottomRight": __( "Bottom right", 'greyd-wp' ),
 					"bottomLeft": __( "Bottom left", 'greyd-wp' ),
-					"all": __( "all sides", 'greyd-wp' )
+					"all": __( "All sides", 'greyd-wp' )
 				},
 			};
 

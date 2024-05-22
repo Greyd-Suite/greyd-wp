@@ -117,7 +117,7 @@
 		 */
 		window.onbeforeunload = () => {
 			if ( hasUnsavedGlobalStyles() ) {
-				return __( 'You have unsaved changes inside the Greyd.Styles editor. Are you sure you want to leave?', 'greyd-wp' );
+				return __( 'You have unsaved changes inside the Greyd Styles editor. Are you sure you want to leave?', 'greyd-wp' );
 			}
 		}
 
@@ -178,7 +178,7 @@
 				]
 			},
 			{
-				title: __( 'Input fields', 'greyd-wp' ),
+				title: __( 'Input Fields', 'greyd-wp' ),
 				slug: "input",
 				icon: 'forms',
 				menu: [
