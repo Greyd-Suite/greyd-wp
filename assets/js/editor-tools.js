@@ -21,7 +21,7 @@ var greyd = greyd || { tools: {}, components: {} };
 	.then( ( plugins ) => {
 		var active = [];
 		plugins.forEach( ( plugin ) => {
-			if ( plugin.status === 'active') {
+			if ( plugin.status === 'active' || plugin.status === 'network-active' ) {
 				active.push( plugin.plugin );
 			}
 		} );
