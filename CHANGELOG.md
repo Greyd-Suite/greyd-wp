@@ -1,3 +1,6 @@
+## 2.4.1 - 2024-06-07
+* Re-add index.php to avoid issues with child themes in multisite environments
+
 ## 2.4.0 - 2024-05-22
 * Make Google and custom fonts deprecation notice always visible in Greyd Global Styles
 * Updates to translation strings
