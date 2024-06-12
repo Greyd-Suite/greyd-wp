@@ -3,6 +3,7 @@
 	"version": 2,
 	"title": "Lavender",
 	"settings": {
+		"appearanceTools": true,
 		"color": {
 			"palette": [
 				{

@@ -3,6 +3,7 @@
 	"version": 2,
 	"title": "Robo",
 	"settings": {
+		"appearanceTools": true,
 		"color": {
 			"palette": [
 				{

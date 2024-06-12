@@ -3,6 +3,7 @@
 	"version": 2,
 	"title": "Retro",
 	"settings": {
+		"appearanceTools": true,
 		"color": {
 			"palette": [
 				{

@@ -3,6 +3,7 @@
 	"version": 2,
 	"title": "Snake",
 	"settings": {
+		"appearanceTools": true,
 		"color": {
 			"palette": [
 				{
