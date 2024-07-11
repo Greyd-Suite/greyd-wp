@@ -570,18 +570,49 @@ class Dashboard {
 				if ( $file_contents ) {
 					$changelog_data = explode( '##', $file_contents );
 					$changelog_content = '';
-					foreach ($changelog_data as $key => $value) {
-						$entry = explode( '*', $value );
-						if ( count($entry) > 1 ) {
-							foreach ($entry as $key => $value) {
-								if ( $key === 0 ) {
-									$changelog_content .= '<h3>' . $value . '</h3><ul>';
-								} else {
-									$changelog_content .= '<li>' . $value . '</li>';
+
+					foreach ( $changelog_data as $key => $value ) {
+						
+						$sections = explode( '**', $value ); 
+
+						foreach ( $sections as $key => $value ) {
+						
+							if ( empty( $value ) ) {
+								continue;
+							}
+				
+							if ( $key === 0 ) {
+								if ( str_contains( $value, '*' )) {
+									$without_headline = explode( '*', $value );
+									foreach ( $without_headline as $key => $value ) {
+										if ( $key === 0 ) {
+											$changelog_content .= '<h3>' . $value . '</h3>';
+										} else {
+											$changelog_content .= '<li>' . $value . '</li>';
+										}
+									}
+									continue;
+								}
+							
+								$changelog_content .= '<h3>' . $value . '</h3>';
+							} else if ( $key === 1 || $key === 3 ) {
+								$changelog_content .= '<h4>' . $value . '</h4>';
+							} else {
+								$entry = explode( '*', $value );
+
+								if ( count($entry) > 1 ) {
+									foreach ( $entry as $key => $value ) {
+										if ( substr($value, 0, 1) == "\n" ) {
+											$changelog_content .= '';
+										} else {
+											$changelog_content .= '<li>' . $value . '</li>';
+										}
+									}
 								}
 							}
 							$changelog_content .= '</ul>';
 						}
+						$changelog_content .= '</br>';
 					}
 
 					set_transient(

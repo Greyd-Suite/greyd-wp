@@ -90,7 +90,49 @@ input[type=submit]:focus-visible,
 .wp-block-search .wp-block-search__button:focus-visible,
 .wp-block-file .wp-block-file__button:focus-visible,
 .wp-block-navigation .wp-block-navigation-item[class*="is-style-button"] .wp-block-navigation-item__content:focus-visible {
-	outline-color: var(--wp--preset--color--foreground);
+	/**
+	 * Use var --text-color if set, fallback to foreground
+	 * @since 2.2.0
+	 */
+	outline-color: var(--text-color, var(--wp--preset--color--foreground) );
+}
+
+/**
+ * Set color variable used for outline focus color
+ * @since 2.2.0
+ */
+.has-primary-color {
+	--text-color: var(--wp--preset--color--primary);
+}
+.has-secondary-color {
+	--text-color: var(--wp--preset--color--secondary);
+}
+.has-tertiary-color {
+	--text-color: var(--wp--preset--color--tertiary);
+}
+.has-foreground-color {
+	--text-color: var(--wp--preset--color--foreground);
+}
+.has-background-color {
+	--text-color: var(--wp--preset--color--background);
+}
+.has-darkest-color {
+	--text-color: var(--wp--preset--color--darkest);
+}
+.has-dark-color {
+	--text-color: var(--wp--preset--color--dark);
+}
+.has-mediumdark-color {
+	--text-color: var(--wp--preset--color--mediumdark);
+}
+.has-mediumlight-color {
+	--text-color: var(--wp--preset--color--mediumlight);
+}
+.has-lightest-color {
+	--text-color: var(--wp--preset--color--lightest);
+}
+.has-base-color {
+	--text-color: var(--wp--preset--color--base);
 }
 
 input:not([type=submit]):focus-visible,
@@ -99,8 +141,13 @@ textarea:focus-visible,
 select:focus-visible,
 input[type="radio"]:focus-visible + span,
 input[type="checkbox"]:focus-visible + span,
-select:focus-visible + .select-selected { 
-	outline: 2px dotted currentColor;
+select:focus-visible + .select-selected
+{ 
+	/**
+	 * Use var --text-color if set, fallback to foreground
+	 * @since 2.2.0
+	 */
+	outline: 2px dotted var(--text-color, currentColor);
 	outline-offset: 3px;
 }
 
@@ -207,6 +254,9 @@ button[type=submit],
 input[type=submit],
 .button,
 .wp-element-button,
+.wp-block-button__link,
+div.wp-element-button, /* editor specific */
+div.wp-block-button__link, /* editor specific */
 .wp-block-search .wp-block-search__button,
 .wp-block-file .wp-block-file__button,
 .wp-block-navigation[class*="is-style-button"] .wp-block-navigation-item .wp-block-navigation-item__content,

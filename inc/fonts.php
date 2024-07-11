@@ -1109,7 +1109,7 @@ class Fonts {
 		\WP_Filesystem();
 
 		// new
-		$folder_new     = method_exists( '\WP_Font_Library', 'get_fonts_dir' ) ? \WP_Font_Library::get_fonts_dir() : WP_CONTENT_DIR.'/fonts';
+		$folder_new     = function_exists( 'wp_get_font_dir' ) ? wp_get_font_dir()['path'] : WP_CONTENT_DIR.'/fonts';
 		$folder_new_url = str_replace( WP_CONTENT_DIR, WP_CONTENT_URL, $folder_new );
 		if ( is_ssl() && strpos( $folder_new_url, 'http:' ) === 0 ) {
 			$folder_new_url = str_replace( 'http:', 'https:', $folder_new_url );
@@ -1161,7 +1161,7 @@ class Fonts {
 				\WP_Filesystem();
 		
 				// new
-				$folder     = method_exists( '\WP_Font_Library', 'get_fonts_dir' ) ? \WP_Font_Library::get_fonts_dir() : WP_CONTENT_DIR.'/fonts';
+				$folder     = function_exists( 'wp_get_font_dir' ) ? wp_get_font_dir()['path'] : WP_CONTENT_DIR.'/fonts';
 				$folder_url = str_replace( WP_CONTENT_DIR, WP_CONTENT_URL, $folder );
 				if ( is_ssl() && strpos( $folder_url, 'http:' ) === 0 ) {
 					$folder_url = str_replace( 'http:', 'https:', $folder_url );

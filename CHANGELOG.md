@@ -1,5 +1,30 @@
+## 2.6.0 - 2024-07-10
+**Improvements**
+
+* Theme JSON 3.0: Utilize new Features
+* Conditional Content: Time-Based Live Conditions
+
+**Bugfixes**
+
+* Fixed some problems with wordings
+* Single Post Content is not rendered as expected with ARMember Plugin
+* Fixed some issues with the theme assets import/export
+* Fixed an issue with the Dynamic Tag "number of posts"
+* Fixed an compatibility issue with Gutenberg 18.3
+* Fixed a javascript issue when a wp-template was included inside a dynamic template
+ 
+## 2.5.0 - 2024-06-21
+**Improvements**
+
+* Added buttons focus outline
+* Added uppercase & letter spacing as global styling option for greyd buttons
+
+**Bugfixes**
+
+* Fixed an issue with missing break points
+
 ## 2.4.1 - 2024-06-07
-* Re-add index.php to avoid issues with child themes in multisite environments
+* Re-added index.php to prevent error when using child themes
 
 ## 2.4.0 - 2024-05-22
 * Make Google and custom fonts deprecation notice always visible in Greyd Global Styles

@@ -244,7 +244,7 @@ var greyd = greyd || { tools: {}, components: {} };
 
 					el( HStack, {}, [
 						el( greyd.components.OptionsControl, {
-							style: { width: "100%" },
+							className: "components-custom-select-control__button",
 							value: value.line.join( ' ' ),
 							options: [
 								"none",
@@ -258,7 +258,7 @@ var greyd = greyd || { tools: {}, components: {} };
 						} ),
 
 						el( greyd.components.OptionsControl, {
-							style: { width: "100%" },
+							className: "components-custom-select-control__button",
 							value: value.style,
 							options: [ "solid", "double", "dotted", "dashed", "wavy" ],
 							onChange: ( newValue ) => {
@@ -518,7 +518,7 @@ var greyd = greyd || { tools: {}, components: {} };
 				}, this.props.label ),
 				// type
 				el( greyd.components.OptionsControl, {
-					style: { width: "100%" },
+					className: "components-custom-select-control__button",
 					value: type,
 					options: this.getOptions( 'type' ),
 					onChange: ( newValue ) => {
@@ -527,7 +527,7 @@ var greyd = greyd || { tools: {}, components: {} };
 				} ),
 				// websafe
 				type == 'websafe' && el( greyd.components.OptionsControl, {
-					style: { width: "100%" },
+					className: "components-custom-select-control__button",
 					value: value,
 					options: this.getOptions( 'websafe' ),
 					onChange: ( newValue ) => {
@@ -537,7 +537,7 @@ var greyd = greyd || { tools: {}, components: {} };
 				} ),
 				// modern
 				type == 'modern' && el( greyd.components.OptionsControl, {
-					style: { width: "100%" },
+					className: "components-custom-select-control__button",
 					value: value,
 					options: this.getOptions( 'modern' ),
 					onChange: ( newValue ) => {
@@ -555,7 +555,7 @@ var greyd = greyd || { tools: {}, components: {} };
 						type: type
 					} ),
 					el( greyd.components.OptionsControl, {
-						style: { width: "100%" },
+						className: "components-custom-select-control__button",
 						value: fontName, // value,
 						options: this.getOptions( 'google' ),
 						onChange: ( newValue ) => {
@@ -564,7 +564,7 @@ var greyd = greyd || { tools: {}, components: {} };
 						},
 					} ),
 					el( greyd.components.MultiselectControl, {
-						style: { width: "100%" },
+						className: "components-custom-select-control__button",
 						value: weights,
 						options: this.getFontWeightOptions(fontName),
 						onChange: ( newValue ) => {
@@ -592,7 +592,7 @@ var greyd = greyd || { tools: {}, components: {} };
 						type: type
 					} ),
 					el( greyd.components.OptionsControl, {
-						style: { width: "100%" },
+						className: "components-custom-select-control__button",
 						value: value,
 						options: this.getOptions( 'custom' ),
 						onChange: ( newValue ) => {
@@ -1496,132 +1496,149 @@ var greyd = greyd || { tools: {}, components: {} };
 
 			var elements = [];
 
-			if ( _.has( values, 'fontFamily' ) && !_.isEmpty( values.fontFamily ) ) elements.push(
-				el( greyd.components.OptionsControl, {
-					style: { width: "100%" },
-					label: __( 'Font family', 'greyd-wp' ),
-					value: values.fontFamily.value,
-					options: values.fontFamily.options,
-					onChange: ( newValue ) => {
-						if ( newValue === '' ) newValue = values.fontFamily.default;
-						this.props.onChange( values.fontFamily.slug, newValue );
-					}
-				} )
-			);
-
-			if ( _.has( values, 'fontSize' ) && !_.isEmpty( values.fontSize ) ) elements.push(
-				el ( wp.components.BaseControl, {}, [
-					el( wp.components.FontSizePicker, {
-						style: { width: "100%" },
-						value: values.fontSize.value,
-						fontSizes: values.fontSize.options,
+			if ( _.has( values, 'fontFamily' ) && !_.isEmpty( values.fontFamily ) ) {
+				elements.push(
+					el( greyd.components.OptionsControl, {
+						className: "components-custom-select-control__button",
+						label: __( 'Font family', 'greyd-wp' ),
+						value: values.fontFamily.value,
+						options: values.fontFamily.options,
 						onChange: ( newValue ) => {
-							if ( typeof newValue === 'undefined' ) newValue = values.fontSize.default;
-							// get font slug from options for saving
-							for ( var i = 0; i < values.fontSize.options.length; i++ ) {
-								if ( values.fontSize.options[ i ].size == newValue ) {
-									newValue = "var(--wp--preset--font-size--" + values.fontSize.options[ i ].slug + ")";
+							if ( newValue === '' ) newValue = values.fontFamily.default;
+							this.props.onChange( values.fontFamily.slug, newValue );
+						}
+					} )
+				);
+			}
+
+			if ( _.has( values, 'fontSize' ) && !_.isEmpty( values.fontSize ) ) {
+				elements.push(
+					el ( wp.components.BaseControl, {}, [
+						el( wp.components.FontSizePicker, {
+							className: "components-custom-select-control__button",
+							value: values.fontSize.value,
+							fontSizes: values.fontSize.options,
+							onChange: ( newValue ) => {
+								if ( typeof newValue === 'undefined' ) newValue = values.fontSize.default;
+								// get font slug from options for saving
+								for ( var i = 0; i < values.fontSize.options.length; i++ ) {
+									if ( values.fontSize.options[ i ].size == newValue ) {
+										newValue = "var(--wp--preset--font-size--" + values.fontSize.options[ i ].slug + ")";
+									}
 								}
+								this.props.onChange( values.fontSize.slug, newValue );
 							}
-							this.props.onChange( values.fontSize.slug, newValue );
-						}
-					} )
-				] )
-			);
-
-			if ( _.has( values, 'fontWeight' ) && !_.isEmpty( values.fontWeight ) ) elements.push(
-				el ( wp.components.BaseControl, {}, [
-					el( wp.blockEditor.__experimentalFontAppearanceControl, {
-						hasFontStyles: false,
-						value: { fontWeight: values.fontWeight.value },
-						onChange: ( newValue ) => {
-							if ( typeof newValue.fontWeight === 'undefined' ) newValue.fontWeight = values.fontWeight.default;
-							this.props.onChange( values.fontWeight.slug, newValue.fontWeight );
-						}
-					} )
-				] )
-			);
-
-			if ( ( _.has( values, 'lineHeight' ) && !_.isEmpty( values.lineHeight ) ) ||
-				( _.has( values, 'textTransform' ) && !_.isEmpty( values.textTransform ) ) ) elements.push(
-					el( 'div', {}, [
-						( _.has( values, 'lineHeight' ) && !_.isEmpty( values.lineHeight ) ) ?
-							el ( wp.components.BaseControl, {}, [
-								el( wp.components.__experimentalUnitControl, {
-									style: { display: "inline-block", maxWidth: "45%", marginRight: "10%" },
-									label: __( 'Line height', 'greyd-wp' ),
-									value: values.lineHeight.value,
-									min: 0,
-									step: 0.005,
-									units: [ { value: '', label: '' } ],
-									onChange: ( newValue ) => {
-										if ( newValue === '' ) newValue = values.lineHeight.default;
-										this.props.onChange( values.lineHeight.slug, newValue );
-									}
-								} )
-							] ) : '',
-
-						( _.has( values, 'textTransform' ) && !_.isEmpty( values.textTransform ) ) ?
-							el ( wp.components.BaseControl, {}, [
-								el( 'div', { style: { display: "inline-flex", maxWidth: "45%" } },
-									el( wp.blockEditor.__experimentalTextTransformControl, {
-										value: values.textTransform.value,
-										onChange: ( newValue ) => {
-											if ( typeof newValue === 'undefined' ) newValue = values.textTransform.default;
-											this.props.onChange( values.textTransform.slug, newValue );
-										}
-									} ),
-								)
-							] ) : ''
+						} )
 					] )
 				);
+			}
 
-			if ( ( _.has( values, 'letterSpacing' ) && !_.isEmpty( values.letterSpacing ) ) ||
-				( _.has( values, 'wordSpacing' ) && !_.isEmpty( values.wordSpacing ) ) ) elements.push(
-					el( 'div', {}, [
-						( _.has( values, 'letterSpacing' ) && !_.isEmpty( values.letterSpacing ) ) ?
-							el ( wp.components.BaseControl, {}, [
-								el( wp.components.__experimentalUnitControl, {
-									style: { display: "inline-block", maxWidth: "45%", marginRight: "10%", marginBottom: "16px" },
-									label: __( 'Letter spacing', 'greyd-wp' ),
-									value: values.letterSpacing.value,
-									units: [
-										{ value: 'px', label: 'px', step: 0.1 },
-										{ value: 'em', label: 'em', step: 0.01 },
-										{ value: 'rem', label: 'rem', step: 0.01 },
-										{ value: 'vh', label: 'vh', step: 0.1 },
-										{ value: 'vw', label: 'vw', step: 0.1 },
-									],
-									onChange: ( newValue ) => {
-										if ( newValue === '' ) newValue = values.letterSpacing.default;
-										this.props.onChange( values.letterSpacing.slug, newValue );
-									}
-								} )
-							]) : '',
-
-						( _.has( values, 'wordSpacing' ) && !_.isEmpty( values.wordSpacing ) ) ?
-							el ( wp.components.BaseControl, {}, [
-								el( wp.components.__experimentalUnitControl, {
-									style: { display: "inline-block", maxWidth: "45%", marginBottom: "16px" },
-									label: __( 'Word spacing', 'greyd-wp' ),
-									value: values.wordSpacing.value,
-									units: [
-										{ value: 'px', label: 'px', step: 0.1 },
-										{ value: 'em', label: 'em', step: 0.01 },
-										{ value: 'rem', label: 'rem', step: 0.01 },
-										{ value: 'vh', label: 'vh', step: 0.1 },
-										{ value: 'vw', label: 'vw', step: 0.1 },
-									],
-									onChange: ( newValue ) => {
-										if ( newValue === '' ) newValue = values.wordSpacing.default;
-										this.props.onChange( values.wordSpacing.slug, newValue );
-									}
-								} )
-							] ): ''
+			if ( _.has( values, 'fontWeight' ) && !_.isEmpty( values.fontWeight ) ) {
+				elements.push(
+					el ( wp.components.BaseControl, {
+						className: 'single-column'
+					}, [
+						el( wp.blockEditor.__experimentalFontAppearanceControl, {
+							hasFontStyles: false,
+							value: { fontWeight: values.fontWeight.value },
+							onChange: ( newValue ) => {
+								if ( typeof newValue.fontWeight === 'undefined' ) newValue.fontWeight = values.fontWeight.default;
+								this.props.onChange( values.fontWeight.slug, newValue.fontWeight );
+							}
+						} )
 					] )
 				);
+			}
 
-			return elements;
+			if ( _.has( values, 'lineHeight' ) && !_.isEmpty( values.lineHeight ) ) {
+				elements.push(
+					el ( wp.components.BaseControl, {
+						label: __( 'Line height', 'greyd-wp' ),
+						className: 'single-column'
+					}, [
+						el( wp.components.__experimentalUnitControl, {
+							value: values.lineHeight.value,
+							min: 0,
+							step: 0.005,
+							units: [ { value: '', label: '' } ],
+							onChange: ( newValue ) => {
+								if ( newValue === '' ) newValue = values.lineHeight.default;
+								this.props.onChange( values.lineHeight.slug, newValue );
+							}
+						} )
+					] )
+				);
+			}
+			
+			if ( _.has( values, 'letterSpacing' ) && !_.isEmpty( values.letterSpacing ) ) {
+				elements.push(
+					el ( wp.components.BaseControl, {
+						label: __( 'Letter spacing', 'greyd-wp' ),
+						className: 'single-column'
+					}, [
+						el( wp.components.__experimentalUnitControl, {
+							value: values.letterSpacing.value,
+							units: [
+								{ value: 'px', label: 'px', step: 0.1 },
+								{ value: 'em', label: 'em', step: 0.01 },
+								{ value: 'rem', label: 'rem', step: 0.01 },
+								{ value: 'vh', label: 'vh', step: 0.1 },
+								{ value: 'vw', label: 'vw', step: 0.1 },
+							],
+							onChange: ( newValue ) => {
+								if ( newValue === '' ) newValue = values.letterSpacing.default;
+								this.props.onChange( values.letterSpacing.slug, newValue );
+							}
+						} )
+					])
+				)
+			}
+
+			if ( _.has( values, 'wordSpacing' ) && !_.isEmpty( values.wordSpacing ) ) {
+				elements.push(
+					el ( wp.components.BaseControl, {
+						label: __( 'Word spacing', 'greyd-wp' ),
+						className: 'single-column'
+					}, [
+						el( wp.components.__experimentalUnitControl, {
+							value: values.wordSpacing.value,
+							units: [
+								{ value: 'px', label: 'px', step: 0.1 },
+								{ value: 'em', label: 'em', step: 0.01 },
+								{ value: 'rem', label: 'rem', step: 0.01 },
+								{ value: 'vh', label: 'vh', step: 0.1 },
+								{ value: 'vw', label: 'vw', step: 0.1 },
+							],
+							onChange: ( newValue ) => {
+								if ( newValue === '' ) newValue = values.wordSpacing.default;
+								this.props.onChange( values.wordSpacing.slug, newValue );
+							}
+						} )
+					] )
+				)
+			}
+
+			if ( _.has( values, 'textTransform' ) && !_.isEmpty( values.textTransform ) ) {
+				elements.push(
+					el ( wp.components.BaseControl, {
+						// className: 'single-column'
+					}, [
+						el( 'div', {}, [
+							el( wp.blockEditor.__experimentalTextTransformControl, {
+								value: values.textTransform.value,
+								onChange: ( newValue ) => {
+									if ( typeof newValue === 'undefined' ) newValue = values.textTransform.default;
+									this.props.onChange( values.textTransform.slug, newValue );
+								}
+							} ),
+						] )
+					] )
+				);
+			}
+
+			return el( 'div', {
+				className: 'greyd-grid-controls'
+			}, elements );
 		}
 	};
 

@@ -1,5 +1,5 @@
 {
-	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"$schema": "https://schemas.wp.org/wp/6.4/theme.json",
 	"version": 2,
 	"customTemplates": [
 		{
@@ -629,7 +629,9 @@
 						"fontFamily": "var(--wp--preset--font-family--body)",
 						"fontSize": "var(--wp--preset--font-size--base)",
 						"fontWeight": "var(--wp--custom--font-weight--semi-bold)",
-						"lineHeight": "var(--wp--custom--line-height-normal)"
+						"lineHeight": "var(--wp--custom--line-height-normal)",
+						"letterSpacing": "0px",
+						"textTransform": "none"
 					}
 				},
 				"input": {
@@ -713,8 +715,7 @@
 						"fontWeight": "400",
 						"letterSpacing": "0px",
 						"lineHeight": "1.6",
-						"textTransform": "none",
-						"wordSpacing": "0px"
+						"textTransform": "none"
 					}
 				},
 				"grid": {

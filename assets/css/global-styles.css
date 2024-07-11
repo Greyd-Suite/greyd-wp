@@ -50,17 +50,37 @@ __________________________________
 	margin-bottom: var(--basic-margin);
 }
 
-.greyd-styles-panel :is( input:not([type=checkbox]):not([type=radio]), select ) {
-	height: 40px;
-	min-height: 40px;
-}
-
 .greyd-styles-panel .components-range-control {
 	flex: 1;
 }
 
 .greyd-styles-panel .components-panel__body:last-child {
 	border-bottom: none;
+}
+
+/* .greyd-styles-panel :is( input:not([type=checkbox]):not([type=radio]), select ) {
+	min-height: 40px;
+	height: 40px;
+} */
+
+.greyd-styles-panel :is( .components-input-control__input, .components-custom-select-control__button, .components-text-control__input ) {
+	font-size: 13px !important;
+	line-height: 1 !important;
+	min-height: 40px !important;
+	height: 40px !important;
+	padding-left: 16px !important;
+}
+
+.greyd-styles-panel .components-unit-control__select {
+	font-size: 13px !important;
+	text-transform: none !important;
+	min-width: 24px !important;
+	max-width: 40px !important;
+	height: 40px !important;
+	margin-inline-end: 0px !important;
+	padding: 4px 2px 4px 0 !important;
+	color: var(--wp-components-color-accent, var(--wp-admin-theme-color, #3858e9)) !important;
+	width: auto !important;
 }
 
 
@@ -121,6 +141,7 @@ __________________________________
 	padding-top: var(--basic-padding);
 	padding-bottom: var(--basic-padding);
 }
+
 :where( .greyd-styles-panel .edit-site-typography-preview ) {
 	font-size: 16px;
 	line-height: 1.5;
@@ -137,6 +158,31 @@ __________________________________
 	border-radius: 2px;
 	justify-content: space-around;
 }
+
 .greyd-styles-panel .block-editor-block-styles__variants .block-editor-block-styles__item:not(.is-active) {
 	background-color: #fff;
+}
+
+/*    Grid Control Group
+__________________________________
+*/
+
+.greyd-grid-controls {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0px, 1fr));
+	gap: calc(16px) calc(8px);
+	align-items: end;
+}
+
+.greyd-grid-controls > * {
+	grid-column: 1 / -1;
+}
+
+.greyd-grid-controls > .single-column {
+	grid-column: span 1;
+}
+
+.greyd-grid-controls .components-base-control__field,
+.greyd-grid-controls select {
+	margin-bottom: 0 !important
 }

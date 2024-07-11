@@ -67,52 +67,52 @@ __________________________________
 __________________________________
 */
 .components-greyd-controlgroup {
-    margin: 0px -8px var(--basic-margin);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+	margin: 0px -8px var(--basic-margin);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
 }
 .components-greyd-controlgroup__item {
-    position: relative;
-    width: 100%;
-    padding: 12px 30px 2px 12px;
-    margin-bottom: 6px;
-    background: #F2F2F2;
+	position: relative;
+	width: 100%;
+	padding: 12px 30px 2px 12px;
+	margin-bottom: 6px;
+	background: #F2F2F2;
 }
 .components-greyd-controlgroup__item select {
-    max-width: 100%;
+	max-width: 100%;
 }
 .components-greyd-controlgroup__item .components-base-control {
-    margin-bottom: 12px !important;
+	margin-bottom: 12px !important;
 }
 .components-greyd-controlgroup__item .components-form-token-field__input-container {
-    background: #fff;
+	background: #fff;
 }
 .components-greyd-controlgroup__item .components-form-token-field__label {
-    display: none;
+	display: none;
 }
 .components-greyd-controlgroup__remove,
 .components-greyd-controlgroup__add {
-    line-height: 0.8;
-    padding: 3px;
-    height: auto;
+	line-height: 0.8;
+	padding: 3px;
+	height: auto;
 }
 .components-greyd-controlgroup__remove {
-    position: absolute;
-    top: 0;
-    right: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 .components-greyd-controlgroup__add {
-    background: #F2F2F2;
+	background: #F2F2F2;
 }
 .components-greyd-controlgroup__add.group_is_empty {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 10px 0;
 }
 .components-greyd-controlgroup__add.group_is_empty > * {
-    margin: 0 5px;
+	margin: 0 5px;
 }
 
 /*    Greyd Fonts
