@@ -20,8 +20,24 @@ class Editor {
 		
 		if ( is_admin() ) {
 			add_action( 'enqueue_block_assets', array( $this, 'add_editor_assets' ), 12 );
+
+			add_action( 'enqueue_block_editor_assets', array( $this, 'skip_link_warning' ) );
 		}
 		
+	}
+
+	/**
+	 * JavaScript version
+	 */
+	public function skip_link_warning() {
+		wp_register_script(
+			'greyd-skip-link-warning',
+			get_template_directory_uri() . '/assets/js/editor-skip-link-warning.js',
+			array( 'wp-i18n' ),
+			wp_get_theme()->get( 'Version' ),
+			true
+		);
+		wp_enqueue_script( 'greyd-skip-link-warning' );
 	}
 
 	/**
