@@ -1933,14 +1933,22 @@ var greyd = greyd || { tools: {}, components: {} };
 		 * viewports: ("Desktop" | "Tablet" | "Mobile")
 		 */
 		getViewport() {
-			var store = ( this.config.editor && typeof this.config.editor !== 'undefined' ) ? "core/edit-site" : "core/edit-post";
-			if ( !_.has( select( store ), "__experimentalGetPreviewDeviceType" ) ) return false;
-			return select( store ).__experimentalGetPreviewDeviceType();
+			if ( has(wp.data.select( 'core/editor' ), 'getDeviceType') ) {
+				return wp.data.select( 'core/editor' ).getDeviceType();
+			} else {
+				var store = ( this.config.editor && typeof this.config.editor !== 'undefined' ) ? "core/edit-site" : "core/edit-post";
+				if ( !_.has( select( store ), "__experimentalGetPreviewDeviceType" ) ) return false;
+				return select( store ).__experimentalGetPreviewDeviceType();
+			}
 		}
 		setViewport( viewport ) {
-			var store = ( this.config.editor && typeof this.config.editor !== 'undefined' ) ? "core/edit-site" : "core/edit-post";
-			if ( !_.has( dispatch( store ), "__experimentalSetPreviewDeviceType" ) ) return false;
-			dispatch( store ).__experimentalSetPreviewDeviceType( viewport );
+			if ( has(wp.data.select( 'core/editor' ), 'setDeviceType') ) {
+				return wp.data.select( 'core/editor' ).setDeviceType();
+			} else {
+				var store = ( this.config.editor && typeof this.config.editor !== 'undefined' ) ? "core/edit-site" : "core/edit-post";
+				if ( !_.has( dispatch( store ), "__experimentalSetPreviewDeviceType" ) ) return false;
+				dispatch( store ).__experimentalSetPreviewDeviceType( viewport );
+			}
 		}
 		getActiveTab( viewport ) {
 			var activeTab = "";

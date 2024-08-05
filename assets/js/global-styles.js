@@ -1557,7 +1557,7 @@
 	wp.plugins.registerPlugin( 'greyd-global-styles', {
 		render: function () {
 			return el(
-				wp.editSite.PluginSidebar,
+				wp.editor?.PluginSidebar ?? wp.editSite.PluginSidebar,
 				{
 					name: 'greyd-global-styles',
 					icon: el( wp.components.Icon, {

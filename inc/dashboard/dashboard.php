@@ -576,11 +576,11 @@ class Dashboard {
 						$sections = explode( '**', $value ); 
 
 						foreach ( $sections as $key => $value ) {
-						
+					
 							if ( empty( $value ) ) {
 								continue;
 							}
-				
+
 							if ( $key === 0 ) {
 								if ( str_contains( $value, '*' )) {
 									$without_headline = explode( '*', $value );
@@ -595,7 +595,7 @@ class Dashboard {
 								}
 							
 								$changelog_content .= '<h3>' . $value . '</h3>';
-							} else if ( $key === 1 || $key === 3 ) {
+							} else if ( $key === 1 || $key === 3 || $key === 5 ) {
 								$changelog_content .= '<h4>' . $value . '</h4>';
 							} else {
 								$entry = explode( '*', $value );

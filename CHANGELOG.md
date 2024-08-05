@@ -1,3 +1,15 @@
+## 2.7.0 - 2024-07-30
+
+**Improvements**
+
+* Adjustments for compatibility with wordpress 6.6
+* Improved navigation submenu CSS
+
+**Bugfixes**
+
+* Fixed too small iframe in template editing mode
+* Fixed a problem with changelog in Greyd Dashboard page
+
 ## 2.6.0 - 2024-07-10
 **Improvements**
 

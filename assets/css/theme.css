@@ -1387,15 +1387,6 @@ table.is-style-stripes th {
 }
 
 /**
- * Post template
- * ____________________________________________________________________
- */
-.wp-block-post-template {
-	margin-top: 0;
-	margin-bottom: 0;
-}
-
-/**
  * Navigation
  * ____________________________________________________________________
  */
@@ -1437,7 +1428,6 @@ table.is-style-stripes th {
 
 .wp-block-navigation ul li {
 	margin-inline-start: 0;
-	padding-block: 6px;
 }
 
 .wp-block-navigation.is-responsive .is-menu-open .wp-block-navigation__responsive-container-content .has-child .wp-block-navigation__submenu-container {
@@ -1451,6 +1441,10 @@ table.is-style-stripes th {
 .wp-block-navigation.is-responsive .is-menu-open ul.wp-block-social-links {
 	justify-content: flex-start;
 }
+
+/**
+ * Submenu container
+ */
 
 .wp-block-navigation .wp-block-navigation__submenu-container.has-background {
 	padding: 0;
@@ -1477,13 +1471,33 @@ table.is-style-stripes th {
 }
 
 /**
- * Submenu dropdown
+ * Submenu dropdown menu first level
  */
-.wp-block-navigation .has-child .wp-block-navigation__submenu-container {
+.wp-block-navigation .wp-block-navigation__container .wp-block-navigation-submenu.has-child .wp-block-navigation__submenu-container {
 	left: 50%;
+	right: auto;
 	transform: translateX(-50%);
+	/* move the submenu down by 6px */
+	margin-top: 6px;
 }
 
+/**
+ * Submenu dropdown menu second level
+ */
+.wp-block-navigation .wp-block-navigation__container .wp-block-navigation-submenu.has-child .wp-block-navigation__submenu-container .wp-block-navigation__submenu-container {
+	left: 100%;
+	right: auto;
+	transform: translateX(0%);
+	margin-top: 0;
+}
+.wp-block-navigation.items-justified-right .wp-block-navigation__container .wp-block-navigation-submenu.has-child .wp-block-navigation__submenu-container .wp-block-navigation__submenu-container {
+	left: auto;
+	right: 100%;
+	transform: translateX(0%);
+	margin-top: 0;
+}
+
+/* triangle (height: 6px) */
 .wp-block-navigation .has-child .wp-block-navigation__submenu-container::before {
 	content: " ";
 	position: absolute;
@@ -1495,22 +1509,46 @@ table.is-style-stripes th {
 	border-left: 6px solid transparent;
 	border-right: 6px solid transparent;
 	border-bottom: 6px solid var(--nav-submenu--background-color);
-	
 }
 
-.wp-block-navigation .wp-block-navigation__submenu-icon {
+/* area to make sure the parent element is still ':hover'
+   while the mouse moves over the 6px gap */
+.wp-block-navigation .has-child .wp-block-navigation__submenu-container::after {
+	content: " ";
+	position: absolute;
+	display: block;
+	top: -6px;
+	left: 0;
+	right: 0;
+	height: 6px;
+}
+
+.wp-block-navigation .has-child .wp-block-navigation__submenu-container .wp-block-navigation__submenu-icon {
 	padding-right: 1em;
+}
+
+@media (min-width: 782px) {
+	.wp-block-navigation .has-child .wp-block-navigation__submenu-container .wp-block-navigation__submenu-container {
+		left: 100%;
+		top: 0;
+		transform: none;
+		margin-top: 0;
+	}
+	.wp-block-navigation .has-child .wp-block-navigation__submenu-container .wp-block-navigation__submenu-container::before {
+		content: none;
+	}
 }
 
 /**
  * Submenu overlay menu
  */
 .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .has-child .wp-block-navigation__submenu-container {
-	background-color: none;
+	background: none;
 	border-radius: 0;
 	box-shadow: none;
 	left: -1px;
 	transform: none;
+	margin-top: 0;
 }
 
 .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .has-child .wp-block-navigation__submenu-container::before {

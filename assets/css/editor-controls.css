@@ -17,7 +17,11 @@
 }
 
 /* fix resizing of template area in site editor */
-.edit-site-visual-editor.is-focus-mode .components-resizable-box__container {
+.editor-visual-editor.is-iframed {
+	padding-bottom: 24px;
+}
+
+.editor-visual-editor.is-iframed .components-resizable-box__container {
 	height: 100% !important;
 }
 
