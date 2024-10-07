@@ -47,6 +47,17 @@ Before you start, make sure you're running WordPress 6.4 or later.
 
 == Changelog ==
 
+= 2.9.0 - 2024-10-01 =
+==Improvements==
+
+* Adjust dashboard changelog for newer format
+* Improved rendering of submenues in navigation
+
+==Bugfixes==
+
+* Fixes translation loading issues
+* Fixes missing CSS variables on input fields
+
 = 2.8.0 - 2024-09-03 =
 ==Features==
 
@@ -101,6 +112,7 @@ Before you start, make sure you're running WordPress 6.4 or later.
 - Re-added index.php to prevent error when using child themes
 
 = 2.4.0 - 2024-05-22 =
+- Fix an issue with font declarations in theme.json
 - Make Google and custom fonts deprecation notice always visible in Greyd Global Styles
 - Updates to translation strings
 
