@@ -352,10 +352,10 @@ var greyd = greyd || { tools: {}, components: {} };
 		getOptions( type ) {
 			var options = {
 				'type': [
-					{ value: 'websafe', label: __( 'Websafe Fonts', 'greyd-wp' ) },
-					{ value: 'modern', label: __( 'Modern Font Stacks', 'greyd-wp' ) },
+					{ value: 'websafe', label: __( 'Websafe fonts', 'greyd-wp' ) },
+					{ value: 'modern', label: __( 'Modern font stacks', 'greyd-wp' ) },
 					{ value: 'google', label: __( 'Google Fonts', 'greyd-wp' ) },
-					{ value: 'custom', label: __( 'Custom Fonts', 'greyd-wp' ) }
+					{ value: 'custom', label: __( 'Custom fonts', 'greyd-wp' ) }
 				],
 				/**
 				 * @link https://www.w3schools.com/cssref/css_websafe_fonts.php
@@ -1007,11 +1007,11 @@ var greyd = greyd || { tools: {}, components: {} };
 				custom ? null : el( greyd.components.ButtonGroupControl, {
 					value: mode,
 					options: [
-						{ value: 'static', label: __( 'static', 'greyd-wp' ) },
+						{ value: 'static', label: __( 'Static', 'greyd-wp' ) },
 						{ value: 'min', label: __( 'min', 'greyd-wp' ) },
 						{ value: 'max', label: __( 'max', 'greyd-wp' ) },
 						{ value: 'clamp', label: __( 'clamp', 'greyd-wp' ) },
-						{ value: 'fluid', label: __( 'fluid', 'greyd-wp' ) }
+						{ value: 'fluid', label: __( 'Fluid', 'greyd-wp' ) }
 					].filter( option => {
 						return modes.indexOf( option.value ) !== -1;
 					} ),

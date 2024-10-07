@@ -688,7 +688,7 @@ var greyd = greyd || { tools: {}, components: {} };
 				el( "p", {}, [
 					this.props.type == 'google' ?
 						__( 'Greyd Google Fonts are deprecated.', 'greyd-wp' ) :
-						__( 'Greyd Custom Fonts are deprecated.', 'greyd-wp' ),
+						__( 'Greyd custom fonts are deprecated.', 'greyd-wp' ),
 					el( 'br' ),
 					__( 'Please use Global Styles Typography settings instead.', 'greyd-wp' )
 				] ),

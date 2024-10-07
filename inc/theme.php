@@ -125,29 +125,29 @@ class Theme {
 
 		$block_styles = array(
 			'core/button'          => array(
-				'fill'      => __( 'Primary Button', 'greyd-wp' ),
-				'outline'   => __( 'Secondary Button', 'greyd-wp' ),
-				'alternate' => __( 'Alternate Button', 'greyd-wp' ),
+				'fill'      => __( 'Primary button', 'greyd-wp' ),
+				'outline'   => __( 'Secondary button', 'greyd-wp' ),
+				'alternate' => __( 'Alternate button', 'greyd-wp' ),
 				'clear'     => __( 'Clear', 'greyd-wp' ),
 			),
 			'core/navigation' => array(
-				'button-fill' => __( 'Primary Button', 'greyd-wp' ),
-				'button-outline' => __( 'Secondary Button', 'greyd-wp' ),
-				'button-alternate' => __( 'Alternate Button', 'greyd-wp' ),
+				'button-fill' => __( 'Primary button', 'greyd-wp' ),
+				'button-outline' => __( 'Secondary button', 'greyd-wp' ),
+				'button-alternate' => __( 'Alternate button', 'greyd-wp' ),
 				'button-chips' => __( 'Chip', 'greyd-wp' ),
 				'clear'     => __( 'Clear', 'greyd-wp' ),
 			),
 			'core/navigation-submenu' => array(
-				'button-fill' => __( 'Primary Button', 'greyd-wp' ),
-				'button-outline' => __( 'Secondary Button', 'greyd-wp' ),
-				'button-alternate' => __( 'Alternate Button', 'greyd-wp' ),
+				'button-fill' => __( 'Primary button', 'greyd-wp' ),
+				'button-outline' => __( 'Secondary button', 'greyd-wp' ),
+				'button-alternate' => __( 'Alternate button', 'greyd-wp' ),
 				'button-chips' => __( 'Chip', 'greyd-wp' ),
 				'clear'     => __( 'Clear', 'greyd-wp' ),
 			),
 			'core/navigation-link' => array(
-				'button-fill' => __( 'Primary Button', 'greyd-wp' ),
-				'button-outline' => __( 'Secondary Button', 'greyd-wp' ),
-				'button-alternate' => __( 'Alternate Button', 'greyd-wp' ),
+				'button-fill' => __( 'Primary button', 'greyd-wp' ),
+				'button-outline' => __( 'Secondary button', 'greyd-wp' ),
+				'button-alternate' => __( 'Alternate button', 'greyd-wp' ),
 				'button-chips' => __( 'Chip', 'greyd-wp' ),
 				'clear'     => __( 'Clear', 'greyd-wp' ),
 			),
@@ -165,7 +165,7 @@ class Theme {
 				'tilt-right'      => __( '3D (right)', 'greyd-wp' ),
 			),
 			'core/cover'       => array(
-				'no-background' => __( 'No Background', 'greyd-wp' ),
+				'no-background' => __( 'No background', 'greyd-wp' ),
 			),
 		);
 

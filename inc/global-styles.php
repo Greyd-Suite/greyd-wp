@@ -184,13 +184,13 @@ class Global_Styles {
 			// check if there was an error updating
 			if ( is_wp_error( $result ) ) {
 				if ( self::DEBUG ) {
-					echo "\r\n" . esc_html( "* error updating styles post „{$post_data['id']}“:" );
+					echo "\r\n" . esc_html( "* error updating styles post \"{$post_data['id']}\":" );
 				}
 				echo "\r\n" . esc_html( $result->get_error_message() );
 			}
 
 			if ( self::DEBUG ) {
-				echo "\r\n" . esc_html( "* styles post „{$post_data['id']}“ successfully updated." );
+				echo "\r\n" . esc_html( "* styles post \"{$post_data['id']}\" successfully updated." );
 			}
 
 			$this->fix_global_styles_settings();

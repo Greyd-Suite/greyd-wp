@@ -20,8 +20,24 @@ class Editor {
 		
 		if ( is_admin() ) {
 			add_action( 'enqueue_block_assets', array( $this, 'add_editor_assets' ), 12 );
+
+			add_action( 'enqueue_block_editor_assets', array( $this, 'main_tag_warning' ) );
 		}
 		
+	}
+
+	/**
+	 * Add a warning to the editor if no main tag or too many main tags are found.
+	 */
+	public function main_tag_warning() {
+		wp_register_script(
+			'greyd-main-tag-warning',
+			get_template_directory_uri() . '/assets/js/editor-main-tag-warning.js',
+			array( 'wp-i18n' ),
+			wp_get_theme()->get( 'Version' ),
+			true
+		);
+		wp_enqueue_script( 'greyd-main-tag-warning' );
 	}
 
 	/**

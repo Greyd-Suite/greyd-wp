@@ -1,3 +1,17 @@
+## 2.8.0 - 2024-09-03
+**Features**
+
+* Added theme support for the new section stylings in groups and columns
+
+**Improvements**
+
+* Reworked translations
+* New notification directky inside the editor, when a wp-template is not using a main-element
+
+**Bugfixes**
+
+* Fixed an issue not displaying gradients when a preset color was removed in the global styles
+
 ## 2.7.0 - 2024-07-30
 
 **Improvements**

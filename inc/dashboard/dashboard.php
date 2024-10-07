@@ -154,7 +154,7 @@ class Dashboard {
 		echo '<div class="greyd_dashboard--header">';
 		echo '<div class="greyd_dashboard--header--content">';
 		echo '<div class="greyd_dashboard--header--content-title">';
-		echo '<a class="greyd_admin_logo" href="' . esc_url( self::$page['homepage'] ) . '" target="_blank" title="' .  esc_html__( 'Greyd Website', 'greyd-wp' ) . '"><img src="' . esc_url( self::$page['icon'] ) . '" width="46" alt="' . esc_attr__( 'Greyd Logo', 'greyd-wp' ) . '" /></a>';
+		echo '<a class="greyd_admin_logo" href="' . esc_url( self::$page['homepage'] ) . '" target="_blank" title="' .  esc_html__( 'Greyd website', 'greyd-wp' ) . '"><img src="' . esc_url( self::$page['icon'] ) . '" width="46" alt="' . esc_attr__( 'Greyd logo', 'greyd-wp' ) . '" /></a>';
 		echo '<h1>' . esc_html__( 'Welcome to the Greyd Theme', 'greyd-wp' ) . '</h1>';
 		echo '</div>';
 		echo '<div class="greyd_dashboard--header--content-button">';
@@ -258,7 +258,7 @@ class Dashboard {
 			),
 			'greyd-hub'          => array(
 				'title'     => __( 'Greyd.Hub', 'greyd-wp' ),
-				'descr'     => __( 'Website management platform with numerous admin features like staging sites, backups & migration assistant.', 'greyd-wp' ),
+				'descr'     => __( 'Website management platform with numerous admin features like staging sites, backups and migration assistant.', 'greyd-wp' ),
 				'image'     => get_template_directory_uri() . '/inc/dashboard/assets/img/greyd-hub.jpg',
 				'image-alt' => '',
 				'help_url'  => 'https://greyd.io/greyd-hub/?utm_source=wp-theme',
@@ -303,7 +303,7 @@ class Dashboard {
 			),
 			'popups'    => array(
 				'title'     => __( 'Greyd.Popups', 'greyd-wp' ),
-				'descr'     => __( 'Create custom popups with a wide range of triggers and conditions.', 'greyd-wp' ),
+				'descr'     => __( 'Create custom pop-ups with a wide range of triggers and conditions.', 'greyd-wp' ),
 				'image'     => get_template_directory_uri() . '/inc/dashboard/assets/img/popups.jpg',
 				'image-alt' => '',
 				'help_url'  => 'https://greyd.io/greyd-popups/?utm_source=wp-theme',
@@ -358,14 +358,14 @@ class Dashboard {
 
 						<div class="greyd_dashboard--main--active-features--top">
 							<div class="greyd_dashboard--main--active-features--top-left">
-								<h2><?php esc_html_e( 'Active Features', 'greyd-wp' ); ?></h2>
+								<h2><?php esc_html_e( 'Active features', 'greyd-wp' ); ?></h2>
 								<p><?php esc_html_e( 'These are the features of the Greyd Theme. Use them now or learn more about them in our Helpcenter.', 'greyd-wp' ); ?></p>
 							</div>
 							<div class="greyd_dashboard--main--active-features--top-right">
 								<?php if ( self::$page['plugin'] ) { ?>
 									<a class="greyd_admin_link--outline" href="https://helpcenter.greyd.io/?utm_source=wp-theme" target="_blank"><span class="text"><?php esc_html_e( 'Helpcenter →', 'greyd-wp' ); ?></span></a>
 								<?php } else { ?>
-									<a class="greyd_admin_link--outline" href="https://greyd.io/greyd-wp/#tutorial?utm_source=wp-theme" target="_blank"><span class="text"><?php esc_html_e( 'Theme Tutorial →', 'greyd-wp' ); ?></span></a>
+									<a class="greyd_admin_link--outline" href="https://greyd.io/greyd-wp/#tutorial?utm_source=wp-theme" target="_blank"><span class="text"><?php esc_html_e( 'Theme tutorial →', 'greyd-wp' ); ?></span></a>
 								<?php } ?>
 							</div>
 						</div>
@@ -397,7 +397,7 @@ class Dashboard {
 									esc_html( $panel['title'] ),
 									isset( $panel['descr'] ) ? esc_html( $panel['descr'] ) : '',
 									isset( $panel['help_url'] ) ? esc_url( $panel['help_url'] ) : '',
-									isset( $panel['help_url'] ) ? esc_html__( 'More Information →', 'greyd-wp' ) : '',
+									isset( $panel['help_url'] ) ? esc_html__( 'More information →', 'greyd-wp' ) : '',
 									isset( $panel['btn_url'] ) ? esc_url( $panel['btn_url'] ) : '',
 									isset( $panel['btn_text'] ) ? esc_html( $panel['btn_text'] ) : '',
 								);
@@ -442,7 +442,7 @@ class Dashboard {
 										esc_html( $panel['title'] ),
 										isset( $panel['descr'] ) ? esc_html( $panel['descr'] ) : '',
 										isset( $panel['help_url'] ) ? esc_url( $panel['help_url'] ) : '',
-										isset( $panel['help_url'] ) ? esc_html__( 'More Information →', 'greyd-wp' ) : '',
+										isset( $panel['help_url'] ) ? esc_html__( 'More information →', 'greyd-wp' ) : '',
 									);
 								}
 								?>
@@ -453,15 +453,15 @@ class Dashboard {
 
 				<aside class="greyd_dashboard--sidebar">
 					<div class="greyd_dashboard--sidebar--need-help">
-						<h2><?php esc_html_e( 'Need Help?', 'greyd-wp' ); ?></h2>
+						<h2><?php esc_html_e( 'Need help?', 'greyd-wp' ); ?></h2>
 						<p><?php esc_html_e( 'In case you need help with our theme, check out the following resources:', 'greyd-wp' ); ?></p>
 						<ul>
-							<li><a href="https://wordpress.org/support/theme/greyd-wp" target="_blank"><?php esc_html_e( 'Support Forum on WordPress.org →', 'greyd-wp' ); ?></a></li>
+							<li><a href="https://wordpress.org/support/theme/greyd-wp" target="_blank"><?php esc_html_e( 'Support forum on WordPress.org →', 'greyd-wp' ); ?></a></li>
 							<li>
 								<?php if ( self::$page['plugin'] ) { ?>
 									<a href="https://helpcenter.greyd.io/?utm_source=wp-theme" target="_blank"><?php esc_html_e( 'Helpcenter →', 'greyd-wp' ); ?></a>
 								<?php } else { ?>
-									<a href="https://greyd.io/greyd-wp/#tutorial?utm_source=wp-theme" target="_blank"><?php esc_html_e( 'Theme Tutorial →', 'greyd-wp' ); ?></a>
+									<a href="https://greyd.io/greyd-wp/#tutorial?utm_source=wp-theme" target="_blank"><?php esc_html_e( 'Theme tutorial →', 'greyd-wp' ); ?></a>
 								<?php } ?>
 							</li>
 							<li><a href="https://greyd.io/greyd-wp/#faq/?utm_source=wp-theme" target="_blank"><?php esc_html_e( 'FAQs →', 'greyd-wp' ); ?></a></li>
@@ -506,7 +506,7 @@ class Dashboard {
 		
 		?>
 		<div id="greyd_notice_dismiss" class="notice notice-info greyd_dashboard_notice">
-			<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/greyd-logo-dark.svg' ); ?>" alt="<?php esc_attr__( 'Greyd Logo', 'greyd-wp' ); ?>" class="greyd_dashboard_notice--image">
+			<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/greyd-logo-dark.svg' ); ?>" alt="<?php esc_attr__( 'Greyd logo', 'greyd-wp' ); ?>" class="greyd_dashboard_notice--image">
 			<div class="greyd_dashboard_notice--content">
 				<h3><?php esc_html_e( 'Thank you for using the Greyd Theme', 'greyd-wp' ); ?></h3>
 				<p><?php esc_html_e( 'Did you know that this theme is just the tip of the iceberg? We offer a lot more functionality in Greyd.Suite - your all-in-one WordPress suite. Watch a demo on our website and test Greyd.Suite for free.', 'greyd-wp' ); ?></p>

@@ -132,13 +132,13 @@
 				title: __( 'Font families', 'greyd-wp' ),
 				slug: "font-families",
 				icon: 'editor-paragraph',
-				tip: __( 'Define up to 3 font families for your website. Reference them within your blocks or declare them as defaults for headlines, buttons, and more using the styles editor.', 'greyd-wp' )
+				tip: __( 'Define up to three font families for your website. Reference them within your blocks or declare them as defaults for headlines, buttons, and more using the styles editor.', 'greyd-wp' )
 			},
 			{
-				title: __( 'Font Sizes', 'greyd-wp' ),
+				title: __( 'Font sizes', 'greyd-wp' ),
 				slug: "font-sizes",
 				icon: 'editor-textcolor',
-				tip: __( "Define up to 7 font sizes here, set to 'fluid' by default. Specify the minimum and maximum values, and the system automatically adjusts font sizes between screen sizes for optimal readability and visual consistency.", 'greyd-wp' )
+				tip: __( "Define up to seven font sizes here, set to 'fluid' by default. Specify the minimum and maximum values, and the system automatically adjusts font sizes between screen sizes for optimal readability and visual consistency.", 'greyd-wp' )
 			},
 			{
 				title: __( 'Buttons', 'greyd-wp' ),
@@ -151,34 +151,34 @@
 						icon: 'admin-tools'
 					},
 					{
-						title: __( 'Primary Button', 'greyd-wp' ),
+						title: __( 'Primary button', 'greyd-wp' ),
 						slug: "prim",
 						icon: 'button'
 					},
 					{
-						title: __( 'Secondary Button', 'greyd-wp' ),
+						title: __( 'Secondary button', 'greyd-wp' ),
 						slug: "sec",
 						icon: 'button'
 					},
 					{
-						title: __( 'Alternate Button', 'greyd-wp' ),
+						title: __( 'Alternate button', 'greyd-wp' ),
 						slug: "trd",
 						icon: 'button'
 					},
 					{
-						title: __( 'Large Button', 'greyd-wp' ),
+						title: __( 'Large button', 'greyd-wp' ),
 						slug: "big",
 						icon: 'editor-expand'
 					},
 					{
-						title: __( 'Small Button', 'greyd-wp' ),
+						title: __( 'Small button', 'greyd-wp' ),
 						slug: "small",
 						icon: 'editor-contract'
 					},
 				]
 			},
 			{
-				title: __( 'Input Fields', 'greyd-wp' ),
+				title: __( 'Input fields', 'greyd-wp' ),
 				slug: "input",
 				icon: 'forms',
 				menu: [
@@ -188,12 +188,12 @@
 						icon: 'admin-tools'
 					},
 					{
-						title: __( 'Primary Input', 'greyd-wp' ),
+						title: __( 'Primary input', 'greyd-wp' ),
 						slug: "prim",
 						icon: 'button'
 					},
 					{
-						title: __( 'Secondary Input', 'greyd-wp' ),
+						title: __( 'Secondary input', 'greyd-wp' ),
 						slug: "sec",
 						icon: 'button'
 					},
@@ -211,7 +211,7 @@
 				title: __( 'Spacing', 'greyd-wp' ),
 				slug: "spacing",
 				icon: 'align-center',
-				tip: __( "Here you can set spacing sizes, which can be referenced when adjusting margins, gaps or paddings. By using more dynamic calculations, you can achieve native responsiveness without the need to define a static value for every breakpoint, try using options like 'clamp' combined with dynamic units like 'vw' (vieport width) or 'vh' (viewport height) te see what is possible.", 'greyd-wp' ),
+				tip: __( "Here you can set spacing sizes, which can be referenced when adjusting margins, gaps or paddings. By using more dynamic calculations, you can achieve native responsiveness without the need to define a static value for every breakpoint, try using options like 'clamp' combined with dynamic units like 'vw' (vieport width) or 'vh' (viewport height) to see what is possible.", 'greyd-wp' ),
 			},
 			{
 				title: __('Grid', 'greyd-wp'),
@@ -682,7 +682,7 @@
 
 						// border-radius
 						el( greyd.components.GlobalStylesPanelBody, {
-							title: __( 'Border Radius', 'greyd-wp' ),
+							title: __( 'Border radius', 'greyd-wp' ),
 						}, renderBorderRadiusPanel( atts.parent, atts.item.slug ) ),
 
 						// border
@@ -693,7 +693,7 @@
 
 						// shadow
 						el( greyd.components.GlobalStylesPanelBody, {
-							title: __( 'Box Shadow', 'greyd-wp' ),
+							title: __( 'Box shadow', 'greyd-wp' ),
 							tabs: tabs,
 						}, renderShadowPanel( atts.parent, atts.item.slug ) ),
 					] );
@@ -766,16 +766,16 @@
 
 				var labels = {
 					sm: {
-						label: __( 'Small Breakpoint', 'greyd-wp' ),
-						help: __( 'This Breakpoint usually sets the mobile screen size.', 'greyd-wp' )
+						label: __( 'Small breakpoint', 'greyd-wp' ),
+						help: __( 'This breakpoint usually sets the mobile screen size.', 'greyd-wp' )
 					},
 					md: {
-						label: __( 'Medium Breakpoint', 'greyd-wp' ),
-						help: __( 'This Breakpoint usually sets the break between tablet and smaller desktops.', 'greyd-wp' )
+						label: __( 'Medium breakpoint', 'greyd-wp' ),
+						help: __( 'This breakpoint usually sets the break between tablet and smaller desktops.', 'greyd-wp' )
 					},
 					lg: {
-						label: __( 'Large Breakpoint', 'greyd-wp' ),
-						help: __( 'This Breakpoint usually sets the break between smaller and larger desktops.', 'greyd-wp' )
+						label: __( 'Large breakpoint', 'greyd-wp' ),
+						help: __( 'This breakpoint usually sets the break between smaller and larger desktops.', 'greyd-wp' )
 					}
 				};
 
@@ -860,18 +860,18 @@
 						} ),
 
 						!isGreydPluginActive && el( wp.components.Tip, {}, [
-							el( "div", {}, __( "If you are using the Greyd Plugin you can define up to 4 different screen sizes. Go to the Greyd Theme Dashboard to install the plugin.", "greyd-wp" ) ),
+							el( "div", {}, __( "If you are using the Greyd Plugin you can define up to four different screen sizes. Go to the Greyd Theme dashboard to install the plugin.", "greyd-wp" ) ),
 						] )
 					] ),
 
 					// content size
 					el( greyd.components.GlobalStylesPanelBody, {
-						title: __( 'Content Size', 'greyd-wp' ),
+						title: __( 'Content size', 'greyd-wp' ),
 						initialOpen: true
 					}, [
 						el( greyd.components.ClampMinMaxControl, {
 							enableCustom: true,
-							help: __( 'This setting overwrites the default content size set inside the global styles panel.', 'greyd-wp' ),
+							help: __( 'This setting overwrites the default content size set inside the Global Styles panel.', 'greyd-wp' ),
 							value: greyd.tools.globalStyles.vars?.[ 'grid' ]?.[ '--wp--style--global--content-size' ],
 							onChange: ( newValue ) => setStyle( '--wp--style--global--content-size', newValue )
 						} )
@@ -879,12 +879,12 @@
 
 					// wide size
 					el( greyd.components.GlobalStylesPanelBody, {
-						title: __( 'Wide Size', 'greyd-wp' ),
+						title: __( 'Wide size', 'greyd-wp' ),
 						initialOpen: true
 					}, [
 						el( greyd.components.ClampMinMaxControl, {
 							enableCustom: true,
-							help: __( 'This setting overwrites the default wide size set inside the global styles panel.', 'greyd-wp' ),
+							help: __( 'This setting overwrites the default wide size set inside the Global Styles panel.', 'greyd-wp' ),
 							value: greyd.tools.globalStyles.vars?.[ 'grid' ]?.[ '--wp--style--global--wide-size' ],
 							onChange: ( newValue ) => setStyle( '--wp--style--global--wide-size', newValue )
 						} )
@@ -898,7 +898,7 @@
 						el( wp.components.BaseControl, {
 							help: [
 								el( "p", {}, [
-									__( 'You can select the default Block Spacing in the Global Styles "Layout" Settings.', 'greyd-wp' )
+									__( 'You can select the default block spacing in the Global Styles "Layout" settings.', 'greyd-wp' )
 								] ),
 								el( "a", { 
 									style: { cursor: 'pointer' },
@@ -1352,7 +1352,7 @@
 			return [
 				// decoration
 				_.has( defaults, 'decoration' ) && el( greyd.components.TextDecorationControl, {
-					label: __( "Text Decoration", "greyd-wp" ),
+					label: __( "Text decoration", "greyd-wp" ),
 					value: vars[ pre + "decoration" ],
 					onChange: ( newValue ) => {
 						if ( newValue === '' ) newValue = defaults.decoration;
@@ -1401,7 +1401,7 @@
 					style: {
 						marginTop: '2em'
 					}
-				}, __( 'Loading global styles...', 'greyd-wp' ) )
+				}, __( 'Loading Global Styles...', 'greyd-wp' ) )
 			] );
 		}
 		// loading failed
@@ -1500,7 +1500,7 @@
 						initialOpen: true
 					}, [
 						el( wp.components.Tip, {}, [
-							el( "span", {}, __( 'You can customize your color palette inside the default global styles panel.', 'greyd-wp' ) ),
+							el( "span", {}, __( 'You can customize your color palette inside the default Global Styles panel.', 'greyd-wp' ) ),
 						] )
 					] )
 				]
