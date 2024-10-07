@@ -89,6 +89,11 @@ class Global_Styles {
 			)
 		);
 
+		// script translations
+		if ( function_exists( 'wp_set_script_translations' ) ) {
+			wp_set_script_translations( 'greyd-wp-global-styles-script', 'greyd-wp' );
+		}
+
 	}
 
 

@@ -1,3 +1,14 @@
+## 2.9.0 - 2024-10-01
+**Improvements**
+
+* Adjust dashboard changelog for newer format
+* Improved rendering of submenues in navigation
+
+**Bugfixes**
+
+* Fixes translation loading issues
+* Fixes missing CSS variables on input fields
+
 ## 2.8.0 - 2024-09-03
 **Features**
 

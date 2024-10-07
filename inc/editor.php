@@ -38,6 +38,9 @@ class Editor {
 			true
 		);
 		wp_enqueue_script( 'greyd-main-tag-warning' );
+		if ( function_exists( 'wp_set_script_translations' ) ) {
+			wp_set_script_translations( 'greyd-main-tag-warning', 'greyd-wp' );
+		}
 	}
 
 	/**
@@ -130,6 +133,16 @@ class Editor {
 			true
 		);
 		wp_enqueue_script( 'greyd-wp-editor-components' );
+
+		/**
+		 * Set script translations.
+		 *
+		 * @see https://make.wordpress.org/core/2018/11/09/new-javascript-i18n-support-in-wordpress/
+		 */
+		if ( function_exists( 'wp_set_script_translations' ) ) {
+			wp_set_script_translations( 'greyd-wp-editor-components', 'greyd-wp' );
+			wp_set_script_translations( 'greyd-wp-editor-tools', 'greyd-wp' );
+		}
 
 	}
 }

@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	};
 	const searchRules = ( rules ) => {
 		// skip empty rules
-		if (typeof rules === 'undefined' || element.sheet.cssRules.length == 0) return;
+		if (typeof rules === 'undefined' || (element && element.sheet.cssRules.length == 0) ) return;
 		// loop stylesheet's cssRules
 		for (var i=0; i<rules.length; i++) {
 			// skip empty rules
