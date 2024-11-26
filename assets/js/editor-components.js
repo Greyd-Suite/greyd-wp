@@ -7,43 +7,11 @@ var greyd = greyd || { tools: {}, components: {} };
 
 ( function ( wp ) {
 
-	const _ = lodash;
+	var { createElement: el } = wp.element;
+	var { __ } = wp.i18n;
+	var _ = lodash;
 
 	if ( !_.has( wp, "editSite" ) ) return null;
-
-	const {
-		createElement: el,
-		Component
-	} = wp.element;
-
-	const {
-		BaseControl,
-		Icon,
-		ColorIndicator,
-		PanelBody,
-		Tooltip,
-		Button,
-		FlexItem,
-		Popover,
-		GradientPicker,
-		RangeControl,
-		__experimentalHStack: HStack,
-		__experimentalUnitControl: UnitControl
-	} = wp.components;
-
-	const {
-		ColorPalette,
-		ContrastChecker,
-		__experimentalColorGradientControl: ColorGradientControl
-	} = wp.blockEditor;
-
-	const {
-		subscribe,
-		dispatch,
-		select
-	} = wp.data;
-
-	const { __ } = wp.i18n;
 
 	if ( typeof greyd.components === 'undefined' ) {
 		greyd.components = {};
@@ -60,14 +28,14 @@ var greyd = greyd || { tools: {}, components: {} };
 	 * 
 	 * @returns {object} DebugControl component.
 	 */
-	greyd.components.DebugControl = class extends Component {
+	greyd.components.DebugControl = class extends wp.element.Component {
 		constructor () {
 			super();
 		}
 		render() {
 			var value = this.props.value;
 			if ( typeof value !== 'string' ) value = JSON.stringify( value, null, 4 );
-			return el( BaseControl, {
+			return el( wp.components.BaseControl, {
 				className: this.props.className,
 				help: _.has( this.props, 'help' ) ? this.props.help : '',
 			},
@@ -92,7 +60,7 @@ var greyd = greyd || { tools: {}, components: {} };
 	 * 
 	 * @returns {object} Icon component.
 	 */
-	greyd.components.Icon = class extends Component {
+	greyd.components.Icon = class extends wp.element.Component {
 		constructor () {
 			super();
 
@@ -109,7 +77,7 @@ var greyd = greyd || { tools: {}, components: {} };
 		render() {
 			const svg = _.get( this.icons, this.props.icon );
 			return _.isEmpty( svg ) ?
-				el( Icon, this.props ) :
+				el( wp.components.Icon, this.props ) :
 				el( "span", { title: this.props.title, dangerouslySetInnerHTML: { __html: svg } } );
 		}
 	};
@@ -125,7 +93,7 @@ var greyd = greyd || { tools: {}, components: {} };
 	 * 
 	 * @returns {string} Value in css format. Empty String "" on default or if cleared.
 	 */
-	greyd.components.TextDecorationControl = class extends Component {
+	greyd.components.TextDecorationControl = class extends wp.element.Component {
 		constructor ( props ) {
 			super( props );
 
@@ -242,7 +210,7 @@ var greyd = greyd || { tools: {}, components: {} };
 						} )
 					] ),
 
-					el( HStack, {}, [
+					el( wp.components.__experimentalHStack, {}, [
 						el( greyd.components.OptionsControl, {
 							className: "components-custom-select-control__button",
 							value: value.line.join( ' ' ),
@@ -267,7 +235,7 @@ var greyd = greyd || { tools: {}, components: {} };
 						} ),
 					] ),
 
-					el( UnitControl, {
+					el( wp.components.__experimentalUnitControl, {
 						value: value.thickness,
 						min: 0,
 						units: [
@@ -996,7 +964,7 @@ var greyd = greyd || { tools: {}, components: {} };
 				values = {}
 			} = this.state;
 
-			return el( BaseControl, {
+			return el( wp.components.BaseControl, {
 				className: this.props.className,
 				label: label,
 				help: help,
@@ -1312,7 +1280,7 @@ var greyd = greyd || { tools: {}, components: {} };
 
 		makeForm( slug ) {
 			var vars = this.props.vars[ 'input' ];
-			const innerBlocks = _.has( this.props, "children" ) ? this.props.children : this.getLabel( slug );
+			const innerBlocks =_.has( this.props, "children" ) ? this.props.children : this.getLabel( slug );
 
 			if ( !_.has( vars, "--wp--custom--greyd--input--" + slug + "--color--text" ) ) return [];
 
@@ -1513,7 +1481,7 @@ var greyd = greyd || { tools: {}, components: {} };
 
 			if ( _.has( values, 'fontSize' ) && !_.isEmpty( values.fontSize ) ) {
 				elements.push(
-					el ( wp.components.BaseControl, {}, [
+					el( wp.components.BaseControl, {}, [
 						el( wp.components.FontSizePicker, {
 							className: "components-custom-select-control__button",
 							value: values.fontSize.value,
@@ -1535,7 +1503,7 @@ var greyd = greyd || { tools: {}, components: {} };
 
 			if ( _.has( values, 'fontWeight' ) && !_.isEmpty( values.fontWeight ) ) {
 				elements.push(
-					el ( wp.components.BaseControl, {
+					el( wp.components.BaseControl, {
 						className: 'single-column'
 					}, [
 						el( wp.blockEditor.__experimentalFontAppearanceControl, {
@@ -1552,7 +1520,7 @@ var greyd = greyd || { tools: {}, components: {} };
 
 			if ( _.has( values, 'lineHeight' ) && !_.isEmpty( values.lineHeight ) ) {
 				elements.push(
-					el ( wp.components.BaseControl, {
+					el( wp.components.BaseControl, {
 						label: __( 'Line height', 'greyd-wp' ),
 						className: 'single-column'
 					}, [
@@ -1572,7 +1540,7 @@ var greyd = greyd || { tools: {}, components: {} };
 			
 			if ( _.has( values, 'letterSpacing' ) && !_.isEmpty( values.letterSpacing ) ) {
 				elements.push(
-					el ( wp.components.BaseControl, {
+					el( wp.components.BaseControl, {
 						label: __( 'Letter spacing', 'greyd-wp' ),
 						className: 'single-column'
 					}, [
@@ -1596,7 +1564,7 @@ var greyd = greyd || { tools: {}, components: {} };
 
 			if ( _.has( values, 'wordSpacing' ) && !_.isEmpty( values.wordSpacing ) ) {
 				elements.push(
-					el ( wp.components.BaseControl, {
+					el( wp.components.BaseControl, {
 						label: __( 'Word spacing', 'greyd-wp' ),
 						className: 'single-column'
 					}, [
@@ -1620,7 +1588,7 @@ var greyd = greyd || { tools: {}, components: {} };
 
 			if ( _.has( values, 'textTransform' ) && !_.isEmpty( values.textTransform ) ) {
 				elements.push(
-					el ( wp.components.BaseControl, {
+					el( wp.components.BaseControl, {
 						// className: 'single-column'
 					}, [
 						el( 'div', {}, [
@@ -1663,7 +1631,7 @@ var greyd = greyd || { tools: {}, components: {} };
 	 * 
 	 * @returns {object} AdvancedPanelBody component.
 	 */
-	greyd.components.GlobalStylesPanelBody = class extends Component {
+	greyd.components.GlobalStylesPanelBody = class extends wp.element.Component {
 
 		constructor ( props ) {
 			super( props );
@@ -1933,21 +1901,21 @@ var greyd = greyd || { tools: {}, components: {} };
 		 * viewports: ("Desktop" | "Tablet" | "Mobile")
 		 */
 		getViewport() {
-			if ( has(wp.data.select( 'core/editor' ), 'getDeviceType') ) {
+			if ( _.has(wp.data.select( 'core/editor' ), 'getDeviceType') ) {
 				return wp.data.select( 'core/editor' ).getDeviceType();
 			} else {
 				var store = ( this.config.editor && typeof this.config.editor !== 'undefined' ) ? "core/edit-site" : "core/edit-post";
-				if ( !_.has( select( store ), "__experimentalGetPreviewDeviceType" ) ) return false;
-				return select( store ).__experimentalGetPreviewDeviceType();
+				if ( !_.has( wp.data.select( store ), "__experimentalGetPreviewDeviceType" ) ) return false;
+				return wp.data.select( store ).__experimentalGetPreviewDeviceType();
 			}
 		}
 		setViewport( viewport ) {
-			if ( has(wp.data.select( 'core/editor' ), 'setDeviceType') ) {
+			if ( _.has(wp.data.select( 'core/editor' ), 'setDeviceType') ) {
 				return wp.data.select( 'core/editor' ).setDeviceType();
 			} else {
 				var store = ( this.config.editor && typeof this.config.editor !== 'undefined' ) ? "core/edit-site" : "core/edit-post";
-				if ( !_.has( dispatch( store ), "__experimentalSetPreviewDeviceType" ) ) return false;
-				dispatch( store ).__experimentalSetPreviewDeviceType( viewport );
+				if ( !_.has( wp.data.dispatch( store ), "__experimentalSetPreviewDeviceType" ) ) return false;
+				wp.data.dispatch( store ).__experimentalSetPreviewDeviceType( viewport );
 			}
 		}
 		getActiveTab( viewport ) {
@@ -1964,7 +1932,7 @@ var greyd = greyd || { tools: {}, components: {} };
 			this.props.holdsColors.forEach( function ( value, i ) {
 				if ( typeof value.color !== 'undefined' ) {
 					var col = greyd.tools.settings.getGradientValue( greyd.tools.settings.getColorValue( value.color ) );
-					if ( col != "" ) colors.push( el( ColorIndicator, { colorValue: col, title: value.title } ) );
+					if ( col != "" ) colors.push( el( wp.components.ColorIndicator, { colorValue: col, title: value.title } ) );
 				}
 
 			} );
@@ -2046,14 +2014,14 @@ var greyd = greyd || { tools: {}, components: {} };
 				}
 			}
 
-			return el( PanelBody, {
+			return el( wp.components.PanelBody, {
 				...this.props,
 				title: el( "div", {}, [
 					el( "span", {}, title ),
 					holdsChange && !holdsColors ? el( "span", { className: "change_holder" } ) : "",
 					el( "div", { className: "panel_buttons" }, [
 						supportsState && onStateToggle ?
-							el( Tooltip, {
+							el( wp.components.Tooltip, {
 								text: __( "Change on hover", 'greyd-wp' )
 							}, el( "button", {
 								className: "button button-ghost" + ( isStateEnabled ? " active" : "" ),
@@ -2067,7 +2035,7 @@ var greyd = greyd || { tools: {}, components: {} };
 							} ) )
 							) : "",
 						!supportsState && supportsResponsive && onResponsiveToggle ?
-							el( Tooltip, {
+							el( wp.components.Tooltip, {
 								text: __( "Change on screen sizes", 'greyd-wp' )
 							}, el( "button", {
 								className: "button button-ghost" + ( isResponsiveEnabled ? " active" : "" ),
@@ -2125,7 +2093,7 @@ var greyd = greyd || { tools: {}, components: {} };
 	 * 
 	 * @returns {object} ColorGradientPopupControl component.
 	 */
-	greyd.components.GlobalStylesColorGradientPopupControl = class extends Component {
+	greyd.components.GlobalStylesColorGradientPopupControl = class extends wp.element.Component {
 		constructor ( props ) {
 			super( props );
 
@@ -2276,23 +2244,23 @@ var greyd = greyd || { tools: {}, components: {} };
 						// wrapper
 						className: 'block-editor-tools-panel-color-dropdown'
 					}, [
-						el( Button, {
+						el( wp.components.Button, {
 							// trigger button
 							"aria-expanded": isOpen,
 							"data-id": this.state.id,
 							className: 'block-editor-panel-color-gradient-settings__dropdown' + ( isOpen ? ' is-open' : '' ),
 							onClick: () => this.setState( { isOpen: isOpen ? false : true } )
 						}, [
-							el( HStack, { justify: "flex-start" }, [
-								el( ColorIndicator, {
+							el( wp.components.__experimentalHStack, { justify: "flex-start" }, [
+								el( wp.components.ColorIndicator, {
 									// color/gradient indicator
 									className: "block-editor-panel-color-gradient-settings__color-indicator",
 									colorValue: value
 								} ),
 								// label
-								hasLabel && el( FlexItem, {}, this.props.label )
+								hasLabel && el( wp.components.FlexItem, {}, this.props.label )
 							] ),
-							isOpen && el( Popover, {
+							isOpen && el( wp.components.Popover, {
 								// color/gradient popover
 								onClick: ( e ) => e.stopPropagation(),
 								className: "color_popup_control__popover color_gradient",
@@ -2307,7 +2275,7 @@ var greyd = greyd || { tools: {}, components: {} };
 								},
 							}, [
 								el( "div", { className: "color_popup_control__popover_content" }, [
-									this.props.mode == 'color' && el( ColorPalette, {
+									this.props.mode == 'color' && el( wp.blockEditor.ColorPalette, {
 										// only solids
 										__experimentalHasMultipleOrigins: true,
 										enableAlpha: enableAlpha,
@@ -2315,7 +2283,7 @@ var greyd = greyd || { tools: {}, components: {} };
 										value: value,
 										onChange: ( newValue ) => this.setValue( 'color', newValue ),
 									} ),
-									this.props.mode == 'gradient' && el( GradientPicker, {
+									this.props.mode == 'gradient' && el( wp.components.GradientPicker, {
 										// only gradients
 										__experimentalHasMultipleOrigins: true,
 										enableAlpha: enableAlpha,
@@ -2323,7 +2291,7 @@ var greyd = greyd || { tools: {}, components: {} };
 										value: value,
 										onChange: ( newValue ) => this.setValue( 'gradient', newValue ),
 									} ),
-									!_.has( this.props, 'mode' ) && el( ColorGradientControl, {
+									!_.has( this.props, 'mode' ) && el( wp.blockEditor.__experimentalColorGradientControl, {
 										// solids and gradients
 										__experimentalHasMultipleOrigins: true,
 										enableAlpha: enableAlpha,
@@ -2339,7 +2307,7 @@ var greyd = greyd || { tools: {}, components: {} };
 						] )
 					] ),
 					// contrast checker
-					_.has( this.props, 'contrast' ) && this.state.mode == 'color' ? el( ContrastChecker, {
+					_.has( this.props, 'contrast' ) && this.state.mode == 'color' ? el( wp.blockEditor.ContrastChecker, {
 						textColor: greyd.tools.settings.getColorValue( this.convertVarToColor( hover ? this.props.contrast.hover : this.props.contrast.default ) ), // '#fff', 
 						backgroundColor: value
 					} ) : ''
@@ -2358,7 +2326,7 @@ var greyd = greyd || { tools: {}, components: {} };
 	 * 
 	 * @returns {string} Value in css format. Empty String "" on default or if cleared.
 	 */
-	greyd.components.GlobalStylesDropShadowControl = class extends Component {
+	greyd.components.GlobalStylesDropShadowControl = class extends wp.element.Component {
 		constructor ( props ) {
 			super( props );
 
@@ -2500,52 +2468,52 @@ var greyd = greyd || { tools: {}, components: {} };
 							onChange: ( newValue ) => this.setValue( "color", newValue )
 						} )
 					] ),
-					el( HStack, {}, [
+					el( wp.components.__experimentalHStack, {}, [
 						el( "span", { className: "inner_label" }, __( "Horizontally", 'greyd-wp' ) ),
-						el( RangeControl, {
+						el( wp.components.RangeControl, {
 							value: value.x,
 							min: -50,
 							max: 50,
 							onChange: ( newValue ) => this.setValue( "x", newValue )
 						} )
 					] ),
-					el( HStack, {}, [
+					el( wp.components.__experimentalHStack, {}, [
 						el( "span", { className: "inner_label" }, __( "Vertically", 'greyd-wp' ) ),
-						el( RangeControl, {
+						el( wp.components.RangeControl, {
 							value: value.y,
 							min: -50,
 							max: 50,
 							onChange: ( newValue ) => this.setValue( "y", newValue )
 						} )
 					] ),
-					el( HStack, {}, [
+					el( wp.components.__experimentalHStack, {}, [
 						el( "span", { className: "inner_label" }, __( "Blur", 'greyd-wp' ) ),
-						el( RangeControl, {
+						el( wp.components.RangeControl, {
 							value: value.blur,
 							min: 0,
 							max: 50,
 							onChange: ( newValue ) => this.setValue( "blur", newValue )
 						} )
 					] ),
-					el( HStack, {}, [
+					el( wp.components.__experimentalHStack, {}, [
 						el( "span", { className: "inner_label" }, __( "Spread", 'greyd-wp' ) ),
-						el( RangeControl, {
+						el( wp.components.RangeControl, {
 							value: value.spread,
 							min: -50,
 							max: 50,
 							onChange: ( newValue ) => this.setValue( "spread", newValue )
 						} )
 					] ),
-					el( HStack, {}, [
+					el( wp.components.__experimentalHStack, {}, [
 						el( "span", { className: "inner_label" }, __( "Opacity", 'greyd-wp' ) ),
-						el( RangeControl, {
+						el( wp.components.RangeControl, {
 							value: value.opacity,
 							min: 0,
 							max: 100,
 							onChange: ( newValue ) => this.setValue( "opacity", newValue )
 						} )
 					] ),
-					el( HStack, {}, [
+					el( wp.components.__experimentalHStack, {}, [
 						el( "span", { className: "inner_label" }, __( "Position", 'greyd-wp' ) ),
 						el( greyd.components.ButtonGroupControl, {
 							value: value.position,

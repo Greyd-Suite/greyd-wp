@@ -7,8 +7,8 @@ var greyd = greyd || { tools: {}, components: {} };
 
 ( function ( wp ) {
 
-	var el = wp.element.createElement;
-	var { __, _x, sprintf } = wp.i18n;
+	var { createElement: el } = wp.element;
+	var { __ } = wp.i18n;
 	var _ = lodash;
 
 	if ( typeof greyd.tools === 'undefined' ) {

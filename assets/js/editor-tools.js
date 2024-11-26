@@ -7,7 +7,7 @@ var greyd = greyd || { tools: {}, components: {} };
 
 ( function( wp ) {
 
-	const _ = lodash;
+	var _ = lodash;
 
 	if ( typeof greyd.tools === 'undefined' ) {
 		greyd.tools = {};
@@ -65,6 +65,15 @@ var greyd = greyd || { tools: {}, components: {} };
 		var output = Object.assign( {}, target );
 		if ( greyd.tools.isObject(target) && greyd.tools.isObject(source) ) {
 			Object.keys(source).forEach( (key) => {
+
+				// if incorrect object exists with the plain 'hover' key, remove it
+				if ( key === ':hover' && 'hover' in output ) {
+					console.log('remove orphaned style defaults for key "hover" instead of ":hover"');
+					delete output['hover'];
+				} else if ( key === 'hover' ) {
+					return;
+				}
+
 				if ( greyd.tools.isObject(source[key]) ) {
 					if ( !(key in target) )
 						Object.assign( output, { [key]: source[key] }) ;

@@ -1,13 +1,6 @@
 ( function ( wp ) {
 
-	const {
-		select,
-		subscribe
-	} = wp.data;
-	var {
-		__,
-		sprintf
-	} = wp.i18n;
+	var { __, sprintf } = wp.i18n;
 
 	/**
 	 * Monitor changes in the editor to check for the main tag
@@ -16,10 +9,10 @@
 		let prevPostType = null;
 		let prevPostId = null;
 
-		const unsubscribe = subscribe( () => {
+		const unsubscribe = wp.data.subscribe( () => {
 			// Get the current post type and post ID for comparison
-			const currentPostType = select( 'core/editor' ).getCurrentPostType();
-			const currentPostId = select( 'core/editor' ).getCurrentPostId();
+			const currentPostType = wp.data.select( 'core/editor' ).getCurrentPostType();
+			const currentPostId = wp.data.select( 'core/editor' ).getCurrentPostId();
 
 			// Run this code only if the post type or post ID has changed
 			if (
@@ -138,4 +131,5 @@
 			}
 		);
 	};
+
 } )( window.wp );

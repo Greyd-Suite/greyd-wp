@@ -5,13 +5,9 @@
  */
 ( function ( wp ) {
 
-	const {
-		createElement: el
-	} = wp.element;
-
-	const _ = lodash;
-
-	const { __ } = wp.i18n;
+	var { createElement: el } = wp.element;
+	var { __ } = wp.i18n;
+	var _ = lodash;
 
 	/**
 	 * Register custom attributes to core blocks.
@@ -107,6 +103,4 @@
 		editBlockHook
 	);
 
-} )(
-	window.wp
-);
+} )( window.wp );

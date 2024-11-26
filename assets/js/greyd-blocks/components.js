@@ -7,23 +7,9 @@ var greyd = greyd || {};
 
 greyd.components = new function () {
 
-	const _ = lodash;
-
-	const {
-		Component,
-		createElement: el,
-		Fragment
-	} = wp.element;
-
-	const {
-		Icon,
-		BaseControl,
-		__experimentalUnitControl: UnitControl,
-		__experimentalHStack: HStack,
-		__experimentalTruncate: Truncate
-	} = wp.components;
-
-	const { __ } = wp.i18n;
+	var { createElement: el } = wp.element;
+	var { __ } = wp.i18n;
+	var _ = lodash;
 
 	/**
 	 * SelectControl with optgroup capability
@@ -38,7 +24,7 @@ greyd.components = new function () {
 	 * 
 	 * @returns {object} OptionsControl component.
 	 */
-	this.OptionsControl = class extends Component {
+	this.OptionsControl = class extends wp.element.Component {
 		constructor () {
 			super();
 		}
@@ -73,7 +59,7 @@ greyd.components = new function () {
 			return options;
 		}
 		render() {
-			return el( BaseControl, {
+			return el( wp.components.BaseControl, {
 				className: 'greyd-options-control',
 				help: _.has( this.props, 'help' ) ? this.props.help : '',
 			},
@@ -105,7 +91,7 @@ greyd.components = new function () {
 	 * @returns {object} String values for each side (eg. {top: "1px", right: "12px", ... }).
 	 *                   Empty object {} on default or if cleared.
 	 */
-	this.DimensionControl = class extends Component {
+	this.DimensionControl = class extends wp.element.Component {
 
 		constructor () {
 			super();
@@ -484,12 +470,12 @@ greyd.components = new function () {
 			const value = this.getValueAsObject( this.props.value );
 
 			return el( "div", { className: "dimension_control" }, [
-				el( HStack, {
+				el( wp.components.__experimentalHStack, {
 					className: "dimension_control__label",
 					justify: "space-between"
 				}, [
 					el( 'label', {}, label ? label : '' ),
-					el( Icon, {
+					el( wp.components.Icon, {
 						className: "switch_button",
 						icon: mode === "simple" ? "admin-links" : "editor-unlink",
 						onClick: this.switchMode
@@ -498,11 +484,11 @@ greyd.components = new function () {
 				el( "div", {},
 					mode === "simple" ? (
 						[
-							el( HStack, {
+							el( wp.components.__experimentalHStack, {
 								justify: "space-between"
 							}, [
 								el( 'label', {}, __( labels.all, 'greyd-wp' ) ),
-								el( UnitControl, {
+								el( wp.components.__experimentalUnitControl, {
 									value: this.getFirstValue( value ) + unit,
 									min: min,
 									max: max[ unit ],
@@ -515,12 +501,12 @@ greyd.components = new function () {
 						]
 					) : (
 						sides.map( ( side ) => {
-							return el( HStack, {
+							return el( wp.components.__experimentalHStack, {
 								className: "dimension_control__inputs",
 								justify: "space-between"
 							}, [
 								el( 'label', {}, __( labels[ side ], 'greyd-wp' ) ),
-								el( UnitControl, {
+								el( wp.components.__experimentalUnitControl, {
 									value: _.has( value, side ) ? value[ side ] : null,
 									min: min,
 									max: max[ unit ],
@@ -549,7 +535,7 @@ greyd.components = new function () {
 	 * 		@property {string} value Value of the option
 	 * @property {callback} onChange Callback function to be called when value is changed.
 	 */
-	this.BlockStyleControl = class extends Component {
+	this.BlockStyleControl = class extends wp.element.Component {
 
 		constructor() {
 			super();
@@ -570,7 +556,7 @@ greyd.components = new function () {
 			let labelElement = null;
 			if ( !_.isEmpty(label) ) {
 				if ( hasEmptyOption) {
-					labelElement = el( BaseControl.VisualLabel, {
+					labelElement = el( wp.components.BaseControl.VisualLabel, {
 						onClick: () => onChange( null ),
 					}, label )
 				} else {
@@ -583,7 +569,7 @@ greyd.components = new function () {
 				}
 			}
 
-			return el( Fragment, {}, [
+			return el( wp.element.Fragment, {}, [
 				labelElement,
 				el( "div", {
 					className: "block-editor-block-styles"
@@ -600,7 +586,7 @@ greyd.components = new function () {
 								"aria-label": String( option.label ),
 								onClick: () => onChange( option.value ),
 							}, [
-								el( Truncate, {
+								el( wp.components.__experimentalTruncate, {
 									numberOfLines: 1,
 									className: "block-editor-block-styles__item-text"
 								}, String( option.label ) )
@@ -636,7 +622,7 @@ greyd.components = new function () {
 	 * 		@property {string} value Value of the option
 	 * @property {callback} onChange Callback function to be called when value is changed.
 	 */
-	this.ButtonGroupControl = class extends Component {
+	this.ButtonGroupControl = class extends wp.element.Component {
 
 		constructor() {
 			super();

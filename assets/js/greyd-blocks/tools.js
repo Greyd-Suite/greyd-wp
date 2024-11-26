@@ -4,6 +4,7 @@
  * This file is loaded in the editor only.
  */
 var greyd = greyd || {};
+var _ = lodash;
 
 if ( typeof greyd.tools === 'undefined' ) {
 	greyd.tools = {};

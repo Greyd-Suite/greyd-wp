@@ -1,3 +1,9 @@
+## 2.11.0 - 2024-11-21
+**Bugfixes**
+
+* Fixed a compatibility issue with the "Simply Schedule Appointments" plugin.  
+* Fixed an issue with child themes using the deprecated "hover" key in theme.json
+
 ## 2.10.0 - 2024-10-30
 **Improvements**
 

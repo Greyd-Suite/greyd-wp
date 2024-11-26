@@ -553,6 +553,7 @@ input[type=submit]:focus-visible,
 	border: none;
 	box-shadow: none;
 	text-decoration: none;
+	text-align: inherit;
 }
 .wp-block-navigation.is-style-clear .wp-block-navigation-submenu .wp-block-navigation__submenu-icon svg,
 .wp-block-navigation .wp-block-navigation-submenu.is-style-clear .wp-block-navigation__submenu-icon svg

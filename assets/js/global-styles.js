@@ -5,12 +5,11 @@
  */
 ( function ( wp ) {
 
-	const _ = lodash;
+	var { createElement: el } = wp.element;
+	var { __ } = wp.i18n;
+	var _ = lodash;
 
 	if ( !_.has( wp, "editSite" ) ) return null;
-
-	const el = wp.element.createElement;
-	const { __ } = wp.i18n;
 
 	/**
 	 * Wrap in a render function.
