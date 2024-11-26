@@ -164,7 +164,7 @@ input[type="search"],
 input[type="submit"],
 input[type="text"],
 textarea,
-div:not(.components-base-control__field) > select {
+select {
 	-webkit-appearance: none;
 	appearance: none;
 }
@@ -647,7 +647,7 @@ input[type=datetime],
 input[type=datetime-local],
 input[type=color],
 textarea,
-div:not(.components-base-control__field) > select,
+select,
 .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper {
 	-webkit-appearance: none;
 	appearance: none;
@@ -719,7 +719,7 @@ input[type=datetime]:hover,
 input[type=datetime-local]:hover,
 input[type=color]:hover,
 textarea:hover,
-div:not(.components-base-control__field) > select:hover,
+select:hover,
 .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper:hover
 /* focus */
 .input:focus,
@@ -742,7 +742,7 @@ input[type=datetime]:focus,
 input[type=datetime-local]:focus,
 input[type=color]:focus,
 textarea:focus,
-div:not(.components-base-control__field) > select:focus,
+select:focus,
 .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper:focus {
 	color: var(--wp--custom--greyd--input--prim--hover--color--text);
 	background-color: var(--wp--custom--greyd--input--prim--hover--color--background);
@@ -798,7 +798,7 @@ input[type=datetime].is-style-sec,
 input[type=datetime-local].is-style-sec,
 input[type=color].is-style-sec,
 textarea.is-style-sec,
-div:not(.components-base-control__field) > select.is-style-sec {
+select.is-style-sec {
 	color: var(--wp--custom--greyd--input--sec--color--text);
 	background-color: var(--wp--custom--greyd--input--sec--color--background);
 	border-radius: var(--wp--custom--greyd--input--sec--border--radius);
@@ -848,7 +848,7 @@ input[type=datetime].is-style-sec:hover,
 input[type=datetime-local].is-style-sec:hover,
 input[type=color].is-style-sec:hover,
 textarea.is-style-sec:hover,
-div:not(.components-base-control__field) > select.is-style-sec:hover,
+select.is-style-sec:hover,
 /* focus */
 .input.is-style-sec:focus,
 input.is-style-sec:not([type=submit], [type=checkbox]):focus,
@@ -870,7 +870,7 @@ input[type=datetime].is-style-sec:focus,
 input[type=datetime-local].is-style-sec:focus,
 input[type=color].is-style-sec:focus,
 textarea.is-style-sec:focus,
-div:not(.components-base-control__field) > select.is-style-sec:focus {
+select.is-style-sec:focus {
 	color: var(--wp--custom--greyd--input--sec--hover--color--text);
 	background-color: var(--wp--custom--greyd--input--sec--hover--color--background);
 	border-width: var(--wp--custom--greyd--input--sec--hover--border--width);
@@ -939,7 +939,7 @@ select[disabled]:hover {
  * Select
  * ____________________________________________________________________
  */
-div:not(.components-base-control__field) > select {
+select {
 	background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M5%206l5%205%205-5%202%201-7%207-7-7%202-1z%22%20fill%3D%22%23555%22%2F%3E%3C%2Fsvg%3E);
 	background-repeat: no-repeat;
 	background-position: right 14px top 55%;

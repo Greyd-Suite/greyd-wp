@@ -1,3 +1,13 @@
+## 2.10.0 - 2024-10-30
+**Improvements**
+
+* As for specificity changes in WP 6.7, button styles need separate CSS for the editor preview
+
+**Bugfixes**
+
+* Fixed an issue with CSS selector specificity in theme.css
+* Fixed an issue with a wrong selector for a site editor class
+
 ## 2.9.0 - 2024-10-01
 **Improvements**
 

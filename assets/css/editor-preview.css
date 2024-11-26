@@ -1,0 +1,131 @@
+/**
+ * Style blocks inside the block editor preview.
+ * 
+ * This style is needed, because since WordPress Version 6.7, the
+ * specificity of editor styles was changed to have less specificity.
+ * This is why we need to use the '.editor-styles-wrapper' class to
+ * target the editor preview.
+ * At the same time we do not want those styles to be applied to the
+ * frontend, so we use this file to define the styles separately.
+ *
+ * @package Greyd
+ * @since 2.10.0
+ */
+
+
+/**
+ * Defining button styles with '.button' leads to the editor selector
+ * ':where(.editor-styles-wrapper) .button' which is less specific than
+ * '.wp-core-ui .button' and therefore will not take precedence.
+ */
+.editor-styles-wrapper .button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	transition: all .2s ease;
+	cursor: pointer;
+	text-align: center;
+	font-family: var(--wp--custom--greyd--button--typography--font-family);
+	font-size: var(--wp--custom--greyd--button--typography--font-size);
+	font-weight: var(--wp--custom--greyd--button--typography--font-weight);
+	line-height: var(--wp--custom--greyd--button--typography--line-height);
+	text-transform: var(--wp--custom--greyd--button--typography--text-transform);
+	letter-spacing: var(--wp--custom--greyd--button--typography--letter-spacing);
+	word-spacing: var(--wp--custom--greyd--button--typography--word-spacing);
+	padding-top: var(--wp--custom--greyd--button--spacing--padding--top);
+	padding-bottom: var(--wp--custom--greyd--button--spacing--padding--bottom);
+	padding-left: var(--wp--custom--greyd--button--spacing--padding--left);
+	padding-right: var(--wp--custom--greyd--button--spacing--padding--right);
+	/* primary */
+	color: var(--wp--custom--greyd--button--prim--color--text);
+	background: var(--wp--custom--greyd--button--prim--color--background);
+	border-radius: var(--wp--custom--greyd--button--prim--border--radius);
+	border-width: var(--wp--custom--greyd--button--prim--border--width);
+	border-style: var(--wp--custom--greyd--button--prim--border--style);
+	border-color: var(--wp--custom--greyd--button--prim--border--color);
+	box-shadow: var(--wp--custom--greyd--button--prim--shadow);
+}
+
+.editor-styles-wrapper .button:hover,
+.editor-styles-wrapper .button:focus-visible {
+	opacity: 1;
+	text-decoration: none;
+	color: var(--wp--custom--greyd--button--prim--hover--color--text);
+	background: var(--wp--custom--greyd--button--prim--hover--color--background);
+	border-width: var(--wp--custom--greyd--button--prim--hover--border--width);
+	border-style: var(--wp--custom--greyd--button--prim--hover--border--style);
+	border-color: var(--wp--custom--greyd--button--prim--hover--border--color);
+	box-shadow: var(--wp--custom--greyd--button--prim--hover--shadow);
+}
+
+
+/**
+ * Defining select styles with 'select' leads to the editor selector
+ * ':where(.editor-styles-wrapper) select' which is less specific than
+ * '.wp-core-ui select' and therefore will not take precedence.
+ */
+.editor-styles-wrapper select {
+	-webkit-appearance: none;
+	appearance: none;
+	display: block;
+	width: 100%;
+	/* font */
+	font-family: var(--wp--custom--greyd--input--typography--font-family);
+	font-size: var(--wp--custom--greyd--input--typography--font-size);
+	font-weight: var(--wp--custom--greyd--input--typography--font-weight);
+	line-height: var(--wp--custom--greyd--input--typography--line-height);
+	text-transform: var(--wp--custom--greyd--input--typography--text-transform);
+	letter-spacing: var(--wp--custom--greyd--input--typography--letter-spacing);
+	/* spacing */
+	padding-top: var(--wp--custom--greyd--input--spacing--padding--top);
+	padding-bottom: var(--wp--custom--greyd--input--spacing--padding--bottom);
+	padding-left: var(--wp--custom--greyd--input--spacing--padding--left);
+	padding-right: var(--wp--custom--greyd--input--spacing--padding--right);
+	/* color */
+	color: var(--wp--custom--greyd--input--prim--color--text);
+	background-color: var(--wp--custom--greyd--input--prim--color--background);
+	/* border */
+	border-radius: var(--wp--custom--greyd--input--prim--border--radius);
+	border-width: var(--wp--custom--greyd--input--prim--border--width);
+	border-style: var(--wp--custom--greyd--input--prim--border--style);
+	border-color: var(--wp--custom--greyd--input--prim--border--color);
+	/* shadow */
+	box-shadow: var(--wp--custom--greyd--input--prim--shadow);
+
+	transition: color 0.2s ease, background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.editor-styles-wrapper select:hover,
+.editor-styles-wrapper select:focus {
+	color: var(--wp--custom--greyd--input--prim--hover--color--text);
+	background-color: var(--wp--custom--greyd--input--prim--hover--color--background);
+	border-width: var(--wp--custom--greyd--input--prim--hover--border--width);
+	border-style: var(--wp--custom--greyd--input--prim--hover--border--style);
+	border-color: var(--wp--custom--greyd--input--prim--hover--border--color);
+	box-shadow: var(--wp--custom--greyd--input--prim--hover--shadow);
+}
+
+.editor-styles-wrapper select.is-style-sec,
+.editor-styles-wrapper .custom-select.is-style-sec > select {
+	color: var(--wp--custom--greyd--input--sec--color--text);
+	background-color: var(--wp--custom--greyd--input--sec--color--background);
+	border-radius: var(--wp--custom--greyd--input--sec--border--radius);
+	border-width: var(--wp--custom--greyd--input--sec--border--width);
+	border-style: var(--wp--custom--greyd--input--sec--border--style);
+	border-color: var(--wp--custom--greyd--input--sec--border--color);
+	box-shadow: var(--wp--custom--greyd--input--sec--shadow);
+}
+
+.editor-styles-wrapper select.is-style-sec:hover,
+.editor-styles-wrapper select.is-style-sec:focus,
+.editor-styles-wrapper .custom-select.is-style-sec > select:hover,
+.editor-styles-wrapper .custom-select.is-style-sec > select:focus {
+	color: var(--wp--custom--greyd--input--sec--color--text);
+	background-color: var(--wp--custom--greyd--input--sec--color--background);
+	border-radius: var(--wp--custom--greyd--input--sec--border--radius);
+	border-width: var(--wp--custom--greyd--input--sec--border--width);
+	border-style: var(--wp--custom--greyd--input--sec--border--style);
+	border-color: var(--wp--custom--greyd--input--sec--border--color);
+	box-shadow: var(--wp--custom--greyd--input--sec--shadow);
+}

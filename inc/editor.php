@@ -109,6 +109,14 @@ class Editor {
 		 */
 
 		wp_register_style(
+			'greyd-theme-editor-preview',
+			get_template_directory_uri() . '/assets/css/editor-preview.css',
+			array(),
+			wp_get_theme()->get( 'Version' )
+		);
+		wp_enqueue_style( 'greyd-theme-editor-preview' );
+
+		wp_register_style(
 			'greyd-wp-editor-controls',
 			get_template_directory_uri() . '/assets/css/editor-controls.css',
 			array(),
