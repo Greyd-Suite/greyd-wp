@@ -4,7 +4,6 @@
  * This file is loaded in the editor only.
  */
 var greyd = greyd || {};
-var _ = lodash;
 
 if ( typeof greyd.tools === 'undefined' ) {
 	greyd.tools = {};
@@ -29,7 +28,7 @@ if ( typeof greyd.tools.showSnackbar === 'undefined' ) {
 	 * @param {bool} isDismissible Whether the snackbar has a close icon
 	 */
 	greyd.tools.showSnackbar = function ( text, style, isDismissible ) {
-		if ( _.isEmpty( text ) ) return;
+		if ( lodash.isEmpty( text ) ) return;
 
 		style = typeof style === 'undefined' ? 'info' : style;
 		isDismissible = typeof isDismissible === 'undefined' ? true : isDismissible;
