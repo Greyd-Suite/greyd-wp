@@ -3,7 +3,7 @@ Contributors: greydsuite, sandrakurze, luminuu, jtgreyd, thomask42, annebovelett
 Requires at least: 6.4
 Tested up to: 6.7
 Requires PHP: 7.4
-Stable tag: 2.11.0
+Stable tag: 2.11.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: accessibility-ready, block-patterns, block-styles, custom-colors, custom-header, custom-logo, editor-style, featured-images, full-site-editing, template-editing, theme-options, translation-ready
@@ -46,6 +46,11 @@ Before you start, make sure you're running WordPress 6.4 or later.
 4. Activate the theme.
 
 == Changelog ==
+
+= 2.11.1 - 2024-11-29 =
+==Bugfixes==
+
+* Remove lodash assignment in global scope to avoid issues with other scripts
 
 = 2.11.0 - 2024-11-21 =
 ==Bugfixes==

@@ -1,3 +1,8 @@
+## 2.11.1 - 2024-11-29
+**Bugfixes**
+
+* Remove lodash assignment in global scope to avoid issues with other scripts  
+
 ## 2.11.0 - 2024-11-21
 **Bugfixes**
 
