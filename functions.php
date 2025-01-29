@@ -12,15 +12,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 // Config vars for the Greyd plugin ecosystem
 if ( ! defined( 'GREYD_THEME_CONFIG' ) ) {
-    define(
-        'GREYD_THEME_CONFIG',
-        array(
-            'theme_name_full' => 'Greyd WP',
-            'theme_name'      => 'greyd-wp',
-            'theme_file'      => __FILE__,
-            'theme_dir'       => __DIR__,
-        )
-    );
+	define(
+		'GREYD_THEME_CONFIG',
+		array(
+			'theme_name_full' => 'Greyd WP',
+			'theme_name'      => 'greyd-wp',
+			'theme_file'      => __FILE__,
+			'theme_dir'       => __DIR__,
+		)
+	);
 }
 
 /**

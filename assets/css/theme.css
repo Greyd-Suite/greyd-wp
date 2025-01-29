@@ -250,13 +250,14 @@ button {
 	margin-inline: 0;
 }
 
+/* Add transition separately to core blocks to match Greyd buttons */
+.wp-block-button__link {
+	transition: all .2s ease;
+}
+
 button[type=submit],
 input[type=submit],
 .button,
-.wp-element-button,
-.wp-block-button__link,
-div.wp-element-button, /* editor specific */
-div.wp-block-button__link, /* editor specific */
 .wp-block-search .wp-block-search__button,
 .wp-block-file .wp-block-file__button,
 .wp-block-navigation[class*="is-style-button"] .wp-block-navigation-item .wp-block-navigation-item__content,
@@ -365,9 +366,6 @@ input[type=submit]:focus-visible,
  * ____________________________________________________________________
  */
 .is-style-outline.button,
-.is-style-outline.wp-element-button,
-.is-style-outline.wp-element-button,
-.is-style-outline.wp-block-button .wp-element-button.wp-block-button__link,
 .button.is-style-sec,
 .wp-block-navigation.is-style-button-outline .wp-block-navigation-item .wp-block-navigation-item__content,
 .wp-block-navigation .wp-block-navigation-item.is-style-button-outline.is-style-button-outline .wp-block-navigation-item__content,
@@ -417,23 +415,20 @@ input[type=submit]:focus-visible,
 	stroke: var(--wp--custom--greyd--button--sec--hover--color--text);
 }
 
-/* @since 1.14.0 overwrite padding from core styles */
+/* @since 1.14.0 overwrite padding from core styles * /
 .wp-block-button .wp-block-button__link.is-style-outline,
 .wp-block-button.is-style-outline > .wp-block-button__link {
 	padding-top: var(--wp--custom--greyd--button--spacing--padding--top);
 	padding-bottom: var(--wp--custom--greyd--button--spacing--padding--bottom);
 	padding-left: var(--wp--custom--greyd--button--spacing--padding--left);
 	padding-right: var(--wp--custom--greyd--button--spacing--padding--right);
-}
+}*/
 
 /**
  * Tertiary (is-style-alternate)
  * ____________________________________________________________________
  */
 .is-style-alternate.button,
-.is-style-alternate.wp-element-button,
-.is-style-alternate.wp-element-button,
-.is-style-alternate.wp-block-button .wp-element-button.wp-block-button__link,
 .button.is-style-trd,
 .wp-block-navigation.is-style-button-alternate .wp-block-navigation-item .wp-block-navigation-item__content,
 .wp-block-navigation .wp-block-navigation-item.is-style-button-alternate.is-style-button-alternate .wp-block-navigation-item__content,
@@ -541,16 +536,13 @@ input[type=submit]:focus-visible,
  * ____________________________________________________________________
  */
 .is-style-clear.button,
-.is-style-clear.wp-element-button,
-.is-style-clear.wp-element-button,
-.is-style-clear.wp-block-button .wp-element-button,
 .wp-block-navigation.is-style-clear .wp-block-navigation-item .wp-block-navigation-item__content,
 .wp-block-navigation .wp-block-navigation-item.is-style-clear .wp-block-navigation-item__content,
 .wp-block-navigation .wp-block-navigation-submenu .wp-block-navigation-item.is-style-clear .wp-block-navigation-item__content {
 	color: inherit;
 	background: none;
 	border-radius: 0;
-	border: none;
+	border: 1px solid transparent;
 	box-shadow: none;
 	text-decoration: none;
 	text-align: inherit;
@@ -574,10 +566,10 @@ input[type=submit]:focus-visible,
 .wp-block-navigation .wp-block-navigation-submenu .wp-block-navigation-item.is-style-clear .wp-block-navigation-item__content:focus-visible {
 	color: inherit;
 	background: none;
-	/* border-radius: 0; */
-	border: none;
+	border-radius: 0;
+	border: 1px solid transparent;
 	box-shadow: none;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 .wp-block-navigation.is-style-clear .wp-block-navigation-submenu .wp-block-navigation-item__content:hover + .wp-block-navigation__submenu-icon svg,
@@ -1077,6 +1069,11 @@ input[type="checkbox"][disabled] {
 .wp-block-image.alignright figcaption,
 .wp-block-image .alignright figcaption {
 	text-align: right;
+}
+
+/* Fix images with height smaller than the line-height. */
+figure.wp-block-image:not(:has( > figcaption)) {
+	line-height: 0;
 }
 
 /* block-styles */
@@ -1650,4 +1647,36 @@ table.is-style-stripes th {
 	position: absolute;
 	width: 1px;
 	white-space: nowrap;
+}
+
+/**
+ * ====================================================================
+ *                             Section Styles
+ * ====================================================================
+ */
+:root :where(.wp-block-group.is-style-section-contrast) {
+	background-color: var(--wp--preset--color--foreground);
+	color: var(--wp--preset--color--background);
+	padding-top: var(--wp--preset--spacing--medium);
+	padding-right: var(--wp--preset--spacing--medium);
+	padding-bottom: var(--wp--preset--spacing--medium);
+	padding-left: var(--wp--preset--spacing--medium);
+}
+
+:root :where(.wp-block-group.is-style-section-neutral) {
+	background-color: var(--wp--preset--color--mediumlight);
+	color: var(--wp--preset--color--foreground);
+	padding-top: var(--wp--preset--spacing--medium);
+	padding-right: var(--wp--preset--spacing--medium);
+	padding-bottom: var(--wp--preset--spacing--medium);
+	padding-left: var(--wp--preset--spacing--medium);
+}
+
+:root :where(.wp-block-group.is-style-section-primary) {
+	background-color: var(--wp--preset--color--primary);
+	color: var(--wp--preset--color--background);
+	padding-top: var(--wp--preset--spacing--medium);
+	padding-right: var(--wp--preset--spacing--medium);
+	padding-bottom: var(--wp--preset--spacing--medium);
+	padding-left: var(--wp--preset--spacing--medium);
 }

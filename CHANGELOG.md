@@ -1,3 +1,11 @@
+## 2.13.0 - 2025-01-29
+**Improvements**
+* Improved the site editor warning if no or too many main classes were found, added link to a help article
+* Improved core and Greyd button styles
+
+**Bugfixes**
+* Fixed some small CSS issues.
+
 ## 2.11.1 - 2024-11-29
 **Bugfixes**
 

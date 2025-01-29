@@ -94,7 +94,7 @@
 	const createWarningNotice = ( mainTagCount ) => {
 
 		// Default notice text when no main tag is found
-		let noticeText = __( 'It has been discovered that this template does not contain an element set to use the <main> HTML tag. Please update a top level group containing the site content to use the main tag in the block settings under `Advanced > HTML Element` and save the template.', 'greyd-wp' );
+		let noticeText = __( 'Improve your website accessibility: This template does not contain a <main> HTML tag, so currently no skip links are available on your website. Please update a top level group block containing the site content to use the <main> HTML tag in the block settings under `Advanced > HTML Element`. You can find more information in our Helpcenter article linked below.', 'greyd-wp' );
 
 		// If there is more than one main tag, change the notice text to include the number found and give advice how to set it up correctly
 		if ( mainTagCount > 1 ) {
@@ -118,7 +118,7 @@
 
 			// If the number is above 10, the number is used as is
 			noticeText = sprintf(
-				__( 'It has been discovered that this template contains %s elements that are set to use the <main> HTML tag. Please reduce the number to one element on the top level that contains the site content and save the template.', 'greyd-wp' ),
+				__( 'Improve your website accessibility: This template contains %s blocks with the <main> HTML tag, which is not recommended. Please reduce the number to one block on the top level that contains the site content. You can find more information in our Helpcenter article linked below.', 'greyd-wp' ),
 				mainTagCount
 			);
 		}
@@ -128,6 +128,12 @@
 			noticeText, // Text string to display.
 			{
 				id: 'greyd-a11y-main-notice', // Custom ID. Set to avoid duplication.
+				actions: [
+					{
+						url: 'https://helpcenter.greyd.io/missing-main-element/',
+						label: __( 'I get a notice that a main element is missing?', 'greyd-wp' ),
+					},
+				],
 			}
 		);
 	};
