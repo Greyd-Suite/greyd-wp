@@ -759,7 +759,7 @@ var greyd = greyd || { tools: {}, components: {} };
 		 * Get all font sizes.
 		 * @returns {object[]} with @properties title, slug
 		 */
-		this.getFontSizes = () => {
+		this.getFontSizes = ( custom=false ) => {
 			var values = greyd.tools.getGlobalStylesValue( 'typography.fontSizes' );
 			var sizes = [];
 			if ( values ) {
@@ -769,6 +769,14 @@ var greyd = greyd || { tools: {}, components: {} };
 						slug: "--wp--preset--font-size--" + size.slug
 					} );
 				} );
+				if ( custom && values.custom ) {
+					values.custom.forEach( ( size ) => {
+						sizes.push( {
+							title: size.name,
+							slug: "--wp--preset--font-size--" + size.slug
+						} );
+					} );
+				}
 			}
 			return sizes;
 		};
@@ -779,7 +787,7 @@ var greyd = greyd || { tools: {}, components: {} };
 		 */
 		this.getFontSizeOptions = () => {
 			var sizes = [];
-			this.getFontSizes().forEach( ( size ) => {
+			this.getFontSizes(true).forEach( ( size ) => {
 				sizes.unshift( {
 					name: size.title,
 					slug: size.slug.replace( "--wp--preset--font-size--", "" ),

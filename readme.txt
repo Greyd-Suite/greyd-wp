@@ -3,7 +3,7 @@ Contributors: greydsuite, sandrakurze, luminuu, jtgreyd, thomask42, annebovelett
 Requires at least: 6.4
 Tested up to: 6.7
 Requires PHP: 7.4
-Stable tag: 2.13.0
+Stable tag: 2.15.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: accessibility-ready, block-patterns, block-styles, custom-colors, custom-header, custom-logo, editor-style, featured-images, full-site-editing, template-editing, theme-options, translation-ready
@@ -46,6 +46,17 @@ Before you start, make sure you're running WordPress 6.4 or later.
 4. Activate the theme.
 
 == Changelog ==
+
+= 2.15.0 - 2025-03-14 =
+==Improvements==
+* Improved definition of outline colors on links, buttons, etc
+* Deprecated font sizes in Greyd Global Styles in favour of Core font sizes settings
+* Improved an issue with orphaned http:// URLs in the font-family src attribute
+
+==Bugfixes==
+* Fixed styles in theme.json for alternate buttons
+* Fixed label colors if they are in a group with a text color set
+* Fixed an issue with custom breakpoints not being recognized
 
 = 2.13.0 - 2025-01-29 =
 ==Improvements==

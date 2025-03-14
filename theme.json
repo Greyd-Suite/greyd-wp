@@ -933,10 +933,10 @@
 				"variations": {
 					"alternate": {
 						"border": {
-							"color": "var(--wp--preset--color--transparent)",
-							"radius": "4px",
-							"style": "solid",
-							"width": "2px"
+							"color": "var(--wp--custom--greyd--button--trd--border--color)",
+							"radius": "var(--wp--custom--greyd--button--trd--border--radius)",
+							"style": "var(--wp--custom--greyd--button--trd--border--style)",
+							"width": "var(--wp--custom--greyd--button--trd--border--width)"
 						},
 						"color": {
 							"background": "var(--wp--custom--greyd--button--trd--color--background)",

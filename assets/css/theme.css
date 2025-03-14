@@ -80,10 +80,7 @@ input[type=submit] {
 
 a:focus-visible,
 .link:focus-visible,
-button:focus-visible {
-	outline-color: currentColor;
-}
-
+button:focus-visible,
 .button:focus-visible,
 input[type=submit]:focus-visible,
 .wp-element-button:focus-visible,
@@ -94,7 +91,7 @@ input[type=submit]:focus-visible,
 	 * Use var --text-color if set, fallback to foreground
 	 * @since 2.2.0
 	 */
-	outline-color: var(--text-color, var(--wp--preset--color--foreground) );
+	outline-color: var( --text-color, var(--wp--preset--color--foreground, currentColor) );
 }
 
 /**
@@ -147,7 +144,7 @@ select:focus-visible + .select-selected
 	 * Use var --text-color if set, fallback to foreground
 	 * @since 2.2.0
 	 */
-	outline: 2px dotted var(--text-color, currentColor);
+	outline: 2px dotted var( --text-color, var(--wp--preset--color--foreground, currentColor) );
 	outline-offset: 3px;
 }
 
@@ -908,6 +905,13 @@ form label,
 	font-size: var(--wp--custom--greyd--input--label--typography--font-size);
 	font-weight: var(--wp--custom--greyd--input--label--typography--font-weight);
 	line-height: var(--wp--custom--greyd--input--label--typography--line-height);
+}
+
+/* If the label has an ancestor with a text color set (i.e. Group block),
+ * then overwrite the color using currentColor.
+ * Individual text color on the label itself will still work with this. */
+.has-text-color label {
+	color: currentColor;
 }
 
 /**

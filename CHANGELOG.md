@@ -1,3 +1,14 @@
+## 2.15.0 - 2025-03-14
+**Improvements**
+* Improved definition of outline colors on links, buttons, etc
+* Deprecated font sizes in Greyd Global Styles in favour of Core font sizes settings
+* Improved an issue with orphaned http:// URLs in the font-family src attribute
+
+**Bugfixes**
+* Fixed styles in theme.json for alternate buttons
+* Fixed label colors if they are in a group with a text color set
+* Fixed an issue with custom breakpoints not being recognized
+
 ## 2.13.0 - 2025-01-29
 **Improvements**
 * Improved the site editor warning if no or too many main classes were found, added link to a help article

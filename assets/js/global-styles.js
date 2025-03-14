@@ -133,12 +133,15 @@
 				icon: 'editor-paragraph',
 				tip: __( 'Define up to three font families for your website. Reference them within your blocks or declare them as defaults for headlines, buttons, and more using the styles editor.', 'greyd-wp' )
 			},
-			{
-				title: __( 'Font sizes', 'greyd-wp' ),
-				slug: "font-sizes",
-				icon: 'editor-textcolor',
-				tip: __( "Define up to seven font sizes here, set to 'fluid' by default. Specify the minimum and maximum values, and the system automatically adjusts font sizes between screen sizes for optimal readability and visual consistency.", 'greyd-wp' )
-			},
+			/**
+			 * @deprecated 2.14.0
+			 */
+			// {
+			// 	title: __( 'Font sizes', 'greyd-theme' ),
+			// 	slug: "font-sizes",
+			// 	icon: 'editor-textcolor',
+			// 	tip: __( "Define up to seven font sizes here, set to 'fluid' by default. Specify the minimum and maximum values, and the system automatically adjusts font sizes between screen sizes for optimal readability and visual consistency.", 'greyd-theme' )
+			// },
 			{
 				title: __( 'Buttons', 'greyd-wp' ),
 				slug: "button",
@@ -293,6 +296,15 @@
 			// font-size
 			if ( merged?.typography?.fontSizes?.theme ) {
 				merged.typography.fontSizes.theme.forEach( (size) => {
+					if ( size.fluid ) {
+						var { min, max } = size.fluid;
+						custom_styles[ "font-size" ][ "--wp--preset--font-size--"+size.slug ] = 'clamp(' + min + ', calc((' + min + ' + ' + max + ') / 2 ), ' + max + ')';
+					}
+					else custom_styles[ "font-size" ][ "--wp--preset--font-size--"+size.slug ] = size.size;
+				} );
+			}
+			if ( merged?.typography?.fontSizes?.custom ) {
+				merged.typography.fontSizes.custom.forEach( (size) => {
 					if ( size.fluid ) {
 						var { min, max } = size.fluid;
 						custom_styles[ "font-size" ][ "--wp--preset--font-size--"+size.slug ] = 'clamp(' + min + ', calc((' + min + ' + ' + max + ') / 2 ), ' + max + ')';

@@ -26,6 +26,9 @@ class Global_Styles {
 		add_filter( 'greyd_dashboard_active_panels', array( $this, 'add_greyd_dashboard_panel' ) );
 		add_action( 'enqueue_block_editor_assets', array( $this, 'block_editor_scripts' ), 13 );
 
+		// Add custom breakpoints
+		add_filter( 'greyd_blocks_breakpoints', array( $this, 'greyd_blocks_breakpoints' ) );
+
 		// ajax handler
 		add_action( 'wp_ajax_greyd_global_styles_ajax', array( $this, 'handle_greyd_ajax_request' ) );
 		add_action( 'after_setup_theme', function() {
@@ -43,6 +46,7 @@ class Global_Styles {
 
 		// fix fluid typography settings
 		add_filter( 'wp_theme_json_data_user', array( $this, 'filter_theme_json_data_user_to_fix_fluid_typography_settings' ), 0 );
+		add_filter( 'wp_theme_json_data_user', array( $this, 'filter_theme_json_data_user_to_fix_fontfamily_ssl_error' ) );
 	}
 
 	/**
@@ -94,6 +98,21 @@ class Global_Styles {
 			wp_set_script_translations( 'greyd-wp-global-styles-script', 'greyd-wp' );
 		}
 
+	}
+
+	/**
+	 * Add custom breakpoints from global-styles.
+	 * @see filter 'greyd_blocks_breakpoints'
+	 */
+	public function greyd_blocks_breakpoints( $breakpoints ) {
+		$data = $this->get_global_styles_data();
+		foreach ( array( "sm", "md", "lg" ) as $bp ) {
+			if ( isset($data["custom"]["greyd"]["grid"]["breakpoint"][$bp]) ) {
+				$breakpoints[$bp] = intval($data["custom"]["greyd"]["grid"]["breakpoint"][$bp]);
+				$breakpoints["vc_".$bp] = $breakpoints[$bp];
+			}
+		}
+		return $breakpoints;
 	}
 
 
@@ -616,6 +635,71 @@ class Global_Styles {
 			$theme_json->update_with( $theme_json_data );
 		}
 
+		return $theme_json;
+	}
+
+	/**
+	 * Fix fontfamily src to use https instead of http.
+	 * @since 2.13.0
+	 * 
+	 * The core implementation of the theme.json file does not fix orphaned http:// URLs in the font-family
+	 * src attribute, if a site has switched to SSL, but the font families were uploaded without SSL.
+	 * This can cause mixed content warnings in the browser console. This filter fixes this issue.
+	 * 
+	 * @param WP_Theme_JSON_Data $theme_json Class to access and update the underlying data.
+	 * 
+	 * @return WP_Theme_JSON_Data
+	 */
+	public function filter_theme_json_data_user_to_fix_fontfamily_ssl_error( $theme_json ){
+
+		if ( ! is_ssl() ) {
+			return $theme_json;
+		}
+	
+		$custom_user_settings = $theme_json->get_theme_json()->get_settings();
+	
+		if (
+			isset( $custom_user_settings['typography'] )
+			&& isset( $custom_user_settings['typography']['fontFamilies'] )
+			&& isset( $custom_user_settings['typography']['fontFamilies']['custom'] )
+		) {
+	
+			$needs_update = false;
+			$fontFamiliesCustom = $custom_user_settings['typography']['fontFamilies']['custom'];
+	
+			foreach ( $fontFamiliesCustom as $key => $fontFamily ) {
+				
+				$fontFace = isset( $fontFamily['fontFace'] ) ? $fontFamily['fontFace'] : null;
+	
+				if ( $fontFace && is_array( $fontFace ) ) {
+					foreach ( $fontFace as $i => $font ) {
+						
+						$src = isset( $font['src'] ) ? $font['src'] : null;
+	
+						// if src only uses http, replace with https
+						if ( $src && is_string( $src ) && strpos( $src, 'http://' ) !== false ) {
+							$src = str_replace( 'http://', 'https://', $src );
+							$fontFamiliesCustom[$key]['fontFace'][$i]['src'] = $src;
+							$needs_update = true;
+						}
+					}
+				}
+			}
+	
+			if ( $needs_update ) {
+				return $theme_json->update_with( array(
+					'version'  => 3,
+					'settings' => array(
+						'typography' => array(
+							'fontFamilies' => array(
+								'custom' => $fontFamiliesCustom,
+							)
+						)
+					)
+				) );
+			}
+		}
+		
 		return $theme_json;
 	}
 	
