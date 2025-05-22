@@ -3,7 +3,7 @@ Contributors: greydsuite, sandrakurze, luminuu, jtgreyd, thomask42, annebovelett
 Requires at least: 6.4
 Tested up to: 6.7
 Requires PHP: 7.4
-Stable tag: 2.15.0
+Stable tag: 2.16.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: accessibility-ready, block-patterns, block-styles, custom-colors, custom-header, custom-logo, editor-style, featured-images, full-site-editing, template-editing, theme-options, translation-ready
@@ -46,6 +46,11 @@ Before you start, make sure you're running WordPress 6.4 or later.
 4. Activate the theme.
 
 == Changelog ==
+
+= 2.16.0 - 2025-04-22 =
+== Bugfixes ==
+* Fixed a CSS selector
+* Fixed a bug in the Greyd Global Styles that didn't allow opening some settings, throwing an error
 
 = 2.15.0 - 2025-03-14 =
 ==Improvements==

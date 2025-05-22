@@ -211,7 +211,7 @@ body.admin-bar .wp-site-blocks {
 }
 
 /* Background spacing */
-:where( .has-background:not( .wp-element-button, .wp-block-navigation-item, .wp-block-navigation-submenu, .row_wrap, .wp-block-separator ) ) {
+:where( .has-background:not( .wp-element-button, .wp-block-navigation-item, .wp-block-navigation-submenu, .row_wrap, .wp-block-separator, .wp-block-navigation__responsive-container ) ) {
 	padding: var(--wp--style--block-gap);
 }
 

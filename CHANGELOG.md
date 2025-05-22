@@ -1,3 +1,8 @@
+## 2.16.0 - 2025-04-22
+**Bugfixes**
+* Fixed a CSS selector
+* Fixed a bug in the Greyd Global Styles that didn't allow opening some settings, throwing an error
+
 ## 2.15.0 - 2025-03-14
 **Improvements**
 * Improved definition of outline colors on links, buttons, etc

@@ -84,442 +84,199 @@ greyd.components = new function () {
 	 * @property {int} min Minimum value.
 	 * @property {int|object} max Maximum value. If integer, only the 'px'-max is set.
 	 * @property {array} sides Sides to be supported.
-	 * @property {string} type Type of value to be returned (object|string).
+	 * @property {string} type Type of the value ('object'|'string').
 	 * @property {object} labels Custom labels for the sides.
 	 * @property {callback} onChange Callback function to be called when value is changed.
+	 * 
+	 * @since 2.3.0 [BETA] SpacingSizesControl is used, to reflect the core control.
 	 * 
 	 * @returns {object} String values for each side (eg. {top: "1px", right: "12px", ... }).
 	 *                   Empty object {} on default or if cleared.
 	 */
 	this.DimensionControl = class extends wp.element.Component {
 
-		constructor () {
+		constructor() {
 			super();
-
-			// bind keyword "this" inside functions to the class object
-			// this.setConfig 			= this.setConfig.bind(this);
-			// this.getMode 			= this.getMode.bind(this);
-			// this.getUnit 			= this.getUnit.bind(this);
-			// this.handleValueChange	= this.handleValueChange.bind(this);
-			// this.handleUnitChange	= this.handleUnitChange.bind(this);
-			// this.clear 				= this.clear.bind(this);
-			this.switchMode = this.switchMode.bind( this );
-
-			this.config = {
-				units: [ "px", "%", "em", "rem", "vw", "vh" ], // Units available in the control.
-				min: 0, // Minimum value, can be negative.
-				max: {
-					'': 100,
-					'px': 200,
-					'%': 100,
-					'em': 100,
-					'rem': 100,
-					'vw': 100,
-					'vh': 100,
-				},
-				step: {
-					'': 1,
-					'px': 0.1,
-					'%': 0.1,
-					'em': 0.01,
-					'rem': 0.01,
-					'vw': 0.1,
-					'vh': 0.1,
-				},
-				sides: [ "top", "right", "bottom", "left" ],
-				type: "object", // the type of value to return
-				labels: {
-					"top": __( "Top", 'greyd-wp' ),
-					"right": __( "Right", 'greyd-wp' ),
-					"bottom": __( "Bottom", 'greyd-wp' ),
-					"left": __( "Left", 'greyd-wp' ),
-					"topLeft": __( "Top left", 'greyd-wp' ),
-					"topRight": __( "Top right", 'greyd-wp' ),
-					"bottomRight": __( "Bottom right", 'greyd-wp' ),
-					"bottomLeft": __( "Bottom left", 'greyd-wp' ),
-					"all": __( "All sides", 'greyd-wp' )
-				},
-			};
-
-			this.state = {
-				mode: "simple",
-				unit: "px"
-			};
-		}
-
-		/**
-		 * Called after the control is build and props are set.
-		 * @source https://reactjs.org/docs/react-component.html#componentdidmount
-		 */
-		componentDidMount() {
-
-			// set the config
-			this.setConfig();
-
-			// init the state
-			if ( typeof this.props.value !== "undefined" ) {
-
-				const state = {
-					mode: this.getMode( this.props.value ),
-					unit: this.getUnit( this.props.value ),
-				};
-
-				if ( state !== this.state ) {
-					this.setState( state );
-				}
-			}
-		}
-
-		/**
-		 * Get the current mode
-		 * @param {string|object} value this.props.value
-		 * @returns {string} 'simple'|'advanced'
-		 */
-		getMode( value ) {
-
-			value = this.getValueAsObject( value );
-
-			if ( typeof value === 'object' && !_.isEmpty( value ) ) {
-
-				let lastVal = null;
-
-				for ( const [ side, val ] of Object.entries( value ) ) {
-					if ( !lastVal ) {
-						lastVal = val;
-					}
-					else if ( !_.isEqual( lastVal, val ) ) {
-						return 'advanced';
-					}
-				}
-			}
-			return 'simple';
-		}
-
-		/**
-		 * Get the current unit
-		 * @param {string|object} value this.props.value
-		 * @returns {string}
-		 */
-		getUnit( value ) {
-
-			value = this.getValueAsObject( value );
-
-			if ( typeof value === 'object' && !_.isEmpty( value ) ) {
-
-				for ( const [ side, val ] of Object.entries( value ) ) {
-
-					// set unit
-					const unit = this.getUnitValue( val );
-					if ( !_.isEmpty( unit ) ) {
-						return unit;
-					}
-				}
-			}
-			else if ( typeof value === 'string' ) {
-				const unit = this.getUnitValue( value );
-				if ( !_.isEmpty( unit ) ) {
-					return unit;
-				}
-			}
-			return 'px';
-		}
-
-		/**
-		 * Get unit from string
-		 * @param {string} value 
-		 * @returns string|null
-		 */
-		getUnitValue = function ( value ) {
-			value = String( value ).match( /(px|%|vw|vh|rem|em)/g );
-			return _.isEmpty( value ) ? null : String( _.get( value, 0 ) );
-		};
-
-		/**
-		 * Set the class configuration
-		 */
-		setConfig() {
-			const { config, props } = this;
-
-			// get any user config...
-			const userConfig = _.pick( props, _.keys( config ) );
-
-			// avoid errors...
-			const finalConfig = _.clone( config );
-
-			// merge labels recursive
-			userConfig.labels = { ...finalConfig.labels, ...userConfig.labels };
-
-			// merge
-			_.assign( finalConfig, userConfig );
-
-			// set max values
-			if ( typeof finalConfig.max !== 'object' ) {
-				finalConfig.max = config.max;
-				finalConfig.max.px = userConfig.max;
-			}
-
-			finalConfig.units = this.modUnitsArray( finalConfig.units );
-
-			this.config = finalConfig;
-		}
-
-		/**
-		 * Modify array of units to be used for UnitControl
-		 * @param {array} units
-		 * @returns {array}
-		 */
-		modUnitsArray( units ) {
-			const finalUnits = [];
-
-			units.forEach( ( unit ) => {
-				finalUnits.push( {
-					label: unit,
-					value: unit,
-					default: 0,
-				} );
-			} );
-
-			return finalUnits;
 		}
 
 		/**
 		 * Convert the value into a javascript object
 		 * @param {mixed} value
-		 * @returns 
+		 * @returns {object}
 		 */
-		getValueAsObject( value ) {
-			if ( typeof value === "object" && !_.isEmpty( value ) ) {
+		explodeShorthandValue( value ) {
+			if (typeof value === "object" && !_.isEmpty(value) ) {
 				return value;
 			}
-			else if ( typeof value === "string" ) {
+			const {
+				sides = [ 'top', 'right', 'bottom', 'left' ],
+			} = this.props;
 
-				let { sides } = this.config;
-				let newValue = {};
+			// build default value
+			let newValue = {};
+			for (var i = 0; i < sides.length; i++) {
+				newValue[ sides[i] ] = null;
+			}
+			
+			if ( typeof value === "object" ) {
+				newValue = {
+					...newValue,
+					value
+				}
+			}
+			else if (typeof value === "string" ) {
 
 				// shorthand property, eg. '4px 10px 3px'
-				if ( !_.isEmpty( value.match( /[\d]+[^\d]+\s+[\d]+[^\d]?/g ) ) ) {
-					let values = value.split( " " );
-					for ( var i = 0; i < sides.length; i++ ) {
-						const side = sides[ i ];
+				if ( !_.isEmpty(value.match(/[a-z\d]+\s+[a-z\d]?/g)) ) {
+					let values = value.split(/\s+/);
+					for (var i = 0; i < sides.length; i++) {
 						let val = null;
-						switch ( side ) {
+						switch ( sides[i] ) {
 							case 'top':
 							case 'topLeft':
-								val = values[ 0 ];
+								val = values[0];
 								break;
 							case 'right':
 							case 'topRight':
-								val = _.has( values, 1 ) ? values[ 1 ] : values[ 0 ];
+								val = _.has(values, 1) ? values[1] : values[0];
 								break;
 							case 'bottom':
 							case 'bottomRight':
-								val = _.has( values, 2 ) ? values[ 2 ] : values[ 0 ];
+								val = _.has(values, 2) ? values[2] : values[0];
 								break;
 							case 'left':
 							case 'bottomLeft':
-								val = _.has( values, 3 ) ? values[ 3 ] : _.has( values, 1 ) ? values[ 1 ] : values[ 0 ];
+								val = _.has(values, 3) ? values[3] : _.has(values, 1) ? values[1] : values[0];
 								break;
-
+								
 						}
-						newValue[ side ] = val;
+						newValue[ sides[i] ] = val;
 					}
 				}
 				// simple string
-				else if ( !_.isEmpty( value ) ) {
-					for ( var i = 0; i < sides.length; i++ ) {
-						newValue[ sides[ i ] ] = value;
+				else if ( !_.isEmpty(value) ) {
+					for (var i = 0; i < sides.length; i++) {
+						newValue[ sides[i] ] = value;
 					}
 				}
-				return newValue;
 			}
-			return {};
+
+			return newValue;
 		}
 
 		/**
-		 * Handle change of a numeric value
-		 * @param {string} side (top|right|...|all)
-		 * @param {string} input 
+		 * Convert the object value into a shorthand css string
+		 * @param {object} value 
+		 * @returns {string}
 		 */
-		handleValueChange( side, input ) {
-			const { value } = this.props;
-			const { mode, unit } = this.state;
-			const { type, sides } = this.config;
-			const unitValue = this.getNumValue( input ) + unit;
-			let newValue = {};
+		implodeShorthandValue( value ) {
 
-			if ( "all" === side ) {
-				if ( type === 'string' ) {
-					newValue = unitValue;
-				}
-				else {
-					sides.forEach( side => {
-						newValue[ side ] = unitValue;
-					} );
-				}
-			}
-			else {
-				newValue = this.getValueAsObject( value );
-				newValue[ side ] = unitValue;
-
-				if ( type === 'string' ) {
-					newValue = Object.values( newValue ).join( " " );
-				}
-			}
-
-			this.props.onChange( newValue );
-		}
-
-		/**
-		 * Handle change of a unit value.
-		 * @param {string} input unit value
-		 */
-		handleUnitChange( input ) {
-			const { value } = this.props;
-			const state = this.state;
-			const unit = this.getUnitValue( input );
-			const { type, sides } = this.config;
-
-			if ( !_.isEmpty( unit ) && unit !== state.unit ) {
-				this.setState( {
-					...state,
-					unit: unit
-				}, () => {
-
-					const newValue = this.getValueAsObject( value );
-					for ( const [ side, val ] of Object.entries( newValue ) ) {
-						const numVal = this.getNumValue( val );
-						if ( _.isEmpty( numVal ) ) {
-							delete newValue[ side ];
-						}
-						else {
-							newValue[ side ] = numVal + unit;
-						}
-					}
-					if ( type === 'string' ) {
-						newValue = Object.values( newValue ).join( " " );
-					}
-
-					this.props.onChange( newValue );
-				} );
-			}
-		}
-
-		/**
-		 * Get numeric value from string
-		 * @param {string} value 
-		 * @returns string|null
-		 */
-		getNumValue = function ( value ) {
-			value = String( value ).match( /[-]{0,1}[\d]*[.]{0,1}[\d]+/g );
-			return _.isEmpty( value ) ? null : String( _.get( value, 0 ) );
-		};
-
-		/**
-		 * Reduce object of values to the first value that is set.
-		 */
-		getFirstValue( value ) {
-			if ( typeof value === 'string' ) {
+			if ( typeof value !== 'object' ) {
 				return value;
 			}
-			else if ( typeof value === "object" && !_.isEmpty( value ) ) {
-				for ( const val of Object.values( value ) ) {
-					if ( !_.isEmpty( val ) ) {
-						return val;
-					}
+
+			const newValue = [];
+			for (const [side, val] of Object.entries(value)) {
+				if ( val === null || val === '' || val === undefined ) {
+					newValue.push('0');
+				} else {
+					newValue.push(val);
 				}
 			}
-			return null;
-		}
-
-		/**
-		 * Reset the value & mode (not the unit)
-		 */
-		clear() {
-			this.setState( {
-				unit: this.state.unit,
-				mode: "simple"
-			}, () => {
-				this.props.onChange( {} );
-			} );
-		}
-
-		/**
-		 * Switch mode between simple and advanced
-		 */
-		switchMode() {
-			let state = {
-				...this.state,
-				mode: this.state.mode === "simple" ? "advanced" : "simple"
-			};
-
-			let callback = null;
-			if ( "simple" === state.mode ) {
-				callback = this.handleValueChange( "all", this.getFirstValue( this.props.value ) );
-			}
-
-			this.setState( state, callback );
+			return newValue.join(" ");
 		}
 
 		/**
 		 * Render the control
 		 */
 		render() {
-			const { type, labels, min, max, step, units, sides } = this.config;
-			const { mode, unit } = this.state;
-			const { label } = this.props;
-			const value = this.getValueAsObject( this.props.value );
 
-			return el( "div", { className: "dimension_control" }, [
-				el( wp.components.__experimentalHStack, {
-					className: "dimension_control__label",
-					justify: "space-between"
+			/**
+			 * @since 2.5.0 New control is used.
+			 */
+			// if ( ! greyd?.data?.is_greyd_beta ) {
+			// 	return el( greyd.components.__DimensionControl, this.props );
+			// }
+
+			const {
+				value,
+				label,
+				onChange,
+				type,
+				min: minimumCustomValue = 0,
+				sides = [ 'top', 'right', 'bottom', 'left' ],
+				...props
+			} = this.props;
+
+			let objectValue;
+			if ( typeof value === 'string' ) {
+				objectValue = this.explodeShorthandValue( value );
+			}
+			else if ( typeof value === 'object' &&  !_.isEmpty(value) ) {
+				objectValue = value;
+			}
+			else {
+				objectValue = {};
+			}
+
+			// convert individual values, otherwise the control only recognizes unit
+			// value and css variables in the format 'var:preset|spacing|small'
+			for (const [ key, val ] of Object.entries(objectValue)) {
+				objectValue[ key ] = greyd.tools.getComputedSpacingValue( val )
+			}
+
+			const isBorderRadius = !_.isEmpty( sides ) && sides.length && sides.indexOf('topRight') > -1;
+
+			return el( wp.components.BaseControl, {
+				className: 'greyd-dimension-control',
+				...props
+			}, [
+
+				// Core Spacing Sizes Control
+				!isBorderRadius && el( wp.blockEditor.__experimentalSpacingSizesControl, {
+					label: label,
+					showSideInLabel: false,
+					minimumCustomValue: minimumCustomValue,
+					sides: sides,
+					values: objectValue,
+					onChange: val => {
+						if ( type === 'string' ) {
+							val = this.implodeShorthandValue( val );
+						}
+						onChange( val )
+					}
+				} ),
+
+				// Core Border Radius Control
+				isBorderRadius && el( wp.blockEditor.__experimentalBorderRadiusControl, {
+					values: objectValue,
+					label: label,
+					onChange: ( val ) => {
+						if ( type === 'string' ) {
+							val = this.implodeShorthandValue( val );
+						}
+						onChange( val )
+					},
+					...props
+				} ),
+				
+				// reset button
+				value !== null && value !== '' && el( wp.components.Flex, {
+					justify: 'flex-end'
 				}, [
-					el( 'label', {}, label ? label : '' ),
-					el( wp.components.Icon, {
-						className: "switch_button",
-						icon: mode === "simple" ? "admin-links" : "editor-unlink",
-						onClick: this.switchMode
-					} ),
-				] ),
-				el( "div", {},
-					mode === "simple" ? (
-						[
-							el( wp.components.__experimentalHStack, {
-								justify: "space-between"
-							}, [
-								el( 'label', {}, __( labels.all, 'greyd-wp' ) ),
-								el( wp.components.__experimentalUnitControl, {
-									value: this.getFirstValue( value ) + unit,
-									min: min,
-									max: max[ unit ],
-									step: step[ unit ],
-									units: units,
-									onChange: ( newValue ) => this.handleValueChange( "all", newValue ),
-									onUnitChange: ( newUnit ) => this.handleUnitChange( newUnit )
-								} )
-							] ),
-						]
-					) : (
-						sides.map( ( side ) => {
-							return el( wp.components.__experimentalHStack, {
-								className: "dimension_control__inputs",
-								justify: "space-between"
-							}, [
-								el( 'label', {}, __( labels[ side ], 'greyd-wp' ) ),
-								el( wp.components.__experimentalUnitControl, {
-									value: _.has( value, side ) ? value[ side ] : null,
-									min: min,
-									max: max[ unit ],
-									step: step[ unit ],
-									units: units,
-									onChange: ( newValue ) => this.handleValueChange( side, newValue ),
-									onUnitChange: ( newUnit ) => this.handleUnitChange( newUnit )
-								} )
-							] );
-						} )
-					)
-				),
-			] );
+					el( wp.components.Button, {
+						onClick: () => onChange( null ),
+						icon: greyd.tools.getCoreIcon( 'undo' ),
+						// iconPosition: 'right',
+						isSmall: true,
+						isTertiary: true,
+						style: {
+							color:  'rgb(117, 117, 117)',
+							paddingInline: '4px',
+						},
+					}, __( "Reset", 'greyd_hub' ) )
+				] )
+			] )
 		}
 	};
 
