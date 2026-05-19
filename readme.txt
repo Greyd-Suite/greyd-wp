@@ -47,6 +47,10 @@ Before you start, make sure you're running WordPress 6.4 or later.
 
 == Changelog ==
 
+= 2.16.1 - 2025-08-21 =
+== Improvements ==
+* Limited the theme dashboard changelog to the latest three entries to avoid massive loading times.
+
 = 2.16.0 - 2025-04-22 =
 == Bugfixes ==
 * Fixed a CSS selector
