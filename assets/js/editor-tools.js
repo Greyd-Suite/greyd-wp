@@ -446,34 +446,44 @@ var greyd = greyd || { tools: {}, components: {} };
 		wp.data.select('core').__experimentalGetCurrentGlobalStylesId();
 		wp.data.select('core').__experimentalGetCurrentThemeBaseGlobalStyles();
 
-		const unsubscribe = wp.data.subscribe( () => {		
+		const unsubscribe = wp.data.subscribe( () => {
 			if (
 				!wp.data.select('core').hasFinishedResolution( '__experimentalGetCurrentGlobalStylesId' ) ||
 				!wp.data.select('core').hasFinishedResolution( '__experimentalGetCurrentThemeBaseGlobalStyles' )
 			) {
 				// console.log( 'resolving...' );
+				return;
 			} 
-			else {
-				var id = wp.data.select('core').__experimentalGetCurrentGlobalStylesId();
-				var merged = greyd.tools.getMergedGlobalStyles();
-				// console.log( 'data received', id, merged );
 
-				// set globalStyles object
-				greyd.tools.globalStyles = {
-					postId: id,
-					defaults: merged,
-					state: 'loaded',
-					vars: {},
-					new: {},
-				};
+			var id = wp.data.select('core').__experimentalGetCurrentGlobalStylesId();
 
-				// done and unsubscribe
-				unsubscribe();
+			// resolve current gobal styles entity
+			wp.data.select('core').getEditedEntityRecord( 'root', 'globalStyles', id );
+			if (
+				!wp.data.select('core').hasFinishedResolution( 'getEditedEntityRecord', ['root', 'globalStyles', id] )
+			) {
+				// console.log( 'still resolving...' );
+				return;
+			} 
 
-				// callback
-				if ( typeof callback === 'function' ) {
-					callback();
-				}
+			var merged = greyd.tools.getMergedGlobalStyles();
+			// console.log( 'data received', id, merged );
+
+			// set globalStyles object
+			greyd.tools.globalStyles = {
+				postId: id,
+				defaults: merged,
+				state: 'loaded',
+				vars: {},
+				new: {},
+			};
+
+			// done and unsubscribe
+			unsubscribe();
+
+			// callback
+			if ( typeof callback === 'function' ) {
+				callback();
 			}
 		} );
 

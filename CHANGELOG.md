@@ -1,3 +1,8 @@
+## 2.17.0 - 2026-03-31
+**Improvements**
+* Improved Global Styles initialization sequence for better editor reliability (WP 7.x compatibility).
+* Adjusted editor tools icon positioning.
+
 ## 2.16.2 - 2025-10-16
 **Improvements**
 * Pushed required wordpress version to 6.6

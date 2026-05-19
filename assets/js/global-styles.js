@@ -410,7 +410,9 @@
 			greyd.tools.globalStyles.state !== 'loading'
 		) {
 			// get global styles
-			greyd.tools.getGlobalStyles();
+			greyd.tools.initGlobalStyles(
+				() => greyd.tools.getGlobalStyles()
+			);
 		}
 
 		/**
