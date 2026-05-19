@@ -47,6 +47,10 @@ Before you start, make sure you're running WordPress 6.4 or later.
 
 == Changelog ==
 
+= 2.16.2 - 2025-10-16 =
+== Improvements ==
+* Pushed required wordpress version to 6.6
+
 = 2.16.1 - 2025-08-21 =
 == Improvements ==
 * Limited the theme dashboard changelog to the latest three entries to avoid massive loading times.
