@@ -572,6 +572,10 @@ class Dashboard {
 					$changelog_content = '';
 
 					foreach ( $changelog_data as $key => $value ) {
+
+						if ( $key > 3 ) {
+							continue;
+						}
 						
 						$sections = explode( '**', $value ); 
 
