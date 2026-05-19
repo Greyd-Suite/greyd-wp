@@ -1334,7 +1334,6 @@ hr.wp-block-separator[style] {
 .wp-block-table td,
 .wp-block-table th {
 	border: 1px solid var(--wp--preset--color--foreground);
-	text-align: left;
 	padding: var(--wp--preset--spacing--small);
 }
 
