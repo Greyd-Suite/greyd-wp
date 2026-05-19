@@ -359,14 +359,10 @@ class Dashboard {
 						<div class="greyd_dashboard--main--active-features--top">
 							<div class="greyd_dashboard--main--active-features--top-left">
 								<h2><?php esc_html_e( 'Active features', 'greyd-wp' ); ?></h2>
-								<p><?php esc_html_e( 'These are the features of the Greyd Theme. Use them now or learn more about them in our Helpcenter.', 'greyd-wp' ); ?></p>
+								<p><?php esc_html_e( 'These are the features of the Greyd Theme. Use them now or learn more about them in our Documentation.', 'greyd-wp' ); ?></p>
 							</div>
 							<div class="greyd_dashboard--main--active-features--top-right">
-								<?php if ( self::$page['plugin'] ) { ?>
-									<a class="greyd_admin_link--outline" href="https://helpcenter.greyd.io/?utm_source=wp-theme" target="_blank"><span class="text"><?php esc_html_e( 'Helpcenter →', 'greyd-wp' ); ?></span></a>
-								<?php } else { ?>
-									<a class="greyd_admin_link--outline" href="https://greyd.io/greyd-wp/#tutorial?utm_source=wp-theme" target="_blank"><span class="text"><?php esc_html_e( 'Theme tutorial →', 'greyd-wp' ); ?></span></a>
-								<?php } ?>
+								<a class="greyd_admin_link--outline" href="https://docs.greyd.io/docs/greyd-theme-greyd-wp/?utm_source=wp-theme" target="_blank"><span class="text"><?php esc_html_e( 'Documentation →', 'greyd-wp' ); ?></span></a>
 							</div>
 						</div>
 
@@ -458,13 +454,8 @@ class Dashboard {
 						<ul>
 							<li><a href="https://wordpress.org/support/theme/greyd-wp" target="_blank"><?php esc_html_e( 'Support forum on WordPress.org →', 'greyd-wp' ); ?></a></li>
 							<li>
-								<?php if ( self::$page['plugin'] ) { ?>
-									<a href="https://helpcenter.greyd.io/?utm_source=wp-theme" target="_blank"><?php esc_html_e( 'Helpcenter →', 'greyd-wp' ); ?></a>
-								<?php } else { ?>
-									<a href="https://greyd.io/greyd-wp/#tutorial?utm_source=wp-theme" target="_blank"><?php esc_html_e( 'Theme tutorial →', 'greyd-wp' ); ?></a>
-								<?php } ?>
+								<a href="https://docs.greyd.io/docs/greyd-theme-greyd-wp/?utm_source=wp-theme" target="_blank"><?php esc_html_e( 'Documentation →', 'greyd-wp' ); ?></a>
 							</li>
-							<li><a href="https://greyd.io/greyd-wp/#faq/?utm_source=wp-theme" target="_blank"><?php esc_html_e( 'FAQs →', 'greyd-wp' ); ?></a></li>
 						</ul>
 					</div>
 					<div class="greyd_dashboard--sidebar--changelog">
@@ -472,7 +463,7 @@ class Dashboard {
 						<div class="greyd-changelog">
 							<?php echo wp_kses_post( self::get_changelog_content() ); ?>
 						</div>
-						<p><a href="https://greyd.io/changelog/?utm_source=wp-theme" target="_blank"><?php esc_html_e( 'See full changelog →', 'greyd-wp' ); ?></a></p>
+						<p><a href="https://github.com/Greyd-Suite/greyd-wp/blob/main/CHANGELOG.md" target="_blank"><?php esc_html_e( 'See full changelog →', 'greyd-wp' ); ?></a></p>
 					</div>
 				</aside>
 			</div>
