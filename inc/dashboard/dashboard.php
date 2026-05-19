@@ -58,9 +58,6 @@ class Dashboard {
 			// add greyd header
 			add_action( 'in_admin_header', array( $this, 'add_greyd_header' ), 1 );
 
-			// greyd admin notice
-			add_action( 'admin_notices', array( $this, 'render_greyd_notice' ) );
-
 			// get adminbar colors
 			add_action( 'admin_head', array( $this, 'get_wp_admin_css_colors' ) );
 
@@ -160,8 +157,6 @@ class Dashboard {
 		echo '<div class="greyd_dashboard--header--content-button">';
 		if ( self::$page['plugin'] ) {
 			echo '<a class="greyd_admin_link--outline" href="' . esc_url( admin_url( 'admin.php?page=greyd_dashboard' ) ) . '"><span class="text">' . esc_html__( 'Go to Plugin Dashboard', 'greyd-wp' ) . ' →</span></a>';
-		} else {
-			echo '<a class="greyd_admin_link--outline" href="https://greyd.io/?utm_source=wp-theme"><span class="text">' . esc_html__( 'Visit our website →', 'greyd-wp' ) . '</span></a>';
 		}
 		echo '</div>';
 		echo '</div>';
@@ -334,21 +329,6 @@ class Dashboard {
 
 			<div class="greyd_dashboard">
 				<section class="greyd_dashboard--main">
-					<?php if ( self::$page['plugin'] ) { ?>
-						<section class="greyd_dashboard--main--plugin-active">
-							<?php // There needs to be a hidden h2 for the Admin Notices to be shown in the correct position, as WP directly inserts it after the first h1 or h2 in the .wrap class. ?>
-							<h2 class="visually-hidden" aria-hidden="true"></h2>
-							<div class="greyd_dashboard--main--active-features--top">
-								<div class="greyd_dashboard--main--active-features--top-left">
-									<h2><?php esc_html_e( 'Discover more features', 'greyd-wp' ); ?></h2>
-									<p><?php esc_html_e( 'The Greyd Plugin is active. You can find a more detailed overview of all active features in the Plugin Dashboard.', 'greyd-wp' ); ?></p>
-								</div>
-								<div class="greyd_dashboard--main--active-features--top-right">
-									<a class="greyd_admin_link greyd_admin_link--dark" href="<?php echo esc_url( admin_url( 'admin.php?page=greyd_dashboard' ) ); ?>"><span class="text"><?php esc_html_e( 'Go to Plugin Dashboard', 'greyd-wp' ); ?></span></a>
-								</div>
-							</div>
-						</section>
-					<?php } ?>
 					<div class="greyd_dashboard--main--active-features">
 
 						<?php if ( ! self::$page['plugin'] ) { ?>
@@ -402,49 +382,6 @@ class Dashboard {
 						</div>
 					</div>
 
-					<?php if ( ! self::$page['plugin'] ) { ?>
-						<div class="greyd_dashboard--main--more-features">
-							<div class="greyd_dashboard--main--active-features--top">
-								<div class="greyd_dashboard--main--active-features--top-left">
-									<h2><?php esc_html_e( 'Discover more features', 'greyd-wp' ); ?></h2>
-									<p><?php esc_html_e( 'We offer a lot more functionality in Greyd.Suite - your all-in-one WordPress suite. Watch a demo on our website and test Greyd.Suite for free.', 'greyd-wp' ); ?></p>
-								</div>
-								<div class="greyd_dashboard--main--active-features--top-right">
-									<a class="greyd_admin_link--outline" href="https://greyd.io/demo/?utm_source=wp-theme" target="_blank"><span class="text"><?php esc_html_e( 'Watch a demo →', 'greyd-wp' ); ?></span></a>
-								</div>
-							</div>
-
-							<div class="greyd_dashboard--feature-grid greyd_dashboard--discover-panels">
-								<?php
-								foreach ( $discover_panels as $panel ) {
-
-									if ( isset( $panel['cap'] ) && ! current_user_can( $panel['cap'] ) ) {
-										continue;
-									}
-
-									echo sprintf(
-										'<div class="greyd_dashboard--feature">
-											<img class="greyd_dashboard--feature--image" src="%s" alt="%s">
-											<div class="greyd_dashboard--feature--content">
-												<h3 class="greyd_dashboard--feature--title">%s</h3>
-												<div class="greyd_dashboard--feature--desc">
-													<p class="greyd_dashboard--feature--desc-text">%s</p>
-													<p class="greyd_dashboard--feature--helplink"><a href="%s" target="_blank">%s</a></p>
-												</div>
-											</div>
-										</div>',
-										esc_url( $panel['image'] ),
-										isset( $panel['image-alt'] ) ? esc_attr( $panel['image-alt'] ) : '',
-										esc_html( $panel['title'] ),
-										isset( $panel['descr'] ) ? esc_html( $panel['descr'] ) : '',
-										isset( $panel['help_url'] ) ? esc_url( $panel['help_url'] ) : '',
-										isset( $panel['help_url'] ) ? esc_html__( 'More information →', 'greyd-wp' ) : '',
-									);
-								}
-								?>
-							</div>
-						</div>
-					<?php } ?>
 				</section>
 
 				<aside class="greyd_dashboard--sidebar">
@@ -478,45 +415,6 @@ class Dashboard {
 		Helper
 	====================================================================================
 	*/
-
-	/**
-	 * Render the greyd notice for the dashboard widget
-	 */
-	public static function render_greyd_notice() {
-		// only render on our page
-		$screen = get_current_screen();
-		if ( $screen->base !== 'appearance_page_greyd-wp' ) {
-			return;
-		}
-
-		$dismissed = get_option( 'greyd_theme_dismiss_admin_notice' );
-		if ( $dismissed ) {
-			return;
-		}
-
-		
-		?>
-		<div id="greyd_notice_dismiss" class="notice notice-info greyd_dashboard_notice">
-			<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/greyd-logo-dark.svg' ); ?>" alt="<?php esc_attr__( 'Greyd logo', 'greyd-wp' ); ?>" class="greyd_dashboard_notice--image">
-			<div class="greyd_dashboard_notice--content">
-				<h3><?php esc_html_e( 'Thank you for using the Greyd Theme', 'greyd-wp' ); ?></h3>
-				<p><?php esc_html_e( 'Did you know that this theme is just the tip of the iceberg? We offer a lot more functionality in Greyd.Suite - your all-in-one WordPress suite. Watch a demo on our website and test Greyd.Suite for free.', 'greyd-wp' ); ?></p>
-				<div class="greyd_dashboard_notice--buttons">
-					<a class="greyd_admin_link greyd_admin_button--dark" href="https://greyd.io?utm_source=wp-theme" target="_blank"><span class="text"><?php esc_html_e( 'Visit our website →', 'greyd-wp' ); ?></span></a>
-					<button class="greyd_admin_button greyd_admin_button--inline button-dismiss"><span class="text"><?php esc_html_e( 'Dismiss this notice', 'greyd-wp' ); ?></span><span class="dashicons dashicons-update"></span></button>
-				</div>
-			</div>
-		</div>
-		<?php
-	}
-
-	/**
-	 * Save admin notice dismissal
-	 */
-	public static function hide_dismissible_admin_notice() {
-		update_option( 'greyd_theme_dismiss_admin_notice', 'true' );
-		echo 'Saving notice dismissal was successful';
-	}
 
 	/**
 	 * Holds Admin color schemes.
