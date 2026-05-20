@@ -1,0 +1,31 @@
+=== Accessibility Statement ===
+The Greyd WP theme was designed and developed with accessibility best practices in mind, following the WordPress Accessibility-Ready Guidelines. We are committed to making the theme usable by as many people as possible, including those using assistive technologies.
+
+== Quick Information ==
+Accessibility audit completed: Yes
+Most recent audit date: 2026-05-20
+Tested to standard and conformance level: [WordPress Accessibility-Ready Guidelines](https://wpaccessibility.org/docs/topics/theme-guidelines/)
+Audited by: [Greyd](https://greydsuite.com/)
+
+== Testing Tools and Methodology ==
+The Greyd WP theme is tested using a combination of automated and manual testing approaches during development. Automated tools such as Axe and browser-based accessibility checkers are used to identify common issues. Manual keyboard navigation testing is performed to ensure all interactive elements are reachable and operable without a mouse. Screen reader testing is conducted VoiceOver (macOS/iOS) to verify that content is announced correctly. Color contrast is verified against WCAG 2.2 AA contrast ratio requirements. Accessibility checks are part of the development workflow and are revisited with each significant release.
+
+== Screen Reader Text Class ==
+The theme uses the `.screen-reader-text` or alternatively `.visually-hidden` class for visually hidden text intended for screen readers only. This follows the WordPress core convention and is defined in the theme stylesheet.
+
+== Accessibility Features ==
+- **Skip to content link:** A visible-on-focus skip link is provided to allow keyboard users to bypass the navigation and jump directly to the main content.
+- **Keyboard navigation:** All interactive elements (menus, buttons, links, forms) are fully operable via keyboard.
+- **ARIA landmarks:** Semantic HTML5 elements and appropriate ARIA landmark roles are used throughout the theme to help screen reader users navigate the page structure.
+- **Focus styles:** Visible focus indicators are provided for all interactive elements to support keyboard-only users.
+- **Semantic HTML:** Headings, lists, and other structural elements follow a logical document outline to support assistive technologies.
+- **Sufficient color contrast:** Default color combinations meet WCAG 2.2 AA contrast ratio requirements (4.5:1 for normal text, 3:1 for large text).
+- **Accessible navigation menus:** Navigation menus are built with proper list markup and include support for keyboard-accessible dropdown menus.
+- **Accessible forms:** Form inputs include associated labels and error messages to support screen reader users.
+- **Responsive design:** The theme layout adapts to different viewport sizes and supports browser zoom up to 200% without loss of content or functionality.
+
+== Accessibility Help Contact ==
+For accessibility-related questions or assistance, please use the WordPress.org support forum: https://wordpress.org/support/theme/greyd-wp/
+
+== Where to Report Issues ==
+Accessibility issues can be reported via the WordPress.org support forum: https://wordpress.org/support/theme/greyd-wp/

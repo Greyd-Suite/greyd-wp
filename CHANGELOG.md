@@ -1,3 +1,7 @@
+## 2.18.0 - 2026-05-20
+**Improvements**
+* Updated the theme to meet the new accessibility-ready requirements.
+
 ## 2.17.0 - 2026-03-31
 **Improvements**
 * Improved Global Styles initialization sequence for better editor reliability (WP 7.x compatibility).

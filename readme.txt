@@ -1,7 +1,7 @@
 === Greyd WP ===
 Contributors: greydsuite, sandrakurze, luminuu, jtgreyd, thomask42, annebovelett
 Requires at least: 6.6
-Tested up to: 6.7
+Tested up to: 7.0
 Requires PHP: 7.4
 Stable tag: 2.16.0
 License: GPLv2 or later
@@ -46,6 +46,10 @@ Before you start, make sure you're running WordPress 6.4 or later.
 4. Activate the theme.
 
 == Changelog ==
+
+= 2.18.0 - 2026-05-20 =
+== Improvements ==
+* Updated the theme to meet the new accessibility-ready requirements.
 
 = 2.17.0 - 2026-03-31 =
 == Improvements ==
