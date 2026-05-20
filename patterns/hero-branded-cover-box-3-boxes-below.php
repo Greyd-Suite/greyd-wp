@@ -73,8 +73,8 @@
 						</figure>
 						<!-- /wp:image -->
 
-						<!-- wp:heading {"textAlign":"left","level":3,"className":""} -->
-						<h3 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Responsive Web Design 2.0', 'greyd-wp' ); ?></h3>
+						<!-- wp:heading {"textAlign":"left","className":""} -->
+						<h2 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Responsive Web Design 2.0', 'greyd-wp' ); ?></h2>
 						<!-- /wp:heading -->
 					</div>
 					<!-- /wp:group -->
@@ -99,8 +99,8 @@
 						</figure>
 						<!-- /wp:image -->
 
-						<!-- wp:heading {"textAlign":"left","level":3,"className":""} -->
-						<h3 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Additional Global Styles', 'greyd-wp' ); ?></h3>
+						<!-- wp:heading {"textAlign":"left","className":""} -->
+						<h2 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Additional Global Styles', 'greyd-wp' ); ?></h2>
 						<!-- /wp:heading -->
 					</div>
 					<!-- /wp:group -->
@@ -125,8 +125,8 @@
 						</figure>
 						<!-- /wp:image -->
 
-						<!-- wp:heading {"textAlign":"left","level":3,"className":""} -->
-						<h3 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Fast &amp; Accessibility-Ready', 'greyd-wp' ); ?></h3>
+						<!-- wp:heading {"textAlign":"left","className":""} -->
+						<h2 class="wp-block-heading has-text-align-left"><?php esc_html_e( 'Fast &amp; Accessibility-Ready', 'greyd-wp' ); ?></h2>
 						<!-- /wp:heading -->
 					</div>
 					<!-- /wp:group -->

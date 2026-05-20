@@ -19,8 +19,8 @@
 		<div class="wp-block-group" style="min-height:480px">
 			<!-- wp:group {"style":{"spacing":{"padding":{"right":"0","left":"0"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
 			<div class="wp-block-group" style="padding-right:0;padding-left:0">
-				<!-- wp:heading {"style":{"spacing":{"margin":{"top":"0"}}},"className":"","fontSize":"medium"} -->
-				<h2 class="wp-block-heading has-medium-font-size" style="margin-top:0"><?php esc_html_e( 'Monthly', 'greyd-wp' ); ?></h2>
+				<!-- wp:heading {"style":{"spacing":{"margin":{"top":"0"}}},"level":3,"className":"","fontSize":"medium"} -->
+				<h3 class="wp-block-heading has-medium-font-size" style="margin-top:0"><?php esc_html_e( 'Monthly', 'greyd-wp' ); ?></h3>
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.5"}},"className":"","fontSize":"normal"} -->
@@ -77,8 +77,8 @@
 		<div class="wp-block-group alignfull" style="min-height:480px">
 			<!-- wp:group {"style":{"spacing":{"padding":{"right":"0","left":"0"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
 			<div class="wp-block-group" style="padding-right:0;padding-left:0">
-				<!-- wp:heading {"style":{"spacing":{"margin":{"top":"0"}}},"className":"","fontSize":"medium"} -->
-				<h2 class="wp-block-heading has-medium-font-size" style="margin-top:0"><?php esc_html_e( 'Quarterly', 'greyd-wp' ); ?></h2>
+				<!-- wp:heading {"style":{"spacing":{"margin":{"top":"0"}}},"level":3,"className":"","fontSize":"medium"} -->
+				<h3 class="wp-block-heading has-medium-font-size" style="margin-top:0"><?php esc_html_e( 'Quarterly', 'greyd-wp' ); ?></h3>
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.5"}},"className":"","fontSize":"normal"} -->
@@ -135,8 +135,8 @@
 		<div class="wp-block-group alignfull" style="min-height:480px">
 			<!-- wp:group {"style":{"dimensions":{"minHeight":"3px"},"spacing":{"padding":{"right":"0","left":"0"},"blockGap":"var:preset|spacing|small"}},"layout":{"type":"default"}} -->
 			<div class="wp-block-group" style="min-height:3px;padding-right:0;padding-left:0">
-				<!-- wp:heading {"style":{"spacing":{"margin":{"top":"0"}}},"className":"","fontSize":"medium"} -->
-				<h2 class="wp-block-heading has-medium-font-size" style="margin-top:0"><?php esc_html_e( 'Yearly', 'greyd-wp' ); ?></h2>
+				<!-- wp:heading {"style":{"spacing":{"margin":{"top":"0"}}},"level":3,"className":"","fontSize":"medium"} -->
+				<h3 class="wp-block-heading has-medium-font-size" style="margin-top:0"><?php esc_html_e( 'Yearly', 'greyd-wp' ); ?></h3>
 				<!-- /wp:heading -->
 
 				<!-- wp:paragraph {"className":"","fontSize":"normal"} -->
@@ -195,8 +195,8 @@
 	<div class="wp-block-group alignfull">
 		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"className":"","layout":{"type":"default"}} -->
 		<div class="wp-block-group">
-			<!-- wp:heading {"style":{"spacing":{"margin":{"top":"0"}}},"className":"","fontSize":"medium"} -->
-			<h2 class="wp-block-heading has-medium-font-size" style="margin-top:0"><?php esc_html_e( 'Are you interested in a custom price plan?', 'greyd-wp' ); ?></h2>
+			<!-- wp:heading {"style":{"spacing":{"margin":{"top":"0"}}},"level":3,"className":"","fontSize":"medium"} -->
+			<h3 class="wp-block-heading has-medium-font-size" style="margin-top:0"><?php esc_html_e( 'Are you interested in a custom price plan?', 'greyd-wp' ); ?></h3>
 			<!-- /wp:heading -->
 
 			<!-- wp:paragraph {"className":"","fontSize":"normal"} -->

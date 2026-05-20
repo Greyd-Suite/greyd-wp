@@ -15,8 +15,8 @@
 <div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-large)">
 	<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 	<div class="wp-block-group">
-		<!-- wp:heading {"textAlign":"center","level":1,"className":""} -->
-		<h1 class="wp-block-heading has-text-align-center"><?php esc_html_e( 'All WordPress. One Suite.', 'greyd-wp' ); ?></h1>
+		<!-- wp:heading {"textAlign":"center","className":"","fontSize":"xx-large"} -->
+		<h2 class="wp-block-heading has-text-align-center has-xx-large-font-size"><?php esc_html_e( 'All WordPress. One Suite.', 'greyd-wp' ); ?></h2>
 		<!-- /wp:heading -->
 
 		<!-- wp:paragraph {"align":"center","className":""} -->
