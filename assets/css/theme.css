@@ -71,7 +71,8 @@ a,
 button,
 .button,
 .link,
-input[type=submit] {
+input[type=submit],
+.wp-block-details summary {
 	outline-style: dotted;
 	outline-color: transparent;
 	outline-width: 2px;
@@ -86,7 +87,8 @@ input[type=submit]:focus-visible,
 .wp-element-button:focus-visible,
 .wp-block-search .wp-block-search__button:focus-visible,
 .wp-block-file .wp-block-file__button:focus-visible,
-.wp-block-navigation .wp-block-navigation-item[class*="is-style-button"] .wp-block-navigation-item__content:focus-visible {
+.wp-block-navigation .wp-block-navigation-item[class*="is-style-button"] .wp-block-navigation-item__content:focus-visible,
+.wp-block-details summary:focus-visible {
 	/**
 	 * Use var --text-color if set, fallback to foreground
 	 * @since 2.2.0
