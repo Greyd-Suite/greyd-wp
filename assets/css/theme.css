@@ -61,6 +61,10 @@ a:where(:not(.wp-element-button)) {
 	cursor: pointer;
 }
 
+a:where(:not(.wp-element-button)):hover {
+	text-decoration-thickness: 2px;
+}
+
 .wp-block-button.outline-light a:focus,
 .wp-block-button.outline-light a:focus-visible {
 	outline-color: var(--wp--preset--color--background);
@@ -1667,6 +1671,35 @@ table.is-style-stripes th {
 	position: absolute;
 	width: 1px;
 	white-space: nowrap;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	border: 0;
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+	background-color: #eee;
+	clip-path: none;
+	color: #444;
+	display: block;
+	font-size: 1em;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
 }
 
 /**
