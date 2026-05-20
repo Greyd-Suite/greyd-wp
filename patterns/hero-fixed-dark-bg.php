@@ -11,8 +11,8 @@
  * Inserter: true
  */
 ?>
-<!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/white-interlaced-blocks-on-dark.webp","hasParallax":true,"dimRatio":50,"overlayColor":"foreground","isUserOverlayColor":true,"minHeightUnit":"px","align":"full","style":{"spacing":{"padding":{"top":"0","bottom":"var:preset|spacing|x-large"},"blockGap":"var:preset|spacing|large"},"color":{"duotone":"var:preset|duotone|foreground-background"}},"className":"","layout":{"type":"constrained"}} -->
-<div class="wp-block-cover alignfull has-parallax" style="padding-top:0;padding-bottom:var(--wp--preset--spacing--x-large)">
+<!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/white-interlaced-blocks-on-dark.webp","hasParallax":true,"dimRatio":50,"overlayColor":"foreground","isUserOverlayColor":true,"minHeightUnit":"px","align":"full","className":"","style":{"spacing":{"padding":{"top":"0","bottom":"var:preset|spacing|x-large"},"blockGap":"var:preset|spacing|large"},"color":{"duotone":"var:preset|duotone|foreground-background"},"elements":{"link":{"color":{"text":"var:preset|color|lightest"}}}},"textColor":"lightest","layout":{"type":"constrained"}} -->
+<div class="wp-block-cover alignfull has-parallax has-lightest-color has-text-color has-link-color" style="padding-top:0;padding-bottom:var(--wp--preset--spacing--x-large)">
 	<span aria-hidden="true" class="wp-block-cover__background has-foreground-background-color has-background-dim"></span>
 	<div class="wp-block-cover__image-background has-parallax" style="background-position:50% 50%;background-image:url(<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/white-interlaced-blocks-on-dark.webp)"></div>
 	<div class="wp-block-cover__inner-container">
@@ -46,9 +46,9 @@
 			</div>
 			<!-- /wp:button -->
 
-			<!-- wp:button {"textColor":"foreground","style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"className":"hidden-sm hidden-xs is-style-alternate"} -->
+			<!-- wp:button {"className":"hidden-sm hidden-xs is-style-alternate"} -->
 			<div class="wp-block-button hidden-sm hidden-xs is-style-alternate">
-				<a class="wp-block-button__link has-foreground-color has-text-color has-link-color wp-element-button" href="https://greyd.io/demo/" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Discover the Suite', 'greyd-wp' ); ?></a>
+				<a class="wp-block-button__link wp-element-button" href="https://greyd.io/demo/" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Discover the Suite', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 		</div>

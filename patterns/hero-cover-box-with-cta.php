@@ -15,8 +15,8 @@
 <div class="wp-block-group">
 	<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}},"border":{"radius":"8px"}},"backgroundColor":"primary","layout":{"type":"default"}} -->
 	<div class="wp-block-group alignwide has-primary-background-color has-background" style="border-radius:8px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
-		<!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/dark-transparent-background-pattern.webp","dimRatio":80,"isUserOverlayColor":true,"minHeight":600,"gradient":"foreground-to-primary","contentPosition":"bottom left","align":"wide","style":{"color":{"duotone":"var:preset|duotone|foreground-background"},"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large","right":"var:preset|spacing|large"}},"border":{"radius":"8px"}},"className":"full-rounded-cover full-rounded-image is-style-no-background","layout":{"type":"constrained","contentSize":"800px"}} -->
-		<div class="wp-block-cover alignwide has-custom-content-position is-position-bottom-left full-rounded-cover full-rounded-image is-style-no-background" style="border-radius:8px;padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large);min-height:600px">
+		<!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/dark-transparent-background-pattern.webp","dimRatio":80,"isUserOverlayColor":true,"minHeight":600,"gradient":"foreground-to-primary","contentPosition":"bottom left","align":"wide","className":"full-rounded-cover full-rounded-image is-style-no-background","style":{"color":{"duotone":"var:preset|duotone|foreground-background"},"spacing":{"padding":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large","left":"var:preset|spacing|large","right":"var:preset|spacing|large"}},"border":{"radius":"8px"},"elements":{"link":{"color":{"text":"var:preset|color|lightest"}}}},"textColor":"lightest","layout":{"type":"constrained","contentSize":"800px"}} -->
+		<div class="wp-block-cover alignwide has-custom-content-position is-position-bottom-left full-rounded-cover full-rounded-image is-style-no-background has-lightest-color has-text-color has-link-color" style="border-radius:8px;padding-top:var(--wp--preset--spacing--large);padding-right:var(--wp--preset--spacing--large);padding-bottom:var(--wp--preset--spacing--large);padding-left:var(--wp--preset--spacing--large);min-height:600px">
 			<span aria-hidden="true" class="wp-block-cover__background has-background-dim-80 has-background-dim wp-block-cover__gradient-background has-background-gradient has-foreground-to-primary-gradient-background"></span>
 			<img class="wp-block-cover__image-background" alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/dark-transparent-background-pattern.webp" data-object-fit="cover" />
 			<div class="wp-block-cover__inner-container">
@@ -36,7 +36,7 @@
 				<div class="wp-block-buttons">
 					<!-- wp:button {"className":"is-style-alternate"} -->
 					<div class="wp-block-button is-style-alternate">
-						<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Find out more about Greyd →', 'greyd-wp' ); ?></a>
+						<a href="#" class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Find out more about Greyd →', 'greyd-wp' ); ?></a>
 					</div>
 					<!-- /wp:button -->
 				</div>

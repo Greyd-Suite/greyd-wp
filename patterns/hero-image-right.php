@@ -37,13 +37,13 @@
 		<div class="wp-block-buttons">
 			<!-- wp:button {"className":"is-style-fill"} -->
 			<div class="wp-block-button is-style-fill">
-				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Get Started', 'greyd-wp' ); ?></a>
+				<a href="#" class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Get Started', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 
 			<!-- wp:button {"className":"is-style-sec is-style-outline"} -->
 			<div class="wp-block-button is-style-sec is-style-outline">
-				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Learn more about Greyd', 'greyd-wp' ); ?></a>
+				<a href="#" class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Learn more about Greyd', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 		</div>

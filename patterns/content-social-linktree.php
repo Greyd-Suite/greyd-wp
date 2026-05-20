@@ -51,31 +51,31 @@
 		<div class="wp-block-buttons" style="margin-bottom:var(--wp--preset--spacing--small)">
 			<!-- wp:button {"className":"has-custom-width wp-block-button__width-100"} -->
 			<div class="wp-block-button has-custom-width wp-block-button__width-100">
-				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Read my latest article', 'greyd-wp' ); ?></a>
+				<a href="#" class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Read my latest article', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 
 			<!-- wp:button {"className":"has-custom-width wp-block-button__width-100"} -->
 			<div class="wp-block-button has-custom-width wp-block-button__width-100">
-				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Listen to my latest interview', 'greyd-wp' ); ?></a>
+				<a href="#" class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Listen to my latest interview', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 
 			<!-- wp:button {"className":"has-custom-width wp-block-button__width-100 is-style-fill"} -->
 			<div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-fill">
-				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Visit my webshop', 'greyd-wp' ); ?></a>
+				<a href="#" class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Visit my webshop', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 
 			<!-- wp:button {"className":"has-custom-width wp-block-button__width-100 is-style-outline"} -->
 			<div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-outline">
-				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Become a Patreon', 'greyd-wp' ); ?></a>
+				<a href="#" class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Become a Patreon', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 
 			<!-- wp:button {"className":"has-custom-width wp-block-button__width-100 is-style-outline"} -->
 			<div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-outline">
-				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Make a donation', 'greyd-wp' ); ?></a>
+				<a href="#" class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Make a donation', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 		</div>

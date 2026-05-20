@@ -31,13 +31,13 @@
 		<div class="wp-block-buttons">
 			<!-- wp:button {"className":"is-style-fill"} -->
 			<div class="wp-block-button is-style-fill">
-				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Get Started Today', 'greyd-wp' ); ?></a>
+				<a href="#" class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Get Started Today', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 
 			<!-- wp:button {"className":"is-style-outline"} -->
 			<div class="wp-block-button is-style-outline">
-				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Explore Features →', 'greyd-wp' ); ?></a>
+				<a href="#" class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Explore Features →', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 		</div>

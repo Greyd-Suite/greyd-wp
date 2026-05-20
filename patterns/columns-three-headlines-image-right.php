@@ -78,7 +78,7 @@
 				<div class="wp-block-buttons alignleft">
 					<!-- wp:button {"className":"is-style-sec is-style-outline"} -->
 					<div class="wp-block-button is-style-sec is-style-outline">
-						<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Apply Now', 'greyd-wp' ); ?></a>
+						<a href="#" class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Apply Now', 'greyd-wp' ); ?></a>
 					</div>
 					<!-- /wp:button -->
 				</div>

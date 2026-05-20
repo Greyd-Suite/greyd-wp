@@ -33,7 +33,7 @@
 		<div class="wp-block-buttons">
 			<!-- wp:button {"className":"is-style-prim"} -->
 			<div class="wp-block-button is-style-prim">
-				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Download now', 'greyd-wp' ); ?></a>
+				<a href="#" class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Download now', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 		</div>

@@ -37,7 +37,7 @@
 			<div class="wp-block-buttons alignfull">
 				<!-- wp:button {"style":{"border":{"radius":0}},"className":"has-custom-width wp-block-button__width-100 is-style-outline"} -->
 				<div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-outline">
-					<a class="wp-block-button__link no-border-radius wp-element-button"><?php esc_html_e( 'Choose Monthly →', 'greyd-wp' ); ?></a>
+					<a href="#" class="wp-block-button__link no-border-radius wp-element-button"><?php esc_html_e( 'Choose Monthly →', 'greyd-wp' ); ?></a>
 				</div>
 				<!-- /wp:button -->
 			</div>
@@ -95,7 +95,7 @@
 			<div class="wp-block-buttons alignfull">
 				<!-- wp:button {"style":{"border":{"radius":0}},"className":"has-custom-width wp-block-button__width-100 is-style-outline"} -->
 				<div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-outline">
-					<a class="wp-block-button__link no-border-radius wp-element-button"><?php esc_html_e( 'Choose Quarterly →', 'greyd-wp' ); ?></a>
+					<a href="#" class="wp-block-button__link no-border-radius wp-element-button"><?php esc_html_e( 'Choose Quarterly →', 'greyd-wp' ); ?></a>
 				</div>
 				<!-- /wp:button -->
 			</div>
@@ -153,7 +153,7 @@
 			<div class="wp-block-buttons alignfull">
 				<!-- wp:button {"style":{"border":{"radius":0}},"className":"has-custom-width wp-block-button__width-100 is-style-fill"} -->
 				<div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-fill">
-					<a class="wp-block-button__link no-border-radius wp-element-button"><?php esc_html_e( 'Choose Yearly →', 'greyd-wp' ); ?></a>
+					<a href="#" class="wp-block-button__link no-border-radius wp-element-button"><?php esc_html_e( 'Choose Yearly →', 'greyd-wp' ); ?></a>
 				</div>
 				<!-- /wp:button -->
 			</div>
@@ -209,7 +209,7 @@
 		<div class="wp-block-buttons alignfull">
 			<!-- wp:button {"style":{"border":{"radius":0}},"className":"is-style-outline"} -->
 			<div class="wp-block-button is-style-outline">
-				<a class="wp-block-button__link no-border-radius wp-element-button"><?php esc_html_e( 'Call Us', 'greyd-wp' ); ?></a>
+				<a href="#" class="wp-block-button__link no-border-radius wp-element-button"><?php esc_html_e( 'Call Us', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 		</div>

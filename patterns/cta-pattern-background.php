@@ -13,8 +13,8 @@
 ?>
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"backgroundColor":"primary","className":"","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull has-primary-background-color has-background" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
-	<!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/repeating-background-pattern-dark-slash.svg","isRepeated":true,"dimRatio":0,"overlayColor":"transparent","isUserOverlayColor":true,"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large"}},"color":[]},"className":"is-style-no-background","layout":{"type":"constrained"}} -->
-	<div class="wp-block-cover alignfull is-repeated is-style-no-background" style="padding-top:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-large)">
+	<!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/repeating-background-pattern-dark-slash.svg","isRepeated":true,"dimRatio":0,"overlayColor":"transparent","isUserOverlayColor":true,"align":"full","className":"is-style-no-background","style":{"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large"}},"elements":{"link":{"color":{"text":"var:preset|color|lightest"}}}},"textColor":"lightest","layout":{"type":"constrained"}} -->
+	<div class="wp-block-cover alignfull is-repeated is-style-no-background has-lightest-color has-text-color has-link-color" style="padding-top:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-large)">
 		<span aria-hidden="true" class="wp-block-cover__background has-transparent-background-color has-background-dim-0 has-background-dim"></span>
 		<div class="wp-block-cover__image-background is-repeated" style="background-position:50% 50%;background-image:url(<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/repeating-background-pattern-dark-slash.svg)"></div>
 		<div class="wp-block-cover__inner-container">
@@ -50,7 +50,7 @@
 					<div class="wp-block-buttons">
 						<!-- wp:button {"className":"has-custom-width wp-block-button__width-100 is-size-big is-style-alternate"} -->
 						<div class="wp-block-button has-custom-width wp-block-button__width-100 is-size-big is-style-alternate">
-							<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Get Started →', 'greyd-wp' ); ?></a>
+							<a class="wp-block-button__link wp-element-button" href="#"><?php esc_html_e( 'Get Started →', 'greyd-wp' ); ?></a>
 						</div>
 						<!-- /wp:button -->
 					</div>

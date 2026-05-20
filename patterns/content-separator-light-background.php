@@ -35,7 +35,7 @@
 			<div class="wp-block-buttons">
 				<!-- wp:button {"className":"has-custom-width wp-block-button__width-100 is-size-big is-style-fill"} -->
 				<div class="wp-block-button has-custom-width wp-block-button__width-100 is-size-big is-style-fill">
-					<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Get Started →', 'greyd-wp' ); ?></a>
+					<a href="#" class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Get Started →', 'greyd-wp' ); ?></a>
 				</div>
 				<!-- /wp:button -->
 			</div>

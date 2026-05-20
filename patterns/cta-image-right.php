@@ -41,7 +41,7 @@
 			<div class="wp-block-buttons">
 				<!-- wp:button {"className":""} -->
 				<div class="wp-block-button">
-					<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Watch demo', 'greyd-wp' ); ?></a>
+					<a href="#" class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Watch demo', 'greyd-wp' ); ?></a>
 				</div>
 				<!-- /wp:button -->
 			</div>

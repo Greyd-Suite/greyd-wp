@@ -11,8 +11,8 @@
  * Inserter: true
  */
 ?>
-<!-- wp:cover {"overlayColor":"main","isUserOverlayColor":true,"minHeightUnit":"px","contentPosition":"center center","style":{"color":{"duotone":"unset"},"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large"},"blockGap":"var:preset|spacing|large"}},"className":"is-style-default"} -->
-<div class="wp-block-cover is-style-default" style="padding-top:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-large)">
+<!-- wp:cover {"overlayColor":"main","isUserOverlayColor":true,"minHeightUnit":"px","contentPosition":"center center","className":"is-style-default","style":{"color":{"duotone":"unset"},"spacing":{"padding":{"top":"var:preset|spacing|x-large","bottom":"var:preset|spacing|x-large"},"blockGap":"var:preset|spacing|large"},"elements":{"link":{"color":{"text":"var:preset|color|lightest"}}}},"textColor":"lightest"} -->
+<div class="wp-block-cover is-style-default has-lightest-color has-text-color has-link-color" style="padding-top:var(--wp--preset--spacing--x-large);padding-bottom:var(--wp--preset--spacing--x-large)">
 	<span aria-hidden="true" class="wp-block-cover__background has-main-background-color has-background-dim-100 has-background-dim"></span>
 	<div class="wp-block-cover__inner-container">
 		<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|medium"}},"className":"","layout":{"type":"flex","orientation":"vertical","justifyContent":"left"}} -->

@@ -13,8 +13,8 @@
 ?>
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"backgroundColor":"primary","layout":{"type":"default"}} -->
 <div class="wp-block-group alignfull has-primary-background-color has-background" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
-	<!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/dark-transparent-background-pattern.webp","dimRatio":70,"isUserOverlayColor":true,"minHeight":614,"minHeightUnit":"px","gradient":"primary-to-foreground","contentPosition":"center center","style":{"color":{"duotone":"var:preset|duotone|foreground-background"},"spacing":{"margin":{"top":"0","bottom":"0"}}},"className":"is-style-no-background","layout":{"type":"constrained"}} -->
-	<div class="wp-block-cover is-style-no-background" style="margin-top:0;margin-bottom:0;min-height:614px">
+	<!-- wp:cover {"url":"<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/dark-transparent-background-pattern.webp","dimRatio":70,"isUserOverlayColor":true,"minHeight":614,"minHeightUnit":"px","gradient":"primary-to-foreground","contentPosition":"center center","className":"is-style-no-background","style":{"color":{"duotone":"var:preset|duotone|foreground-background"},"spacing":{"margin":{"top":"0","bottom":"0"}},"elements":{"link":{"color":{"text":"var:preset|color|lightest"}}}},"textColor":"lightest","layout":{"type":"constrained"}} -->
+	<div class="wp-block-cover is-style-no-background has-lightest-color has-text-color has-link-color" style="margin-top:0;margin-bottom:0;min-height:614px">
 		<span aria-hidden="true" class="wp-block-cover__background has-background-dim-70 has-background-dim wp-block-cover__gradient-background has-background-gradient has-primary-to-foreground-gradient-background"></span>
 		<img class="wp-block-cover__image-background" alt="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/dark-transparent-background-pattern.webp" data-object-fit="cover" />
 		<div class="wp-block-cover__inner-container">

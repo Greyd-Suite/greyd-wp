@@ -36,7 +36,7 @@
 			<div class="wp-block-buttons">
 				<!-- wp:button {"textColor":"background","style":{"elements":{"link":{"color":{"text":"var:preset|color|background"}}}},"borderColor":"background","className":"is-style-outline"} -->
 				<div class="wp-block-button is-style-outline">
-					<a class="wp-block-button__link has-background-color has-text-color has-link-color has-border-color has-background-border-color wp-element-button"><?php esc_html_e( 'Contact Us', 'greyd-wp' ); ?></a>
+					<a href="#" class="wp-block-button__link has-background-color has-text-color has-link-color has-border-color has-background-border-color wp-element-button"><?php esc_html_e( 'Contact Us', 'greyd-wp' ); ?></a>
 				</div>
 				<!-- /wp:button -->
 			</div>

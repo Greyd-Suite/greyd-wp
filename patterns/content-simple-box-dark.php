@@ -51,7 +51,7 @@
 		<div class="wp-block-buttons">
 			<!-- wp:button {"className":"is-style-alternate"} -->
 			<div class="wp-block-button is-style-alternate">
-				<a class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Get Started', 'greyd-wp' ); ?></a>
+				<a href="#" class="wp-block-button__link wp-element-button"><?php esc_html_e( 'Get Started', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 		</div>
