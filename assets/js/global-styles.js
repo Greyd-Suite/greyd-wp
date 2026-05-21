@@ -137,10 +137,10 @@
 			 * @deprecated 2.14.0
 			 */
 			// {
-			// 	title: __( 'Font sizes', 'greyd-theme' ),
+			// 	title: __( 'Font sizes', 'greyd-wp' ),
 			// 	slug: "font-sizes",
 			// 	icon: 'editor-textcolor',
-			// 	tip: __( "Define up to seven font sizes here, set to 'fluid' by default. Specify the minimum and maximum values, and the system automatically adjusts font sizes between screen sizes for optimal readability and visual consistency.", 'greyd-theme' )
+			// 	tip: __( "Define up to seven font sizes here, set to 'fluid' by default. Specify the minimum and maximum values, and the system automatically adjusts font sizes between screen sizes for optimal readability and visual consistency.", 'greyd-wp' )
 			// },
 			{
 				title: __( 'Buttons', 'greyd-wp' ),

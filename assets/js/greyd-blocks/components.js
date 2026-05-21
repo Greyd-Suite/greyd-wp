@@ -274,7 +274,7 @@ greyd.components = new function () {
 							color:  'rgb(117, 117, 117)',
 							paddingInline: '4px',
 						},
-					}, __( "Reset", 'greyd-theme' ) )
+					}, __( "Reset", 'greyd-wp' ) )
 				] )
 			] )
 		}
