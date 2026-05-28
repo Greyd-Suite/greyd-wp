@@ -126,10 +126,6 @@ __________________________________
 	margin-bottom: var(--basic-padding);
 }
 
-.components-h-stack > .components-range-control {
-	flex: 2;
-}
-
 
 /*    DropShadowControl
 __________________________________

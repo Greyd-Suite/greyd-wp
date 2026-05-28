@@ -1,3 +1,7 @@
+## 2.18.1 - 2026-05-28
+**Bugfixes**
+* Removed an unused CSS class that caused display issues in the editor.
+
 ## 2.18.0 - 2026-05-20
 **Improvements**
 * Updated the theme to meet the new accessibility-ready requirements.
