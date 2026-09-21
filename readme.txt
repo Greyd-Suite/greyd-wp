@@ -1,6 +1,6 @@
 === Greyd WP ===
 Contributors: greydsuite, sandrakurze, luminuu, jtgreyd, thomask42, annebovelett
-Requires at least: 6.6
+Requires at least: 6.9
 Tested up to: 7.0
 Requires PHP: 7.4
 Stable tag: 2.18.1

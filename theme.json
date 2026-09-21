@@ -929,6 +929,11 @@
 	},
 	"styles": {
 		"blocks": {
+			"core/accordion-heading": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--medium)"
+				}
+			},
 			"core/button": {
 				"variations": {
 					"alternate": {
