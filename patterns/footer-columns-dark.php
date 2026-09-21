@@ -76,7 +76,7 @@
 				<h3 class="wp-block-heading has-small-font-size"><?php esc_html_e( 'Search', 'greyd-wp' ); ?></h3>
 				<!-- /wp:heading -->
 
-				<!-- wp:search {"label":"<?php esc_html_e( 'Search', 'greyd-wp' ); ?>","showLabel":false,"buttonText":"<?php esc_html_e( 'Search', 'greyd-wp' ); ?>","buttonUseIcon":true,"style":{"border":{"radius":"4px"}},"className":""} /-->
+				<!-- wp:search {"ariaLabel":"<?php esc_attr_e( 'Footer', 'greyd-wp' ); ?>","label":"<?php esc_html_e( 'Search', 'greyd-wp' ); ?>","showLabel":false,"buttonText":"<?php esc_html_e( 'Search', 'greyd-wp' ); ?>","buttonUseIcon":true,"style":{"border":{"radius":"4px"}},"className":""} /-->
 			</div>
 			<!-- /wp:group -->
 		</div>

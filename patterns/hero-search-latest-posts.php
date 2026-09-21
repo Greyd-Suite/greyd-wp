@@ -42,7 +42,7 @@
 				</div>
 				<!-- /wp:group -->
 
-				<!-- wp:search {"label":"<?php esc_html_e( 'Search', 'greyd-wp' ); ?>","showLabel":false,"placeholder":"<?php esc_html_e( 'Search', 'greyd-wp' ); ?>","buttonText":"<?php esc_html_e( 'Search', 'greyd-wp' ); ?>","buttonUseIcon":true,"style":{"border":{"radius":"4px"}},"className":""} /-->
+				<!-- wp:search {"ariaLabel":"<?php esc_attr_e( 'Site', 'greyd-wp' ); ?>","label":"<?php esc_html_e( 'Search', 'greyd-wp' ); ?>","showLabel":false,"placeholder":"<?php esc_html_e( 'Search', 'greyd-wp' ); ?>","buttonText":"<?php esc_html_e( 'Search', 'greyd-wp' ); ?>","buttonUseIcon":true,"style":{"border":{"radius":"4px"}},"className":""} /-->
 			</div>
 			<!-- /wp:column -->
 

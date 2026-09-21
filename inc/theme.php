@@ -27,6 +27,9 @@ class Theme {
 		// block assets
 		add_action( 'init', array( $this, 'register_block_styles' ) );
 		add_action( 'init', array( $this, 'register_pattern_categories' ), 9 );
+
+		// block adjustments
+		add_filter( 'register_block_type_args', array( $this, 'add_search_aria_label_support' ), 10, 2 );
 	}
 
 	/**
@@ -72,6 +75,35 @@ class Theme {
 		);
 		wp_enqueue_script( 'greyd-wp' );
 
+	}
+
+
+	/**
+	 * Allow an accessible name to be set on the Search block.
+	 *
+	 * core/search renders a `search` landmark (<form role="search">) but ships no way to name it,
+	 * so a page with more than one Search block exposes several identically unnamed landmarks.
+	 * Opting the block into core's own `ariaLabel` block support lets our patterns set a name
+	 * declaratively via `{"ariaLabel":"..."}`.
+	 *
+	 * Harmless no-op once core adds this support upstream.
+	 *
+	 * @param array  $args Block type registration arguments.
+	 * @param string $name Block type name.
+	 * @return array
+	 */
+	public function add_search_aria_label_support( $args, $name ) {
+
+		if ( 'core/search' !== $name ) {
+			return $args;
+		}
+
+		if ( ! isset( $args['supports'] ) || ! is_array( $args['supports'] ) ) {
+			$args['supports'] = array();
+		}
+		$args['supports']['ariaLabel'] = true;
+
+		return $args;
 	}
 
 	/**
