@@ -77,7 +77,7 @@ button,
 .link,
 input[type=submit],
 .wp-block-details summary {
-	outline-style: dotted;
+	outline-style: solid;
 	outline-color: transparent;
 	outline-width: 2px;
 	outline-offset: 2px;
@@ -161,7 +161,7 @@ select:focus-visible + .select-selected
 	 * Use var --text-color if set, fallback to foreground
 	 * @since 2.2.0
 	 */
-	outline: 2px dotted var( --text-color, var(--wp--preset--color--foreground, currentColor) );
+	outline: 2px solid var( --text-color, var(--wp--preset--color--foreground, currentColor) );
 	outline-offset: 3px;
 }
 
