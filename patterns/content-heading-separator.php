@@ -13,7 +13,9 @@
 ?>
 <!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|small"}},"className":"","layout":{"type":"default"}} -->
 <div class="wp-block-group alignwide">
-	<!-- wp:post-title {"textAlign":"center","level":1,"align":"wide","className":""} /-->
+	<!-- wp:heading {"textAlign":"center","align":"wide","className":""} -->
+	<h2 class="wp-block-heading alignwide has-text-align-center"><?php esc_html_e( 'Everything you need to know', 'greyd-wp' ); ?></h2>
+	<!-- /wp:heading -->
 
 	<!-- wp:separator {"align":"center","style":{"spacing":{"margin":{"top":"var:preset|spacing|large","bottom":"var:preset|spacing|large"}}},"backgroundColor":"foreground","className":"is-style-dots"} -->
 	<hr class="wp-block-separator aligncenter has-text-color has-foreground-color has-alpha-channel-opacity has-foreground-background-color has-background is-style-dots" style="margin-top:var(--wp--preset--spacing--large);margin-bottom:var(--wp--preset--spacing--large)" />

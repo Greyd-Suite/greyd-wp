@@ -16,6 +16,13 @@
 			"postTypes": [
 				"page"
 			]
+		},
+		{
+			"name": "page-no-title",
+			"title": "Page without Title",
+			"postTypes": [
+				"page"
+			]
 		}
 	],
 	"settings": {

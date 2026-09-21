@@ -17,7 +17,9 @@
 	<p class="has-text-align-center has-primary-color has-text-color" style="font-style:normal;font-weight:700"><?php esc_html_e( "And there's even more!", 'greyd-wp' ); ?></p>
 	<!-- /wp:paragraph -->
 
-	<!-- wp:post-title {"textAlign":"center","level":1,"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|x-large"}}},"className":"","fontSize":"x-large"} /-->
+	<!-- wp:heading {"textAlign":"center","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|x-large"}}},"className":"","fontSize":"x-large"} -->
+	<h2 class="wp-block-heading has-text-align-center has-x-large-font-size" style="margin-bottom:var(--wp--preset--spacing--x-large)"><?php esc_html_e( 'Explore all features', 'greyd-wp' ); ?></h2>
+	<!-- /wp:heading -->
 
 	<!-- wp:separator {"style":{"spacing":{"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"foreground","className":"is-style-dots"} -->
 	<hr class="wp-block-separator has-text-color has-foreground-color has-alpha-channel-opacity has-foreground-background-color has-background is-style-dots" style="margin-top:0;margin-bottom:0" />

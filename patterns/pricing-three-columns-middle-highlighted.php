@@ -19,8 +19,8 @@
 		<div class="wp-block-group has-foreground-color has-lightest-background-color has-text-color has-background has-link-color" style="border-radius:4px">
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small","padding":{"bottom":"var:preset|spacing|medium"}},"border":{"bottom":{"color":"var:preset|color|foreground","style":"dotted","width":"1px"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 			<div class="wp-block-group" style="border-bottom-color:var(--wp--preset--color--foreground);border-bottom-style:dotted;border-bottom-width:1px;padding-bottom:var(--wp--preset--spacing--medium)">
-				<!-- wp:heading {"level":3,"className":"","fontSize":"medium"} -->
-				<h3 class="wp-block-heading has-medium-font-size"><?php esc_html_e( 'Monthly', 'greyd-wp' ); ?></h3>
+				<!-- wp:heading {"level":2,"className":"","fontSize":"medium"} -->
+				<h2 class="wp-block-heading has-medium-font-size"><?php esc_html_e( 'Monthly', 'greyd-wp' ); ?></h2>
 				<!-- /wp:heading -->
 			</div>
 			<!-- /wp:group -->
@@ -85,8 +85,8 @@
 			<div class="wp-block-group has-foreground-color has-lightest-background-color has-text-color has-background has-link-color" style="border-top-left-radius:0px;border-top-right-radius:0px;border-bottom-left-radius:4px;border-bottom-right-radius:4px">
 				<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small","padding":{"bottom":"var:preset|spacing|medium"}},"border":{"bottom":{"color":"var:preset|color|foreground","style":"dotted","width":"1px"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 				<div class="wp-block-group" style="border-bottom-color:var(--wp--preset--color--foreground);border-bottom-style:dotted;border-bottom-width:1px;padding-bottom:var(--wp--preset--spacing--medium)">
-					<!-- wp:heading {"level":3,"className":"","fontSize":"large"} -->
-					<h3 class="wp-block-heading has-large-font-size"><strong><?php esc_html_e( 'Quarterly', 'greyd-wp' ); ?></strong></h3>
+					<!-- wp:heading {"level":2,"className":"","fontSize":"large"} -->
+					<h2 class="wp-block-heading has-large-font-size"><strong><?php esc_html_e( 'Quarterly', 'greyd-wp' ); ?></strong></h2>
 					<!-- /wp:heading -->
 				</div>
 				<!-- /wp:group -->
@@ -147,8 +147,8 @@
 		<div class="wp-block-group has-foreground-color has-lightest-background-color has-text-color has-background has-link-color" style="border-radius:4px">
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|small","padding":{"bottom":"var:preset|spacing|medium"}},"border":{"bottom":{"color":"var:preset|color|foreground","style":"dotted","width":"1px"}}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
 			<div class="wp-block-group" style="border-bottom-color:var(--wp--preset--color--foreground);border-bottom-style:dotted;border-bottom-width:1px;padding-bottom:var(--wp--preset--spacing--medium)">
-				<!-- wp:heading {"level":3,"className":"","fontSize":"medium"} -->
-				<h3 class="wp-block-heading has-medium-font-size"><?php esc_html_e( 'Yearly', 'greyd-wp' ); ?></h3>
+				<!-- wp:heading {"level":2,"className":"","fontSize":"medium"} -->
+				<h2 class="wp-block-heading has-medium-font-size"><?php esc_html_e( 'Yearly', 'greyd-wp' ); ?></h2>
 				<!-- /wp:heading -->
 			</div>
 			<!-- /wp:group -->
