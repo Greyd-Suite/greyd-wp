@@ -39,7 +39,7 @@
 
 	<!-- wp:paragraph {"align":"center"} -->
 	<p class="has-text-align-center">
-		<a href="https://greyd.io/" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Explore Features →', 'greyd-wp' ); ?></a>
+		<a href="https://greyd.io/"><?php esc_html_e( 'Explore Features →', 'greyd-wp' ); ?></a>
 	</p>
 	<!-- /wp:paragraph -->
 </div>

@@ -22,7 +22,7 @@
 			<p class="has-small-font-size" style="padding-right:var(--wp--preset--spacing--medium)"><?php esc_html_e( 'Nisl libero ullamcorper id ipsum viverra mauris non pellentesque placerat lorem lacinia sagittis non pretium.', 'greyd-wp' ); ?></p>
 			<!-- /wp:paragraph -->
 
-			<!-- wp:social-links {"iconColor":"heading","iconColorValue":"var(--wp--preset--color--heading)","openInNewTab":true,"size":"has-small-icon-size","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|small","left":"var:preset|spacing|small"}}},"className":"is-style-logos-only"} -->
+			<!-- wp:social-links {"iconColor":"heading","iconColorValue":"var(--wp--preset--color--heading)","size":"has-small-icon-size","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|small","left":"var:preset|spacing|small"}}},"className":"is-style-logos-only"} -->
 			<ul class="wp-block-social-links has-small-icon-size has-icon-color is-style-logos-only">
 				<!-- wp:social-link {"url":"#","service":"facebook","className":""} /-->
 

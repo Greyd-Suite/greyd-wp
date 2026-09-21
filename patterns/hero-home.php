@@ -44,13 +44,13 @@
 				<div class="wp-block-buttons">
 					<!-- wp:button {"className":"is-style-fill"} -->
 					<div class="wp-block-button is-style-fill">
-						<a class="wp-block-button__link wp-element-button" href="https://greyd.io/greyd-wp" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Download Theme →', 'greyd-wp' ); ?></a>
+						<a class="wp-block-button__link wp-element-button" href="https://greyd.io/greyd-wp"><?php esc_html_e( 'Download Theme →', 'greyd-wp' ); ?></a>
 					</div>
 					<!-- /wp:button -->
 
 					<!-- wp:button {"textColor":"foreground","style":{"elements":{"link":{"color":{"text":"var:preset|color|foreground"}}}},"className":"is-style-outline"} -->
 					<div class="wp-block-button is-style-outline">
-						<a class="wp-block-button__link has-foreground-color has-text-color has-link-color wp-element-button" href="https://greyd.io/demo/" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Discover the Suite', 'greyd-wp' ); ?></a>
+						<a class="wp-block-button__link has-foreground-color has-text-color has-link-color wp-element-button" href="https://greyd.io/demo/"><?php esc_html_e( 'Discover the Suite', 'greyd-wp' ); ?></a>
 					</div>
 					<!-- /wp:button -->
 				</div>
@@ -71,15 +71,15 @@
 						<!-- /wp:paragraph -->
 
 						<!-- wp:paragraph {"className":""} -->
-						<p><a href="https://greyd.io/" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Visit our website →', 'greyd-wp' ); ?></a></p>
+						<p><a href="https://greyd.io/"><?php esc_html_e( 'Visit our website →', 'greyd-wp' ); ?></a></p>
 						<!-- /wp:paragraph -->
 
 						<!-- wp:paragraph {"className":""} -->
-						<p><a href="https://greyd.io/greyd-wp/#tutorial" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Helpcenter →', 'greyd-wp' ); ?></a></p>
+						<p><a href="https://greyd.io/greyd-wp/#tutorial"><?php esc_html_e( 'Helpcenter →', 'greyd-wp' ); ?></a></p>
 						<!-- /wp:paragraph -->
 
 						<!-- wp:paragraph {"className":""} -->
-						<p><a href="https://greyd.io/greyd-wp/#faq" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'FAQs →', 'greyd-wp' ); ?></a></p>
+						<p><a href="https://greyd.io/greyd-wp/#faq"><?php esc_html_e( 'FAQs →', 'greyd-wp' ); ?></a></p>
 						<!-- /wp:paragraph -->
 					</div>
 					<!-- /wp:group -->

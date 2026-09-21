@@ -42,13 +42,13 @@
 		<div class="wp-block-buttons">
 			<!-- wp:button {"className":"is-style-fill"} -->
 			<div class="wp-block-button is-style-fill">
-				<a class="wp-block-button__link wp-element-button" href="https://greyd.io/greyd-wp" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Download Theme →', 'greyd-wp' ); ?></a>
+				<a class="wp-block-button__link wp-element-button" href="https://greyd.io/greyd-wp"><?php esc_html_e( 'Download Theme →', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 
 			<!-- wp:button {"className":"hidden-sm hidden-xs is-style-alternate"} -->
 			<div class="wp-block-button hidden-sm hidden-xs is-style-alternate">
-				<a class="wp-block-button__link wp-element-button" href="https://greyd.io/demo/" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Discover the Suite', 'greyd-wp' ); ?></a>
+				<a class="wp-block-button__link wp-element-button" href="https://greyd.io/demo/"><?php esc_html_e( 'Discover the Suite', 'greyd-wp' ); ?></a>
 			</div>
 			<!-- /wp:button -->
 		</div>

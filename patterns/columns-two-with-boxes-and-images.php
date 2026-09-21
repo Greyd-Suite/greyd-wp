@@ -82,7 +82,7 @@
 				<!-- /wp:group -->
 
 				<!-- wp:paragraph {"align":"center","className":""} -->
-				<p class="has-text-align-center"><a href="https://greyd.io/" target="_blank" rel="noreferrer noopener"><?php esc_html_e( 'Learn more about the theme →', 'greyd-wp' ); ?></a></p>
+				<p class="has-text-align-center"><a href="https://greyd.io/"><?php esc_html_e( 'Learn more about the theme →', 'greyd-wp' ); ?></a></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
