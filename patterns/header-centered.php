@@ -22,7 +22,7 @@
 		</div>
 		<!-- /wp:group -->
 
-		<!-- wp:navigation {"__unstableLocation":"primary","className":"","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right","orientation":"horizontal"},"style":{"spacing":{"margin":{"top":"0"}}}} -->
+		<!-- wp:navigation {"ariaLabel":"<?php esc_attr_e( 'Primary', 'greyd-wp' ); ?>","__unstableLocation":"primary","className":"","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"right","orientation":"horizontal"},"style":{"spacing":{"margin":{"top":"0"}}}} -->
 			<!-- wp:page-list {"className":""} /-->
 		<!-- /wp:navigation -->
 	</div>

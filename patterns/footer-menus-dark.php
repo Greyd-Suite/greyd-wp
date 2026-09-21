@@ -46,7 +46,7 @@
 					<p class="has-heading-color has-text-color has-x-small-font-size" style="font-style:normal;font-weight:500;letter-spacing:1px;text-transform:uppercase"><?php esc_html_e( 'Products', 'greyd-wp' ); ?></p>
 					<!-- /wp:paragraph -->
 
-					<!-- wp:navigation {"overlayMenu":"never","className":"","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"left","orientation":"vertical"},"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}}} -->
+					<!-- wp:navigation {"ariaLabel":"<?php esc_attr_e( 'Products', 'greyd-wp' ); ?>","overlayMenu":"never","className":"","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"left","orientation":"vertical"},"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}}} -->
 						<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Products List', 'greyd-wp' ); ?>","url":"#","kind":"custom","isTopLevelLink":true,"className":""} /-->
 
 						<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Plans & Pricing', 'greyd-wp' ); ?>","url":"#","kind":"custom","isTopLevelLink":true,"className":""} /-->
@@ -64,7 +64,7 @@
 					<p class="has-heading-color has-text-color has-x-small-font-size" style="font-style:normal;font-weight:500;letter-spacing:1px;text-transform:uppercase"><?php esc_html_e( 'Company', 'greyd-wp' ); ?></p>
 					<!-- /wp:paragraph -->
 
-					<!-- wp:navigation {"overlayMenu":"never","className":"","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"left","orientation":"vertical"},"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}}} -->
+					<!-- wp:navigation {"ariaLabel":"<?php esc_attr_e( 'Company', 'greyd-wp' ); ?>","overlayMenu":"never","className":"","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"left","orientation":"vertical"},"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}}} -->
 						<!-- wp:navigation-link {"label":"<?php esc_html_e( 'About Us', 'greyd-wp' ); ?>","url":"#","kind":"custom","isTopLevelLink":true,"className":""} /-->
 
 						<!-- wp:navigation-link {"label":"<?php esc_html_e( 'News', 'greyd-wp' ); ?>","url":"#","kind":"custom","isTopLevelLink":true,"className":""} /-->
@@ -90,7 +90,7 @@
 					<p class="has-heading-color has-text-color has-x-small-font-size" style="font-style:normal;font-weight:500;letter-spacing:1px;text-transform:uppercase"><?php esc_html_e( 'Resources', 'greyd-wp' ); ?></p>
 					<!-- /wp:paragraph -->
 
-					<!-- wp:navigation {"overlayMenu":"never","className":"","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"left","orientation":"vertical"},"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}}} -->
+					<!-- wp:navigation {"ariaLabel":"<?php esc_attr_e( 'Resources', 'greyd-wp' ); ?>","overlayMenu":"never","className":"","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"left","orientation":"vertical"},"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}}} -->
 						<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Gallery', 'greyd-wp' ); ?>","url":"#","kind":"custom","isTopLevelLink":true,"className":""} /-->
 
 						<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Blog Articles', 'greyd-wp' ); ?>","url":"#","kind":"custom","isTopLevelLink":true,"className":""} /-->
@@ -108,7 +108,7 @@
 					<p class="has-heading-color has-text-color has-x-small-font-size" style="font-style:normal;font-weight:500;letter-spacing:1px;text-transform:uppercase"><?php esc_html_e( 'Support', 'greyd-wp' ); ?></p>
 					<!-- /wp:paragraph -->
 
-					<!-- wp:navigation {"overlayMenu":"never","className":"","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"left","orientation":"vertical"},"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}}} -->
+					<!-- wp:navigation {"ariaLabel":"<?php esc_attr_e( 'Support', 'greyd-wp' ); ?>","overlayMenu":"never","className":"","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"left","orientation":"vertical"},"style":{"spacing":{"blockGap":"var:preset|spacing|xx-small"}}} -->
 						<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Knowledge Base', 'greyd-wp' ); ?>","url":"#","kind":"custom","isTopLevelLink":true,"className":""} /-->
 
 						<!-- wp:navigation-link {"label":"<?php esc_html_e( 'Contact Support', 'greyd-wp' ); ?>","url":"#","kind":"custom","isTopLevelLink":true,"className":""} /-->

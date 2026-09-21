@@ -38,7 +38,7 @@
 			<h3 class="wp-block-heading has-small-font-size"><?php esc_html_e( 'More info', 'greyd-wp' ); ?></h3>
 			<!-- /wp:heading -->
 
-			<!-- wp:navigation {"overlayMenu":"never","__unstableLocation":"primary","className":"","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"left","orientation":"vertical"}} -->
+			<!-- wp:navigation {"ariaLabel":"<?php esc_attr_e( 'More info', 'greyd-wp' ); ?>","overlayMenu":"never","__unstableLocation":"primary","className":"","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"left","orientation":"vertical"}} -->
 				<!-- wp:page-list {"className":""} /-->
 			<!-- /wp:navigation -->
 		</div>

@@ -24,7 +24,7 @@
 		</div>
 		<!-- /wp:group -->
 
-		<!-- wp:navigation {"overlayMenu":"never","__unstableLocation":"primary","className":"","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"left","orientation":"horizontal"}} -->
+		<!-- wp:navigation {"ariaLabel":"<?php esc_attr_e( 'Footer', 'greyd-wp' ); ?>","overlayMenu":"never","__unstableLocation":"primary","className":"","layout":{"type":"flex","setCascadingProperties":true,"justifyContent":"left","orientation":"horizontal"}} -->
 			<!-- wp:page-list {"className":""} /-->
 		<!-- /wp:navigation -->
 	</div>
